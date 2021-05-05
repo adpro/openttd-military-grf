@@ -1,0 +1,10 @@
+##grflangid 0x15
+# This is the Czech language file
+
+# GRF name and description definitions
+STR_GRF_NAME        :{TITLE} {VERSION}
+STR_GRF_DESCRIPTION :{TITLE} obsahuje několik vojenských letadel.{}{BLACK}Verze: {SILVER}{VERSION}{}{BLACK}Copyright: {SILVER}{COPYRIGHT}2021 adpro{}{BLACK}Licence:{SILVER} GPL v2{}{BLACK}Zdroj: {SILVER}https://github.com/adpro/openttd-military-grf/
+
+# vehicle names
+STR_NAME_AIR_DEFAULT  :Default Dart
+STR_NAME_AIR_F86      :North American F-86 Sabre

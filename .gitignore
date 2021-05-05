@@ -1,0 +1,5 @@
+output/
+**/.nmlcache
+
+# pyenv
+.python-version
