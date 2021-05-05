@@ -6,5 +6,14 @@ STR_GRF_NAME        :{TITLE} {VERSION}
 STR_GRF_DESCRIPTION :{TITLE} contains several military airplanes.{}{BLACK}Version: {SILVER}{VERSION}{}{BLACK}Copyright: {SILVER}{COPYRIGHT}2021 adpro{}{BLACK}License:{SILVER} GPL v2{}{BLACK}Source: {SILVER}https://github.com/adpro/openttd-military-grf/
 
 # vehicle names
-STR_NAME_AIR_DEFAULT  :Default Dart
-STR_NAME_AIR_F86      :North American F-86 Sabre
+STR_NAME_AIR_DEFAULT    :Default Dart
+STR_NAME_AIR_F86        :North American F-86 Sabre
+STR_NAME_AIR_F4         :McDonnell F-4 Phantom II
+STR_NAME_AIR_F16        :General Dynamics F-16 Fighting Falcon
+STR_NAME_AIR_F18        :McDonnell Douglas F/A-18 Hornet
+STR_NAME_AIR_F35        :Lockheed Martin F-35A Lightning II
+STR_NAME_AIR_TEMPEST    :BAE Systems Tempest
+STR_NAME_AIR_P51        :North American P-51 Mustang
+STR_NAME_AIR_SCAMEL     :Sopwith Camel
+STR_NAME_AIR_GGLADIATOR :Gloster Gladiator
+STR_NAME_AIR_HURRICANE  :Hawker Hurricane IIC
