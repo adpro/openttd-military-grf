@@ -12,6 +12,7 @@ STR_NAME_AIR_F4         :McDonnell F-4 Phantom II
 STR_NAME_AIR_F16        :General Dynamics F-16 Fighting Falcon
 STR_NAME_AIR_F18        :McDonnell Douglas F/A-18 Hornet
 STR_NAME_AIR_F35        :Lockheed Martin F-35A Lightning II
+STR_NAME_AIR_RQ4        :Northrop Grumman RQ-4 Global Hawk
 STR_NAME_AIR_TEMPEST    :BAE Systems Tempest
 STR_NAME_AIR_P51        :North American P-51 Mustang
 STR_NAME_AIR_SCAMEL     :Sopwith Camel
