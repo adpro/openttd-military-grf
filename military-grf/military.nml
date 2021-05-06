@@ -6,6 +6,7 @@ grf {
     min_compatible_version: 0;
 }
 
+/* ************************************************************************* */
 /* airplane F-86 Sabre */
 
 spriteset(spriteset_air_f86, "gfx/png/air_f86.png") {
@@ -57,6 +58,7 @@ item (FEAT_AIRCRAFT, item_air_f86) {
 }
 
 
+/* ************************************************************************* */
 /* airplane F-4 Phantom II */
 
 spriteset(spriteset_air_f4, "gfx/png/air_f4.png") {
@@ -109,6 +111,7 @@ item (FEAT_AIRCRAFT, item_air_f4) {
 }
 
 
+/* ************************************************************************* */
 /* airplane F-16 */
 
 spriteset(spriteset_air_f16, "gfx/png/air_f16.png") {
@@ -160,7 +163,59 @@ item (FEAT_AIRCRAFT, item_air_f16) {
    }
 }
 
+/* ************************************************************************* */
+/* airplane F-18 */
 
+spriteset(spriteset_air_f18, "gfx/png/air_f18.png") {
+    // 32 x 20 x 8
+    //left_x, upper_y, width, height, offset_x, offset_y
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    [   0,     0,       14,    22,     -7,       -10]
+    [  15,     0,       25,    20,    -12,        -9]
+    [  41,     0,       29,    13,    -14,        -5]
+    [  71,     0,       25,    20,    -12,        -9]
+    [  97,     0,       14,    22,     -7,       -10]
+    [ 112,     0,       25,    20,    -12,        -9]
+    [ 138,     0,       29,    13,    -14,        -5]
+    [ 168,     0,       25,    20,    -12,        -9]
+}
+
+item (FEAT_AIRCRAFT, item_air_f18) {
+    property {
+        name:                           string(STR_NAME_AIR_F18);
+        climates_available:             bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+        introduction_date:              date(1980,02,01);
+        model_life:                     53;
+        /* retire_early not set, use default retirement behaviour */
+        vehicle_life:                   25;
+        reliability_decay:              5;
+        refittable_cargo_classes:       bitmask(CC_MAIL, CC_EXPRESS, CC_ARMOURED, CC_LIQUID);
+        non_refittable_cargo_classes:   bitmask(CC_PASSENGERS, CC_REFRIGERATED);
+        loading_speed:                  5;
+        cost_factor:                    1;
+        running_cost_factor:            1;
+        /* cargo_age_period is left at default */
+
+        /* airplane-specific properties */
+        sprite_id:                      SPRITE_ID_NEW_AIRCRAFT; //enable new graphics
+        speed:                          1915 km/h;
+        range:                          0;
+        misc_flags:                     bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
+        refit_cost:                     0; // Refitting is free
+        /* callback_flags are not set, no need to manually enable callbacks */
+        aircraft_type:                  AIRCRAFT_TYPE_SMALL;
+        acceleration:                   90;
+        passenger_capacity:             0;
+        mail_capacity:                  4;
+        sound_effect:                   SOUND_JET; // SOUND_PLANE_TAKE_OFF | SOUND_JET
+        /* Visual effect is left at default (no effect) */
+   }
+   graphics {
+        default: spriteset_air_f18;
+   }
+}
+
+/* ************************************************************************* */
 /* default */
 
 spriteset(spriteset_air_default, "gfx/png/air_default.png") {
