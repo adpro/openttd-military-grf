@@ -2,15 +2,15 @@
 
 ## About
 
-Military Items provides military aircrafts from around the world. 
+Military Items provides military aircraft from around the world. 
 The set is not aimed at specific military operators or manufacturers,
 but rather gives you a broad selection so that you can be your own 
 company. To support that goal, the vehicles are in dual company colours.
 
 ## Usage and Parameters
 
-The first aircraft is available from 1949. Build (small) airports to use
-aircrafts.
+The first aircraft is available from 1913. Build (small) airports to use
+aircraft.
 
 By default military airplanes (especially fighters) can carry only limited types
 of cargo.
@@ -23,14 +23,14 @@ The vehicle life corresponds to use by users anywhere in the world.
 If you like a particular vehicle to be added to the set, you can make a 
 request for that. Post your request in the development topic at 	
 TT-Forums.net (*WILL BE ADDED*) 
-and preferrably also to the issue tracker at the github repository 
+and preferably also to the issue tracker at the github repository 
 (https://github.com/adpro/openttd-military-grf/issues) such that the 
 request is not lost.
 
 To avoid disappointment, consider the following rules for requests:
 - The manufacturer and model must not already be present in the set;
 - If the manufacturer is present in the set, the model must fill a 
-  regional or timeframe gap;
+  regional or time frame gap;
 - Sufficient information must be available to draw and code the vehicle;
 - The development team and author reserves the right to interpret these rules more 
   like guidelines.
