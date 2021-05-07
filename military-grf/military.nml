@@ -34,8 +34,8 @@ item (FEAT_AIRCRAFT, item_air_f86) {
         refittable_cargo_classes:       bitmask(CC_MAIL, CC_EXPRESS, CC_ARMOURED, CC_LIQUID);
         non_refittable_cargo_classes:   bitmask(CC_PASSENGERS, CC_REFRIGERATED);
         loading_speed:                  5;
-        cost_factor:                    1;
-        running_cost_factor:            1;
+        cost_factor:                    5;
+        running_cost_factor:            10;
         /* cargo_age_period is left at default */
 
         /* airplane-specific properties */
@@ -87,8 +87,8 @@ item (FEAT_AIRCRAFT, item_air_f4) {
         refittable_cargo_classes:       bitmask(CC_MAIL, CC_EXPRESS, CC_ARMOURED, CC_LIQUID);
         non_refittable_cargo_classes:   bitmask(CC_PASSENGERS, CC_REFRIGERATED);
         loading_speed:                  5;
-        cost_factor:                    1;
-        running_cost_factor:            1;
+        cost_factor:                    8;
+        running_cost_factor:            23;
         /* cargo_age_period is left at default */
 
         /* airplane-specific properties */
@@ -140,8 +140,8 @@ item (FEAT_AIRCRAFT, item_air_f16) {
         refittable_cargo_classes:       bitmask(CC_MAIL, CC_EXPRESS, CC_ARMOURED, CC_LIQUID);
         non_refittable_cargo_classes:   bitmask(CC_PASSENGERS, CC_REFRIGERATED);
         loading_speed:                  5;
-        cost_factor:                    1;
-        running_cost_factor:            1;
+        cost_factor:                    30;
+        running_cost_factor:            45;
         /* cargo_age_period is left at default */
 
         /* airplane-specific properties */
@@ -192,8 +192,8 @@ item (FEAT_AIRCRAFT, item_air_f18) {
         refittable_cargo_classes:       bitmask(CC_MAIL, CC_EXPRESS, CC_ARMOURED, CC_LIQUID);
         non_refittable_cargo_classes:   bitmask(CC_PASSENGERS, CC_REFRIGERATED);
         loading_speed:                  5;
-        cost_factor:                    1;
-        running_cost_factor:            1;
+        cost_factor:                    63;
+        running_cost_factor:            68;
         /* cargo_age_period is left at default */
 
         /* airplane-specific properties */
@@ -244,8 +244,8 @@ item (FEAT_AIRCRAFT, item_air_f35) {
         refittable_cargo_classes:       bitmask(CC_MAIL, CC_EXPRESS, CC_ARMOURED, CC_LIQUID);
         non_refittable_cargo_classes:   bitmask(CC_PASSENGERS, CC_REFRIGERATED);
         loading_speed:                  5;
-        cost_factor:                    1;
-        running_cost_factor:            1;
+        cost_factor:                    74;
+        running_cost_factor:            160;
         /* cargo_age_period is left at default */
 
         /* airplane-specific properties */
@@ -284,7 +284,7 @@ spriteset(spriteset_air_rq4, "gfx/png/air_rq4.png") {
     [ 278,     0,       45,    30,    -22,       -14]
 }
 
-item (FEAT_AIRCRAFT, item_air_f35) {
+item (FEAT_AIRCRAFT, item_air_rq4) {
     property {
         name:                           string(STR_NAME_AIR_RQ4);
         climates_available:             bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
@@ -296,8 +296,8 @@ item (FEAT_AIRCRAFT, item_air_f35) {
         refittable_cargo_classes:       bitmask(CC_MAIL, CC_EXPRESS, CC_ARMOURED);
         non_refittable_cargo_classes:   bitmask(CC_PASSENGERS, CC_REFRIGERATED);
         loading_speed:                  5;
-        cost_factor:                    1;
-        running_cost_factor:            1;
+        cost_factor:                    67;
+        running_cost_factor:            64;
         /* cargo_age_period is left at default */
 
         /* airplane-specific properties */
@@ -348,8 +348,8 @@ item (FEAT_AIRCRAFT, item_air_hurricane) {
         refittable_cargo_classes:       bitmask(CC_MAIL, CC_EXPRESS, CC_ARMOURED);
         non_refittable_cargo_classes:   bitmask(CC_PASSENGERS, CC_REFRIGERATED);
         loading_speed:                  5;
-        cost_factor:                    1;
-        running_cost_factor:            1;
+        cost_factor:                    2;
+        running_cost_factor:            3;
         /* cargo_age_period is left at default */
 
         /* airplane-specific properties */
@@ -372,54 +372,53 @@ item (FEAT_AIRCRAFT, item_air_hurricane) {
 }
 
 /* ************************************************************************* */
-/* default */
+/* airplane Avro 504 */
 
-spriteset(spriteset_air_default, "gfx/png/air_default.png") {
+spriteset(spriteset_air_avro, "gfx/png/air_avro504.png") {
+    // 15 x 19 x 5
     //left_x, upper_y, width, height, offset_x, offset_y
     //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
-    [  75,    26,       38,    25,     -19,       -11]
-    [ 123,    26,       43,    23,     -21,       -10]
-    [ 171,    26,       55,    21,     -27,        -9]
-    [ 235,    26,       43,    30,     -21,       -14]
-    [ 283,    26,       38,    35,     -19,       -16]
-    [ 331,    26,       43,    30,     -21,       -14]
-    [ 379,    26,       55,    21,     -27,        -9]
-    [ 443,    26,       43,    23,     -21,       -10]
+    [   0,     0,       12,    12,     -6,        -5]
+    [  13,     0,       17,    13,     -8,        -5]
+    [  31,     0,       15,     9,     -7,        -3]
+    [  47,     0,       17,    13,     -8,        -5]
+    [  65,     0,       12,    12,     -6,        -5]
+    [  78,     0,       17,    13,     -8,        -5]
+    [  96,     0,       15,     9,     -7,        -3]
+    [ 112,     0,       17,    13,     -8,        -5]
 }
 
-item (FEAT_AIRCRAFT, item_air_default) {
+item (FEAT_AIRCRAFT, item_air_avro) {
     property {
-        name:                           string(STR_NAME_AIR_DEFAULT);
+        name:                           string(STR_NAME_AIR_AVRO);
         climates_available:             bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
-        introduction_date:              date(1920,01,01);
-        // introduction_date:              date(1949,10,01);
-        model_life:                     8;
+        introduction_date:              date(1913,09,18);
+        model_life:                     19;
         /* retire_early not set, use default retirement behaviour */
         vehicle_life:                   15;
         reliability_decay:              5;
-        refittable_cargo_classes:       bitmask(CC_MAIL, CC_EXPRESS, CC_ARMOURED, CC_LIQUID);
+        refittable_cargo_classes:       bitmask(CC_MAIL, CC_EXPRESS, CC_ARMOURED);
         non_refittable_cargo_classes:   bitmask(CC_PASSENGERS, CC_REFRIGERATED);
-        loading_speed:                  5;
-        cost_factor:                    255;
-        running_cost_factor:            255;
+        loading_speed:                  2;
+        cost_factor:                    1;
+        running_cost_factor:            1;
         /* cargo_age_period is left at default */
 
         /* airplane-specific properties */
         sprite_id:                      SPRITE_ID_NEW_AIRCRAFT; //enable new graphics
-        speed:                          1106 km/h;
+        speed:                          153 km/h;
         range:                          0;
         misc_flags:                     bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
         refit_cost:                     0; // Refitting is free
         /* callback_flags are not set, no need to manually enable callbacks */
         aircraft_type:                  AIRCRAFT_TYPE_SMALL;
-        acceleration:                   50;
+        acceleration:                   15;
         passenger_capacity:             0;
-        mail_capacity:                  4;
-        sound_effect:                   SOUND_JET; // SOUND_PLANE_TAKE_OFF | SOUND_JET
+        mail_capacity:                  2;
+        sound_effect:                   SOUND_PLANE_TAKE_OFF; // SOUND_PLANE_TAKE_OFF | SOUND_JET
         /* Visual effect is left at default (no effect) */
    }
    graphics {
-        default: spriteset_air_default;
+        default: spriteset_air_avro;
    }
-
 }
