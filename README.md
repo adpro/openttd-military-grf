@@ -22,7 +22,7 @@ The vehicle life corresponds to use by users anywhere in the world.
 
 If you like a particular vehicle to be added to the set, you can make a 
 request for that. Post your request in the development topic at 	
-TT-Forums.net (*WILL BE ADDED*) 
+TT-Forums.net (https://www.tt-forums.net/viewtopic.php?f=26&t=88858) 
 and preferably also to the issue tracker at the github repository 
 (https://github.com/adpro/openttd-military-grf/issues) such that the 
 request is not lost.
