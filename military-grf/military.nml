@@ -2,8 +2,13 @@ grf {
     grfid: "AD\01\01";  // TTDPatch ID and published version
     name: string(STR_GRF_NAME);
     desc: string(STR_GRF_DESCRIPTION);
-    version: 0; // OpenTTD published version
+    version: 1; // OpenTTD published version
     min_compatible_version: 0;
+
+    // versions:
+    // 1 = 0.1.0alpha9
+    // 2 = 0.2.0
+
 }
 
 
