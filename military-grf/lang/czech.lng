@@ -7,12 +7,30 @@ STR_GRF_DESCRIPTION :{TITLE} obsahuje několik vojenských letadel.{}{BLACK}Verz
 
 # vehicle names
 STR_NAME_AIR_F86        :North American F-86 Sabre
-STR_NAME_AIR_F4         :McDonnell F-4 Phantom II
-STR_NAME_AIR_F16        :General Dynamics F-16 Fighting Falcon
-STR_NAME_AIR_F18        :McDonnell Douglas F/A-18 Hornet
-STR_NAME_AIR_F35        :Lockheed Martin F-35A Lightning II
-STR_NAME_AIR_RQ4        :Northrop Grumman RQ-4 Global Hawk
-STR_NAME_AIR_HURRICANE  :Hawker Hurricane IIC
-STR_NAME_AIR_AVRO       :Avro 504
-STR_NAME_AIR_P51        :North American P-51 Mustang
+STR_DESC_AIR_F86		:Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Známý jako první americký stíhací letoun s šípovými křídly, který dokázal čelit sovětským MiGům-15 v rychlých soubojích na obloze korejské války. Vyrobeno 9 860 ks.
 
+STR_NAME_AIR_F4         :McDonnell F-4 Phantom II
+STR_DESC_AIR_F4		    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Nejvíce vyráběné americké nadzvukové vojenské letadlo v historii a ikonické bojové letadlo studené války. Vyrobeno 5 195 ks.
+
+STR_NAME_AIR_F16        :General Dynamics F-16 Fighting Falcon
+STR_DESC_AIR_F16		:Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Nejpočetnější letadlo s pevnými křídly na světě ve vojenské službě v roce 2015. Vyrobeno přes 4 600 ks.
+
+STR_NAME_AIR_F18        :McDonnell Douglas F/A-18 Hornet
+STR_DESC_AIR_F18		:Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Letoun může provádět stíhací doprovod, protivzdušnou obranu flotily, potlačení nepřátelské protivzdušné obrany, přímou leteckou podporu a vzdušný průzkum. Vyrobeno 1 500 ks.
+
+STR_NAME_AIR_F35        :Lockheed Martin F-35A Lightning II
+STR_DESC_AIR_F35		:Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Druhý letoun 5. generace ve službách USA. Letoun má tři hlavní varianty: konvenční vzlet a přistání (CTOL) F-35A, krátký vzlet a vertikální přistání (STOVL) F-35B a letadlový (CV / CATOBAR) F-35C. Bude vyrobeno přes 2 800 strojů.
+
+STR_NAME_AIR_RQ4        :Northrop Grumman RQ-4 Global Hawk
+STR_DESC_AIR_RQ4		:Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Global Hawk vykonává povinnosti podobné úkolům Lockheed U-2. Může mapovat až 40 000 čtverečních mil (100 000 km čtverečních) terénu denně, což je oblast o velikosti Jižní Koreje nebo Islandu. Bylo vyrobeno přes 50 ks.
+
+STR_NAME_AIR_HURRICANE  :Hawker Hurricane IIC
+STR_DESC_AIR_HURRICANE	:Země původu: {ORANGE}GBR {}{BLACK}Historická fakta: {ORANGE}Hurricane způsobil 60 procent ztrát Luftwaffe v bitvě o Británii a bojoval ve všech hlavních oblastech druhé světové války. Bylo vyrobeno 14 487 ks.
+
+STR_NAME_AIR_AVRO       :Avro 504
+STR_DESC_AIR_AVRO		:Země původu: {ORANGE}GBR {}{BLACK}Historická fakta: {ORANGE}Nejvíce vyráběné letadlo jakéhokoli druhu, které sloužilo na jakékoli straně během první světové války. Bylo vyrobeno 11 303 ks.
+
+STR_NAME_AIR_P51        :North American P-51 Mustang
+STR_DESC_AIR_P51		:Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}.
+
+STR_DESC_AIR_TMPL		:Země původu: {ORANGE}??? {}{BLACK}Historická fakta: {ORANGE}.

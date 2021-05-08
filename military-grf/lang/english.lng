@@ -7,11 +7,30 @@ STR_GRF_DESCRIPTION :{TITLE} contains several military airplanes.{}{BLACK}Versio
 
 # vehicle names
 STR_NAME_AIR_F86        :North American F-86 Sabre
+STR_DESC_AIR_F86		:Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}Best known as the US' first swept-wing fighter that could counter the swept-wing Soviet MiG-15 in high-speed dogfights in the skies of the Korean War. 9 860 Sabres was built.
+
 STR_NAME_AIR_F4         :McDonnell F-4 Phantom II
+STR_DESC_AIR_F4		    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The most produced American supersonic military aircraft in history, and cementing its position as an iconic combat aircraft of the Cold War. 5 195 Phantoms was built.
+
 STR_NAME_AIR_F16        :General Dynamics F-16 Fighting Falcon
+STR_DESC_AIR_F16	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The world's most numerous fixed-wing aircraft in military service in 2015. Over 4 600 Falcons was built.
+
 STR_NAME_AIR_F18        :McDonnell Douglas F/A-18 Hornet
+STR_DESC_AIR_F18	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The aircraft can perform fighter escort, fleet air defense, suppression of enemy air defenses, air interdiction, close air support, and aerial reconnaissance. 1 500 Hornets was built.
+
 STR_NAME_AIR_F35        :Lockheed Martin F-35A Lightning II
+STR_DESC_AIR_F35	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The 2nd 5th generation figher in US service. The aircraft has three main variants: the conventional takeoff and landing (CTOL) F-35A, the short take-off and vertical-landing (STOVL) F-35B, and the carrier-based (CV/CATOBAR) F-35C. Over 2 800 Lightnings will be built.
+
 STR_NAME_AIR_RQ4        :Northrop Grumman RQ-4 Global Hawk
+STR_DESC_AIR_RQ4	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The Global Hawk performs duties similar to that of the Lockheed U-2. It can survey as much as 40,000 square miles (100,000 square km) of terrain a day, an area the size of South Korea or Iceland. Over 50 Hawks was built.
+
 STR_NAME_AIR_HURRICANE  :Hawker Hurricane IIC
+STR_DESC_AIR_HURRICANE  :Country of origin: {ORANGE}GBR {}{BLACK}Historic facts: {ORANGE}The Hurricane inflicted 60 percent of the losses sustained by the Luftwaffe in the Battle of Britain, and fought in all the major theatres of the Second World War. 14 487 Hurricanes was built.
+
 STR_NAME_AIR_AVRO       :Avro 504
+STR_DESC_AIR_AVRO		:Country of origin: {ORANGE}GBR {}{BLACK}Historic facts: {ORANGE}The most-produced aircraft of any kind that served in any military capacity during the First World War. 11 303 aircraft was built.
+
 STR_NAME_AIR_P51        :North American P-51 Mustang
+STR_DESC_AIR_F5		    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}.
+
+STR_DESC_AIR_TMPL		:Country of origin: {ORANGE}??? {}{BLACK}Historic facts: {ORANGE}.
