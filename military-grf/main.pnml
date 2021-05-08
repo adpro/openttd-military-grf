@@ -1,0 +1,13 @@
+#include "header.pnml"
+
+
+// aircraft
+#include "gfx/pnml/aircraft/avro504.pnml"
+#include "gfx/pnml/aircraft/hawker_hurricane.pnml"
+#include "gfx/pnml/aircraft/f-86.pnml"
+#include "gfx/pnml/aircraft/f-4.pnml"
+#include "gfx/pnml/aircraft/f-16.pnml"
+#include "gfx/pnml/aircraft/f-18.pnml"
+#include "gfx/pnml/aircraft/f-35.pnml"
+#include "gfx/pnml/aircraft/rq-4.pnml"
+

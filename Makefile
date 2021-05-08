@@ -3,6 +3,12 @@ PYTHON?=/usr/bin/env python3
 SRCDIR=military-grf
 OUTDIR=output	
 MKDIR_P=mkdir -p
+NMLFILE=military_items.nml
+
+ifdef NMLFILE
+	CC             ?= "$(shell which cc 2>/dev/null)"
+	CC_FLAGS       ?= -C -E -nostdinc -x c-header
+endif
 
 .PHONY: help build clean deploy copy test
 
@@ -14,16 +20,23 @@ ${OUTDIR}:
 	${MKDIR_P} ${OUTDIR}
 
 build: ${OUTDIR} ## builds nml files into grf file
-	cd $(SRCDIR) \
-	&& nmlc --grf ../output/military-items.grf military.nml
+	@echo "[CC] Compiling NML..."
+	@cd $(SRCDIR) \
+	&& $(CC) $(CC_FLAGS) -o $(NMLFILE) main.pnml
+	@echo "[NML] Compiling NewGRF..."
+	@cd $(SRCDIR) \
+	&& nmlc --grf ../output/military-items.grf $(NMLFILE)
 
 clean: ## deletes output dir with its content
-	[ ! -d $(OUTDIR) ] || rm -rf $(OUTDIR)
+	@echo "[CLEAN] Cleaning repo directory..."
+	@[ ! -d $(OUTDIR) ] || rm -rf $(OUTDIR)
+	@[ ! -f $(SRCDIR)/$(NMLFILE) ] || rm $(SRCDIR)/$(NMLFILE)
 
 deploy: ## deploys grf to BananaS server
-	echo 'NOT IMPLEMENTED'
+	@echo 'NOT IMPLEMENTED'
 
 copy: ## copies data
-	[ ! -d $(OUTDIR) ] || cp -f output/military-items.grf ~/Documents/OpenTTD/newgrf
+	@echo "[COPY] Copying files to game folder..."
+	@[ ! -d $(OUTDIR) ] || cp -f output/military-items.grf ~/Documents/OpenTTD/newgrf
 
 test: clean build copy ## run clean, build and copy

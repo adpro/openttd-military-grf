@@ -1,5 +1,6 @@
 output/
 **/.nmlcache
+**/*.nml
 
 # pyenv
 .python-version

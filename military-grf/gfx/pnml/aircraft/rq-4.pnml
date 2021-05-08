@@ -1,0 +1,50 @@
+/* airplane RQ-4 Global Hawk */
+
+spriteset(spriteset_air_rq4, "gfx/png/air_rq4.png") {
+    // 24 x 67 x 8
+    //left_x, upper_y, width, height, offset_x, offset_y
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    [   0,     0,       44,    20,    -22,        -9]
+    [  45,     0,       45,    30,    -22,       -14]
+    [  91,     0,       24,    24,    -12,       -11]
+    [ 116,     0,       45,    30,    -22,       -14]
+    [ 162,     0,       44,    20,    -22,        -9]
+    [ 207,     0,       45,    30,    -22,       -14]
+    [ 253,     0,       24,    24,    -12,       -11]
+    [ 278,     0,       45,    30,    -22,       -14]
+}
+
+item (FEAT_AIRCRAFT, item_air_rq4) {
+    property {
+        name:                           string(STR_NAME_AIR_RQ4);
+        climates_available:             bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+        introduction_date:              date(1998,03,01);
+        model_life:                     40;
+        /* retire_early not set, use default retirement behaviour */
+        vehicle_life:                   28;
+        reliability_decay:              5;
+        refittable_cargo_classes:       bitmask(CC_MAIL, CC_EXPRESS, CC_ARMOURED);
+        non_refittable_cargo_classes:   bitmask(CC_PASSENGERS, CC_REFRIGERATED);
+        loading_speed:                  5;
+        cost_factor:                    67;
+        running_cost_factor:            64;
+        /* cargo_age_period is left at default */
+
+        /* airplane-specific properties */
+        sprite_id:                      SPRITE_ID_NEW_AIRCRAFT; //enable new graphics
+        speed:                          609 km/h;
+        range:                          0;
+        misc_flags:                     bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
+        refit_cost:                     0; // Refitting is free
+        /* callback_flags are not set, no need to manually enable callbacks */
+        aircraft_type:                  AIRCRAFT_TYPE_SMALL;
+        acceleration:                   45;
+        passenger_capacity:             0;
+        mail_capacity:                  4;
+        sound_effect:                   SOUND_JET; // SOUND_PLANE_TAKE_OFF | SOUND_JET
+        /* Visual effect is left at default (no effect) */
+   }
+   graphics {
+        default: spriteset_air_rq4;
+   }
+}
