@@ -27,7 +27,7 @@ item (FEAT_AIRCRAFT, item_air_rq4) {
         non_refittable_cargo_classes:   bitmask(CC_PASSENGERS, CC_REFRIGERATED);
         loading_speed:                  5;
         cost_factor:                    67;
-        running_cost_factor:            64;
+        running_cost_factor:            163;
         /* cargo_age_period is left at default */
 
         /* airplane-specific properties */
