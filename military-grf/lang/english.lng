@@ -36,4 +36,7 @@ STR_DESC_AIR_P51	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {O
 STR_NAME_AIR_C5         :Lockheed C-5 Galaxy
 STR_DESC_AIR_C5 	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The C-5 is among the largest military aircraft in the world. Over 130 aircraft was built.
 
+STR_NAME_AIR_C17        :Boeing C-17 Globemaster III
+STR_DESC_AIR_C17 	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}Original developer is McDonnel Douglas, merged to Boeing in 1997. The C-17 is designed to operate from runways as short as 3,500 ft (1,100 m) and as narrow as 90 ft (27 m). 279 airplanes was built.
+
 STR_DESC_AIR_TMPL		:Country of origin: {ORANGE}??? {}{BLACK}Historic facts: {ORANGE}.

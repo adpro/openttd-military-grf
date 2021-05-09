@@ -7,9 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Table of Contents
 - [Changelog](#changelog)
   - [[Unreleased]](#unreleased)
+    - [Added](#added)
     - [Changed](#changed)
   - [[0.1.0] - 2021-05-07](#010---2021-05-07)
-    - [Added](#added)
+    - [Added](#added-1)
 
 You can find these types of changes:
 
@@ -21,6 +22,9 @@ You can find these types of changes:
 - Security in case of vulnerabilities.
 
 ## [Unreleased]
+### Added
+- Lockheed C-5 Galaxy aircraft
+- McDonnell Douglas/Boeing C-17 Globemaster III aircraft
 ### Changed
 - Move to partial nml files (pnml) and gcc preprocessor from coding in one big nml file.
 

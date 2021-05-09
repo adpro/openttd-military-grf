@@ -36,4 +36,7 @@ STR_DESC_AIR_P51		:Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANG
 STR_NAME_AIR_C5         :Lockheed C-5 Galaxy
 STR_DESC_AIR_C5 	    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}C-5 patří mezi největší vojenská letadla na světě. Bylo vyrobeno více než 130 ks.
 
+STR_NAME_AIR_C17        :Boeing C-17 Globemaster III
+STR_DESC_AIR_C17 	    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Původním vývojářem je McDonnell Douglas, sloučený s Boeingem v roce 1997. C-17 je navržen tak, aby fungoval z přistávacích drah pouhých 1 100 m a tak úzkých jako 27 m. Bylo vyrobeno 279 letadel.
+
 STR_DESC_AIR_TMPL		:Země původu: {ORANGE}??? {}{BLACK}Historická fakta: {ORANGE}.
