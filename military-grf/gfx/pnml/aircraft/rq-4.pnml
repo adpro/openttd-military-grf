@@ -45,6 +45,7 @@ item (FEAT_AIRCRAFT, item_air_rq4) {
         /* Visual effect is left at default (no effect) */
    }
    graphics {
-        default: spriteset_air_rq4;
+        additional_text:    return string(STR_DESC_AIR_RQ4); //Additional text shown in purchase list
+        default:            spriteset_air_rq4;
    }
 }

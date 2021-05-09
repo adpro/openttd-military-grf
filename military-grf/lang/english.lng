@@ -31,6 +31,6 @@ STR_NAME_AIR_AVRO       :Avro 504
 STR_DESC_AIR_AVRO		:Country of origin: {ORANGE}GBR {}{BLACK}Historic facts: {ORANGE}The most-produced aircraft of any kind that served in any military capacity during the First World War. 11 303 aircraft was built.
 
 STR_NAME_AIR_P51        :North American P-51 Mustang
-STR_DESC_AIR_F5		    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}.
+STR_DESC_AIR_P51	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}.
 
 STR_DESC_AIR_TMPL		:Country of origin: {ORANGE}??? {}{BLACK}Historic facts: {ORANGE}.

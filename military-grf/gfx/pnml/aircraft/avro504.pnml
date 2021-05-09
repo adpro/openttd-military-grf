@@ -47,6 +47,7 @@ item (FEAT_AIRCRAFT, item_air_avro) {
         /* Visual effect is left at default (no effect) */
    }
    graphics {
-        default: spriteset_air_avro;
+        additional_text:    return string(STR_DESC_AIR_AVRO); //Additional text shown in purchase list
+        default:            spriteset_air_avro;
    }
 }
