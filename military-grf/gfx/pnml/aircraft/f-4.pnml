@@ -33,7 +33,7 @@ item (FEAT_AIRCRAFT, item_air_f4) {
         /* airplane-specific properties */
         sprite_id:                      SPRITE_ID_NEW_AIRCRAFT; //enable new graphics
         speed:                          2370 km/h;
-        range:                          0;
+        range:                          540;
         misc_flags:                     bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
         refit_cost:                     0; // Refitting is free
         /* callback_flags are not set, no need to manually enable callbacks */
