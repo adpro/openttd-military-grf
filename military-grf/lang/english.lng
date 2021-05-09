@@ -33,4 +33,7 @@ STR_DESC_AIR_AVRO		:Country of origin: {ORANGE}GBR {}{BLACK}Historic facts: {ORA
 STR_NAME_AIR_P51        :North American P-51 Mustang
 STR_DESC_AIR_P51	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}.
 
+STR_NAME_AIR_C5         :Lockheed C-5 Galaxy
+STR_DESC_AIR_C5 	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The C-5 is among the largest military aircraft in the world. Over 130 aircraft was built.
+
 STR_DESC_AIR_TMPL		:Country of origin: {ORANGE}??? {}{BLACK}Historic facts: {ORANGE}.

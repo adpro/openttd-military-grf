@@ -33,4 +33,7 @@ STR_DESC_AIR_AVRO		:Země původu: {ORANGE}GBR {}{BLACK}Historická fakta: {ORAN
 STR_NAME_AIR_P51        :North American P-51 Mustang
 STR_DESC_AIR_P51		:Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}.
 
+STR_NAME_AIR_C5         :Lockheed C-5 Galaxy
+STR_DESC_AIR_C5 	    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}C-5 patří mezi největší vojenská letadla na světě. Bylo vyrobeno více než 130 ks.
+
 STR_DESC_AIR_TMPL		:Země původu: {ORANGE}??? {}{BLACK}Historická fakta: {ORANGE}.

@@ -11,3 +11,4 @@
 #include "gfx/pnml/aircraft/f-35.pnml"
 #include "gfx/pnml/aircraft/rq-4.pnml"
 
+#include "gfx/pnml/aircraft/c-5.pnml"
