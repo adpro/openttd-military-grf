@@ -27,9 +27,10 @@ You can find these types of changes:
 - McDonnell Douglas/Boeing C-17 Globemaster III aircraft
 - Douglas C-74 Globemaster aircraft
 - Douglas C-124 Globemaster II "Old Shaky" aircraft
+- Lockheed C-141 Starlifter aircraft
 
 ### Changed
-- Move to partial nml files (pnml) and gcc preprocessor from coding in one big nml file.
+- Move to partial nml files (pnml) and gcc preprocessor from coding in one NML file.
 
 ## [0.1.0] - 2021-05-07
 ### Added

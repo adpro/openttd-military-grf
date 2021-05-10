@@ -45,4 +45,7 @@ STR_DESC_AIR_C74 	    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {O
 STR_NAME_AIR_C124       :Douglas C-124 Globemaster II "Old Shaky"
 STR_DESC_AIR_C124 	    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Letoun byl vyvinut z prototypu Douglas C-74 Globemaster z druhé světové války a na základě poznatků získaných během berlínské přepravy. Bylo vyrobeno 448 ks.
 
+STR_NAME_AIR_C141       :Lockheed C-141 Starlifter
+STR_DESC_AIR_C141 	    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Představen jako náhrada za pomalejší nákladní vrtulová letadla, jako jsou Douglas C-124 Globemaster II a Douglas C-133 Cargomaster, byl C-141 navržen podle požadavků stanovených v roce 1960. Postaveno 285 ks.
+
 STR_DESC_AIR_TMPL		:Země původu: {ORANGE}??? {}{BLACK}Historická fakta: {ORANGE}.
