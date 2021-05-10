@@ -25,7 +25,8 @@ You can find these types of changes:
 ### Added
 - Lockheed C-5 Galaxy aircraft
 - McDonnell Douglas/Boeing C-17 Globemaster III aircraft
-- Douglas C-74 Globemaster
+- Douglas C-74 Globemaster aircraft
+- Douglas C-124 Globemaster II "Old Shaky" aircraft
 
 ### Changed
 - Move to partial nml files (pnml) and gcc preprocessor from coding in one big nml file.

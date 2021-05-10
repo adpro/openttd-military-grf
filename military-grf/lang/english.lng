@@ -42,4 +42,7 @@ STR_DESC_AIR_C17 	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {
 STR_NAME_AIR_C74        :Douglas C-74 Globemaster
 STR_DESC_AIR_C74 	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}Airplane was developed in response to a need for a transoceanic heavy-lift military transport aircraft during WWII. 14 airplanes was built.
 
+STR_NAME_AIR_C124       :Douglas C-124 Globemaster II
+STR_DESC_AIR_C124 	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}It was developed from a prototype a World War II–design Douglas C-74 Globemaster, and based on lessons learned during the Berlin Airlift. 448 airplanes was built.
+
 STR_DESC_AIR_TMPL		:Country of origin: {ORANGE}??? {}{BLACK}Historic facts: {ORANGE}.
