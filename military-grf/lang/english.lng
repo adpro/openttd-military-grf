@@ -39,4 +39,7 @@ STR_DESC_AIR_C5 	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {O
 STR_NAME_AIR_C17        :Boeing C-17 Globemaster III
 STR_DESC_AIR_C17 	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}Original developer is McDonnel Douglas, merged to Boeing in 1997. The C-17 is designed to operate from runways as short as 3,500 ft (1,100 m) and as narrow as 90 ft (27 m). 279 airplanes was built.
 
+STR_NAME_AIR_C74        :Douglas C-74 Globemaster
+STR_DESC_AIR_C74 	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}Airplane was developed in response to a need for a transoceanic heavy-lift military transport aircraft during WWII. 14 airplanes was built.
+
 STR_DESC_AIR_TMPL		:Country of origin: {ORANGE}??? {}{BLACK}Historic facts: {ORANGE}.

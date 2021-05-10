@@ -13,3 +13,4 @@
 
 #include "gfx/pnml/aircraft/c-5.pnml"
 #include "gfx/pnml/aircraft/c-17.pnml"
+#include "gfx/pnml/aircraft/c-74.pnml"

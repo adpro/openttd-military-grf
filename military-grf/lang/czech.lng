@@ -39,4 +39,7 @@ STR_DESC_AIR_C5 	    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {OR
 STR_NAME_AIR_C17        :Boeing C-17 Globemaster III
 STR_DESC_AIR_C17 	    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Původním vývojářem je McDonnell Douglas, sloučený s Boeingem v roce 1997. C-17 je navržen tak, aby fungoval z přistávacích drah pouhých 1 100 m a tak úzkých jako 27 m. Bylo vyrobeno 279 letadel.
 
+STR_NAME_AIR_C74        :Douglas C-74 Globemaster
+STR_DESC_AIR_C74 	    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Letoun byl vyvinut jako reakce na potřebu zaoceánského těžkého vojenského transportního letadla během 2. sv. války. Bylo vyrobeno 14 letadel.
+
 STR_DESC_AIR_TMPL		:Země původu: {ORANGE}??? {}{BLACK}Historická fakta: {ORANGE}.
