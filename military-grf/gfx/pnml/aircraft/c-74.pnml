@@ -49,6 +49,6 @@ item (FEAT_AIRCRAFT, item_air_c74) {
         additional_text:    return string(STR_DESC_AIR_C74); //Additional text shown in purchase list
         default:            spriteset_air_c74;
 
-        mail_capacity:      return 300;    // callback for setting capacity
+        mail_capacity:      return 200;    // callback for setting capacity
    }
 }
