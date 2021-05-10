@@ -16,3 +16,4 @@
 #include "gfx/pnml/aircraft/c-74.pnml"
 #include "gfx/pnml/aircraft/c-124.pnml"
 #include "gfx/pnml/aircraft/c-141.pnml"
+#include "gfx/pnml/aircraft/a-400m.pnml"

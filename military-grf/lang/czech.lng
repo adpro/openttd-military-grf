@@ -48,4 +48,8 @@ STR_DESC_AIR_C124 	    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {
 STR_NAME_AIR_C141       :Lockheed C-141 Starlifter
 STR_DESC_AIR_C141 	    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Představen jako náhrada za pomalejší nákladní vrtulová letadla, jako jsou Douglas C-124 Globemaster II a Douglas C-133 Cargomaster, byl C-141 navržen podle požadavků stanovených v roce 1960. Postaveno 285 ks.
 
+STR_NAME_AIR_A400       :Airbus A400M Atlas
+STR_DESC_AIR_A400 	    :Země původu: {ORANGE}EU {}{BLACK}Historická fakta: {ORANGE}Většina systémů je volně založená na systémech A380, ale je upravena pro vojenskou misi. Postaveno přes 100 ks.
+
 STR_DESC_AIR_TMPL		:Země původu: {ORANGE}??? {}{BLACK}Historická fakta: {ORANGE}.
+

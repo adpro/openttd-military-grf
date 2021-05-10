@@ -9,7 +9,7 @@ Table of Contents
   - [[Unreleased]](#unreleased)
     - [Added](#added)
     - [Changed](#changed)
-  - [[0.1.0] - 2021-05-07](#010---2021-05-07)
+  - [[0.1.0] "Fighters" - 2021-05-07](#010-fighters---2021-05-07)
     - [Added](#added-1)
 
 You can find these types of changes:
@@ -28,11 +28,12 @@ You can find these types of changes:
 - Douglas C-74 Globemaster aircraft
 - Douglas C-124 Globemaster II "Old Shaky" aircraft
 - Lockheed C-141 Starlifter aircraft
+- Airbus A-400M aircraft
 
 ### Changed
 - Move to partial nml files (pnml) and gcc preprocessor from coding in one NML file.
 
-## [0.1.0] - 2021-05-07
+## [0.1.0] "Fighters" - 2021-05-07
 ### Added
 - Avro 504 aircraft.
 - Hawker Hurricane IIC aircraft.
