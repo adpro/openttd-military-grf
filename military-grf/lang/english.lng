@@ -51,5 +51,8 @@ STR_DESC_AIR_C141 	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: 
 STR_NAME_AIR_A400       :Airbus A400M Atlas
 STR_DESC_AIR_A400 	    :Country of origin: {ORANGE}EU {}{BLACK}Historic facts: {ORANGE}Most systems are loosely based on those of the A380, but modified for the military mission. Over 100 airplanes was built.
 
+STR_NAME_AIR_MIRAGE3    :Dassault Mirage III
+STR_DESC_AIR_MIRAGE3    :Country of origin: {ORANGE}FRA {}{BLACK}Historic facts: {ORANGE}The first Western European combat aircraft to exceed Mach 2 in horizontal flight. 1422 fighters was built.
+
 STR_DESC_AIR_TMPL		:Country of origin: {ORANGE}??? {}{BLACK}Historic facts: {ORANGE}.
 

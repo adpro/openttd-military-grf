@@ -7,11 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Table of Contents
 - [Changelog](#changelog)
   - [[Unreleased]](#unreleased)
-  - [[0.2.0] "Airlift" - 2021-05-10](#020-airlift---2021-05-10)
     - [Added](#added)
+  - [[0.2.0] "Airlift" - 2021-05-10](#020-airlift---2021-05-10)
+    - [Added](#added-1)
     - [Changed](#changed)
   - [[0.1.0] "Fighters" - 2021-05-07](#010-fighters---2021-05-07)
-    - [Added](#added-1)
+    - [Added](#added-2)
 
 You can find these types of changes:
 
@@ -23,6 +24,8 @@ You can find these types of changes:
 - *Security* in case of vulnerabilities.
 
 ## [Unreleased]
+### Added
+- Dassault Mirage III aircraft
 
 ## [0.2.0] "Airlift" - 2021-05-10
 

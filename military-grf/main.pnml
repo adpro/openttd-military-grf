@@ -1,5 +1,5 @@
 #include "header.pnml"
-
+#include "templates.pnml"
 
 // aircraft
 #include "gfx/pnml/aircraft/avro504.pnml"
@@ -17,3 +17,5 @@
 #include "gfx/pnml/aircraft/c-124.pnml"
 #include "gfx/pnml/aircraft/c-141.pnml"
 #include "gfx/pnml/aircraft/a-400m.pnml"
+
+#include "gfx/pnml/aircraft/mirage-iii.pnml"

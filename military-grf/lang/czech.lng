@@ -51,5 +51,9 @@ STR_DESC_AIR_C141 	    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {
 STR_NAME_AIR_A400       :Airbus A400M Atlas
 STR_DESC_AIR_A400 	    :Země původu: {ORANGE}EU {}{BLACK}Historická fakta: {ORANGE}Většina systémů je volně založená na systémech A380, ale je upravena pro vojenskou misi. Postaveno přes 100 ks.
 
-STR_DESC_AIR_TMPL		:Země původu: {ORANGE}??? {}{BLACK}Historická fakta: {ORANGE}.
+STR_NAME_AIR_MIRAGE3    :Dassault Mirage III
+STR_DESC_AIR_MIRAGE3    :Země původu: {ORANGE}FRA {}{BLACK}Historická fakta: {ORANGE}První západoevropské bojové letadlo, které při vodorovném letu překročilo Mach 2. Vyrobeno 1422 ks.
+
+
+STR_DESC_AIR_TMPL		:Země původu: {ORANGE}??? {}{BLACK}Historická fakta: {ORANGE}
 
