@@ -57,5 +57,8 @@ STR_DESC_AIR_MIRAGE3    :Země původu: {ORANGE}FRA {}{BLACK}Historická fakta: 
 STR_NAME_AIR_NID29      :Nieuport-Delage NiD 29
 STR_DESC_AIR_NID29		:Země původu: {ORANGE}FRA {}{BLACK}Historická fakta: {ORANGE}NiD 29 byl bezpochyby nejlepším stíhacím letounem roku 1920. Vyrobeno bylo 1571 ks.
 
+STR_NAME_AIR_MIRAGE2K   :Dassault Mirage 2000
+STR_DESC_AIR_MIRAGE2K   :Země původu: {ORANGE}FRA {}{BLACK}Historická fakta: {ORANGE}Letoun je výsledkem vlastního vývoje Francie poté co odešla z evropského vývoje letounu, ze kterého vzniklo Tornado. Vyrobeno 601 ks.
+
 STR_DESC_AIR_TMPL		:Země původu: {ORANGE}??? {}{BLACK}Historická fakta: {ORANGE}
 

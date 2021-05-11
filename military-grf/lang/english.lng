@@ -57,5 +57,8 @@ STR_DESC_AIR_MIRAGE3    :Country of origin: {ORANGE}FRA {}{BLACK}Historic facts:
 STR_NAME_AIR_NID29      :Nieuport-Delage NiD 29
 STR_DESC_AIR_NID29 	    :Country of origin: {ORANGE}FRA {}{BLACK}Historic facts: {ORANGE}NiD 29 was undoubtedly the greatest fighter aircraft of 1920. 1571 airplanes was built.
 
+STR_NAME_AIR_MIRAGE2K   :Dassault Mirage 2000
+STR_DESC_AIR_MIRAGE2K   :Country of origin: {ORANGE}FRA {}{BLACK}Historic facts: {ORANGE}The aircraft is the result of France's own development after it left the European development of the aircraft from which the Tornado emerged. 601 fighters was built.
+
 STR_DESC_AIR_TMPL		:Country of origin: {ORANGE}??? {}{BLACK}Historic facts: {ORANGE}.
 

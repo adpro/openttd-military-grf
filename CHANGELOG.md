@@ -27,6 +27,7 @@ You can find these types of changes:
 ### Added
 - Dassault Mirage III aircraft
 - Nieuport-Delage NiD 29 aircraft
+- Mirage 2000 aircraft (with loading sprite set)
 
 ## [0.2.0] "Airlift" - 2021-05-10
 
