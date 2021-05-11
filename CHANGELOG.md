@@ -26,6 +26,7 @@ You can find these types of changes:
 ## [Unreleased]
 ### Added
 - Dassault Mirage III aircraft
+- Nieuport-Delage NiD 29 aircraft
 
 ## [0.2.0] "Airlift" - 2021-05-10
 

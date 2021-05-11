@@ -54,6 +54,8 @@ STR_DESC_AIR_A400 	    :Země původu: {ORANGE}EU {}{BLACK}Historická fakta: {O
 STR_NAME_AIR_MIRAGE3    :Dassault Mirage III
 STR_DESC_AIR_MIRAGE3    :Země původu: {ORANGE}FRA {}{BLACK}Historická fakta: {ORANGE}První západoevropské bojové letadlo, které při vodorovném letu překročilo Mach 2. Vyrobeno 1422 ks.
 
+STR_NAME_AIR_NID29      :Nieuport-Delage NiD 29
+STR_DESC_AIR_NID29		:Země původu: {ORANGE}FRA {}{BLACK}Historická fakta: {ORANGE}NiD 29 byl bezpochyby nejlepším stíhacím letounem roku 1920. Vyrobeno bylo 1571 ks.
 
 STR_DESC_AIR_TMPL		:Země původu: {ORANGE}??? {}{BLACK}Historická fakta: {ORANGE}
 

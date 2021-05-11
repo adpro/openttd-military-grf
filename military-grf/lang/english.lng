@@ -54,5 +54,8 @@ STR_DESC_AIR_A400 	    :Country of origin: {ORANGE}EU {}{BLACK}Historic facts: {
 STR_NAME_AIR_MIRAGE3    :Dassault Mirage III
 STR_DESC_AIR_MIRAGE3    :Country of origin: {ORANGE}FRA {}{BLACK}Historic facts: {ORANGE}The first Western European combat aircraft to exceed Mach 2 in horizontal flight. 1422 fighters was built.
 
+STR_NAME_AIR_NID29      :Nieuport-Delage NiD 29
+STR_DESC_AIR_NID29 	    :Country of origin: {ORANGE}FRA {}{BLACK}Historic facts: {ORANGE}NiD 29 was undoubtedly the greatest fighter aircraft of 1920. 1571 airplanes was built.
+
 STR_DESC_AIR_TMPL		:Country of origin: {ORANGE}??? {}{BLACK}Historic facts: {ORANGE}.
 

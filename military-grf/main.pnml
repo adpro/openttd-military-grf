@@ -19,3 +19,4 @@
 #include "gfx/pnml/aircraft/a-400m.pnml"
 
 #include "gfx/pnml/aircraft/mirage-iii.pnml"
+#include "gfx/pnml/aircraft/nid-29.pnml"
