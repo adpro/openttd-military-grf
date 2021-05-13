@@ -13,7 +13,7 @@ The first aircraft is available from 1913. Build (small) airports to use
 aircraft.
 
 By default military airplanes (especially fighters) can carry only limited types
-of cargo.
+of cargo. But this set also consists of heavy-lift military transport aircraft.
 
 By default each vehicle can be purchased in similar years like in real life.
 The vehicle life corresponds to use by users anywhere in the world.
