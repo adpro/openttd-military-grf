@@ -22,3 +22,4 @@
 #include "gfx/pnml/aircraft/nid-29.pnml"
 #include "gfx/pnml/aircraft/mirage-2k.pnml"
 #include "gfx/pnml/aircraft/jas-39.pnml"
+#include "gfx/pnml/aircraft/rafale.pnml"

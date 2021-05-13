@@ -1,51 +1,51 @@
-/* airplane JAS 39 */
+/* airplane Rafale */
 
-spritegroup spritegroup_air_jas39 {
-	loading: spriteset_air_jas39_loading;
-	loaded:  spriteset_air_jas39;
+spritegroup spritegroup_air_rafale {
+	loading: spriteset_air_rafale_loading;
+	loaded:  spriteset_air_rafale;
 }
-spriteset(spriteset_air_jas39, "gfx/png/air_jas39.png") {
-    // 24 x 14 x 8
+spriteset(spriteset_air_rafale, "gfx/png/air_rafale.png") {
+    // 26 x 18 x 9
     template_fighter_26(0)
 }
-spriteset(spriteset_air_jas39_loading, "gfx/png/air_jas39_loading.png") {
-    // 24 x 14 x 8
+spriteset(spriteset_air_rafale_loading, "gfx/png/air_rafale_loading.png") {
+    // 26 x 18 x 9
     template_fighter_26(0)
 }
 
 
-item (FEAT_AIRCRAFT, item_air_jas39) {
+item (FEAT_AIRCRAFT, item_air_rafale) {
     property {
-        name:                           string(STR_NAME_AIR_JAS39);
+        name:                           string(STR_NAME_AIR_RAFALE);
         climates_available:             bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
-        introduction_date:              date(1989,02,01);
-        model_life:                     50;
+        introduction_date:              date(1991,05,19);
+        model_life:                     40;
         /* retire_early not set, use default retirement behaviour */
         vehicle_life:                   40;
         reliability_decay:              5;
         refittable_cargo_classes:       bitmask(CC_MAIL, CC_EXPRESS, CC_ARMOURED, CC_LIQUID);
         non_refittable_cargo_classes:   bitmask(CC_PASSENGERS, CC_REFRIGERATED);
         loading_speed:                  5;
-        cost_factor:                    30;
-        running_cost_factor:            15;
+        cost_factor:                    65;
+        running_cost_factor:            47;
         /* cargo_age_period is left at default */
 
         /* airplane-specific properties */
         sprite_id:                      SPRITE_ID_NEW_AIRCRAFT; //enable new graphics
-        speed:                          2460 km/h;
-        range:                          640;
+        speed:                          1912 km/h;
+        range:                          740;
         misc_flags:                     bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
         refit_cost:                     0; // Refitting is free
         /* callback_flags are not set, no need to manually enable callbacks */
         aircraft_type:                  AIRCRAFT_TYPE_SMALL;
-        acceleration:                   84;
+        acceleration:                   85;
         passenger_capacity:             0;
         mail_capacity:                  4;
         sound_effect:                   SOUND_JET; // SOUND_PLANE_TAKE_OFF | SOUND_JET
         /* Visual effect is left at default (no effect) */
    }
    graphics {
-        additional_text:    return string(STR_DESC_AIR_JAS39); //Additional text shown in purchase list
-        default:            spritegroup_air_jas39;
+        additional_text:    return string(STR_DESC_AIR_RAFALE); //Additional text shown in purchase list
+        default:            spritegroup_air_rafale;
    }
 }
