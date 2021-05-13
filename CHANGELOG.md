@@ -4,17 +4,6 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-Table of Contents
-- [Changelog](#changelog)
-  - [[Unreleased]](#unreleased)
-    - [Added](#added)
-    - [Changed](#changed)
-  - [[0.2.0] "Airlift" - 2021-05-10](#020-airlift---2021-05-10)
-    - [Added](#added-1)
-    - [Changed](#changed-1)
-  - [[0.1.0] "Fighters" - 2021-05-07](#010-fighters---2021-05-07)
-    - [Added](#added-2)
-
 You can find these types of changes:
 
 - *Added* for new features.
@@ -25,6 +14,11 @@ You can find these types of changes:
 - *Security* in case of vulnerabilities.
 
 ## [Unreleased]
+
+- no evidence
+
+## [0.3.0] "North & West" - 2021-05-13
+
 ### Added
 - Dassault Mirage III aircraft
 - Nieuport-Delage NiD 29 aircraft
@@ -34,7 +28,7 @@ You can find these types of changes:
 - Lockheed Martin RQ-170 Sentinel
 
 ### Changed
-- Add sorting for airplanes
+- Sorting for airplanes by aircraft type and introduction year
 
 ## [0.2.0] "Airlift" - 2021-05-10
 
@@ -69,6 +63,7 @@ You can find these types of changes:
 - English translation from [@adpro](https://github.com/adpro).
 - Czech translation from [@adpro](https://github.com/adpro).
 
-[Unreleased]: https://github.com/adpro/openttd-military-grf/compare/v0.2.0...HEAD
+[Unreleased]: https://github.com/adpro/openttd-military-grf/compare/v0.3.0...HEAD
+[0.3.0]: https://github.com/adpro/openttd-military-grf/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/adpro/openttd-military-grf/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/adpro/openttd-military-grf/releases/tag/v0.1.0
