@@ -8,9 +8,10 @@ Table of Contents
 - [Changelog](#changelog)
   - [[Unreleased]](#unreleased)
     - [Added](#added)
+    - [Changed](#changed)
   - [[0.2.0] "Airlift" - 2021-05-10](#020-airlift---2021-05-10)
     - [Added](#added-1)
-    - [Changed](#changed)
+    - [Changed](#changed-1)
   - [[0.1.0] "Fighters" - 2021-05-07](#010-fighters---2021-05-07)
     - [Added](#added-2)
 
@@ -31,6 +32,9 @@ You can find these types of changes:
 - Saab JAS 39 Gripen (with loading sprite set)
 - Dassault Rafale aircraft (with loading sprite set)
 - Lockheed Martin RQ-170 Sentinel
+
+### Changed
+- Add sorting for airplanes
 
 ## [0.2.0] "Airlift" - 2021-05-10
 

@@ -1,0 +1,30 @@
+sort (FEAT_AIRCRAFT,	
+[
+    // fighters
+    item_air_avro
+    ,item_air_nid29
+    ,item_air_hurricane
+    ,item_air_f86
+    ,item_air_mirage3
+    ,item_air_f4
+    ,item_air_f16
+    ,item_air_mirage2k
+    ,item_air_f18
+    ,item_air_jas39
+    ,item_air_rafale
+    ,item_air_f35
+
+    // airlift
+    ,item_air_c74
+    ,item_air_c124
+    ,item_air_c141
+    ,item_air_c5
+    ,item_air_c17
+    ,item_air_a400
+
+    // reconnaissance
+    ,item_air_rq4
+    ,item_air_rq170
+
+    // helicopters
+]);
