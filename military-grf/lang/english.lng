@@ -66,6 +66,9 @@ STR_DESC_AIR_JAS39 	    :Country of origin: {ORANGE}SWE {}{BLACK}Historic facts:
 STR_NAME_AIR_RAFALE     :Dassault Rafale
 STR_DESC_AIR_RAFALE     :Country of origin: {ORANGE}FRA {}{BLACK}Historic facts: {ORANGE}The aircraft is the result of France's own development after it left the European development of the aircraft from which the Typhoon emerged. 201 fighters was built.
 
+STR_NAME_AIR_RQ170      :Lockheed Martin RQ-170 Sentinel
+STR_DESC_AIR_RQ170      :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}Plane is secret. Some images and details of the aircraft were released after Iran captured an RQ-170 in 2011. Around 30 Sentinels was built.
+
 
 STR_DESC_AIR_TMPL		:Country of origin: {ORANGE}??? {}{BLACK}Historic facts: {ORANGE}.
 

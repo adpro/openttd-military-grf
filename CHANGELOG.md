@@ -30,6 +30,7 @@ You can find these types of changes:
 - Dassault Mirage 2000 aircraft (with loading sprite set)
 - Saab JAS 39 Gripen (with loading sprite set)
 - Dassault Rafale aircraft (with loading sprite set)
+- Lockheed Martin RQ-170 Sentinel
 
 ## [0.2.0] "Airlift" - 2021-05-10
 

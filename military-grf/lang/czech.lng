@@ -66,6 +66,10 @@ STR_DESC_AIR_JAS39		:Země původu: {ORANGE}SWE {}{BLACK}Historická fakta: {ORA
 STR_NAME_AIR_RAFALE     :Dassault Rafale
 STR_DESC_AIR_RAFALE     :Země původu: {ORANGE}FRA {}{BLACK}Historická fakta: {ORANGE}Letoun je výsledkem vlastního vývoje Francie poté co odešla z evropského vývoje letounu, ze kterého vznikl Typhoon. Vyrobeno přes 201 ks.
 
+STR_NAME_AIR_RQ170      :Lockheed Martin RQ-170 Sentinel
+STR_DESC_AIR_RQ170      :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Letadlo je tajné. Některé obrázky a podrobnosti o letadle byly zveřejněny poté, co jej Írán v roce 2011 dopadl na svých hranicích. Bylo vyrobeno přibližně 30 ks.
+
+
 
 STR_DESC_AIR_TMPL		:Země původu: {ORANGE}??? {}{BLACK}Historická fakta: {ORANGE}
 
