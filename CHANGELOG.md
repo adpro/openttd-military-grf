@@ -28,6 +28,7 @@ You can find these types of changes:
 - Dassault Mirage III aircraft
 - Nieuport-Delage NiD 29 aircraft
 - Mirage 2000 aircraft (with loading sprite set)
+- Saab JAS 39 Gripen (with loading sprite set)
 
 ## [0.2.0] "Airlift" - 2021-05-10
 

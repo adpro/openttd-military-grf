@@ -60,5 +60,9 @@ STR_DESC_AIR_NID29 	    :Country of origin: {ORANGE}FRA {}{BLACK}Historic facts:
 STR_NAME_AIR_MIRAGE2K   :Dassault Mirage 2000
 STR_DESC_AIR_MIRAGE2K   :Country of origin: {ORANGE}FRA {}{BLACK}Historic facts: {ORANGE}The aircraft is the result of France's own development after it left the European development of the aircraft from which the Tornado emerged. 601 fighters was built.
 
+STR_NAME_AIR_JAS39      :Saab JAS 39 Gripen
+STR_DESC_AIR_JAS39 	    :Country of origin: {ORANGE}SWE {}{BLACK}Historic facts: {ORANGE}JAS 39 was planned to meet the Swedish Air Force's requirement for an affordable Mach 2 aircraft with good short-field performance for a defensive dispersed basing plan in the event of invasion. Over 271 Gripens was built.
+
+
 STR_DESC_AIR_TMPL		:Country of origin: {ORANGE}??? {}{BLACK}Historic facts: {ORANGE}.
 
