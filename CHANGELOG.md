@@ -15,7 +15,8 @@ You can find these types of changes:
 
 ## [Unreleased]
 
-- no evidence
+### Changed
+- Remove version from GRF file in Makefile
 
 ## [0.3.0] "North & West" - 2021-05-13
 

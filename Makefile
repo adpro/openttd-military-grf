@@ -34,14 +34,14 @@ build: ${OUTDIR} ## builds nml files into grf file
 	&& $(CC) $(CC_FLAGS) -o $(NMLFILE) main.pnml
 	@echo "[NML] Compiling NewGRF..."
 	@cd $(SRCDIR) \
-	&& nmlc --grf ../output/$(NAME)-$(VERSION).grf $(NMLFILE)
+	&& nmlc --grf ../output/$(NAME).grf $(NMLFILE)
 
 bundle: build ${BUNDLEDIR} ## make tar bundle
 	@echo "[PANDOC] Compiling text files from markdown..."
 	@pandoc -f markdown -t plain README.md -o $(BUNDLEDIR)/readme.txt
 	@pandoc -f markdown -t plain CHANGELOG.md -o $(BUNDLEDIR)/changelog.txt
 	@cp -f LICENSE $(BUNDLEDIR)/license.txt
-	@cp -f $(OUTDIR)/$(NAME)-$(VERSION).grf $(BUNDLEDIR)/
+	@cp -f $(OUTDIR)/$(NAME).grf $(BUNDLEDIR)/
 	@echo "[TAR] Creating bundle..."
 	@tar -cf $(OUTDIR)/$(NAME)-$(VERSION).tar -C $(BUNDLEDIR)/ .
 
@@ -55,6 +55,6 @@ deploy: ## deploys grf to BananaS server
 
 copy: ## copies data
 	@echo "[COPY] Copying files to game folder..."
-	@[ ! -d $(OUTDIR) ] || cp -f output/military-items.grf ~/Documents/OpenTTD/newgrf
+	@[ ! -d $(OUTDIR) ] || cp -f $(OUTDIR)/$(NAME).grf ~/Documents/OpenTTD/newgrf
 
 test: clean build copy ## run clean, build and copy
