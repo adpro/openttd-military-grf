@@ -5,6 +5,8 @@
 STR_GRF_NAME        :{TITLE} {VERSION}
 STR_GRF_DESCRIPTION :{TITLE} contains several military airplanes.{}{BLACK}Version: {SILVER}{VERSION}{}{BLACK}Copyright: {SILVER}{COPYRIGHT}2021 adpro{}{BLACK}License:{SILVER} GPL v2{}{BLACK}Source: {SILVER}https://github.com/adpro/openttd-military-grf/
 
+STR_MIN_OPENTTD_VERSION :1.2.0 or r22518
+
 # vehicle names
 STR_NAME_AIR_F86        :North American F-86 Sabre
 STR_DESC_AIR_F86		:Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}Best known as the US' first swept-wing fighter that could counter the swept-wing Soviet MiG-15 in high-speed dogfights in the skies of the Korean War. 9 860 Sabres was built.
@@ -72,3 +74,4 @@ STR_DESC_AIR_RQ170      :Country of origin: {ORANGE}USA {}{BLACK}Historic facts:
 
 STR_DESC_AIR_TMPL		:Country of origin: {ORANGE}??? {}{BLACK}Historic facts: {ORANGE}.
 
+STR_NAME_AIR_SMALLAIRPORT   :USS Intrepid carrier 1943

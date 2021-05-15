@@ -5,6 +5,8 @@
 STR_GRF_NAME        :{TITLE} {VERSION}
 STR_GRF_DESCRIPTION :{TITLE} obsahuje několik vojenských letadel.{}{BLACK}Verze: {SILVER}{VERSION}{}{BLACK}Copyright: {SILVER}{COPYRIGHT}2021 adpro{}{BLACK}Licence:{SILVER} GPL v2{}{BLACK}Zdroj: {SILVER}https://github.com/adpro/openttd-military-grf/
 
+STR_MIN_OPENTTD_VERSION :1.2.0 or r22518
+
 # vehicle names
 STR_NAME_AIR_F86        :North American F-86 Sabre
 STR_DESC_AIR_F86		:Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Známý jako první americký stíhací letoun s šípovými křídly, který dokázal čelit sovětským MiGům-15 v rychlých soubojích na obloze korejské války. Vyrobeno 9 860 ks.
@@ -73,3 +75,4 @@ STR_DESC_AIR_RQ170      :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: 
 
 STR_DESC_AIR_TMPL		:Země původu: {ORANGE}??? {}{BLACK}Historická fakta: {ORANGE}
 
+STR_NAME_AIR_SMALLAIRPORT   :letadlová loď USS Intrepid 1943

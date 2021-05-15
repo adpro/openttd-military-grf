@@ -1,0 +1,146 @@
+template ground_tile(x, y) {
+	// [x, y, 64, 31, -31, 0]
+	[x, y, 64, 33, -32, -1]
+}
+
+spriteset(spriteset_air_small_deck, "gfx/png/air_airport_small.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(0,0)
+}
+spritelayout airport_deck {
+ 	ground { sprite: GROUNDSPRITE_NORMAL; }
+ 	childsprite {
+ 		sprite: spriteset_air_small_deck; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+}
+
+spriteset(spriteset_air_small_deck_line, "gfx/png/air_airport_small.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(65,0)
+}
+spritelayout airport_deck_line {
+ 	ground { sprite: GROUNDSPRITE_NORMAL; }
+ 	childsprite {
+ 		sprite: spriteset_air_small_deck_line; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+}
+
+spriteset(spriteset_air_small_deck_lift, "gfx/png/air_airport_small.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(130,0)
+}
+spritelayout airport_deck_lift {
+ 	ground { sprite: GROUNDSPRITE_NORMAL; }
+ 	childsprite {
+ 		sprite: spriteset_air_small_deck_lift; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+}
+
+spriteset(spriteset_air_small_deck_line_lift, "gfx/png/air_airport_small.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(195,0)
+}
+spritelayout airport_deck_line_lift {
+ 	ground { sprite: GROUNDSPRITE_NORMAL; }
+ 	childsprite {
+ 		sprite: spriteset_air_small_deck_line_lift; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+}
+
+spriteset(spriteset_air_small_tower, "gfx/png/air_airport_small.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    [0,34,64,64,-32,-30]
+}
+spritelayout airport_tower {
+ 	ground { sprite: GROUNDSPRITE_NORMAL; }
+ 	childsprite {
+ 		sprite: spriteset_air_small_deck; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+    building {
+        sprite: spriteset_air_small_tower;
+        recolour_mode: RECOLOUR_REMAP;
+		palette: PALETTE_USE_DEFAULT; 
+		xoffset: 0;
+		xextent: 0;
+		zextent: 0; 
+    }
+}
+
+spriteset(spriteset_air_small_tower_chimney, "gfx/png/air_airport_small.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    [65,34,64,64,-32,-30]
+}
+spritelayout airport_chimney {
+ 	ground { sprite: GROUNDSPRITE_NORMAL; }
+ 	childsprite {
+ 		sprite: spriteset_air_small_deck; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+    building {
+        sprite: spriteset_air_small_tower_chimney;
+        recolour_mode: RECOLOUR_REMAP;
+		palette: PALETTE_USE_DEFAULT; 
+		xoffset: 0;
+		xextent: 0;
+		zextent: 0; 
+    }
+}
+
+
+switch(FEAT_AIRPORTTILES, SELF, small_airport_tiles_north_switch, relative_pos & 0xFFFF) {
+	0x0000: airport_deck_lift;
+	0x0001: airport_tower;
+	0x0002: airport_chimney;
+	0x0003: airport_deck_lift;
+	0x0100: airport_deck;
+	0x0101: airport_deck;
+	0x0102: airport_deck;
+	0x0103: airport_deck;
+	0x0200: airport_deck_line;
+	0x0201: airport_deck_line_lift;
+	0x0202: airport_deck_line;
+	0x0203: airport_deck_line;
+}
+
+tilelayout small_airport_layout_north {
+	rotation: DIRECTION_NORTH;
+	0, 0: small_airport_tiles;
+	1, 0: small_airport_tiles;
+	2, 0: small_airport_tiles;
+	3, 0: small_airport_tiles;
+	0, 1: small_airport_tiles;
+	1, 1: small_airport_tiles;
+	2, 1: small_airport_tiles;
+	3, 1: small_airport_tiles;
+	0, 2: small_airport_tiles;
+	1, 2: small_airport_tiles;
+	2, 2: small_airport_tiles;
+	3, 2: small_airport_tiles;
+}
+
+item(FEAT_AIRPORTTILES, small_airport_tiles) {
+    property {
+        substitute: 0;
+    }
+    graphics {
+        small_airport_tiles_north_switch;
+    }
+}
+
+item(FEAT_AIRPORTS, small_airport) {
+	property {
+		override: 0;
+		layouts: [small_airport_layout_north];
+        name: string(STR_NAME_AIR_SMALLAIRPORT);
+        years_available: [1939, 1956];
+        //ttd_airport_type: 0;
+	}
+	// graphics {
+	// 	small_layout_cb_switch;
+	// }
+}

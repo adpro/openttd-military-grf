@@ -1,3 +1,8 @@
+if (ttd_platform != PLATFORM_OPENTTD || openttd_version < version_openttd(1, 2, 0, 22518)) {
+	error(FATAL, REQUIRES_OPENTTD, string(STR_MIN_OPENTTD_VERSION));
+	exit;
+}
+
 grf {
     grfid: "AD\01\01";  // TTDPatch ID and published version
     name: string(STR_GRF_NAME);

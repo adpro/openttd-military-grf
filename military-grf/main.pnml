@@ -25,3 +25,5 @@
 #include "gfx/pnml/aircraft/jas-39.pnml"
 #include "gfx/pnml/aircraft/rafale.pnml"
 #include "gfx/pnml/aircraft/rq-170.pnml"
+
+#include "gfx/pnml/airport/small.pnml"
