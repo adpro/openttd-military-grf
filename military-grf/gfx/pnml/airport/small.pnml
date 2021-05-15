@@ -66,8 +66,8 @@ spritelayout airport_tower {
         recolour_mode: RECOLOUR_REMAP;
 		palette: PALETTE_USE_DEFAULT; 
 		xoffset: 0;
-		xextent: 0;
-		zextent: 0; 
+		yoffset: -5;
+		zoffset: 0; 
     }
 }
 
@@ -86,8 +86,8 @@ spritelayout airport_chimney {
         recolour_mode: RECOLOUR_REMAP;
 		palette: PALETTE_USE_DEFAULT; 
 		xoffset: 0;
-		xextent: 0;
-		zextent: 0; 
+		yoffset: -5;
+		zoffset: 0; 
     }
 }
 
@@ -132,12 +132,12 @@ item(FEAT_AIRPORTTILES, small_airport_tiles) {
     }
 }
 
-item(FEAT_AIRPORTS, small_airport) {
+item(FEAT_AIRPORTS, small_airport_intrepid) {
 	property {
 		override: 0;
 		layouts: [small_airport_layout_north];
         name: string(STR_NAME_AIR_SMALLAIRPORT);
-        years_available: [1939, 1956];
+        years_available: [1939, 1955];
         //ttd_airport_type: 0;
 	}
 	// graphics {
