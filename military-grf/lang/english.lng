@@ -74,4 +74,5 @@ STR_DESC_AIR_RQ170      :Country of origin: {ORANGE}USA {}{BLACK}Historic facts:
 
 STR_DESC_AIR_TMPL		:Country of origin: {ORANGE}??? {}{BLACK}Historic facts: {ORANGE}.
 
-STR_NAME_AIR_SMALLAIRPORT   :USS Intrepid carrier 1943
+STR_NAME_AIR_SMALLAIRPORT   :USS Intrepid (Essex class) 1943
+STR_NAME_AIR_SMALLAIRPORT2  :HMS Eagle (Audacious class) 1956

@@ -1,7 +1,4 @@
-template ground_tile(x, y) {
-	// [x, y, 64, 31, -31, 0]
-	[x, y, 64, 33, -32, -1]
-}
+// USS Intrepid class
 
 spriteset(spriteset_air_small_deck, "gfx/png/air_airport_small.png") {
     //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
@@ -137,8 +134,10 @@ item(FEAT_AIRPORTS, small_airport_intrepid) {
 		override: 0;
 		layouts: [small_airport_layout_north];
         name: string(STR_NAME_AIR_SMALLAIRPORT);
-        years_available: [1939, 1955];
+        years_available: [1939, 1950];
         //ttd_airport_type: 0;
+        catchment_area: 5;
+        maintenance_cost: 28;
 	}
 	// graphics {
 	// 	small_layout_cb_switch;

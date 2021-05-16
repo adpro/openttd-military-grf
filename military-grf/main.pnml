@@ -27,3 +27,4 @@
 #include "gfx/pnml/aircraft/rq-170.pnml"
 
 #include "gfx/pnml/airport/small.pnml"
+#include "gfx/pnml/airport/small2.pnml"

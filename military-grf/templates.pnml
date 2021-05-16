@@ -12,3 +12,9 @@ template template_fighter_26(x) { //x=0
 }
 
 // 40 x 28 x 12
+
+
+template ground_tile(x, y) {
+	// [x, y, 64, 31, -31, 0]
+	[x, y, 64, 33, -32, -1]
+}

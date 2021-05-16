@@ -75,4 +75,5 @@ STR_DESC_AIR_RQ170      :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: 
 
 STR_DESC_AIR_TMPL		:Země původu: {ORANGE}??? {}{BLACK}Historická fakta: {ORANGE}
 
-STR_NAME_AIR_SMALLAIRPORT   :letadlová loď USS Intrepid 1943
+STR_NAME_AIR_SMALLAIRPORT   :USS Intrepid (třída Essex) 1943
+STR_NAME_AIR_SMALLAIRPORT2  :HMS Eagle (třída Implacable) 1956
