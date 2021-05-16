@@ -12,6 +12,30 @@
 //  	}
 // }
 
+spriteset(spriteset_air_small_deck_catapult, "gfx/png/air_airport_small.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(260,99)
+}
+spritelayout airport_deck_catapult {
+ 	ground { sprite: GROUNDSPRITE_NORMAL; }
+ 	childsprite {
+ 		sprite: spriteset_air_small_deck_catapult; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+}
+
+spriteset(spriteset_air_small_deck_catapult_cover, "gfx/png/air_airport_small.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(325,99)
+}
+spritelayout airport_deck_catapult_cover {
+ 	ground { sprite: GROUNDSPRITE_NORMAL; }
+ 	childsprite {
+ 		sprite: spriteset_air_small_deck_catapult_cover; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+}
+
 spriteset(spriteset_air_small_deck_line_start1956, "gfx/png/air_airport_small.png") {
     //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
     ground_tile(0,99)
@@ -107,8 +131,8 @@ switch(FEAT_AIRPORTTILES, SELF, small_airport_tiles_north_switch1956, relative_p
 	0x0001: airport_tower1956;
 	0x0002: airport_chimney1956;
 	0x0003: airport_deck_lift1956;
-	0x0100: airport_deck;
-	0x0101: airport_deck;
+	0x0100: airport_deck_catapult;
+	0x0101: airport_deck_catapult_cover;
 	0x0102: airport_deck;
 	0x0103: airport_deck;
 	0x0200: airport_deck_line1956;
