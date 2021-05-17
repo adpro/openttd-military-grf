@@ -26,5 +26,7 @@
 #include "gfx/pnml/aircraft/rafale.pnml"
 #include "gfx/pnml/aircraft/rq-170.pnml"
 
+// airports - like carriers
 #include "gfx/pnml/airport/small.pnml"
 #include "gfx/pnml/airport/small2.pnml"
+#include "gfx/pnml/airport/small_modern.pnml"

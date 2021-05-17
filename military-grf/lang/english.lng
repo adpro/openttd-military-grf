@@ -74,5 +74,7 @@ STR_DESC_AIR_RQ170      :Country of origin: {ORANGE}USA {}{BLACK}Historic facts:
 
 STR_DESC_AIR_TMPL		:Country of origin: {ORANGE}??? {}{BLACK}Historic facts: {ORANGE}.
 
-STR_NAME_AIR_SMALLAIRPORT   :USS Intrepid (Essex class) 1943
-STR_NAME_AIR_SMALLAIRPORT2  :HMS Eagle (Audacious class) 1956
+STR_NAME_AIR_SMALLAIRPORT   :USS Intrepid /CV-11/ (Essex class) 1943
+STR_NAME_AIR_SMALLAIRPORT2  :HMS Eagle /R05/ (Audacious class) 1956
+STR_NAME_AIR_SMALLAIRPORT_MODERN    :USS Enterprise /CVAN-65/ 1980
+STR_NAME_AIR_SMALLAIRPORT_MODERN2   :Charles de Gaulle /R91/ 2001
