@@ -1,4 +1,4 @@
-// USS Intrepid class
+// USS Intrepid CV-11
 
 spriteset(spriteset_air_small_deck, "gfx/png/air_airport_small.png") {
     //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
