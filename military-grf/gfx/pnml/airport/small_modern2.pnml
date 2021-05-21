@@ -1,0 +1,180 @@
+// Charles de Gaulle R91
+
+spriteset(spriteset_air_small_deck_modern2000, "gfx/png/air_airport_small.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(0,297)
+}
+spritelayout airport_deck_modern2000 {
+ 	ground { sprite: GROUNDSPRITE_NORMAL; }
+ 	childsprite {
+ 		sprite: spriteset_air_small_deck_modern2000; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+}
+
+spriteset(spriteset_air_small_deck_modern_line2000, "gfx/png/air_airport_small.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(130,297)
+}
+spritelayout airport_deck_modern_line2000 {
+ 	ground { sprite: GROUNDSPRITE_NORMAL; }
+ 	childsprite {
+ 		sprite: spriteset_air_small_deck_modern_line2000; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+}
+
+spriteset(spriteset_air_small_deck_modern_line_start2000, "gfx/png/air_airport_small.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(65,297)
+}
+spritelayout airport_deck_modern_line_start2000 {
+ 	ground { sprite: GROUNDSPRITE_NORMAL; }
+ 	childsprite {
+ 		sprite: spriteset_air_small_deck_modern_line_start2000; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+}
+
+spriteset(spriteset_air_small_deck_modern_line_stop2000, "gfx/png/air_airport_small.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(195,297)
+}
+spritelayout airport_deck_modern_line_stop2000 {
+ 	ground { sprite: GROUNDSPRITE_NORMAL; }
+ 	childsprite {
+ 		sprite: spriteset_air_small_deck_modern_line_stop2000; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+}
+
+spriteset(spriteset_air_small_deck_modern_lift2000, "gfx/png/air_airport_small.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(260,297)
+}
+spritelayout airport_deck_modern_lift2000 {
+ 	ground { sprite: GROUNDSPRITE_NORMAL; }
+ 	childsprite {
+ 		sprite: spriteset_air_small_deck_modern_lift2000; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+}
+
+spriteset(spriteset_air_small_deck_modern_catapult2000, "gfx/png/air_airport_small.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(325,297)
+}
+spritelayout airport_deck_modern_catapult2000 {
+ 	ground { sprite: GROUNDSPRITE_NORMAL; }
+ 	childsprite {
+ 		sprite: spriteset_air_small_deck_modern_catapult2000; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+}
+
+spriteset(spriteset_air_small_deck_modern_catapult22000, "gfx/png/air_airport_small.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(390,297)
+}
+spritelayout airport_deck_modern_catapult22000 {
+ 	ground { sprite: GROUNDSPRITE_NORMAL; }
+ 	childsprite {
+ 		sprite: spriteset_air_small_deck_modern_catapult22000; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+}
+
+spriteset(spriteset_air_small_deck_modern_catapult_cover2000, "gfx/png/air_airport_small.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(455,297)
+}
+spritelayout airport_deck_modern_catapult_cover2000 {
+ 	ground { sprite: GROUNDSPRITE_NORMAL; }
+ 	childsprite {
+ 		sprite: spriteset_air_small_deck_modern_catapult_cover2000; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+}
+
+
+spriteset(spriteset_air_small_modern_tower2000, "gfx/png/air_airport_small.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    [0,331,64,64,-32,-30]
+}
+spritelayout airport_modern_tower2000 {
+ 	ground { sprite: GROUNDSPRITE_NORMAL; }
+ 	childsprite {
+ 		sprite: spriteset_air_small_deck_modern2000; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+    building {
+        sprite: spriteset_air_small_modern_tower2000;
+        recolour_mode: RECOLOUR_REMAP;
+		palette: PALETTE_USE_DEFAULT; 
+		xoffset: 0;
+		yoffset: 0;
+		zoffset: 0; 
+    }
+}
+
+
+
+switch(FEAT_AIRPORTTILES, SELF, small_airport_modern2000_tiles_north_switch, relative_pos & 0xFFFF) {
+	0x0000: airport_deck_modern2000;
+	0x0001: airport_modern_tower2000;
+	0x0002: airport_deck_modern_lift2000;
+	0x0003: airport_deck_modern_lift2000;
+	0x0100: airport_deck_modern_catapult2000;
+	0x0101: airport_deck_modern_catapult22000;
+	0x0102: airport_deck_modern_catapult_cover2000;
+	0x0103: airport_deck_modern2000;
+	0x0200: airport_deck_modern_line_stop2000;
+	0x0201: airport_deck_modern_line2000;
+	0x0202: airport_deck_modern_line2000;
+	0x0203: airport_deck_modern_line_start2000;
+}
+
+tilelayout small_airport_modern2000_layout_north {
+	rotation: DIRECTION_NORTH;
+	0, 0: small_airport_modern2000_tiles;
+	1, 0: small_airport_modern2000_tiles;
+	2, 0: small_airport_modern2000_tiles;
+	3, 0: small_airport_modern2000_tiles;
+	0, 1: small_airport_modern2000_tiles;
+	1, 1: small_airport_modern2000_tiles;
+	2, 1: small_airport_modern2000_tiles;
+	3, 1: small_airport_modern2000_tiles;
+	0, 2: small_airport_modern2000_tiles;
+	1, 2: small_airport_modern2000_tiles;
+	2, 2: small_airport_modern2000_tiles;
+	3, 2: small_airport_modern2000_tiles;
+}
+
+item(FEAT_AIRPORTTILES, small_airport_modern2000_tiles) {
+    property {
+        substitute: 0;
+    }
+    graphics {
+        small_airport_modern2000_tiles_north_switch;
+    }
+}
+
+spriteset(spriteset_air_small_modern2_preview, "gfx/png/air_airport_small.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    preview_small_airport(571,342)
+}
+
+item(FEAT_AIRPORTS, small_airport_degaulle) {
+	property {
+		override: 0;
+		layouts: [small_airport_modern2000_layout_north];
+        name: string(STR_NAME_AIR_SMALLAIRPORT_MODERN2);
+        years_available: [2000, 2030];
+        //ttd_airport_type: 0;
+        catchment_area: 6;
+        maintenance_cost: 38;
+	}
+	graphics {
+		spriteset_air_small_modern2_preview;
+	}
+}
