@@ -42,3 +42,22 @@ item (FEAT_AIRCRAFT, item_air_nid29) {
         default:            spriteset_air_nid29;
    }
 }
+
+if (Aircraft_Ranges == 0) {
+    item (FEAT_AIRCRAFT, item_air_nid29)
+    {
+        property	
+        {
+            range: 0; 
+        }
+    }
+}
+if (Aircraft_Ranges == 1) {
+    item (FEAT_AIRCRAFT, item_air_nid29)
+    {
+        property	
+        {
+            range: 116; 
+        }
+    }
+}

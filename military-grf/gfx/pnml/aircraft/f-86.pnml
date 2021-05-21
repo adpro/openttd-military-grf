@@ -48,3 +48,22 @@ item (FEAT_AIRCRAFT, item_air_f86) {
         default:            spriteset_air_f86;
    }
 }
+
+if (Aircraft_Ranges == 0) {
+    item (FEAT_AIRCRAFT, item_air_f86)
+    {
+        property	
+        {
+            range: 0; 
+        }
+    }
+}
+if (Aircraft_Ranges == 1) {
+    item (FEAT_AIRCRAFT, item_air_f86)
+    {
+        property	
+        {
+            range: 491; 
+        }
+    }
+}

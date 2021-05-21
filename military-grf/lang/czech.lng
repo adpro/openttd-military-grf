@@ -7,6 +7,14 @@ STR_GRF_DESCRIPTION :{TITLE} obsahuje několik vojenských letadel.{}{BLACK}Verz
 
 STR_MIN_OPENTTD_VERSION :1.2.0 or r22518
 
+
+# parameters
+STR_PARAM_NAME_RANGES           :Povolit omezení doletu letadel
+STR_PARAM_DESC_RANGES           :Umožní omezit dolet letadel, jinak bez limitu.
+STR_PARAM_VALUE_RANGES_OFF      :Bez limitu doletu
+STR_PARAM_VALUE_RANGES_NORMAL   :Omezený dolet
+
+
 # vehicle names
 STR_NAME_AIR_F86        :North American F-86 Sabre
 STR_DESC_AIR_F86		:Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Známý jako první americký stíhací letoun s šípovými křídly, který dokázal čelit sovětským MiGům-15 v rychlých soubojích na obloze korejské války. Vyrobeno 9 860 ks.

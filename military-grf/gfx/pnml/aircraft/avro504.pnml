@@ -51,3 +51,22 @@ item (FEAT_AIRCRAFT, item_air_avro) {
         default:            spriteset_air_avro;
    }
 }
+
+if (Aircraft_Ranges == 0) {
+    item (FEAT_AIRCRAFT, item_air_avro)
+    {
+        property	
+        {
+            range: 0; 
+        }
+    }
+}
+if (Aircraft_Ranges == 1) {
+    item (FEAT_AIRCRAFT, item_air_avro)
+    {
+        property	
+        {
+            range: 80; 
+        }
+    }
+}

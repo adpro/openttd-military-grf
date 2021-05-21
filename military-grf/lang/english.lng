@@ -7,6 +7,14 @@ STR_GRF_DESCRIPTION :{TITLE} contains several military airplanes.{}{BLACK}Versio
 
 STR_MIN_OPENTTD_VERSION :1.2.0 or r22518
 
+
+# parameters
+STR_PARAM_NAME_RANGES           :Enable aircraft ranges
+STR_PARAM_DESC_RANGES           :Enable limit aircraft range, otherwise without limit.
+STR_PARAM_VALUE_RANGES_OFF      :No range limit
+STR_PARAM_VALUE_RANGES_NORMAL   :Limited aircraft range
+
+
 # vehicle names
 STR_NAME_AIR_F86        :North American F-86 Sabre
 STR_DESC_AIR_F86		:Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}Best known as the US' first swept-wing fighter that could counter the swept-wing Soviet MiG-15 in high-speed dogfights in the skies of the Korean War. 9 860 Sabres was built.
