@@ -167,3 +167,13 @@ item(FEAT_AIRPORTS, small_airport_enterprise) {
 		spriteset_air_small_modern_preview;
 	}
 }
+
+if (airport_disable_date_restrictions) {
+    item (FEAT_AIRPORTS, small_airport_enterprise)
+    {
+        property	
+        {
+            years_available: [0, 0xFFFF];
+        }
+    }
+}

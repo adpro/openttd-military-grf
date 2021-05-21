@@ -151,3 +151,13 @@ item(FEAT_AIRPORTS, small_airport_intrepid) {
 		default: spriteset_air_small_preview;
 	}
 }
+
+if (airport_disable_date_restrictions) {
+    item (FEAT_AIRPORTS, small_airport_intrepid)
+    {
+        property	
+        {
+            years_available: [0, 0xFFFF];
+        }
+    }
+}

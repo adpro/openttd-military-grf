@@ -186,3 +186,13 @@ item(FEAT_AIRPORTS, small_airport_eagle) {
 		spriteset_air_small2_preview;
 	}
 }
+
+if (airport_disable_date_restrictions) {
+    item (FEAT_AIRPORTS, small_airport_eagle)
+    {
+        property	
+        {
+            years_available: [0, 0xFFFF];
+        }
+    }
+}

@@ -14,6 +14,9 @@ STR_PARAM_DESC_RANGES           :Umožní omezit dolet letadel, jinak bez limitu
 STR_PARAM_VALUE_RANGES_OFF      :Bez limitu doletu
 STR_PARAM_VALUE_RANGES_NORMAL   :Omezený dolet
 
+STR_PARAM_NAME_AIRPORT_DATE_RESTRICTION :Zakázat omezení výstavby letišť let. lodí dle datumu
+STR_PARAM_DESC_AIRPORT_DATE_RESTRICTION :Umožní postavit letiště letadlových lodí bez ohledu na datum.
+
 
 # vehicle names
 STR_NAME_AIR_F86        :North American F-86 Sabre

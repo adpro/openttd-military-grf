@@ -27,4 +27,13 @@ grf {
             } ;
         }
     }
+    param 1 {
+        airport_disable_date_restrictions {
+            type: bool;
+            name: string(STR_PARAM_NAME_AIRPORT_DATE_RESTRICTION);
+            desc: string(STR_PARAM_DESC_AIRPORT_DATE_RESTRICTION);
+            def_value: 0;
+            bit: 1;
+        }
+    }
 }
