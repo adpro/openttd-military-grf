@@ -18,3 +18,8 @@ template ground_tile(x, y) {
 	// [x, y, 64, 31, -31, 0]
 	[x, y, 64, 33, -32, -1]
 }
+
+template preview_small_airport(x, y) {
+	// [x, y, 64, 31, -31, 0]
+	[x,y,225,113,0,0]
+}

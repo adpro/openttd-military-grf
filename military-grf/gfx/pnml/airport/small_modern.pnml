@@ -147,6 +147,12 @@ item(FEAT_AIRPORTTILES, small_airport_modern_tiles) {
     }
 }
 
+spriteset(spriteset_air_small_modern_preview, "gfx/png/air_airport_small.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    preview_small_airport(571,228)
+}
+
+
 item(FEAT_AIRPORTS, small_airport_enterprise) {
 	property {
 		override: 0;
@@ -157,7 +163,7 @@ item(FEAT_AIRPORTS, small_airport_enterprise) {
         catchment_area: 6;
         maintenance_cost: 38;
 	}
-	// graphics {
-	// 	small_layout_cb_switch;
-	// }
+	graphics {
+		spriteset_air_small_modern_preview;
+	}
 }

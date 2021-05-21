@@ -129,6 +129,14 @@ item(FEAT_AIRPORTTILES, small_airport_tiles) {
     }
 }
 
+
+spriteset(spriteset_air_small_preview, "gfx/png/air_airport_small.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    preview_small_airport(571,0)
+}
+
+
+
 item(FEAT_AIRPORTS, small_airport_intrepid) {
 	property {
 		override: 0;
@@ -139,7 +147,7 @@ item(FEAT_AIRPORTS, small_airport_intrepid) {
         catchment_area: 5;
         maintenance_cost: 28;
 	}
-	// graphics {
-	// 	small_layout_cb_switch;
-	// }
+	graphics {
+		default: spriteset_air_small_preview;
+	}
 }
