@@ -2,11 +2,24 @@ grf {
     grfid: "AD\01\01";  // TTDPatch ID and published version
     name: string(STR_GRF_NAME);
     desc: string(STR_GRF_DESCRIPTION);
-    version: 3; // OpenTTD published version
+    version: 4; // OpenTTD published version
     min_compatible_version: 0;
 
     // versions:
     // 1 = 0.1.0alpha9
     // 2 = 0.2.0 (post alpha 8)
-
+    param 0 {
+        Aircraft_Ranges {
+            type: int;
+            name: string(STR_PARAM_NAME_RANGES);
+            desc: string(STR_PARAM_DESC_RANGES);
+            min_value: 0;
+            max_value: 1;
+            def_value: 1;
+            names: {
+                0: string(STR_PARAM_VALUE_RANGES_OFF);
+                1: string(STR_PARAM_VALUE_RANGES_NORMAL);
+            } ;
+        }
+    }
 }

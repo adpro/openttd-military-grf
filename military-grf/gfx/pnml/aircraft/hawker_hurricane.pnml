@@ -49,3 +49,23 @@ item (FEAT_AIRCRAFT, item_air_hurricane) {
         default:            spriteset_air_hurricane;
    }
 }
+
+
+if (Aircraft_Ranges == 0) {
+    item (FEAT_AIRCRAFT, item_air_hurricane)
+    {
+        property	
+        {
+            range: 0; 
+        }
+    }
+}
+if (Aircraft_Ranges == 1) {
+    item (FEAT_AIRCRAFT, item_air_hurricane)
+    {
+        property	
+        {
+            range: 194; 
+        }
+    }
+}

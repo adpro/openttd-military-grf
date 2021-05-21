@@ -40,3 +40,22 @@ item (FEAT_AIRCRAFT, item_air_mirage3) {
         default:            spriteset_air_mirage3;
    }
 }
+
+if (Aircraft_Ranges == 0) {
+    item (FEAT_AIRCRAFT, item_air_mirage3)
+    {
+        property	
+        {
+            range: 0; 
+        }
+    }
+}
+if (Aircraft_Ranges == 1) {
+    item (FEAT_AIRCRAFT, item_air_mirage3)
+    {
+        property	
+        {
+            range: 667; 
+        }
+    }
+}

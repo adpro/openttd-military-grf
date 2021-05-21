@@ -49,3 +49,22 @@ item (FEAT_AIRCRAFT, item_air_rafale) {
         default:            spritegroup_air_rafale;
    }
 }
+
+if (Aircraft_Ranges == 0) {
+    item (FEAT_AIRCRAFT, item_air_rafale)
+    {
+        property	
+        {
+            range: 0; 
+        }
+    }
+}
+if (Aircraft_Ranges == 1) {
+    item (FEAT_AIRCRAFT, item_air_rafale)
+    {
+        property	
+        {
+            range: 740; 
+        }
+    }
+}

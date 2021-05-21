@@ -52,3 +52,22 @@ item (FEAT_AIRCRAFT, item_air_c74) {
         mail_capacity:      return 200;    // callback for setting capacity
    }
 }
+
+if (Aircraft_Ranges == 0) {
+    item (FEAT_AIRCRAFT, item_air_c74)
+    {
+        property	
+        {
+            range: 0; 
+        }
+    }
+}
+if (Aircraft_Ranges == 1) {
+    item (FEAT_AIRCRAFT, item_air_c74)
+    {
+        property	
+        {
+            range: 1100; 
+        }
+    }
+}
