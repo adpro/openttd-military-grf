@@ -177,7 +177,7 @@ item(FEAT_AIRPORTS, small_airport_eagle) {
 		override: 0;
 		layouts: [small_airport_layout_north1956];
         name: string(STR_NAME_AIR_SMALLAIRPORT2);
-        years_available: [1951, 1971];
+        years_available: [1951, 1972];
         //ttd_airport_type: 0;
         catchment_area: 5;
         maintenance_cost: 30;

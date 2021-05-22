@@ -82,6 +82,8 @@ STR_DESC_AIR_RAFALE     :Země původu: {ORANGE}FRA {}{BLACK}Historická fakta: 
 STR_NAME_AIR_RQ170      :Lockheed Martin RQ-170 Sentinel
 STR_DESC_AIR_RQ170      :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Letadlo je tajné. Některé obrázky a podrobnosti o letadle byly zveřejněny poté, co jej Írán v roce 2011 dopadl na svých hranicích. Bylo vyrobeno přibližně 30 ks.
 
+STR_NAME_AIR_F6F        :Grumman F6F Hellcat
+STR_DESC_AIR_F6F	    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Dominantní bojovník námořnictva Spojených států ve druhé polovině války v Pacifiku. Vyrobeno 12 275 ks.
 
 
 STR_DESC_AIR_TMPL		:Země původu: {ORANGE}??? {}{BLACK}Historická fakta: {ORANGE}

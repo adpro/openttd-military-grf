@@ -158,10 +158,10 @@ item(FEAT_AIRPORTS, small_airport_enterprise) {
 		override: 0;
 		layouts: [small_airport_modern_layout_north];
         name: string(STR_NAME_AIR_SMALLAIRPORT_MODERN);
-        years_available: [1972, 1999];
+        years_available: [1961, 2012];
         //ttd_airport_type: 0;
         catchment_area: 6;
-        maintenance_cost: 38;
+        maintenance_cost: 50;
 	}
 	graphics {
 		spriteset_air_small_modern_preview;

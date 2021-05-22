@@ -81,6 +81,8 @@ STR_DESC_AIR_RAFALE     :Country of origin: {ORANGE}FRA {}{BLACK}Historic facts:
 STR_NAME_AIR_RQ170      :Lockheed Martin RQ-170 Sentinel
 STR_DESC_AIR_RQ170      :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}Plane is secret. Some images and details of the aircraft were released after Iran captured an RQ-170 in 2011. Around 30 Sentinels was built.
 
+STR_NAME_AIR_F6F        :Grumman F6F Hellcat
+STR_DESC_AIR_F6F        :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}It was the United States Navy's dominant fighter in the second half of the Pacific War. 12 275 Hellcats was built.
 
 STR_DESC_AIR_TMPL		:Country of origin: {ORANGE}??? {}{BLACK}Historic facts: {ORANGE}.
 

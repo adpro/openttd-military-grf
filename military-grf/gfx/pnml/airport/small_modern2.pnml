@@ -169,7 +169,7 @@ item(FEAT_AIRPORTS, small_airport_degaulle) {
 		override: 0;
 		layouts: [small_airport_modern2000_layout_north];
         name: string(STR_NAME_AIR_SMALLAIRPORT_MODERN2);
-        years_available: [2000, 2030];
+        years_available: [2000, 2040];
         //ttd_airport_type: 0;
         catchment_area: 6;
         maintenance_cost: 38;
