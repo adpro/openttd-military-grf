@@ -85,6 +85,9 @@ STR_DESC_AIR_RQ170      :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: 
 STR_NAME_AIR_F6F        :Grumman F6F Hellcat
 STR_DESC_AIR_F6F	    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Dominantní bojovník námořnictva Spojených států ve druhé polovině války v Pacifiku. Vyrobeno 12 275 ks.
 
+STR_NAME_AIR_HSEAHAWK   :Hawker Sea Hawk
+STR_DESC_AIR_HSEAHAWK   :Země původu: {ORANGE}GBR {}{BLACK}Historická fakta: {ORANGE}Sea Hawk se stal prvním proudovým letounem společnosti Hawker. Značný počet byl vyroben také pro vývozní trh. Bylo vyrobeno 542 ks.
+
 
 STR_DESC_AIR_TMPL		:Země původu: {ORANGE}??? {}{BLACK}Historická fakta: {ORANGE}
 

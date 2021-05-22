@@ -84,6 +84,10 @@ STR_DESC_AIR_RQ170      :Country of origin: {ORANGE}USA {}{BLACK}Historic facts:
 STR_NAME_AIR_F6F        :Grumman F6F Hellcat
 STR_DESC_AIR_F6F        :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}It was the United States Navy's dominant fighter in the second half of the Pacific War. 12 275 Hellcats was built.
 
+STR_NAME_AIR_HSEAHAWK   :Hawker Sea Hawk
+STR_DESC_AIR_HSEAHAWK	:Country of origin: {ORANGE}GBR {}{BLACK}Historic facts: {ORANGE}The Sea Hawk became Hawker's first jet aircraft. A considerable number were also produced for the export market. 542 Sea Hawks was built.
+
+
 STR_DESC_AIR_TMPL		:Country of origin: {ORANGE}??? {}{BLACK}Historic facts: {ORANGE}.
 
 STR_NAME_AIR_SMALLAIRPORT   :USS Intrepid /CV-11/ (Essex class) 1943
