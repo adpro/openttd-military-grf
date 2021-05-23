@@ -33,7 +33,7 @@ All airports are only available in north heading.
 | USS Intrepid (CV-11) | small 4x3 | 1941-1974 | 5 | 28 |
 | HMS Eagle (R05) | small 4x3 | 1951-1972 | 5 | 30 |
 | USS Enterprise (CVAN-65) | small 4x3 | 1961-2012 | 6 | 50 |
-| Charles de Gaule (R91) | small 4x3 | 2000-2040 | 6 | 38 |
+| Charles de Gaulle (R91) | small 4x3 | 2000-2040 | 6 | 38 |
 
 
 
