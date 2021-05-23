@@ -60,6 +60,7 @@ Airplanes available in set:
 | Douglas C-74 Globemaster | heavy lift cargo aircraft | small | 1945 | 2 | 528 | 1 100 |
 | Douglas C-124 Globemaster II | heavy lift cargo aircraft | small | 1949 | 6 | 489 | 1 298 |
 | Lockheed C-141 Starlifter | strategic airlifter | small | 1963 | 5 | 912 | 945 |
+| Grumman C-2 Greyhound | carrier-based COD | small | 1964 | 8 | 635 | 480 |
 | Lockheed C-5 Galaxy | large military transport aircraft | large | 1968 | 21 | 856 | 852 |
 | Boeing C-17 Globemaster III | large military transport aircraft | small | 1991 | 24 | 1 080 | 896 |
 | Airbus A400M Atlas | military transport aircraft | small | 2009 | 30 | 858 | 660 |
