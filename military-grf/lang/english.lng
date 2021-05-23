@@ -19,73 +19,76 @@ STR_PARAM_DESC_AIRPORT_DATE_RESTRICTION :Make possibility to purchase carrier-li
 
 # vehicle names
 STR_NAME_AIR_F86        :North American F-86 Sabre
-STR_DESC_AIR_F86		:Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}Best known as the US' first swept-wing fighter that could counter the swept-wing Soviet MiG-15 in high-speed dogfights in the skies of the Korean War. 9 860 Sabres was built.
+STR_DESC_AIR_F86		:Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}Best known as the US' first swept-wing fighter that could counter the swept-wing Soviet MiG-15 in high-speed dogfights in the skies of the Korean War. 9 860 Sabres were built.
 
 STR_NAME_AIR_F4         :McDonnell F-4 Phantom II
-STR_DESC_AIR_F4		    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The most produced American supersonic military aircraft in history, and cementing its position as an iconic combat aircraft of the Cold War. 5 195 Phantoms was built.
+STR_DESC_AIR_F4		    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The most produced American supersonic military aircraft in history, and cementing its position as an iconic combat aircraft of the Cold War. 5 195 Phantoms were built.
 
 STR_NAME_AIR_F16        :General Dynamics F-16 Fighting Falcon
-STR_DESC_AIR_F16	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The world's most numerous fixed-wing aircraft in military service in 2015. Over 4 600 Falcons was built.
+STR_DESC_AIR_F16	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The world's most numerous fixed-wing aircraft in military service in 2015. Over 4 600 Falcons were built.
 
 STR_NAME_AIR_F18        :McDonnell Douglas F/A-18 Hornet
-STR_DESC_AIR_F18	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The aircraft can perform fighter escort, fleet air defense, suppression of enemy air defenses, air interdiction, close air support, and aerial reconnaissance. 1 500 Hornets was built.
+STR_DESC_AIR_F18	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The aircraft can perform fighter escort, fleet air defense, suppression of enemy air defenses, air interdiction, close air support, and aerial reconnaissance. 1 500 Hornets were built.
 
 STR_NAME_AIR_F35        :Lockheed Martin F-35A Lightning II
 STR_DESC_AIR_F35	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The 2nd 5th generation figher in US service. The aircraft has three main variants: the conventional takeoff and landing (CTOL) F-35A, the short take-off and vertical-landing (STOVL) F-35B, and the carrier-based (CV/CATOBAR) F-35C. Over 2 800 Lightnings will be built.
 
 STR_NAME_AIR_RQ4        :Northrop Grumman RQ-4 Global Hawk
-STR_DESC_AIR_RQ4	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The Global Hawk performs duties similar to that of the Lockheed U-2. It can survey as much as 40,000 square miles (100,000 square km) of terrain a day, an area the size of South Korea or Iceland. Over 50 Hawks was built.
+STR_DESC_AIR_RQ4	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The Global Hawk performs duties similar to that of the Lockheed U-2. It can survey as much as 40,000 square miles (100,000 square km) of terrain a day, an area the size of South Korea or Iceland. Over 50 Hawks were built.
 
 STR_NAME_AIR_HURRICANE  :Hawker Hurricane IIC
-STR_DESC_AIR_HURRICANE  :Country of origin: {ORANGE}GBR {}{BLACK}Historic facts: {ORANGE}The Hurricane inflicted 60 percent of the losses sustained by the Luftwaffe in the Battle of Britain, and fought in all the major theatres of the Second World War. 14 487 Hurricanes was built.
+STR_DESC_AIR_HURRICANE  :Country of origin: {ORANGE}GBR {}{BLACK}Historic facts: {ORANGE}The Hurricane inflicted 60 percent of the losses sustained by the Luftwaffe in the Battle of Britain, and fought in all the major theatres of the Second World War. 14 487 Hurricanes were built.
 
 STR_NAME_AIR_AVRO       :Avro 504
-STR_DESC_AIR_AVRO		:Country of origin: {ORANGE}GBR {}{BLACK}Historic facts: {ORANGE}The most-produced aircraft of any kind that served in any military capacity during the First World War. 11 303 aircraft was built.
+STR_DESC_AIR_AVRO		:Country of origin: {ORANGE}GBR {}{BLACK}Historic facts: {ORANGE}The most-produced aircraft of any kind that served in any military capacity during the First World War. 11 303 aircraft were built.
 
 STR_NAME_AIR_P51        :North American P-51 Mustang
 STR_DESC_AIR_P51	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}.
 
 STR_NAME_AIR_C5         :Lockheed C-5 Galaxy
-STR_DESC_AIR_C5 	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The C-5 is among the largest military aircraft in the world. Over 130 aircraft was built.
+STR_DESC_AIR_C5 	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The C-5 is among the largest military aircraft in the world. Over 130 aircraft were built.
 
 STR_NAME_AIR_C17        :Boeing C-17 Globemaster III
-STR_DESC_AIR_C17 	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}Original developer is McDonnel Douglas, merged to Boeing in 1997. The C-17 is designed to operate from runways as short as 3,500 ft (1,100 m) and as narrow as 90 ft (27 m). 279 airplanes was built.
+STR_DESC_AIR_C17 	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}Original developer is McDonnel Douglas, merged to Boeing in 1997. The C-17 is designed to operate from runways as short as 3,500 ft (1,100 m) and as narrow as 90 ft (27 m). 279 airplanes were built.
 
 STR_NAME_AIR_C74        :Douglas C-74 Globemaster
-STR_DESC_AIR_C74 	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}Airplane was developed in response to a need for a transoceanic heavy-lift military transport aircraft during WWII. 14 airplanes was built.
+STR_DESC_AIR_C74 	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}Airplane was developed in response to a need for a transoceanic heavy-lift military transport aircraft during WWII. 14 airplanes were built.
 
 STR_NAME_AIR_C124       :Douglas C-124 Globemaster II
-STR_DESC_AIR_C124 	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}It was developed from a prototype a World War II–design Douglas C-74 Globemaster, and based on lessons learned during the Berlin Airlift. 448 airplanes was built.
+STR_DESC_AIR_C124 	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}It was developed from a prototype a World War II–design Douglas C-74 Globemaster, and based on lessons learned during the Berlin Airlift. 448 airplanes were built.
 
 STR_NAME_AIR_C141       :Lockheed C-141 Starlifter
-STR_DESC_AIR_C141 	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}Introduced to replace slower propeller driven cargo planes such as the Douglas C-124 Globemaster II and Douglas C-133 Cargomaster, the C-141 was designed to requirements set in 1960. 285 C-124 was built.
+STR_DESC_AIR_C141 	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}Introduced to replace slower propeller driven cargo planes such as the Douglas C-124 Globemaster II and Douglas C-133 Cargomaster, the C-141 was designed to requirements set in 1960. 285 C-124 were built.
 
 STR_NAME_AIR_A400       :Airbus A400M Atlas
-STR_DESC_AIR_A400 	    :Country of origin: {ORANGE}EU {}{BLACK}Historic facts: {ORANGE}Most systems are loosely based on those of the A380, but modified for the military mission. Over 100 airplanes was built.
+STR_DESC_AIR_A400 	    :Country of origin: {ORANGE}EU {}{BLACK}Historic facts: {ORANGE}Most systems are loosely based on those of the A380, but modified for the military mission. Over 100 airplanes were built.
 
 STR_NAME_AIR_MIRAGE3    :Dassault Mirage III
-STR_DESC_AIR_MIRAGE3    :Country of origin: {ORANGE}FRA {}{BLACK}Historic facts: {ORANGE}The first Western European combat aircraft to exceed Mach 2 in horizontal flight. 1422 fighters was built.
+STR_DESC_AIR_MIRAGE3    :Country of origin: {ORANGE}FRA {}{BLACK}Historic facts: {ORANGE}The first Western European combat aircraft to exceed Mach 2 in horizontal flight. 1422 fighters were built.
 
 STR_NAME_AIR_NID29      :Nieuport-Delage NiD 29
-STR_DESC_AIR_NID29 	    :Country of origin: {ORANGE}FRA {}{BLACK}Historic facts: {ORANGE}NiD 29 was undoubtedly the greatest fighter aircraft of 1920. 1571 airplanes was built.
+STR_DESC_AIR_NID29 	    :Country of origin: {ORANGE}FRA {}{BLACK}Historic facts: {ORANGE}NiD 29 was undoubtedly the greatest fighter aircraft of 1920. 1571 airplanes were built.
 
 STR_NAME_AIR_MIRAGE2K   :Dassault Mirage 2000
-STR_DESC_AIR_MIRAGE2K   :Country of origin: {ORANGE}FRA {}{BLACK}Historic facts: {ORANGE}The aircraft is the result of France's own development after it left the European development of the aircraft from which the Tornado emerged. 601 fighters was built.
+STR_DESC_AIR_MIRAGE2K   :Country of origin: {ORANGE}FRA {}{BLACK}Historic facts: {ORANGE}The aircraft is the result of France's own development after it left the European development of the aircraft from which the Tornado emerged. 601 fighters were built.
 
 STR_NAME_AIR_JAS39      :Saab JAS 39 Gripen
-STR_DESC_AIR_JAS39 	    :Country of origin: {ORANGE}SWE {}{BLACK}Historic facts: {ORANGE}JAS 39 was planned to meet the Swedish Air Force's requirement for an affordable Mach 2 aircraft with good short-field performance for a defensive dispersed basing plan in the event of invasion. Over 271 Gripens was built.
+STR_DESC_AIR_JAS39 	    :Country of origin: {ORANGE}SWE {}{BLACK}Historic facts: {ORANGE}JAS 39 was planned to meet the Swedish Air Force's requirement for an affordable Mach 2 aircraft with good short-field performance for a defensive dispersed basing plan in the event of invasion. Over 271 Gripens were built.
 
 STR_NAME_AIR_RAFALE     :Dassault Rafale
-STR_DESC_AIR_RAFALE     :Country of origin: {ORANGE}FRA {}{BLACK}Historic facts: {ORANGE}The aircraft is the result of France's own development after it left the European development of the aircraft from which the Typhoon emerged. 201 fighters was built.
+STR_DESC_AIR_RAFALE     :Country of origin: {ORANGE}FRA {}{BLACK}Historic facts: {ORANGE}The aircraft is the result of France's own development after it left the European development of the aircraft from which the Typhoon emerged. 201 fighters were built.
 
 STR_NAME_AIR_RQ170      :Lockheed Martin RQ-170 Sentinel
-STR_DESC_AIR_RQ170      :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}Plane is secret. Some images and details of the aircraft were released after Iran captured an RQ-170 in 2011. Around 30 Sentinels was built.
+STR_DESC_AIR_RQ170      :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}Plane is secret. Some images and details of the aircraft were released after Iran captured an RQ-170 in 2011. Around 30 Sentinels were built.
 
 STR_NAME_AIR_F6F        :Grumman F6F Hellcat
-STR_DESC_AIR_F6F        :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}It was the United States Navy's dominant fighter in the second half of the Pacific War. 12 275 Hellcats was built.
+STR_DESC_AIR_F6F        :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}It was the United States Navy's dominant fighter in the second half of the Pacific War. 12 275 Hellcats were built.
 
 STR_NAME_AIR_HSEAHAWK   :Hawker Sea Hawk
-STR_DESC_AIR_HSEAHAWK	:Country of origin: {ORANGE}GBR {}{BLACK}Historic facts: {ORANGE}The Sea Hawk became Hawker's first jet aircraft. A considerable number were also produced for the export market. 542 Sea Hawks was built.
+STR_DESC_AIR_HSEAHAWK	:Country of origin: {ORANGE}GBR {}{BLACK}Historic facts: {ORANGE}The Sea Hawk became Hawker's first jet aircraft. A considerable number were also produced for the export market. 542 Sea Hawks were built.
+
+STR_NAME_AIR_C2         :Grumman C-2 Greyhound
+STR_DESC_AIR_C2 	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}Its primary mission is carrier onboard delivery (COD). C-2 is mainly used to transport high-priority cargo, mail, and passengers between carriers and shore bases, and can also deliver cargo such as jet engines and special stores. 52 Greyhounds were built.
 
 
 STR_DESC_AIR_TMPL		:Country of origin: {ORANGE}??? {}{BLACK}Historic facts: {ORANGE}.

@@ -20,6 +20,7 @@ sort (FEAT_AIRCRAFT,
     ,item_air_c74
     ,item_air_c124
     ,item_air_c141
+    ,item_air_c2
     ,item_air_c5
     ,item_air_c17
     ,item_air_a400

@@ -28,6 +28,7 @@
 
 #include "gfx/pnml/aircraft/f6f.pnml"
 #include "gfx/pnml/aircraft/hawker_sea_hawk.pnml"
+#include "gfx/pnml/aircraft/c-2.pnml"
 
 // airports - like carriers
 #include "gfx/pnml/airport/small.pnml"
