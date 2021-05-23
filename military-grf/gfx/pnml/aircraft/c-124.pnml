@@ -50,6 +50,8 @@ item (FEAT_AIRCRAFT, item_air_c124) {
         default:            spriteset_air_c124;
 
         mail_capacity:      return 350;    // callback for setting capacity
+        cost_factor:                    return 6;
+        running_cost_factor:            return 266;
    }
 }
 

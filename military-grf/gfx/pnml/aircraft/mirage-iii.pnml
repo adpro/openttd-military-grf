@@ -38,6 +38,8 @@ item (FEAT_AIRCRAFT, item_air_mirage3) {
    graphics {
         additional_text:    return string(STR_DESC_AIR_MIRAGE3); //Additional text shown in purchase list
         default:            spriteset_air_mirage3;
+        cost_factor:                    return 6;
+        running_cost_factor:            return 319;
    }
 }
 

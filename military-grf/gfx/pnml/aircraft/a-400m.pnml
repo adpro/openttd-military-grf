@@ -49,6 +49,8 @@ item (FEAT_AIRCRAFT, item_air_a400) {
         default:            spriteset_air_a400;
 
         mail_capacity:      return 385;    // callback for setting capacity
+        cost_factor:                    return 856;
+        running_cost_factor:            return 1063;
    }
 }
 

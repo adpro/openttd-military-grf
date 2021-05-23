@@ -46,6 +46,8 @@ item (FEAT_AIRCRAFT, item_air_f86) {
    graphics {
         additional_text:    return string(STR_DESC_AIR_F86); //Additional text shown in purchase list
         default:            spriteset_air_f86;
+        cost_factor:                    return 3;
+        running_cost_factor:            return 64;
    }
 }
 

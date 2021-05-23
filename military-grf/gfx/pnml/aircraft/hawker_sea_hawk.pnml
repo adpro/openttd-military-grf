@@ -47,6 +47,8 @@ item (FEAT_AIRCRAFT, item_air_hseahawk) {
    graphics {
         additional_text:    return string(STR_DESC_AIR_HSEAHAWK); //Additional text shown in purchase list
         default:            spriteset_air_hseahawk;
+        cost_factor:                    return 4;
+        running_cost_factor:            return 69;
    }
 }
 
