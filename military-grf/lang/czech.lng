@@ -91,6 +91,9 @@ STR_DESC_AIR_HSEAHAWK   :Země původu: {ORANGE}GBR {}{BLACK}Historická fakta: 
 STR_NAME_AIR_C2         :Grumman C-2 Greyhound
 STR_DESC_AIR_C2 	    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Jeho hlavním posláním je doručování nákladů na palubu letadlových lodí (COD). C-2 se používá hlavně k přepravě nákladu, pošty a cestujících s vysokou prioritou mezi dopravci a pobřežními základnami a může také doručovat náklad, jako jsou proudové motory. Bylo vyrobeno 52 ks.
 
+STR_NAME_AIR_UH1        :Bell UH-1 Iroquois / HU-1 "Huey"
+STR_DESC_AIR_UH1 	    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}UH-1 poprvé sloužil v bojových operacích během války ve Vietnamu, přičemž bylo nasazeno kolem 7 000 vrtulníků. Bylo vyrobeno přes 16 000 ks.
+
 
 STR_DESC_AIR_TMPL		:Země původu: {ORANGE}??? {}{BLACK}Historická fakta: {ORANGE}
 

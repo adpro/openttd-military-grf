@@ -90,6 +90,10 @@ STR_DESC_AIR_HSEAHAWK	:Country of origin: {ORANGE}GBR {}{BLACK}Historic facts: {
 STR_NAME_AIR_C2         :Grumman C-2 Greyhound
 STR_DESC_AIR_C2 	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}Its primary mission is carrier onboard delivery (COD). C-2 is mainly used to transport high-priority cargo, mail, and passengers between carriers and shore bases, and can also deliver cargo such as jet engines and special stores. 52 Greyhounds were built.
 
+STR_NAME_AIR_UH1        :Bell UH-1 Iroquois / HU-1 "Huey"
+STR_DESC_AIR_UH1	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The UH-1 first saw service in combat operations during the Vietnam War, with around 7,000 helicopters deployed. More than 16 000 Hueys were built.
+
+
 
 STR_DESC_AIR_TMPL		:Country of origin: {ORANGE}??? {}{BLACK}Historic facts: {ORANGE}.
 

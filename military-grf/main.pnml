@@ -30,6 +30,9 @@
 #include "gfx/pnml/aircraft/hawker_sea_hawk.pnml"
 #include "gfx/pnml/aircraft/c-2.pnml"
 
+// helicopters
+#include "gfx/pnml/helicopters/uh-1.pnml"
+
 // airports - like carriers
 #include "gfx/pnml/airport/small.pnml"
 #include "gfx/pnml/airport/small2.pnml"
