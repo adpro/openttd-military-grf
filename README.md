@@ -67,6 +67,8 @@ Airplanes available in set:
 | Reconnaissance |||||||||
 | Northrop Grumman RQ-4 Global Hawk | remotely-piloted surveillance aircraft | small | 1998 | 40 | 609 | 4 560 |
 | Lockheed Martin RQ-170 Sentinel | unmanned aerial vehicle | small | 2007 | 30 | 710 | 2 000 |
+| Helicopters |||||||||
+| Bell UH-1 Iroquois / HU-1 "Huey" | utility military helicopter | helicopter | 1956 | 31 | 220 | 102 |
 | | | | | | | |
 
 ## Requests
