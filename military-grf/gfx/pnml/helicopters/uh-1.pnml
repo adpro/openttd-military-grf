@@ -16,7 +16,7 @@ spriteset(spriteset_air_uh1_rotor, "gfx/png/air_uh1_rotor.png") {
 
 
 
-item (FEAT_AIRCRAFT, item_air_avro) {
+item (FEAT_AIRCRAFT, item_air_uh1) {
     property {
         name:                           string(STR_NAME_AIR_UH1);
         climates_available:             bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
