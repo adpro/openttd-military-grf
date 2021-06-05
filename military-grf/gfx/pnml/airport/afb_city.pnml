@@ -154,7 +154,7 @@ spriteset(spriteset_air_afb_taxiway_stop, "gfx/png/air_airport_afb.png") {
 }
 spriteset(spriteset_air_afb_tower_north, "gfx/png/air_airport_afb.png") {
     //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
-    building_tile(0,303,96,-64)
+    building_tile_anim(0,303,96,-64)
 }
 spriteset(spriteset_air_afb_ils, "gfx/png/air_airport_afb.png") {
     //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
@@ -162,7 +162,7 @@ spriteset(spriteset_air_afb_ils, "gfx/png/air_airport_afb.png") {
 }
 spriteset(spriteset_air_afb_dme, "gfx/png/air_airport_afb.png") {
     //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
-    building_tile(195,238,64,-32)
+    building_tile_anim(195,238,64,-32)
 }
 spriteset(spriteset_air_afb_barracks, "gfx/png/air_airport_afb.png") {
     //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
@@ -170,7 +170,7 @@ spriteset(spriteset_air_afb_barracks, "gfx/png/air_airport_afb.png") {
 }
 spriteset(spriteset_air_afb_firedept, "gfx/png/air_airport_afb.png") {
     //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
-    building_tile(325,238,64,-32)
+    building_tile_anim(325,238,64,-32)
 }
 
 

@@ -23,6 +23,11 @@ template building_tile(x, y, z, w) {
 	// [x, y, 64, 31, -31, 0]
 	[x, y, 64, z, -32, w]
 }
+template building_tile_anim(x, y, z, w) {
+	// [x, y, 64, 31, -31, 0]
+	[x, y, 64, z, -32, w, ANIM]
+}
+
 template preview_small_airport(x, y) {
 	// [x, y, 64, 31, -31, 0]
 	[x,y,225,113,0,0]
