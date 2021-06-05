@@ -2,7 +2,7 @@
 
 ## About
 
-Military Items provides military aircraft from around the world. 
+Military Items provides military aircraft from around the world, airports and other military stuff. 
 The set is not aimed at specific military operators or manufacturers,
 but rather gives you a broad selection so that you can be your own 
 company. To support that goal, the vehicles are in dual company colours.
@@ -18,13 +18,22 @@ of cargo. But this set also consists of heavy-lift military transport aircraft.
 By default each vehicle can be purchased in similar years like in real life.
 The vehicle life corresponds to use by users anywhere in the world.
 
-### Parameters
+The first airport is available from 1941. Build carrier-like airport to simulate aircraft carrier and to use naval aircraft.
 
+### Parameters
+The set provides parameters:
+
+- Enable aircraft ranges
+  - Limits the range of aircraft. Range is set similar to World Airliners Set. Default *Limited Aircraft range*.
+- Disable date restrictions for airports
+  - Make possibility to purchase airports without date limitations. Default *False*.
 
 
 ### Contents
 
 The set contains several airports based on aircraft carriers. Due to the limitations of the game, these airports are adapted, ie. the bridge is on the opposite side, the airport is wider than an aircraft carrier, etc.
+
+Normal airports are also available.
 
 All airports are only available in north heading.
 
@@ -35,6 +44,10 @@ All airports are only available in north heading.
 | USS Enterprise (CVAN-65) | small 4x3 | 1961-2012 | 6 | 50 |
 | Charles de Gaulle (R91) | small 4x3 | 2000-2040 | 6 | 38 |
 
+
+| Airport | Size of OpenTTD airport | Available dates | Catchment | Infrastructure Cost |
+| --- | --- | --- | --- | --- |
+| Air Force Base | city 6x6 | 1950-2050 | default | default |
 
 
 Airplanes available in set:
@@ -69,7 +82,8 @@ Airplanes available in set:
 | Lockheed Martin RQ-170 Sentinel | unmanned aerial vehicle | small | 2007 | 30 | 710 | 2 000 |
 | Helicopters |||||||||
 | Bell UH-1 Iroquois / HU-1 "Huey" | utility military helicopter | helicopter | 1956 | 31 | 220 | 102 |
-| | | | | | | |
+
+[comment]: <tablex> (| | | | | | | |)
 
 ## Requests
 

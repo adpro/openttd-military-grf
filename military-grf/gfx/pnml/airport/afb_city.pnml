@@ -1,0 +1,735 @@
+// AFB 6x6 city airport
+
+spriteset(spriteset_air_afb_runway, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(0,0)
+}
+spriteset(spriteset_air_afb_runway_start, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(130,0)
+}
+spriteset(spriteset_air_afb_runway_line, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(195,0)
+}
+spriteset(spriteset_air_afb_runway_stop, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(260,0)
+}
+spriteset(spriteset_air_afb_taxiway, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(65,0)
+}
+spriteset(spriteset_air_afb_taxiway_corner_ne, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(0,68)
+}
+spriteset(spriteset_air_afb_taxiway_corner_se, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(65,68)
+}
+spriteset(spriteset_air_afb_taxiway_corner_sw, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(130,68)
+}
+spriteset(spriteset_air_afb_taxiway_corner_nw, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(195,68)
+}
+spriteset(spriteset_air_afb_taxiway_cross_nw, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(260,68)
+}
+spriteset(spriteset_air_afb_taxiway_cross_ne, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(325,68)
+}
+spriteset(spriteset_air_afb_taxiway_half_ne, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(0,102)
+}
+spriteset(spriteset_air_afb_taxiway_half_se, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(65,102)
+}
+spriteset(spriteset_air_afb_taxiway_half_sw, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(130,102)
+}
+spriteset(spriteset_air_afb_taxiway_half_nw, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(195,102)
+}
+spriteset(spriteset_air_afb_hoverpoint, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(260,102)
+}
+spriteset(spriteset_air_afb_hoverpoint2, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(325,102)
+}
+spriteset(spriteset_air_afb_taxiway_cross_line_nw, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(0,136)
+}
+spriteset(spriteset_air_afb_taxiway_cross_line_ne, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(65,136)
+}
+spriteset(spriteset_air_afb_taxiway_corner_line_ne, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(130,136)
+}
+spriteset(spriteset_air_afb_taxiway_corner_line_se, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(195,136)
+}
+spriteset(spriteset_air_afb_taxiway_corner_line_sw, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(260,136)
+}
+spriteset(spriteset_air_afb_taxiway_corner_line_nw, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(325,136)
+}
+spriteset(spriteset_air_afb_taxiway_line_se, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(0,170)
+}
+spriteset(spriteset_air_afb_taxiway_line_sw, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(65,170)
+}
+spriteset(spriteset_air_afb_taxiway_line_nw, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(130,170)
+}
+spriteset(spriteset_air_afb_taxiway_line_ne, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(195,170)
+}
+spriteset(spriteset_air_afb_taxiway_line_ns, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(260,170)
+}
+spriteset(spriteset_air_afb_taxiway_line_we, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(325,170)
+}
+spriteset(spriteset_air_afb_taxiway_line_sw2, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(390,170)
+}
+spriteset(spriteset_air_afb_taxiway_line_see, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(390,136)
+}
+spriteset(spriteset_air_afb_taxiway_line_sse, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(390,102)
+}
+spriteset(spriteset_air_afb_taxiway_parking_nw, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(0,204)
+}
+spriteset(spriteset_air_afb_taxiway_parking_ne, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(65,204)
+}
+spriteset(spriteset_air_afb_taxiway_hangar_north, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(65,238)
+}
+spriteset(spriteset_air_afb_hangar_north, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    building_tile(0,238,64,-32)
+}
+spriteset(spriteset_air_afb_taxiway_stop_runway, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(260,204)
+}
+spriteset(spriteset_air_afb_taxiway_stop, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    ground_tile(325,204)
+}
+spriteset(spriteset_air_afb_tower_north, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    building_tile(0,303,96,-64)
+}
+spriteset(spriteset_air_afb_ils, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    building_tile(130,238,64,-32)
+}
+spriteset(spriteset_air_afb_dme, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    building_tile(195,238,64,-32)
+}
+spriteset(spriteset_air_afb_barracks, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    building_tile(260,238,64,-32)
+}
+spriteset(spriteset_air_afb_firedept, "gfx/png/air_airport_afb.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    building_tile(325,238,64,-32)
+}
+
+
+spritelayout airport_runway_afb_start {
+ 	ground { sprite: GROUNDSPRITE_CONCRETE; }
+ 	childsprite {
+ 		sprite: spriteset_air_afb_runway; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+ 	childsprite {
+ 		sprite: spriteset_air_afb_runway_start; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+}
+
+spritelayout airport_runway_afb_line {
+ 	ground { sprite: GROUNDSPRITE_CONCRETE; }
+ 	childsprite {
+ 		sprite: spriteset_air_afb_runway; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+ 	childsprite {
+ 		sprite: spriteset_air_afb_runway_line; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+}
+
+spritelayout airport_runway_afb_stop {
+ 	ground { sprite: GROUNDSPRITE_CONCRETE; }
+ 	childsprite {
+ 		sprite: spriteset_air_afb_runway; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+ 	childsprite {
+ 		sprite: spriteset_air_afb_runway_stop; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+}
+
+spritelayout airport_taxiway_afb {
+ 	ground { sprite: GROUNDSPRITE_CONCRETE; }
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+}
+
+
+spritelayout airport_free_afb {
+ 	ground { sprite: GROUNDSPRITE_NORMAL; }
+}
+// spritelayout airport_taxiway_afb_cross_nw {
+//  	ground { sprite: GROUNDSPRITE_NORMAL; }
+//  	childsprite {
+//  		sprite: spriteset_air_afb_taxiway_cross_nw; // custom spriteset
+//  		always_draw: 1; // also draw in transparent mode
+//  	}
+//  	childsprite {
+//  		sprite: spriteset_air_afb_taxiway_cross_line_nw; // custom spriteset
+//  		always_draw: 1; // also draw in transparent mode
+//         xoffset: 0;
+//         yoffset: 0;
+//  	}
+// }
+spritelayout airport_taxiway_afb_cross_ne {
+ 	ground { sprite: GROUNDSPRITE_NORMAL; }
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_cross_ne; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_cross_line_ne; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+        xoffset: 0;
+        yoffset: 0;
+ 	}
+}
+spritelayout airport_taxiway_afb_corner_ne {
+ 	ground { sprite: GROUNDSPRITE_NORMAL; }
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_corner_ne; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_corner_line_ne; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+}
+spritelayout airport_taxiway_afb_corner_sw {
+ 	ground { sprite: GROUNDSPRITE_NORMAL; }
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_corner_sw; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_corner_line_sw; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+}
+spritelayout airport_taxiway_afb_corner_nw {
+ 	ground { sprite: GROUNDSPRITE_NORMAL; }
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_corner_nw; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_corner_line_nw; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+}
+spritelayout airport_taxiway_afb_corner_se {
+ 	ground { sprite: GROUNDSPRITE_NORMAL; }
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_corner_se; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_corner_line_se; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+}
+
+// spritelayout airport_taxiway_afb_half_sw {
+//  	ground { sprite: GROUNDSPRITE_NORMAL; }
+//  	childsprite {
+//  		sprite: spriteset_air_afb_taxiway_half_sw; // custom spriteset
+//  		always_draw: 1; // also draw in transparent mode
+//  	}
+// }
+// spritelayout airport_taxiway_afb_half_nw {
+//  	ground { sprite: GROUNDSPRITE_NORMAL; }
+//  	childsprite {
+//  		sprite: spriteset_air_afb_taxiway_half_nw; // custom spriteset
+//  		always_draw: 1; // also draw in transparent mode
+//  	}
+// }
+// spritelayout airport_taxiway_afb_half_se {
+//  	ground { sprite: GROUNDSPRITE_NORMAL; }
+//  	childsprite {
+//  		sprite: spriteset_air_afb_taxiway_half_se; // custom spriteset
+//  		always_draw: 1; // also draw in transparent mode
+//  	}
+// }
+
+spritelayout airport_taxiway_afb_cross_nw_hover {
+ 	ground { sprite: GROUNDSPRITE_NORMAL; }
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_cross_nw; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+ 	childsprite {
+ 		sprite: spriteset_air_afb_hoverpoint; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+        xoffset: 26;
+        yoffset: 10;
+ 	}
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_cross_line_nw; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+        xoffset: 0;
+        yoffset: 0;
+ 	}
+}
+
+spritelayout airport_taxiway_afb_city00 {
+ 	ground { sprite: GROUNDSPRITE_CONCRETE; }
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+    building {
+        sprite: spriteset_air_afb_firedept;
+        recolour_mode: RECOLOUR_REMAP;
+		palette: PALETTE_USE_DEFAULT; 
+		xoffset: 0;
+		yoffset: 0;
+		zoffset: 0; 
+    }     
+}
+spritelayout airport_taxiway_afb_city02 {
+ 	ground { sprite: GROUNDSPRITE_CONCRETE; }
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_line_ne; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_line_nw; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_parking_nw; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+        xoffset: 20;
+        yoffset: 9;
+ 	}
+}
+spritelayout airport_taxiway_afb_city03 {
+ 	ground { sprite: GROUNDSPRITE_CONCRETE; }
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_line_nw; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+}
+spritelayout airport_taxiway_afb_city04 {
+ 	ground { sprite: GROUNDSPRITE_CONCRETE; }
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_line_ns; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+}
+spritelayout airport_taxiway_afb_city05 {
+ 	ground { sprite: GROUNDSPRITE_CONCRETE; }
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_hangar_north; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+    building {
+        sprite: spriteset_air_afb_hangar_north;
+        recolour_mode: RECOLOUR_REMAP;
+		palette: PALETTE_USE_DEFAULT; 
+		xoffset: 0;
+		yoffset: 0;
+		zoffset: 0; 
+    }     
+}
+spritelayout airport_taxiway_afb_city10 {
+ 	ground { sprite: GROUNDSPRITE_CONCRETE; }
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+    building {
+        sprite: spriteset_air_afb_barracks;
+        recolour_mode: RECOLOUR_REMAP;
+		palette: PALETTE_USE_DEFAULT; 
+		xoffset: 0;
+		yoffset: 0;
+		zoffset: 0; 
+    }     
+}
+spritelayout airport_taxiway_afb_city11 {
+ 	ground { sprite: GROUNDSPRITE_CONCRETE; }
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_line_se; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+}
+spritelayout airport_taxiway_afb_city12 {
+ 	ground { sprite: GROUNDSPRITE_CONCRETE; }
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+ 	// childsprite {
+ 	// 	sprite: spriteset_air_afb_taxiway_line_se; // custom spriteset
+ 	// 	always_draw: 1; // also draw in transparent mode
+ 	// }
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_line_nw; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+}
+spritelayout airport_taxiway_afb_city13 {
+ 	ground { sprite: GROUNDSPRITE_CONCRETE; }
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_line_ne; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_line_se; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_parking_ne; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+        xoffset: 0;
+        yoffset: 0;
+ 	}
+}
+spritelayout airport_taxiway_afb_city14 {
+ 	ground { sprite: GROUNDSPRITE_CONCRETE; }
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_line_see; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+}
+spritelayout airport_taxiway_afb_city15 {
+ 	ground { sprite: GROUNDSPRITE_CONCRETE; }
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_line_sw; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_line_sse; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+}
+spritelayout airport_taxiway_afb_city20 {
+ 	ground { sprite: GROUNDSPRITE_CONCRETE; }
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+    building {
+        sprite: spriteset_air_afb_tower_north;
+        recolour_mode: RECOLOUR_REMAP;
+		palette: PALETTE_USE_DEFAULT; 
+		xoffset: 0;
+		yoffset: 0;
+		zoffset: 0; 
+    }     
+}
+spritelayout airport_taxiway_afb_city21 {
+ 	ground { sprite: GROUNDSPRITE_CONCRETE; }
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_line_ne; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_line_see; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_parking_nw; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+        xoffset: 20;
+        yoffset: 10;
+ 	}
+}
+spritelayout airport_taxiway_afb_city22 {
+ 	ground { sprite: GROUNDSPRITE_NORMAL; }
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_half_ne; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_line_sw2; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+}
+spritelayout airport_taxiway_afb_city30 {
+ 	ground { sprite: GROUNDSPRITE_NORMAL; }
+    building {
+        sprite: spriteset_air_afb_dme;
+        recolour_mode: RECOLOUR_REMAP;
+		palette: PALETTE_USE_DEFAULT; 
+		xoffset: 4;
+		yoffset: 4;
+		zoffset: 0; 
+    }     
+}
+spritelayout airport_taxiway_afb_city35 {
+ 	ground { sprite: GROUNDSPRITE_NORMAL; }
+    building {
+        sprite: spriteset_air_afb_ils;
+        recolour_mode: RECOLOUR_REMAP;
+		palette: PALETTE_USE_DEFAULT; 
+		xoffset: 0;
+		yoffset: 0;
+		zoffset: 0; 
+    }     
+}
+spritelayout airport_taxiway_afb_city42 {
+ 	ground { sprite: GROUNDSPRITE_NORMAL; }
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_cross_ne; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+ 	childsprite {
+ 		sprite: spriteset_air_afb_hoverpoint2; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+        xoffset: 12;
+        yoffset: 14;
+ 	}
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_cross_line_ne; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+        xoffset: 0;
+        yoffset: 0;
+ 	}
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_stop; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+        xoffset: 0;
+        yoffset: 0;
+ 	}
+}
+spritelayout airport_taxiway_afb_city43 {
+ 	ground { sprite: GROUNDSPRITE_NORMAL; }
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_cross_nw; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+ 	}
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_cross_line_nw; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+        xoffset: 0;
+        yoffset: 0;
+ 	}
+ 	childsprite {
+ 		sprite: spriteset_air_afb_taxiway_stop_runway; // custom spriteset
+ 		always_draw: 1; // also draw in transparent mode
+        xoffset: 0;
+        yoffset: 0;
+ 	}
+}
+
+
+switch(FEAT_AIRPORTTILES, SELF, airport_afb_city_north_switch, relative_pos & 0xFFFF) {
+	0x0000: airport_taxiway_afb_city00;
+	0x0001: airport_taxiway_afb;
+	0x0002: airport_taxiway_afb_city02;
+	0x0003: airport_taxiway_afb_city03;
+	0x0004: airport_taxiway_afb_city04;
+	0x0005: airport_taxiway_afb_city05;
+	0x0100: airport_taxiway_afb_city10;
+	0x0101: airport_taxiway_afb_city11;
+	0x0102: airport_taxiway_afb_city12;
+	0x0103: airport_taxiway_afb_city13;
+	0x0104: airport_taxiway_afb_city14;
+	0x0105: airport_taxiway_afb_city15;
+	0x0200: airport_taxiway_afb_city20;
+	0x0201: airport_taxiway_afb_city21;
+	0x0202: airport_taxiway_afb_city22;
+	0x0203: airport_taxiway_afb_corner_se;
+	0x0204: airport_taxiway_afb_cross_ne;
+	0x0205: airport_taxiway_afb_corner_nw;
+	0x0300: airport_taxiway_afb_city30;
+	0x0301: airport_taxiway_afb_corner_sw;
+	0x0302: airport_taxiway_afb_cross_nw_hover;
+	0x0303: airport_taxiway_afb_cross_ne;
+	0x0304: airport_taxiway_afb_corner_nw;
+	0x0305: airport_taxiway_afb_city35;
+	0x0400: airport_free_afb;
+	0x0401: airport_taxiway_afb_corner_se;
+	0x0402: airport_taxiway_afb_city42;
+	0x0403: airport_taxiway_afb_city43;
+	0x0404: airport_taxiway_afb_corner_ne;
+	0x0405: airport_free_afb;
+	0x0500: airport_runway_afb_stop;
+	0x0501: airport_runway_afb_line;
+	0x0502: airport_runway_afb_line;
+	0x0503: airport_runway_afb_line;
+	0x0504: airport_runway_afb_line;
+	0x0505: airport_runway_afb_start;
+}
+
+tilelayout airport_afb_city_layout_north {
+	rotation: DIRECTION_NORTH;
+	0, 0: airport_afb_city_tiles;
+	1, 0: airport_afb_city_tiles;
+	2, 0: airport_afb_city_tiles;
+	3, 0: airport_afb_city_tiles;
+	4, 0: airport_afb_city_tiles;
+	5, 0: airport_afb_city_tiles;
+	0, 1: airport_afb_city_tiles;
+	1, 1: airport_afb_city_tiles;
+	2, 1: airport_afb_city_tiles;
+	3, 1: airport_afb_city_tiles;
+	4, 1: airport_afb_city_tiles;
+	5, 1: airport_afb_city_tiles;
+	0, 2: airport_afb_city_tiles;
+	1, 2: airport_afb_city_tiles;
+	2, 2: airport_afb_city_tiles;
+	3, 2: airport_afb_city_tiles;
+	4, 2: airport_afb_city_tiles;
+	5, 2: airport_afb_city_tiles;
+	0, 3: airport_afb_city_tiles;
+	1, 3: airport_afb_city_tiles;
+	2, 3: airport_afb_city_tiles;
+	3, 3: airport_afb_city_tiles;
+	4, 3: airport_afb_city_tiles;
+	5, 3: airport_afb_city_tiles;
+	0, 4: airport_afb_city_tiles;
+	1, 4: airport_afb_city_tiles;
+	2, 4: airport_afb_city_tiles;
+	3, 4: airport_afb_city_tiles;
+	4, 4: airport_afb_city_tiles;
+	5, 4: airport_afb_city_tiles;
+	0, 5: airport_afb_city_tiles;
+	1, 5: airport_afb_city_tiles;
+	2, 5: airport_afb_city_tiles;
+	3, 5: airport_afb_city_tiles;
+	4, 5: airport_afb_city_tiles;
+	5, 5: airport_afb_city_tiles;
+}
+
+item(FEAT_AIRPORTTILES, airport_afb_city_tiles) {
+    property {
+        substitute: 1;
+    }
+    graphics {
+        airport_afb_city_north_switch;
+    }
+}
+
+spriteset(spriteset_air_afb_city_preview, "gfx/png/air_airport_afb_city_preview.png") {
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    preview_small_airport(0,212)
+}
+
+
+item(FEAT_AIRPORTS, airport_afb_city) {
+	property {
+		override: 1;
+		layouts: [airport_afb_city_layout_north];
+        name: string(STR_NAME_AIR_AFB_CITY);
+        years_available: [1950, 2050];
+        //ttd_airport_type: 0;
+        //catchment_area: 6;
+        //maintenance_cost: 50;
+	}
+	graphics {
+		spriteset_air_afb_city_preview;
+	}
+}
+
+if (airport_disable_date_restrictions) {
+    item (FEAT_AIRPORTS, airport_afb_city)
+    {
+        property	
+        {
+            years_available: [0, 0xFFFF];
+        }
+    }
+}

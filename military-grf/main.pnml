@@ -38,3 +38,5 @@
 #include "gfx/pnml/airport/small2.pnml"
 #include "gfx/pnml/airport/small_modern.pnml"
 #include "gfx/pnml/airport/small_modern2.pnml"
+// airports - AFBs
+#include "gfx/pnml/airport/afb_city.pnml"
