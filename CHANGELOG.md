@@ -15,7 +15,7 @@ You can find these types of changes:
 
 ## [Unreleased]
 
-## [0.4.0.RC] "Aircraft Carriers" - 2021-06-??
+## [0.4.0] "Aircraft Carriers" - 2021-06-06
 
 ### Added
 - Grumman F6F Hellcat aircraft
