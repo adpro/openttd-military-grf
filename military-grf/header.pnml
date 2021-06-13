@@ -7,7 +7,7 @@ grf {
     grfid: "AD\01\01";  // TTDPatch ID and published version
     name: string(STR_GRF_NAME);
     desc: string(STR_GRF_DESCRIPTION);
-    version: 4; // OpenTTD published version
+    version: 5; // OpenTTD published version
     min_compatible_version: 0;
 
     // versions:
@@ -34,6 +34,123 @@ grf {
             desc: string(STR_PARAM_DESC_AIRPORT_DATE_RESTRICTION);
             def_value: 0;
             bit: 1;
+        }
+    }
+    param 2 {
+        param_enable_us_fighters {
+            type: bool;
+            name: string(STR_PARAM_NAME_US_FIGHTERS);
+            desc: string(STR_PARAM_DESC_US_FIGHTERS);
+            def_value: 1;
+            bit: 2;
+        }
+    }
+    param 3 {
+        param_enable_eu_fighters {
+            type: bool;
+            name: string(STR_PARAM_NAME_EU_FIGHTERS);
+            desc: string(STR_PARAM_DESC_EU_FIGHTERS);
+            def_value: 1;
+            bit: 3;
+        }
+    }
+    param 4 {
+        param_enable_rus_fighters {
+            type: bool;
+            name: string(STR_PARAM_NAME_RUS_FIGHTERS);
+            desc: string(STR_PARAM_DESC_RUS_FIGHTERS);
+            def_value: 1;
+            bit: 4;
+        }
+    }
+    param 5 {
+        param_enable_other_fighters {
+            type: bool;
+            name: string(STR_PARAM_NAME_OTHER_FIGHTERS);
+            desc: string(STR_PARAM_DESC_OTHER_FIGHTERS);
+            def_value: 1;
+            bit: 5;
+        }
+    }
+    param 6 {
+        param_enable_uav {
+            type: bool;
+            name: string(STR_PARAM_NAME_UAV);
+            desc: string(STR_PARAM_DESC_UAV);
+            def_value: 1;
+            bit: 6;
+        }
+    }
+    param 7 {
+        param_enable_us_lifters {
+            type: bool;
+            name: string(STR_PARAM_NAME_US_LIFTERS);
+            desc: string(STR_PARAM_DESC_US_LIFTERS);
+            def_value: 1;
+            bit: 7;
+        }
+    }
+    param 8 {
+        param_enable_eu_lifters {
+            type: bool;
+            name: string(STR_PARAM_NAME_EU_LIFTERS);
+            desc: string(STR_PARAM_DESC_EU_LIFTERS);
+            def_value: 1;
+            bit: 8;
+        }
+    }
+    param 9 {
+        param_enable_rus_lifters {
+            type: bool;
+            name: string(STR_PARAM_NAME_RUS_LIFTERS);
+            desc: string(STR_PARAM_DESC_RUS_LIFTERS);
+            def_value: 1;
+            bit: 9;
+        }
+    }
+    param 10 {
+        param_enable_other_lifters {
+            type: bool;
+            name: string(STR_PARAM_NAME_OTHER_LIFTERS);
+            desc: string(STR_PARAM_DESC_OTHER_LIFTERS);
+            def_value: 1;
+            bit: 10;
+        }
+    }
+    param 11 {
+        param_enable_us_helis {
+            type: bool;
+            name: string(STR_PARAM_NAME_US_HELIS);
+            desc: string(STR_PARAM_DESC_US_HELIS);
+            def_value: 1;
+            bit: 11;
+        }
+    }
+    param 12 {
+        param_enable_eu_helis {
+            type: bool;
+            name: string(STR_PARAM_NAME_EU_HELIS);
+            desc: string(STR_PARAM_DESC_EU_HELIS);
+            def_value: 1;
+            bit: 12;
+        }
+    }
+    param 13 {
+        param_enable_rus_helis {
+            type: bool;
+            name: string(STR_PARAM_NAME_RUS_HELIS);
+            desc: string(STR_PARAM_DESC_RUS_HELIS);
+            def_value: 1;
+            bit: 13;
+        }
+    }
+    param 14 {
+        param_enable_other_helis {
+            type: bool;
+            name: string(STR_PARAM_NAME_OTHER_HELIS);
+            desc: string(STR_PARAM_DESC_OTHER_HELIS);
+            def_value: 1;
+            bit: 14;
         }
     }
 }

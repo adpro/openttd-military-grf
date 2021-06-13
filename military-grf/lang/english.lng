@@ -17,6 +17,38 @@ STR_PARAM_VALUE_RANGES_NORMAL   :Limited aircraft range
 STR_PARAM_NAME_AIRPORT_DATE_RESTRICTION :Disable date restrictions for airports
 STR_PARAM_DESC_AIRPORT_DATE_RESTRICTION :Make possibility to purchase airports without date limitations. 
 
+STR_PARAM_NAME_US_FIGHTERS      :Enable U.S. fighters
+STR_PARAM_DESC_US_FIGHTERS      :Enable existence of U.S. fighters in game
+STR_PARAM_NAME_EU_FIGHTERS      :Enable europian fighters
+STR_PARAM_DESC_EU_FIGHTERS      :Enable existence of europian fighters in game
+STR_PARAM_NAME_RUS_FIGHTERS     :Enable russian fighters
+STR_PARAM_DESC_RUS_FIGHTERS     :Enable existence of russian fighters in game
+STR_PARAM_NAME_OTHER_FIGHTERS   :Enable other fighters
+STR_PARAM_DESC_OTHER_FIGHTERS   :Enable existence of other fighters in game
+
+STR_PARAM_NAME_UAV              :Enable UAV
+STR_PARAM_DESC_UAV              :Enable existence of UAV aircraft in game
+
+STR_PARAM_NAME_US_LIFTERS       :Enable U.S. transport aircraft
+STR_PARAM_DESC_US_LIFTERS       :Enable existence of U.S. transport aircraft in game
+STR_PARAM_NAME_EU_LIFTERS       :Enable europian transport aircraft
+STR_PARAM_DESC_EU_LIFTERS       :Enable existence of europian transport aircraft in game
+STR_PARAM_NAME_RUS_LIFTERS      :Enable russian transport aircraft
+STR_PARAM_DESC_RUS_LIFTERS      :Enable existence of russian transport aircraft in game
+STR_PARAM_NAME_OTHER_LIFTERS    :Enable other transport aircraft
+STR_PARAM_DESC_OTHER_LIFTERS    :Enable existence of other transport aircraft in game
+
+STR_PARAM_NAME_US_HELIS         :Enable U.S. helicopters
+STR_PARAM_DESC_US_HELIS         :Enable existence of U.S. helicopters in game
+STR_PARAM_NAME_EU_HELIS         :Enable europian helicopters
+STR_PARAM_DESC_EU_HELIS         :Enable existence of europian helicopters in game
+STR_PARAM_NAME_RUS_HELIS        :Enable russian helicopters
+STR_PARAM_DESC_RUS_HELIS        :Enable existence of russian helicopters in game
+STR_PARAM_NAME_OTHER_HELIS      :Enable other helicopters
+STR_PARAM_DESC_OTHER_HELIS      :Enable existence of other helicopters in game
+
+
+
 # vehicle names
 STR_NAME_AIR_F86        :North American F-86 Sabre
 STR_DESC_AIR_F86		:Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}Best known as the US' first swept-wing fighter that could counter the swept-wing Soviet MiG-15 in high-speed dogfights in the skies of the Korean War. 9 860 Sabres were built.

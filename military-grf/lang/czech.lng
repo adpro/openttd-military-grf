@@ -17,6 +17,36 @@ STR_PARAM_VALUE_RANGES_NORMAL   :Omezený dolet
 STR_PARAM_NAME_AIRPORT_DATE_RESTRICTION :Zakázat omezení výstavby letišť let. lodí dle datumu
 STR_PARAM_DESC_AIRPORT_DATE_RESTRICTION :Umožní postavit letiště letadlových lodí bez ohledu na datum.
 
+STR_PARAM_NAME_US_FIGHTERS      :Povolit stíhačky USA
+STR_PARAM_DESC_US_FIGHTERS      :Povolí existenci stíhaček USA ve hře
+STR_PARAM_NAME_EU_FIGHTERS      :Povolit stíhačky z Evropy
+STR_PARAM_DESC_EU_FIGHTERS      :Povolí existenci stíhaček z evropských států ve hře
+STR_PARAM_NAME_RUS_FIGHTERS     :Povolit stíhačky Ruska
+STR_PARAM_DESC_RUS_FIGHTERS     :Povolí existenci stíhaček Ruska ve hře
+STR_PARAM_NAME_OTHER_FIGHTERS   :Povolit stíhačky ostatních zemí
+STR_PARAM_DESC_OTHER_FIGHTERS   :Povolí existenci stíhaček ostatních zemí ve hře
+
+STR_PARAM_NAME_UAV              :Povolit bezpilotní letouny
+STR_PARAM_DESC_UAV              :Povolí existenci bezpilotních UAV letadel ve hře
+
+STR_PARAM_NAME_US_LIFTERS       :Povolit transportní letadla USA
+STR_PARAM_DESC_US_LIFTERS       :Povolí existenci transportních letadel USA ve hře
+STR_PARAM_NAME_EU_LIFTERS       :Povolit evropská transportní letadla 
+STR_PARAM_DESC_EU_LIFTERS       :Povolí existenci evropských transportních letadel ve hře
+STR_PARAM_NAME_RUS_LIFTERS      :Povolit ruská transportní letadla 
+STR_PARAM_DESC_RUS_LIFTERS      :Povolí existenci ruských transportních letadelí ve hře
+STR_PARAM_NAME_OTHER_LIFTERS    :Povolit ostatní transportní letadla 
+STR_PARAM_DESC_OTHER_LIFTERS    :Povolí existenci transportních letadel ostatních zemí ve hře
+
+STR_PARAM_NAME_US_HELIS         :Povolit vrtulníky USA
+STR_PARAM_DESC_US_HELIS         :Povolí existenci vrtulníků USA ve hře
+STR_PARAM_NAME_EU_HELIS         :Povolit evropská vrtulníky 
+STR_PARAM_DESC_EU_HELIS         :Povolí existenci evropských vrtulníků ve hře
+STR_PARAM_NAME_RUS_HELIS        :Povolit ruská vrtulníky 
+STR_PARAM_DESC_RUS_HELIS        :Povolí existenci ruských vrtulníků ve hře
+STR_PARAM_NAME_OTHER_HELIS      :Povolit ostatní vrtulníky 
+STR_PARAM_DESC_OTHER_HELIS      :Povolí existenci vrtulníků ostatních zemí ve hře
+
 
 # vehicle names
 STR_NAME_AIR_F86        :North American F-86 Sabre

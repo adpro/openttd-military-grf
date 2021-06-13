@@ -15,61 +15,62 @@ spriteset(spriteset_air_uh1_rotor, "gfx/png/air_uh1_rotor.png") {
 }
 
 
+if (param_enable_us_helis) {
+    item (FEAT_AIRCRAFT, item_air_uh1) {
+        property {
+            name:                           string(STR_NAME_AIR_UH1);
+            climates_available:             bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+            introduction_date:              date(1956,10,20);
+            model_life:                     31;
+            /* retire_early not set, use default retirement behaviour */
+            vehicle_life:                   50;
+            reliability_decay:              5;
+            refittable_cargo_classes:       bitmask(CC_PASSENGERS, CC_MAIL, CC_EXPRESS, CC_ARMOURED, CC_PIECE_GOODS, CC_HAZARDOUS);
+            non_refittable_cargo_classes:   bitmask(CC_REFRIGERATED);
+            loading_speed:                  10;
+            cost_factor:                    3;
+            running_cost_factor:            5;
+            /* cargo_age_period is left at default */
 
-item (FEAT_AIRCRAFT, item_air_uh1) {
-    property {
-        name:                           string(STR_NAME_AIR_UH1);
-        climates_available:             bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
-        introduction_date:              date(1956,10,20);
-        model_life:                     31;
-        /* retire_early not set, use default retirement behaviour */
-        vehicle_life:                   50;
-        reliability_decay:              5;
-        refittable_cargo_classes:       bitmask(CC_PASSENGERS, CC_MAIL, CC_EXPRESS, CC_ARMOURED, CC_PIECE_GOODS, CC_HAZARDOUS);
-        non_refittable_cargo_classes:   bitmask(CC_REFRIGERATED);
-        loading_speed:                  10;
-        cost_factor:                    3;
-        running_cost_factor:            5;
-        /* cargo_age_period is left at default */
+            /* airplane-specific properties */
+            sprite_id:                      SPRITE_ID_NEW_AIRCRAFT; //enable new graphics
+            speed:                          220 km/h;
+            range:                          102;
+            misc_flags:                     bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
+            refit_cost:                     0; // Refitting is free
+            /* callback_flags are not set, no need to manually enable callbacks */
+            aircraft_type:                  AIRCRAFT_TYPE_HELICOPTER;
+            acceleration:                   15;
+            passenger_capacity:             14;
+            mail_capacity:                  3;
+            sound_effect:                   SOUND_HELICOPTER; // SOUND_PLANE_TAKE_OFF | SOUND_JET
+            /* Visual effect is left at default (no effect) */
+    }
+    graphics {
+            additional_text:    return string(STR_DESC_AIR_UH1); //Additional text shown in purchase list
+            default:            spriteset_air_uh1;
+            rotor:              spriteset_air_uh1_rotor;
+            cost_factor:                    return 3;
+            running_cost_factor:            return 213;
+    }
+    }
 
-        /* airplane-specific properties */
-        sprite_id:                      SPRITE_ID_NEW_AIRCRAFT; //enable new graphics
-        speed:                          220 km/h;
-        range:                          102;
-        misc_flags:                     bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
-        refit_cost:                     0; // Refitting is free
-        /* callback_flags are not set, no need to manually enable callbacks */
-        aircraft_type:                  AIRCRAFT_TYPE_HELICOPTER;
-        acceleration:                   15;
-        passenger_capacity:             14;
-        mail_capacity:                  3;
-        sound_effect:                   SOUND_HELICOPTER; // SOUND_PLANE_TAKE_OFF | SOUND_JET
-        /* Visual effect is left at default (no effect) */
-   }
-   graphics {
-        additional_text:    return string(STR_DESC_AIR_UH1); //Additional text shown in purchase list
-        default:            spriteset_air_uh1;
-        rotor:              spriteset_air_uh1_rotor;
-        cost_factor:                    return 3;
-        running_cost_factor:            return 213;
-   }
-}
-
-if (Aircraft_Ranges == 0) {
-    item (FEAT_AIRCRAFT, item_air_uh1)
-    {
-        property	
+    if (Aircraft_Ranges == 0) {
+        item (FEAT_AIRCRAFT, item_air_uh1)
         {
-            range: 0; 
+            property	
+            {
+                range: 0; 
+            }
         }
     }
-}
-if (Aircraft_Ranges == 1) {
-    item (FEAT_AIRCRAFT, item_air_uh1)
-    {
-        property	
+    if (Aircraft_Ranges == 1) {
+        item (FEAT_AIRCRAFT, item_air_uh1)
         {
-            range: 102; 
+            property	
+            {
+                range: 102; 
+            }
         }
     }
 }

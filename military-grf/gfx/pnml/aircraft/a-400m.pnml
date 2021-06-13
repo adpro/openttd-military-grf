@@ -14,61 +14,63 @@ spriteset(spriteset_air_a400, "gfx/png/air_a400m.png") {
     [ 285,     0,       44,    36,    -22,       -17]
 }
 
-item (FEAT_AIRCRAFT, item_air_a400) {
-    property {
-        name:                           string(STR_NAME_AIR_A400);
-        climates_available:             bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
-        introduction_date:              date(2009,12,11);
-        model_life:                     30;
-        /* retire_early not set, use default retirement behaviour */
-        vehicle_life:                   40;
-        reliability_decay:              5;
-        refittable_cargo_classes:       bitmask(CC_MAIL, CC_EXPRESS, CC_ARMOURED, CC_PIECE_GOODS, CC_LIQUID, CC_REFRIGERATED, CC_HAZARDOUS, CC_COVERED, CC_OVERSIZED, CC_NON_POURABLE, CC_NEO_BULK);
-        non_refittable_cargo_classes:   bitmask(CC_PASSENGERS, CC_BULK);
-        loading_speed:                  20;
-        cost_factor:                    200;
-        running_cost_factor:            69;
-        /* cargo_age_period is left at default */
+if (param_enable_eu_lifters){
+    item (FEAT_AIRCRAFT, item_air_a400) {
+        property {
+            name:                           string(STR_NAME_AIR_A400);
+            climates_available:             bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+            introduction_date:              date(2009,12,11);
+            model_life:                     30;
+            /* retire_early not set, use default retirement behaviour */
+            vehicle_life:                   40;
+            reliability_decay:              5;
+            refittable_cargo_classes:       bitmask(CC_MAIL, CC_EXPRESS, CC_ARMOURED, CC_PIECE_GOODS, CC_LIQUID, CC_REFRIGERATED, CC_HAZARDOUS, CC_COVERED, CC_OVERSIZED, CC_NON_POURABLE, CC_NEO_BULK);
+            non_refittable_cargo_classes:   bitmask(CC_PASSENGERS, CC_BULK);
+            loading_speed:                  20;
+            cost_factor:                    200;
+            running_cost_factor:            69;
+            /* cargo_age_period is left at default */
 
-        /* airplane-specific properties */
-        sprite_id:                      SPRITE_ID_NEW_AIRCRAFT; //enable new graphics
-        speed:                          858 km/h;
-        range:                          660;
-        misc_flags:                     bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
-        refit_cost:                     0; // Refitting is free
-        /* callback_flags are not set, no need to manually enable callbacks */
-        aircraft_type:                  AIRCRAFT_TYPE_SMALL; // take-off 980m
-        acceleration:                   35;
-        passenger_capacity:             0;
-        mail_capacity:                  0;
-        sound_effect:                   SOUND_PLANE_TAKE_OFF; // SOUND_PLANE_TAKE_OFF | SOUND_JET
-        /* Visual effect is left at default (no effect) */
-   }
-   graphics {
-        additional_text:    return string(STR_DESC_AIR_A400); //Additional text shown in purchase list
-        default:            spriteset_air_a400;
+            /* airplane-specific properties */
+            sprite_id:                      SPRITE_ID_NEW_AIRCRAFT; //enable new graphics
+            speed:                          858 km/h;
+            range:                          660;
+            misc_flags:                     bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
+            refit_cost:                     0; // Refitting is free
+            /* callback_flags are not set, no need to manually enable callbacks */
+            aircraft_type:                  AIRCRAFT_TYPE_SMALL; // take-off 980m
+            acceleration:                   35;
+            passenger_capacity:             0;
+            mail_capacity:                  0;
+            sound_effect:                   SOUND_PLANE_TAKE_OFF; // SOUND_PLANE_TAKE_OFF | SOUND_JET
+            /* Visual effect is left at default (no effect) */
+    }
+    graphics {
+            additional_text:    return string(STR_DESC_AIR_A400); //Additional text shown in purchase list
+            default:            spriteset_air_a400;
 
-        mail_capacity:      return 385;    // callback for setting capacity
-        cost_factor:                    return 856;
-        running_cost_factor:            return 1063;
-   }
-}
+            mail_capacity:      return 385;    // callback for setting capacity
+            cost_factor:                    return 856;
+            running_cost_factor:            return 1063;
+    }
+    }
 
-if (Aircraft_Ranges == 0) {
-    item (FEAT_AIRCRAFT, item_air_a400)
-    {
-        property	
+    if (Aircraft_Ranges == 0) {
+        item (FEAT_AIRCRAFT, item_air_a400)
         {
-            range: 0; 
+            property	
+            {
+                range: 0; 
+            }
         }
     }
-}
-if (Aircraft_Ranges == 1) {
-    item (FEAT_AIRCRAFT, item_air_a400)
-    {
-        property	
+    if (Aircraft_Ranges == 1) {
+        item (FEAT_AIRCRAFT, item_air_a400)
         {
-            range: 660; 
+            property	
+            {
+                range: 660; 
+            }
         }
     }
 }

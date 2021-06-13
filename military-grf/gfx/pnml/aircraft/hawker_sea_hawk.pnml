@@ -14,60 +14,62 @@ spriteset(spriteset_air_hseahawk, "gfx/png/air_hawker_sea_hawk.png") {
     [ 133,     0,       20,    15,    -10,        -6]
 }
 
-item (FEAT_AIRCRAFT, item_air_hseahawk) {
-    property {
-        name:                           string(STR_NAME_AIR_HSEAHAWK);
-        climates_available:             bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
-        introduction_date:              date(1947,09,02);
-        model_life:                     9;
-        /* retire_early not set, use default retirement behaviour */
-        vehicle_life:                   35;
-        reliability_decay:              5;
-        refittable_cargo_classes:       bitmask(CC_MAIL, CC_EXPRESS, CC_ARMOURED);
-        non_refittable_cargo_classes:   bitmask(CC_PASSENGERS, CC_REFRIGERATED);
-        loading_speed:                  5;
-        cost_factor:                    5;
-        running_cost_factor:            3;
-        /* cargo_age_period is left at default */
+if (param_enable_eu_fighters){
+    item (FEAT_AIRCRAFT, item_air_hseahawk) {
+        property {
+            name:                           string(STR_NAME_AIR_HSEAHAWK);
+            climates_available:             bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+            introduction_date:              date(1947,09,02);
+            model_life:                     9;
+            /* retire_early not set, use default retirement behaviour */
+            vehicle_life:                   35;
+            reliability_decay:              5;
+            refittable_cargo_classes:       bitmask(CC_MAIL, CC_EXPRESS, CC_ARMOURED);
+            non_refittable_cargo_classes:   bitmask(CC_PASSENGERS, CC_REFRIGERATED);
+            loading_speed:                  5;
+            cost_factor:                    5;
+            running_cost_factor:            3;
+            /* cargo_age_period is left at default */
 
-        /* airplane-specific properties */
-        sprite_id:                      SPRITE_ID_NEW_AIRCRAFT; //enable new graphics
-        speed:                          970 km/h;
-        range:                          238;
-        misc_flags:                     bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
-        refit_cost:                     0; // Refitting is free
-        /* callback_flags are not set, no need to manually enable callbacks */
-        aircraft_type:                  AIRCRAFT_TYPE_SMALL;
-        acceleration:                   46;
-        passenger_capacity:             0;
-        mail_capacity:                  4;
-        sound_effect:                   SOUND_JET; // SOUND_PLANE_TAKE_OFF | SOUND_JET
-        /* Visual effect is left at default (no effect) */
-   }
-   graphics {
-        additional_text:    return string(STR_DESC_AIR_HSEAHAWK); //Additional text shown in purchase list
-        default:            spriteset_air_hseahawk;
-        cost_factor:                    return 4;
-        running_cost_factor:            return 69;
-   }
-}
+            /* airplane-specific properties */
+            sprite_id:                      SPRITE_ID_NEW_AIRCRAFT; //enable new graphics
+            speed:                          970 km/h;
+            range:                          238;
+            misc_flags:                     bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
+            refit_cost:                     0; // Refitting is free
+            /* callback_flags are not set, no need to manually enable callbacks */
+            aircraft_type:                  AIRCRAFT_TYPE_SMALL;
+            acceleration:                   46;
+            passenger_capacity:             0;
+            mail_capacity:                  4;
+            sound_effect:                   SOUND_JET; // SOUND_PLANE_TAKE_OFF | SOUND_JET
+            /* Visual effect is left at default (no effect) */
+    }
+    graphics {
+            additional_text:    return string(STR_DESC_AIR_HSEAHAWK); //Additional text shown in purchase list
+            default:            spriteset_air_hseahawk;
+            cost_factor:                    return 4;
+            running_cost_factor:            return 69;
+    }
+    }
 
 
-if (Aircraft_Ranges == 0) {
-    item (FEAT_AIRCRAFT, item_air_hseahawk)
-    {
-        property	
+    if (Aircraft_Ranges == 0) {
+        item (FEAT_AIRCRAFT, item_air_hseahawk)
         {
-            range: 0; 
+            property	
+            {
+                range: 0; 
+            }
         }
     }
-}
-if (Aircraft_Ranges == 1) {
-    item (FEAT_AIRCRAFT, item_air_hseahawk)
-    {
-        property	
+    if (Aircraft_Ranges == 1) {
+        item (FEAT_AIRCRAFT, item_air_hseahawk)
         {
-            range: 238; 
+            property	
+            {
+                range: 238; 
+            }
         }
     }
 }

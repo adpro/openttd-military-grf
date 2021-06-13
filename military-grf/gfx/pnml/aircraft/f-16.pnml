@@ -14,59 +14,61 @@ spriteset(spriteset_air_f16, "gfx/png/air_f16.png") {
     [ 142,     0,       21,    18,    -10,        -8]
 }
 
-item (FEAT_AIRCRAFT, item_air_f16) {
-    property {
-        name:                           string(STR_NAME_AIR_F16);
-        climates_available:             bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
-        introduction_date:              date(1976,06,01);
-        model_life:                     55;
-        /* retire_early not set, use default retirement behaviour */
-        vehicle_life:                   40;
-        reliability_decay:              5;
-        refittable_cargo_classes:       bitmask(CC_MAIL, CC_EXPRESS, CC_ARMOURED, CC_LIQUID);
-        non_refittable_cargo_classes:   bitmask(CC_PASSENGERS, CC_REFRIGERATED);
-        loading_speed:                  5;
-        cost_factor:                    30;
-        running_cost_factor:            27;
-        /* cargo_age_period is left at default */
+if (param_enable_us_fighters){
+    item (FEAT_AIRCRAFT, item_air_f16) {
+        property {
+            name:                           string(STR_NAME_AIR_F16);
+            climates_available:             bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+            introduction_date:              date(1976,06,01);
+            model_life:                     55;
+            /* retire_early not set, use default retirement behaviour */
+            vehicle_life:                   40;
+            reliability_decay:              5;
+            refittable_cargo_classes:       bitmask(CC_MAIL, CC_EXPRESS, CC_ARMOURED, CC_LIQUID);
+            non_refittable_cargo_classes:   bitmask(CC_PASSENGERS, CC_REFRIGERATED);
+            loading_speed:                  5;
+            cost_factor:                    30;
+            running_cost_factor:            27;
+            /* cargo_age_period is left at default */
 
-        /* airplane-specific properties */
-        sprite_id:                      SPRITE_ID_NEW_AIRCRAFT; //enable new graphics
-        speed:                          2124 km/h;
-        range:                          840;
-        misc_flags:                     bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
-        refit_cost:                     0; // Refitting is free
-        /* callback_flags are not set, no need to manually enable callbacks */
-        aircraft_type:                  AIRCRAFT_TYPE_SMALL;
-        acceleration:                   77;
-        passenger_capacity:             0;
-        mail_capacity:                  4;
-        sound_effect:                   SOUND_JET; // SOUND_PLANE_TAKE_OFF | SOUND_JET
-        /* Visual effect is left at default (no effect) */
-   }
-   graphics {
-        additional_text:    return string(STR_DESC_AIR_F16); //Additional text shown in purchase list
-        default:            spriteset_air_f16;
-        cost_factor:                    return 109;
-        running_cost_factor:            return 1185;
-   }
-}
+            /* airplane-specific properties */
+            sprite_id:                      SPRITE_ID_NEW_AIRCRAFT; //enable new graphics
+            speed:                          2124 km/h;
+            range:                          840;
+            misc_flags:                     bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
+            refit_cost:                     0; // Refitting is free
+            /* callback_flags are not set, no need to manually enable callbacks */
+            aircraft_type:                  AIRCRAFT_TYPE_SMALL;
+            acceleration:                   77;
+            passenger_capacity:             0;
+            mail_capacity:                  4;
+            sound_effect:                   SOUND_JET; // SOUND_PLANE_TAKE_OFF | SOUND_JET
+            /* Visual effect is left at default (no effect) */
+    }
+    graphics {
+            additional_text:    return string(STR_DESC_AIR_F16); //Additional text shown in purchase list
+            default:            spriteset_air_f16;
+            cost_factor:                    return 109;
+            running_cost_factor:            return 1185;
+    }
+    }
 
-if (Aircraft_Ranges == 0) {
-    item (FEAT_AIRCRAFT, item_air_f16)
-    {
-        property	
+    if (Aircraft_Ranges == 0) {
+        item (FEAT_AIRCRAFT, item_air_f16)
         {
-            range: 0; 
+            property	
+            {
+                range: 0; 
+            }
         }
     }
-}
-if (Aircraft_Ranges == 1) {
-    item (FEAT_AIRCRAFT, item_air_f16)
-    {
-        property	
+    if (Aircraft_Ranges == 1) {
+        item (FEAT_AIRCRAFT, item_air_f16)
         {
-            range: 840; 
+            property	
+            {
+                range: 840; 
+            }
         }
     }
 }
