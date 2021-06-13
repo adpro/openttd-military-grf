@@ -30,6 +30,15 @@
 #include "gfx/pnml/aircraft/eu/hawker_sea_hawk.pnml"
 #include "gfx/pnml/aircraft/us/c-2.pnml"
 
+#include "gfx/pnml/aircraft/rus/i-16.pnml"
+#include "gfx/pnml/aircraft/rus/yak-9.pnml"
+#include "gfx/pnml/aircraft/rus/mig-15.pnml"
+#include "gfx/pnml/aircraft/rus/mig-19.pnml"
+#include "gfx/pnml/aircraft/rus/mig-23.pnml"
+#include "gfx/pnml/aircraft/rus/mig-29.pnml"
+#include "gfx/pnml/aircraft/rus/su-30.pnml"
+#include "gfx/pnml/aircraft/rus/su-57.pnml"
+
 // helicopters
 #include "gfx/pnml/helicopters/uh-1.pnml"
 

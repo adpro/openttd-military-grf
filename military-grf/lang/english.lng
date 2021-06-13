@@ -126,6 +126,30 @@ STR_NAME_AIR_UH1        :Bell UH-1 Iroquois / HU-1 "Huey"
 STR_DESC_AIR_UH1	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The UH-1 first saw service in combat operations during the Vietnam War, with around 7,000 helicopters deployed. More than 16 000 Hueys were built.
 
 
+STR_NAME_AIR_I16        :Polikarpov I-16
+STR_DESC_AIR_I16 	    :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}It was the world's first low-wing cantilever monoplane fighter with retractable landing gear to attain operational status and as such "introduced a new vogue in fighter design." 10 292 I-16s were built.
+
+STR_NAME_AIR_YAK9       :Yakovlev Yak-9
+STR_DESC_AIR_YAK9       :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}Yak-9 played a major role in taking air superiority over Luftwaffe aces on the new Focke-Wulf Fw 190 and Messerschmitt Bf 109G fighters during the grand Battle of Kursk in summer 1943. 16 769 Yak-9s were built.
+
+STR_NAME_AIR_MIG15      :Mikoyan-Gurevich MiG-15
+STR_DESC_AIR_MIG15      :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}The MiG-15 was one of the first successful jet fighters to incorporate swept wings to achieve high transonic speeds. In combat over Korea, it outclassed straight-winged jet day fighters, which were largely relegated to ground-attack roles, and quickly countered the similar American swept-wing North American F-86 Sabre. More than 17 310 MiGs were built.
+
+STR_NAME_AIR_MIG19      :Mikoyan-Gurevich MiG-19
+STR_DESC_AIR_MIG19      :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}The world's first mass-produced supersonic aircraft. It was the first Soviet production aircraft capable of supersonic speeds in level flight. More than 2 300 MiGs were built.
+
+STR_NAME_AIR_MIG23      :Mikoyan-Gurevich MiG-23
+STR_DESC_AIR_MIG23      :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}The world's most-produced variable-geometry aircraft, along with similar Soviet aircraft such as the Su-17 "Fitter". 5 047 MiGs were built.
+
+STR_NAME_AIR_MIG29      :Mikoyan MiG-29
+STR_DESC_AIR_MIG29      :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}It was developed to counter new U.S. fighters such as the McDonnell Douglas F-15 Eagle and the General Dynamics F-16 Fighting Falcon. More than 1 600 MiGs were built.
+
+STR_NAME_AIR_SU30       :Sukhoi Su-30
+STR_DESC_AIR_SU30       :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}It is a multirole fighter for all-weather, air-to-air and air-to-surface deep interdiction missions. It is able to perform some very advanced manoeuvres, including the Pugachev's Cobra and the tailslide. More than 630 Su-30s were built.
+
+STR_NAME_AIR_SU57       :Sukhoi Su-57
+STR_DESC_AIR_SU57       :Country of origin: {ORANGE}RUS {}{BLACK}Historic facts: {ORANGE}The Su-57 is the first fighter in Russian military service to use stealth technology. 12 Su-57s were built.
+
 
 STR_DESC_AIR_TMPL		:Country of origin: {ORANGE}??? {}{BLACK}Historic facts: {ORANGE}.
 

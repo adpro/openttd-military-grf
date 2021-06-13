@@ -124,6 +124,30 @@ STR_DESC_AIR_C2 	    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {OR
 STR_NAME_AIR_UH1        :Bell UH-1 Iroquois / HU-1 "Huey"
 STR_DESC_AIR_UH1 	    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}UH-1 poprvé sloužil v bojových operacích během války ve Vietnamu, přičemž bylo nasazeno kolem 7 000 vrtulníků. Bylo vyrobeno přes 16 000 ks.
 
+STR_NAME_AIR_I16        :Polikarpov I-16
+STR_DESC_AIR_I16 	    :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Jednalo se o první dolnoplošníkový samonosný jednoplošník na světě se zatahovacím podvozkem, který dosáhl provozního stavu, a jako takový „představil nový směr v stíhacím designu." Bylo vyrobeno 10 292 ks.
+
+STR_NAME_AIR_YAK9       :Jakovlev Jak-9
+STR_DESC_AIR_YAK9       :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Jak-9 hrál hlavní roli při získávání vzdušné převahy nad esy Luftwaffe u nových stíhaček Focke-Wulf Fw 190 a Messerschmitt Bf 109G během velké bitvy u Kurska v létě 1943. Bylo vyrobeno 16 769 ks.
+
+STR_NAME_AIR_MIG15      :Mikojan-Gurevič MiG-15
+STR_DESC_AIR_MIG15      :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}MiG-15 byl jedním z prvních úspěšných proudových stíhaček, které začleňovaly šípovitá křídla pro dosažení vysokých transonických rychlostí. V boji nad Koreou překonal stíhačky s přímými křídly, které byly z velké části odsunuty do rolí pozemního útoku, a rychle čelil podobnému severoamerickému F-86 Sabre. Bylo vyrobeno přes 17 310 ks.
+
+STR_NAME_AIR_MIG19      :Mikojan-Gurevič MiG-19
+STR_DESC_AIR_MIG19      :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}První sériově vyráběné nadzvukové letadlo na světě. Jednalo se o první sovětské sériové letadlo schopné nadzvukových rychlostí ve vodorovném letu. Bylo vyrobeno přes 2 300 ks.
+
+STR_NAME_AIR_MIG23      :Mikojan-Gurevič MiG-23
+STR_DESC_AIR_MIG23      :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Nejvíce vyráběné letadlo s proměnnou geometrií na světě, spolu s podobnými sovětskými letadly, jako je Su-17 „Fitter“. Bylo vyrobeno 5 047 ks.
+
+STR_NAME_AIR_MIG29      :Mikojan MiG-29
+STR_DESC_AIR_MIG29      :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Byl vyvinut s cílem čelit novým americkým stíhačům, jako jsou McDonnell Douglas F-15 Eagle a General Dynamics F-16 Fighting Falcon. Bylo vyrobeno přes 1 600 ks.
+
+STR_NAME_AIR_SU30       :Suchoj Su-30
+STR_DESC_AIR_SU30       :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Jedná se o víceúčelový stíhací letoun do každého počasí, hlubokých misí vzduch-vzduch a vzduch-země. Je schopen provádět některé velmi pokročilé manévry, včetně Pugachevovy kobry a ocasu. Bylo vyrobeno přes 630 ks.
+
+STR_NAME_AIR_SU57       :Suchoj Su-57
+STR_DESC_AIR_SU57       :Země původu: {ORANGE}RUS {}{BLACK}Historická fakta: {ORANGE}Su-57 je prvním stíhačem ruské vojenské služby, který používá stealth technologii. Bylo vyrobeno 12 ks.
+
 
 STR_DESC_AIR_TMPL		:Země původu: {ORANGE}??? {}{BLACK}Historická fakta: {ORANGE}
 
