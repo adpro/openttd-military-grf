@@ -15,7 +15,7 @@ spriteset(spriteset_air_uh1_rotor, "gfx/png/air_uh1_rotor.png") {
 }
 
 
-if (param_enable_us_helis) {
+if (is_aircraft_helicopter_enabled(param_aircraft_enable_us)){
     item (FEAT_AIRCRAFT, item_air_uh1) {
         property {
             name:                           string(STR_NAME_AIR_UH1);

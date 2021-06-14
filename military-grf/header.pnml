@@ -37,120 +37,119 @@ grf {
         }
     }
     param 2 {
-        param_enable_us_fighters {
-            type: bool;
-            name: string(STR_PARAM_NAME_US_FIGHTERS);
-            desc: string(STR_PARAM_DESC_US_FIGHTERS);
+        param_airport_enable {
+            type: int;
+            name: string(STR_PARAM_NAME_AIRPORT_ENABLE);
+            desc: string(STR_PARAM_DESC_AIRPORT_ENABLE);
+            min_value: 0;
+            max_value: 4;
             def_value: 1;
-            bit: 2;
+            names: {
+                0: string(STR_PARAM_VALUE_AIRPORT_NONE);
+                1: string(STR_PARAM_VALUE_AIRPORT_ALL);
+                2: string(STR_PARAM_VALUE_AIRPORT_CLASSIC_ONLY);
+                3: string(STR_PARAM_VALUE_AIRPORT_CARRIER_ONLY);
+                4: string(STR_PARAM_VALUE_AIRPORT_HELIPORTS_ONLY);
+            } ;
         }
     }
-    param 3 {
-        param_enable_eu_fighters {
-            type: bool;
-            name: string(STR_PARAM_NAME_EU_FIGHTERS);
-            desc: string(STR_PARAM_DESC_EU_FIGHTERS);
-            def_value: 1;
-            bit: 3;
-        }
-    }
+    // param 3 {
+    //     param_aircraft_enable_cs {
+    //         type: int;
+    //         name: string(STR_PARAM_NAME_AIRCRAFT_ENABLE_CS);
+    //         desc: string(STR_PARAM_DESC_AIRCRAFT_ENABLE_CS);
+    //         min_value: 0;
+    //         max_value: 5;
+    //         def_value: 1;
+    //         names: {
+    //             0: string(STR_PARAM_VALUE_AIRCRAFT_NONE);
+    //             1: string(STR_PARAM_VALUE_AIRCRAFT_ALL);
+    //             2: string(STR_PARAM_VALUE_AIRCRAFT_FIGHTERS);
+    //             3: string(STR_PARAM_VALUE_AIRCRAFT_AIRLIFTERS);
+    //             4: string(STR_PARAM_VALUE_AIRCRAFT_HELIS);
+    //             5: string(STR_PARAM_VALUE_AIRCRAFT_AIRLIFTERS_AND_HELIS);
+    //         } ;
+    //     }
+    // }
     param 4 {
-        param_enable_rus_fighters {
-            type: bool;
-            name: string(STR_PARAM_NAME_RUS_FIGHTERS);
-            desc: string(STR_PARAM_DESC_RUS_FIGHTERS);
+        param_aircraft_enable_eu {
+            type: int;
+            name: string(STR_PARAM_NAME_AIRCRAFT_ENABLE_EU);
+            desc: string(STR_PARAM_DESC_AIRCRAFT_ENABLE_EU);
+            min_value: 0;
+            max_value: 5;
             def_value: 1;
-            bit: 4;
+            names: {
+                0: string(STR_PARAM_VALUE_AIRCRAFT_NONE);
+                1: string(STR_PARAM_VALUE_AIRCRAFT_ALL);
+                2: string(STR_PARAM_VALUE_AIRCRAFT_FIGHTERS);
+                3: string(STR_PARAM_VALUE_AIRCRAFT_AIRLIFTERS);
+                4: string(STR_PARAM_VALUE_AIRCRAFT_HELIS);
+                5: string(STR_PARAM_VALUE_AIRCRAFT_AIRLIFTERS_AND_HELIS);
+            } ;
         }
     }
     param 5 {
-        param_enable_other_fighters {
-            type: bool;
-            name: string(STR_PARAM_NAME_OTHER_FIGHTERS);
-            desc: string(STR_PARAM_DESC_OTHER_FIGHTERS);
+        param_aircraft_enable_rus {
+            type: int;
+            name: string(STR_PARAM_NAME_AIRCRAFT_ENABLE_RUS);
+            desc: string(STR_PARAM_DESC_AIRCRAFT_ENABLE_RUS);
+            min_value: 0;
+            max_value: 5;
             def_value: 1;
-            bit: 5;
+            names: {
+                0: string(STR_PARAM_VALUE_AIRCRAFT_NONE);
+                1: string(STR_PARAM_VALUE_AIRCRAFT_ALL);
+                2: string(STR_PARAM_VALUE_AIRCRAFT_FIGHTERS);
+                3: string(STR_PARAM_VALUE_AIRCRAFT_AIRLIFTERS);
+                4: string(STR_PARAM_VALUE_AIRCRAFT_HELIS);
+                5: string(STR_PARAM_VALUE_AIRCRAFT_AIRLIFTERS_AND_HELIS);
+            } ;
         }
     }
     param 6 {
-        param_enable_uav {
-            type: bool;
-            name: string(STR_PARAM_NAME_UAV);
-            desc: string(STR_PARAM_DESC_UAV);
+        param_aircraft_enable_us {
+            type: int;
+            name: string(STR_PARAM_NAME_AIRCRAFT_ENABLE_US);
+            desc: string(STR_PARAM_DESC_AIRCRAFT_ENABLE_US);
+            min_value: 0;
+            max_value: 5;
             def_value: 1;
-            bit: 6;
+            names: {
+                0: string(STR_PARAM_VALUE_AIRCRAFT_NONE);
+                1: string(STR_PARAM_VALUE_AIRCRAFT_ALL);
+                2: string(STR_PARAM_VALUE_AIRCRAFT_FIGHTERS);
+                3: string(STR_PARAM_VALUE_AIRCRAFT_AIRLIFTERS);
+                4: string(STR_PARAM_VALUE_AIRCRAFT_HELIS);
+                5: string(STR_PARAM_VALUE_AIRCRAFT_AIRLIFTERS_AND_HELIS);
+            } ;
         }
     }
     param 7 {
-        param_enable_us_lifters {
-            type: bool;
-            name: string(STR_PARAM_NAME_US_LIFTERS);
-            desc: string(STR_PARAM_DESC_US_LIFTERS);
+        param_aircraft_enable_other {
+            type: int;
+            name: string(STR_PARAM_NAME_AIRCRAFT_ENABLE_OTHER);
+            desc: string(STR_PARAM_DESC_AIRCRAFT_ENABLE_OTHER);
+            min_value: 0;
+            max_value: 5;
             def_value: 1;
-            bit: 7;
+            names: {
+                0: string(STR_PARAM_VALUE_AIRCRAFT_NONE);
+                1: string(STR_PARAM_VALUE_AIRCRAFT_ALL);
+                2: string(STR_PARAM_VALUE_AIRCRAFT_FIGHTERS);
+                3: string(STR_PARAM_VALUE_AIRCRAFT_AIRLIFTERS);
+                4: string(STR_PARAM_VALUE_AIRCRAFT_HELIS);
+                5: string(STR_PARAM_VALUE_AIRCRAFT_AIRLIFTERS_AND_HELIS);
+            } ;
         }
     }
     param 8 {
-        param_enable_eu_lifters {
+        param_standard_planes_disable {
             type: bool;
-            name: string(STR_PARAM_NAME_EU_LIFTERS);
-            desc: string(STR_PARAM_DESC_EU_LIFTERS);
-            def_value: 1;
-            bit: 8;
-        }
-    }
-    param 9 {
-        param_enable_rus_lifters {
-            type: bool;
-            name: string(STR_PARAM_NAME_RUS_LIFTERS);
-            desc: string(STR_PARAM_DESC_RUS_LIFTERS);
-            def_value: 1;
-            bit: 9;
-        }
-    }
-    param 10 {
-        param_enable_other_lifters {
-            type: bool;
-            name: string(STR_PARAM_NAME_OTHER_LIFTERS);
-            desc: string(STR_PARAM_DESC_OTHER_LIFTERS);
-            def_value: 1;
-            bit: 10;
-        }
-    }
-    param 11 {
-        param_enable_us_helis {
-            type: bool;
-            name: string(STR_PARAM_NAME_US_HELIS);
-            desc: string(STR_PARAM_DESC_US_HELIS);
-            def_value: 1;
-            bit: 11;
-        }
-    }
-    param 12 {
-        param_enable_eu_helis {
-            type: bool;
-            name: string(STR_PARAM_NAME_EU_HELIS);
-            desc: string(STR_PARAM_DESC_EU_HELIS);
-            def_value: 1;
-            bit: 12;
-        }
-    }
-    param 13 {
-        param_enable_rus_helis {
-            type: bool;
-            name: string(STR_PARAM_NAME_RUS_HELIS);
-            desc: string(STR_PARAM_DESC_RUS_HELIS);
-            def_value: 1;
-            bit: 13;
-        }
-    }
-    param 14 {
-        param_enable_other_helis {
-            type: bool;
-            name: string(STR_PARAM_NAME_OTHER_HELIS);
-            desc: string(STR_PARAM_DESC_OTHER_HELIS);
-            def_value: 1;
-            bit: 14;
+            name: string(STR_PARAM_NAME_STD_PLANES);
+            desc: string(STR_PARAM_DESC_STD_PLANES);
+            def_value: 0;
+            bit: 2;
         }
     }
 }

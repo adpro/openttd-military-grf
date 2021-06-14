@@ -5,7 +5,7 @@ spriteset(spriteset_air_mirage3, "gfx/png/air_mirage3.png") {
     template_fighter_26(0)
 }
 
-if (param_enable_eu_fighters){
+if (is_aircraft_fighter_enabled(param_aircraft_enable_eu)){
     item (FEAT_AIRCRAFT, item_air_mirage3) {
         property {
             name:                           string(STR_NAME_AIR_MIRAGE3);

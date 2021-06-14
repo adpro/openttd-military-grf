@@ -13,7 +13,7 @@ spriteset(spriteset_air_mig29, "gfx/png/air_f86.png") {
     [ 126,     0,       19,    17,     -9,        -7]
 }
 
-if (param_enable_rus_fighters){
+if (is_aircraft_fighter_enabled(param_aircraft_enable_rus)){
     item (FEAT_AIRCRAFT, item_air_mig29) {
         property {
             name:                           string(STR_NAME_AIR_MIG29);

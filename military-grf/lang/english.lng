@@ -17,36 +17,33 @@ STR_PARAM_VALUE_RANGES_NORMAL   :Limited aircraft range
 STR_PARAM_NAME_AIRPORT_DATE_RESTRICTION :Disable date restrictions for airports
 STR_PARAM_DESC_AIRPORT_DATE_RESTRICTION :Make possibility to purchase airports without date limitations. 
 
-STR_PARAM_NAME_US_FIGHTERS      :Enable U.S. fighters
-STR_PARAM_DESC_US_FIGHTERS      :Enable existence of U.S. fighters in game
-STR_PARAM_NAME_EU_FIGHTERS      :Enable europian fighters
-STR_PARAM_DESC_EU_FIGHTERS      :Enable existence of europian fighters in game
-STR_PARAM_NAME_RUS_FIGHTERS     :Enable russian fighters
-STR_PARAM_DESC_RUS_FIGHTERS     :Enable existence of russian fighters in game
-STR_PARAM_NAME_OTHER_FIGHTERS   :Enable other fighters
-STR_PARAM_DESC_OTHER_FIGHTERS   :Enable existence of other fighters in game
+STR_PARAM_NAME_AIRPORT_ENABLE           :Enable custom airports
+STR_PARAM_DESC_AIRPORT_ENABLE           :Enable military theme airports in game
+STR_PARAM_VALUE_AIRPORT_NONE            :None
+STR_PARAM_VALUE_AIRPORT_ALL             :All
+STR_PARAM_VALUE_AIRPORT_CLASSIC_ONLY    :Classic AFB airports only
+STR_PARAM_VALUE_AIRPORT_CARRIER_ONLY    :Carrier-like airports only
+STR_PARAM_VALUE_AIRPORT_HELIPORTS_ONLY  :Military heliports only
 
-STR_PARAM_NAME_UAV              :Enable UAV
-STR_PARAM_DESC_UAV              :Enable existence of UAV aircraft in game
+STR_PARAM_VALUE_AIRCRAFT_NONE                   :None
+STR_PARAM_VALUE_AIRCRAFT_ALL                    :All
+STR_PARAM_VALUE_AIRCRAFT_FIGHTERS               :Fighters and reconnaissance aircraft only
+STR_PARAM_VALUE_AIRCRAFT_AIRLIFTERS             :Transport aircraft only
+STR_PARAM_VALUE_AIRCRAFT_HELIS                  :Helicopters only
+STR_PARAM_VALUE_AIRCRAFT_AIRLIFTERS_AND_HELIS   :Transport aircraft and helicopters
+STR_PARAM_NAME_AIRCRAFT_ENABLE_CS               :Enable Czechoslovak aircraft
+STR_PARAM_DESC_AIRCRAFT_ENABLE_CS               :Enable existence of Czechoslovak/Czech aircraft in game.
+STR_PARAM_NAME_AIRCRAFT_ENABLE_EU               :Enable Europian aircraft
+STR_PARAM_DESC_AIRCRAFT_ENABLE_EU               :Enable existence of Europian aircraft in game (British, French, Swedish, etc.).
+STR_PARAM_NAME_AIRCRAFT_ENABLE_RUS              :Enable Soviet/Russian aircraft
+STR_PARAM_DESC_AIRCRAFT_ENABLE_RUS              :Enable existence of Soviet/Russian aircraft in game.
+STR_PARAM_NAME_AIRCRAFT_ENABLE_US               :Enable U.S. aircraft
+STR_PARAM_DESC_AIRCRAFT_ENABLE_US               :Enable existence of U.S. aircraft in game.
+STR_PARAM_NAME_AIRCRAFT_ENABLE_OTHER            :Enable aircraft of other nations
+STR_PARAM_DESC_AIRCRAFT_ENABLE_OTHER            :Enable existence of aircraft of other nations in game.
 
-STR_PARAM_NAME_US_LIFTERS       :Enable U.S. transport aircraft
-STR_PARAM_DESC_US_LIFTERS       :Enable existence of U.S. transport aircraft in game
-STR_PARAM_NAME_EU_LIFTERS       :Enable europian transport aircraft
-STR_PARAM_DESC_EU_LIFTERS       :Enable existence of europian transport aircraft in game
-STR_PARAM_NAME_RUS_LIFTERS      :Enable russian transport aircraft
-STR_PARAM_DESC_RUS_LIFTERS      :Enable existence of russian transport aircraft in game
-STR_PARAM_NAME_OTHER_LIFTERS    :Enable other transport aircraft
-STR_PARAM_DESC_OTHER_LIFTERS    :Enable existence of other transport aircraft in game
-
-STR_PARAM_NAME_US_HELIS         :Enable U.S. helicopters
-STR_PARAM_DESC_US_HELIS         :Enable existence of U.S. helicopters in game
-STR_PARAM_NAME_EU_HELIS         :Enable europian helicopters
-STR_PARAM_DESC_EU_HELIS         :Enable existence of europian helicopters in game
-STR_PARAM_NAME_RUS_HELIS        :Enable russian helicopters
-STR_PARAM_DESC_RUS_HELIS        :Enable existence of russian helicopters in game
-STR_PARAM_NAME_OTHER_HELIS      :Enable other helicopters
-STR_PARAM_DESC_OTHER_HELIS      :Enable existence of other helicopters in game
-
+STR_PARAM_NAME_STD_PLANES   :Disable default aircraft
+STR_PARAM_DESC_STD_PLANES   :Disables default airplanes and helicopters in game.
 
 
 # vehicle names

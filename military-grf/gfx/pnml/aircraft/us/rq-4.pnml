@@ -14,7 +14,7 @@ spriteset(spriteset_air_rq4, "gfx/png/air_rq4.png") {
     [ 278,     0,       45,    30,    -22,       -14]
 }
 
-if (param_enable_uav){
+if (is_aircraft_fighter_enabled(param_aircraft_enable_us)){
     item (FEAT_AIRCRAFT, item_air_rq4) {
         property {
             name:                           string(STR_NAME_AIR_RQ4);

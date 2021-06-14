@@ -16,7 +16,7 @@ spriteset(spriteset_air_avro, "gfx/png/air_avro504.png") {
 
 
 
-if (param_enable_eu_fighters){
+if (is_aircraft_fighter_enabled(param_aircraft_enable_eu)){
     item (FEAT_AIRCRAFT, item_air_avro) {
         property {
             name:                           string(STR_NAME_AIR_AVRO);

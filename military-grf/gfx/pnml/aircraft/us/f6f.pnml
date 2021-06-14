@@ -14,7 +14,7 @@ spriteset(spriteset_air_hellcat, "gfx/png/air_f6f.png") {
     [ 126,     0,       19,    16,     -9,        -7]
 }
 
-if (param_enable_us_fighters){
+if (is_aircraft_fighter_enabled(param_aircraft_enable_us)){
     item (FEAT_AIRCRAFT, item_air_hellcat) {
         property {
             name:                           string(STR_NAME_AIR_F6F);

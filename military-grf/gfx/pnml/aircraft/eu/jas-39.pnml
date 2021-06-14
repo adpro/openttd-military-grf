@@ -14,7 +14,7 @@ spriteset(spriteset_air_jas39_loading, "gfx/png/air_jas39_loading.png") {
 }
 
 
-if (param_enable_eu_fighters){
+if (is_aircraft_fighter_enabled(param_aircraft_enable_eu)){
     item (FEAT_AIRCRAFT, item_air_jas39) {
         property {
             name:                           string(STR_NAME_AIR_JAS39);

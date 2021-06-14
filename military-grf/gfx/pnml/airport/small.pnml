@@ -137,27 +137,29 @@ spriteset(spriteset_air_small_preview, "gfx/png/air_airport_small.png") {
 
 
 
-item(FEAT_AIRPORTS, small_airport_intrepid) {
-	property {
-		override: 0;
-		layouts: [small_airport_layout_north];
-        name: string(STR_NAME_AIR_SMALLAIRPORT);
-        years_available: [1941, 1974];
-        //ttd_airport_type: 0;
-        catchment_area: 5;
-        maintenance_cost: 28;
+if (is_carrier_enabled(param_airport_enable)) {
+	item(FEAT_AIRPORTS, small_airport_intrepid) {
+		property {
+			override: 0;
+			layouts: [small_airport_layout_north];
+			name: string(STR_NAME_AIR_SMALLAIRPORT);
+			years_available: [1941, 1974];
+			//ttd_airport_type: 0;
+			catchment_area: 5;
+			maintenance_cost: 28;
+		}
+		graphics {
+			default: spriteset_air_small_preview;
+		}
 	}
-	graphics {
-		default: spriteset_air_small_preview;
-	}
-}
 
-if (airport_disable_date_restrictions) {
-    item (FEAT_AIRPORTS, small_airport_intrepid)
-    {
-        property	
-        {
-            years_available: [0, 0xFFFF];
-        }
-    }
+	if (airport_disable_date_restrictions) {
+		item (FEAT_AIRPORTS, small_airport_intrepid)
+		{
+			property	
+			{
+				years_available: [0, 0xFFFF];
+			}
+		}
+	}
 }

@@ -1,0 +1,13 @@
+#define is_afb_enabled(parameter) (parameter == 1) || (parameter == 2) ? 1 : 0
+#define is_carrier_enabled(parameter) (parameter == 1) || (parameter == 3) ? 1 : 0
+#define is_heliport_enabled(parameter) (parameter == 1) || (parameter == 4) ? 1 : 0
+
+#define is_aircraft_fighter_enabled(parameter) (parameter == 1) || (parameter == 2) ? 1 : 0
+#define is_aircraft_airlifter_enabled(parameter) (parameter == 1) || (parameter == 3) || (parameter == 5) ? 1 : 0
+#define is_aircraft_helicopter_enabled(parameter) (parameter == 1) || (parameter == 4) || (parameter == 5) ? 1 : 0
+
+
+if (param_standard_planes_disable)	
+{
+  disable_item(FEAT_AIRCRAFT, 0, 39);	
+}

@@ -14,7 +14,7 @@ spriteset(spriteset_air_c17, "gfx/png/air_c17.png") {
     [ 285,     0,       44,    36,    -22,       -17]
 }
 
-if (param_enable_us_lifters){
+if (is_aircraft_airlifter_enabled(param_aircraft_enable_us)){
     item (FEAT_AIRCRAFT, item_air_c17) {
         property {
             name:                           string(STR_NAME_AIR_C17);

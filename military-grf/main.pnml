@@ -1,5 +1,6 @@
 #include "header.pnml"
 #include "templates.pnml"
+#include "gfx/pnml/definitions.pnml"
 #include "gfx/pnml/sorting.pnml"
 
 // aircraft
