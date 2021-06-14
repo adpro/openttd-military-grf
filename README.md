@@ -62,6 +62,7 @@ Airplanes available in set:
 | Grumman F6F Hellcat | carrier-based fighter | small | 1942 | 4 | 629 | 492 |
 | Yakovlev Yak-9 | fighter | small | 1942 | 6 | 600 | 182 |
 | Hawker Sea Hawk | carrier-based fighter | small | 1947 | 9 | 970 | 238 |
+| Mikoyan-Gurevich MiG-15 | fighter | small | 1947 | 6 | 1076 | 504 |
 | North American F-86 Sabre | fighter | small | 1949 | 8 | 1 106 | 491 |
 | Dassault Mirage III | fighter, IIIM carrier-based| small | 1956 | 24 | 2 350 | 667 |
 | McDonnell F-4 Phantom II | carrier based fighter, bomber | small | 1958 | 24 | 2 370 | 540 |
