@@ -14,6 +14,13 @@ You can find these types of changes:
 - *Security* in case of vulnerabilities.
 
 ## [Unreleased]
+### Added
+- Parameters to choose which aircraft to use in game
+- Parameter which airports to use in game
+- CSV version of Numbers spreadsheet
+
+### Changed
+- Aircraft source file reorganization
 
 ## [0.4.0] "Aircraft Carriers" - 2021-06-06
 
