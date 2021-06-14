@@ -15,6 +15,7 @@ You can find these types of changes:
 
 ## [Unreleased]
 ### Added
+- Polikarpov I-16 airplane
 - Parameters to choose which aircraft to use in game
 - Parameter which airports to use in game
 - CSV version of Numbers spreadsheet

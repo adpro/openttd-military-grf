@@ -57,6 +57,7 @@ Airplanes available in set:
 | Fighters |||||||
 | Avro 504 | fighter | small | 1913 | 19  | 153 | 80 |
 | Nieuport-Delage NiD 29 | fighter | small | 1918 | 10 | 235 | 116 |
+| Polikarpov I-16 | fighter | small | 1933 | 9 | 489 | 140 |
 | Hawker Hurricane IIC | fighter | small | 1935 | 9 | 550 | 194 |
 | Grumman F6F Hellcat | carrier-based fighter | small | 1942 | 4 | 629 | 492 |
 | Hawker Sea Hawk | carrier-based fighter | small | 1947 | 9 | 970 | 238 |
