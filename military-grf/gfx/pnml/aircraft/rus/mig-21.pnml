@@ -1,27 +1,20 @@
-/* airplane MiG-23 */
+/* airplane MiG-21 */
 
-spriteset(spriteset_air_mig23, "gfx/png/air_f86.png") {
+spriteset(spriteset_air_mig21, "gfx/png/air_mig21.png") {
     //left_x, upper_y, width, height, offset_x, offset_y
     //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
-    [   0,     0,       12,    17,     -6,        -7]
-    [  13,     0,       19,    17,     -9,        -7]
-    [  33,     0,       19,    12,     -9,        -5]
-    [  53,     0,       19,    17,     -9,        -7]
-    [  73,     0,       12,    17,     -6,        -7]
-    [  86,     0,       19,    17,     -9,        -7]
-    [ 106,     0,       19,    12,     -9,        -5]
-    [ 126,     0,       19,    17,     -9,        -7]
+    template_fighter_26(0)
 }
 
 if (is_aircraft_fighter_enabled(param_aircraft_enable_rus)){
-    item (FEAT_AIRCRAFT, item_air_mig23) {
+    item (FEAT_AIRCRAFT, item_air_mig21) {
         property {
-            name:                           string(STR_NAME_AIR_MIG23);
+            name:                           string(STR_NAME_AIR_MIG21);
             climates_available:             bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
-            introduction_date:              date(1967,05,10);
-            model_life:                     18;
+            introduction_date:              date(1955,06,16);
+            model_life:                     36;
             /* retire_early not set, use default retirement behaviour */
-            vehicle_life:                   35;
+            vehicle_life:                   40;
             reliability_decay:              5;
             refittable_cargo_classes:       bitmask(CC_MAIL, CC_EXPRESS, CC_ARMOURED, CC_LIQUID);
             non_refittable_cargo_classes:   bitmask(CC_PASSENGERS, CC_REFRIGERATED);
@@ -32,8 +25,8 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_rus)){
 
             /* airplane-specific properties */
             sprite_id:                      SPRITE_ID_NEW_AIRCRAFT; //enable new graphics
-            speed:                          2499 km/h;
-            range:                          564;
+            speed:                          2175 km/h;
+            range:                          159;
             misc_flags:                     bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
             refit_cost:                     0; // Refitting is free
             /* callback_flags are not set, no need to manually enable callbacks */
@@ -45,15 +38,15 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_rus)){
             /* Visual effect is left at default (no effect) */
     }
     graphics {
-            additional_text:    return string(STR_DESC_AIR_MIG23); //Additional text shown in purchase list
-            default:            spriteset_air_mig23;
-            cost_factor:                    return 44;
-            running_cost_factor:            return 1063;
+            additional_text:    return string(STR_DESC_AIR_MIG21); //Additional text shown in purchase list
+            default:            spriteset_air_mig21;
+            cost_factor:                    return 22;
+            running_cost_factor:            return 744;
     }
     }
 
     if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_mig23)
+        item (FEAT_AIRCRAFT, item_air_mig21)
         {
             property	
             {
@@ -62,11 +55,11 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_rus)){
         }
     }
     if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_mig23)
+        item (FEAT_AIRCRAFT, item_air_mig21)
         {
             property	
             {
-                range: 564; 
+                range: 1595; 
             }
         }
     }

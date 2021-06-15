@@ -18,6 +18,8 @@ You can find these types of changes:
 - Polikarpov I-16 airplane
 - Yakovlev Yak-9 airplane
 - Mikoyan-Gurevich MiG-15 airplane
+- Mikoyan-Gurevich MiG-19 airplane
+- Mikoyan-Gurevich MiG-21 airplane
 - Parameters to choose which aircraft to use in game
 - Parameter which airports to use in game
 - CSV version of Numbers spreadsheet

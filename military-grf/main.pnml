@@ -35,7 +35,7 @@
 #include "gfx/pnml/aircraft/rus/yak-9.pnml"
 #include "gfx/pnml/aircraft/rus/mig-15.pnml"
 #include "gfx/pnml/aircraft/rus/mig-19.pnml"
-#include "gfx/pnml/aircraft/rus/mig-23.pnml"
+#include "gfx/pnml/aircraft/rus/mig-21.pnml"
 #include "gfx/pnml/aircraft/rus/mig-29.pnml"
 #include "gfx/pnml/aircraft/rus/su-30.pnml"
 #include "gfx/pnml/aircraft/rus/su-57.pnml"

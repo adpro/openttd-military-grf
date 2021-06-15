@@ -64,6 +64,8 @@ Airplanes available in set:
 | Hawker Sea Hawk | carrier-based fighter | small | 1947 | 9 | 970 | 238 |
 | Mikoyan-Gurevich MiG-15 | fighter | small | 1947 | 6 | 1076 | 504 |
 | North American F-86 Sabre | fighter | small | 1949 | 8 | 1 106 | 491 |
+| Mikoyan-Gurevich MiG-19 | fighter | small | 1952 | 14 | 1452 | 440 |
+| Mikoyan-Gurevich MiG-21 | fighter | small | 1955 | 36 | 2175 | 159 |
 | Dassault Mirage III | fighter, IIIM carrier-based| small | 1956 | 24 | 2 350 | 667 |
 | McDonnell F-4 Phantom II | carrier based fighter, bomber | small | 1958 | 24 | 2 370 | 540 |
 | General Dynamics F-16 Fighting Falcon | multirole fighter | small | 1976 | 55 | 2 124 | 840 |

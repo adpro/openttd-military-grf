@@ -135,8 +135,8 @@ STR_DESC_AIR_MIG15      :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts
 STR_NAME_AIR_MIG19      :Mikoyan-Gurevich MiG-19
 STR_DESC_AIR_MIG19      :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}The world's first mass-produced supersonic aircraft. It was the first Soviet production aircraft capable of supersonic speeds in level flight. More than 2 300 MiGs were built.
 
-STR_NAME_AIR_MIG23      :Mikoyan-Gurevich MiG-23
-STR_DESC_AIR_MIG23      :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}The world's most-produced variable-geometry aircraft, along with similar Soviet aircraft such as the Su-17 "Fitter". 5 047 MiGs were built.
+STR_NAME_AIR_MIG21      :Mikoyan-Gurevich MiG-21
+STR_DESC_AIR_MIG21      :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}Approximately 60 countries in four continents have flown the MiG-21, and it still serves many nations six decades after its maiden flight. It made aviation records, became the most-produced supersonic jet aircraft in aviation history, the most-produced combat aircraft since the Korean War and previously the longest production run of a combat aircraft (now exceeded by both the McDonnell Douglas F-15 Eagle and General Dynamics F-16 Fighting Falcon). 11 496 MiGs were built.
 
 STR_NAME_AIR_MIG29      :Mikoyan MiG-29
 STR_DESC_AIR_MIG29      :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}It was developed to counter new U.S. fighters such as the McDonnell Douglas F-15 Eagle and the General Dynamics F-16 Fighting Falcon. More than 1 600 MiGs were built.
