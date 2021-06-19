@@ -69,6 +69,7 @@ Airplanes available in set:
 | Dassault Mirage III | fighter, IIIM carrier-based| small | 1956 | 24 | 2 350 | 667 |
 | McDonnell F-4 Phantom II | carrier based fighter, bomber | small | 1958 | 24 | 2 370 | 540 |
 | General Dynamics F-16 Fighting Falcon | multirole fighter | small | 1976 | 55 | 2 124 | 840 |
+| Mikoyan-Gurevich MiG-29 | fighter | small | 1977 | 60 | 2400 | 420 |
 | Dassault Mirage 2000 | fighter | small | 1978 | 29 | 2 336 | 667 |
 | McDonnell Douglas F/A-18 Hornet | carrier-based fighter and attacker | small | 1980 | 53 | 1 915 | 403 |
 | Saab JAS 39 Gripen | multirole fighter | small | 1989 | 50 | 2 460 | 640 |

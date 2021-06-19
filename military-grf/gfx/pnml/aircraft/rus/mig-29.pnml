@@ -1,16 +1,16 @@
 /* airplane MiG-29 */
 
-spriteset(spriteset_air_mig29, "gfx/png/air_f86.png") {
+spriteset(spriteset_air_mig29, "gfx/png/air_mig29.png") {
     //left_x, upper_y, width, height, offset_x, offset_y
     //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
-    [   0,     0,       12,    17,     -6,        -7]
-    [  13,     0,       19,    17,     -9,        -7]
-    [  33,     0,       19,    12,     -9,        -5]
-    [  53,     0,       19,    17,     -9,        -7]
-    [  73,     0,       12,    17,     -6,        -7]
-    [  86,     0,       19,    17,     -9,        -7]
-    [ 106,     0,       19,    12,     -9,        -5]
-    [ 126,     0,       19,    17,     -9,        -7]
+    [   0,     0,       14,    23,     -7,       -10]
+    [  15,     0,       25,    21,    -12,        -9]
+    [  41,     0,       29,    14,    -14,        -6]
+    [  71,     0,       25,    21,    -12,        -9]
+    [  97,     0,       14,    23,     -7,       -10]
+    [ 112,     0,       25,    21,    -12,        -9]
+    [ 138,     0,       29,    14,    -14,        -6]
+    [ 168,     0,       25,    21,    -12,        -9]
 }
 
 if (is_aircraft_fighter_enabled(param_aircraft_enable_rus)){
