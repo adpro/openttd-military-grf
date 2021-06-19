@@ -1,16 +1,17 @@
 /* airplane Su-30 */
 
-spriteset(spriteset_air_su30, "gfx/png/air_f86.png") {
+spriteset(spriteset_air_su30, "gfx/png/air_su30.png") {
     //left_x, upper_y, width, height, offset_x, offset_y
     //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
-    [   0,     0,       12,    17,     -6,        -7]
-    [  13,     0,       19,    17,     -9,        -7]
-    [  33,     0,       19,    12,     -9,        -5]
-    [  53,     0,       19,    17,     -9,        -7]
-    [  73,     0,       12,    17,     -6,        -7]
-    [  86,     0,       19,    17,     -9,        -7]
-    [ 106,     0,       19,    12,     -9,        -5]
-    [ 126,     0,       19,    17,     -9,        -7]
+    // 37x24x10
+    [   0,     0,       16,    28,     -8,       -13]
+    [  17,     0,       30,    25,    -15,       -11]
+    [  48,     0,       37,    16,    -18,        -7]
+    [  86,     0,       30,    25,    -15,       -11]
+    [ 117,     0,       16,    28,     -8,       -13]
+    [ 134,     0,       30,    25,    -15,       -11]
+    [ 165,     0,       37,    16,    -18,        -7]
+    [ 203,     0,       30,    25,    -15,       -11]
 }
 
 if (is_aircraft_fighter_enabled(param_aircraft_enable_rus)){

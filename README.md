@@ -73,6 +73,7 @@ Airplanes available in set:
 | Dassault Mirage 2000 | fighter | small | 1978 | 29 | 2 336 | 667 |
 | McDonnell Douglas F/A-18 Hornet | carrier-based fighter and attacker | small | 1980 | 53 | 1 915 | 403 |
 | Saab JAS 39 Gripen | multirole fighter | small | 1989 | 50 | 2 460 | 640 |
+| Sukhoi Su-30 | multirole fighter | small | 1989 | 40 | 2 120 | 600 |
 | Dassault Rafale | multirole fighter, M carrier-based | small | 1991 | 40 | 1 912 | 740 |
 | Lockheed Martin F-35A Lightning II | multirole combat aircraft | small | 2006 | 34 | 1 930 | 560 |
 | Transport / Airlifters |||||||||

@@ -21,6 +21,7 @@ You can find these types of changes:
 - Mikoyan-Gurevich MiG-19 airplane
 - Mikoyan-Gurevich MiG-21 airplane
 - Mikoyan-Gurevich MiG-29 airplane
+- Sukhoi Su-30 airplane
 - Parameters to choose which aircraft to use in game
 - Parameter which airports to use in game
 - CSV version of Numbers spreadsheet
