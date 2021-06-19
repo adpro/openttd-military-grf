@@ -4,15 +4,17 @@ spriteset(spriteset_air_su30, "gfx/png/air_su30.png") {
     //left_x, upper_y, width, height, offset_x, offset_y
     //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
     // 37x24x10
-    [   0,     0,       16,    28,     -8,       -13]
-    [  17,     0,       30,    25,    -15,       -11]
-    [  48,     0,       37,    16,    -18,        -7]
-    [  86,     0,       30,    25,    -15,       -11]
-    [ 117,     0,       16,    28,     -8,       -13]
-    [ 134,     0,       30,    25,    -15,       -11]
-    [ 165,     0,       37,    16,    -18,        -7]
-    [ 203,     0,       30,    25,    -15,       -11]
+    // [   0,     0,       16,    28,     -8,       -13]
+    // [  17,     0,       30,    25,    -15,       -11]
+    // [  48,     0,       37,    16,    -18,        -7]
+    // [  86,     0,       30,    25,    -15,       -11]
+    // [ 117,     0,       16,    28,     -8,       -13]
+    // [ 134,     0,       30,    25,    -15,       -11]
+    // [ 165,     0,       37,    16,    -18,        -7]
+    // [ 203,     0,       30,    25,    -15,       -11]
+    template_aircraft(0, 0, 16, 28, 30, 25, 37, 16)
 }
+
 
 if (is_aircraft_fighter_enabled(param_aircraft_enable_rus)){
     item (FEAT_AIRCRAFT, item_air_su30) {

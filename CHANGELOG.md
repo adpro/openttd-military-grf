@@ -28,6 +28,7 @@ You can find these types of changes:
 
 ### Changed
 - Aircraft source file reorganization
+- NML spritesets moved to templates
 
 ## [0.4.0] "Aircraft Carriers" - 2021-06-06
 
