@@ -76,6 +76,7 @@ Airplanes available in set:
 | Sukhoi Su-30 | multirole fighter | small | 1989 | 40 | 2 120 | 600 |
 | Dassault Rafale | multirole fighter, M carrier-based | small | 1991 | 40 | 1 912 | 740 |
 | Lockheed Martin F-35A Lightning II | multirole combat aircraft | small | 2006 | 34 | 1 930 | 560 |
+| Sukhoi Su-57 | multirole fighter | small | 2010 | 40 | 2 440 | 700 |
 | Transport / Airlifters |||||||||
 | Douglas C-74 Globemaster | heavy lift cargo aircraft | small | 1945 | 2 | 528 | 1 100 |
 | Douglas C-124 Globemaster II | heavy lift cargo aircraft | small | 1949 | 6 | 489 | 1 298 |
