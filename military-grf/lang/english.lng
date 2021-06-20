@@ -147,6 +147,9 @@ STR_DESC_AIR_SU30       :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts
 STR_NAME_AIR_SU57       :Sukhoi Su-57
 STR_DESC_AIR_SU57       :Country of origin: {ORANGE}RUS {}{BLACK}Historic facts: {ORANGE}The Su-57 is the first fighter in Russian military service to use stealth technology. 12 Su-57s were built.
 
+STR_NAME_AIR_AN2        :Antonov An-2
+STR_DESC_AIR_AN2        :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}Its remarkable durability, high lifting power, and ability to take off and land from poor runways have given it a long service life. More than 18 000 An-2 were built.
+
 
 STR_DESC_AIR_TMPL		:Country of origin: {ORANGE}??? {}{BLACK}Historic facts: {ORANGE}.
 

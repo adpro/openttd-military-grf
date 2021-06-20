@@ -7,6 +7,7 @@ sort (FEAT_AIRCRAFT,
     ,item_air_hurricane
     ,item_air_hellcat
     ,item_air_yak9
+    ,item_air_an2
     ,item_air_hseahawk
     ,item_air_mig15
     ,item_air_f86

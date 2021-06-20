@@ -146,6 +146,8 @@ STR_DESC_AIR_SU30       :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta:
 STR_NAME_AIR_SU57       :Suchoj Su-57
 STR_DESC_AIR_SU57       :Země původu: {ORANGE}RUS {}{BLACK}Historická fakta: {ORANGE}Su-57 je prvním stíhačem ruské vojenské služby, který používá stealth technologii. Bylo vyrobeno 12 ks.
 
+STR_NAME_AIR_AN2        :Antonov An-2
+STR_DESC_AIR_AN2        :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Jeho pozoruhodná odolnost, vysoká nosnost a schopnost vzletu a přistání ze špatných drah mu poskytly dlouhou životnost ve službě. Bylo vyrobeno více než 18 000 ks.
 
 STR_DESC_AIR_TMPL		:Země původu: {ORANGE}??? {}{BLACK}Historická fakta: {ORANGE}
 

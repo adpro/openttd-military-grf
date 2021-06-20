@@ -40,6 +40,8 @@
 #include "gfx/pnml/aircraft/rus/su-30.pnml"
 #include "gfx/pnml/aircraft/rus/su-57.pnml"
 
+#include "gfx/pnml/aircraft/rus/an-2.pnml"
+
 // helicopters
 #include "gfx/pnml/helicopters/uh-1.pnml"
 

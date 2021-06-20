@@ -79,6 +79,7 @@ Airplanes available in set:
 | Sukhoi Su-57 | multirole fighter | small | 2010 | 40 | 2 440 | 700 |
 | Transport / Airlifters |||||||||
 | Douglas C-74 Globemaster | heavy lift cargo aircraft | small | 1945 | 2 | 528 | 1 100 |
+| Antonov An-2 | utility aircraft | small | 1947 | 54 | 258 | 169 |
 | Douglas C-124 Globemaster II | heavy lift cargo aircraft | small | 1949 | 6 | 489 | 1 298 |
 | Lockheed C-141 Starlifter | strategic airlifter | small | 1963 | 5 | 912 | 945 |
 | Grumman C-2 Greyhound | carrier-based COD | small | 1964 | 8 | 635 | 480 |
