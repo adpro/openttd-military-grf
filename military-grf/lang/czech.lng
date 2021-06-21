@@ -149,6 +149,10 @@ STR_DESC_AIR_SU57       :Země původu: {ORANGE}RUS {}{BLACK}Historická fakta: 
 STR_NAME_AIR_AN2        :Antonov An-2
 STR_DESC_AIR_AN2        :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Jeho pozoruhodná odolnost, vysoká nosnost a schopnost vzletu a přistání ze špatných drah mu poskytly dlouhou životnost ve službě. Bylo vyrobeno více než 18 000 ks.
 
+STR_NAME_AIR_AN12       :Antonov An-12
+STR_DESC_AIR_AN12       :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Po více než tři desetiletí byl An-12 standardním nákladním a výsadkovým transportním letounem středního doletu sovětských vzdušných sil. Bylo vyrobeno 1 248 ks.
+
+
 STR_DESC_AIR_TMPL		:Země původu: {ORANGE}??? {}{BLACK}Historická fakta: {ORANGE}
 
 

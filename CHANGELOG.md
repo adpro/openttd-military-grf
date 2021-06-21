@@ -24,6 +24,7 @@ You can find these types of changes:
 - Sukhoi Su-30 airplane
 - Sukhoi Su-57 airplane
 - Antonov An-2 airplane
+- Antonov An-12 airplane
 - Parameters to choose which aircraft to use in game
 - Parameter which airports to use in game
 - CSV version of Numbers spreadsheet

@@ -150,6 +150,9 @@ STR_DESC_AIR_SU57       :Country of origin: {ORANGE}RUS {}{BLACK}Historic facts:
 STR_NAME_AIR_AN2        :Antonov An-2
 STR_DESC_AIR_AN2        :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}Its remarkable durability, high lifting power, and ability to take off and land from poor runways have given it a long service life. More than 18 000 An-2 were built.
 
+STR_NAME_AIR_AN12        :Antonov An-12
+STR_DESC_AIR_AN12        :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}For more than three decades the An-12 was the standard medium-range cargo and paratroop transport aircraft of the Soviet air forces. 1 248 An-12 were built.
+
 
 STR_DESC_AIR_TMPL		:Country of origin: {ORANGE}??? {}{BLACK}Historic facts: {ORANGE}.
 
