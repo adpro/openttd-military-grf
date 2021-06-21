@@ -152,6 +152,18 @@ STR_DESC_AIR_AN2        :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta:
 STR_NAME_AIR_AN12       :Antonov An-12
 STR_DESC_AIR_AN12       :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Po více než tři desetiletí byl An-12 standardním nákladním a výsadkovým transportním letounem středního doletu sovětských vzdušných sil. Bylo vyrobeno 1 248 ks.
 
+STR_NAME_AIR_AN22       :Antonov An-22
+STR_DESC_AIR_AN22       :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Letoun byl navržen jako strategický přepravní letoun, navržený speciálně pro rozšíření schopnosti sovětských výsadkových jednotek přistávat s jejich tehdy novými obrněnými vozidly BMD-1. Bylo vyrobeno 68 ks.
+
+STR_NAME_AIR_AN24       :Antonov An-24
+STR_DESC_AIR_AN24       :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Byl navržen tak, aby nahradil přepravu veteránského pístového Iljušina Il-14 na krátké a střední vzdálenosti, optimalizovaný pro provoz z drsných ploch a nepřipravených letišť ve vzdálených lokalitách. Bylo vyrobeno 1 367 ks.
+
+STR_NAME_AIR_AN26       :Antonov An-26
+STR_DESC_AIR_AN26       :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Když dostal v březnu 1968 zelenou pro An-26, přizpůsobil Antonov OKB konstrukci rampy An-40 pro trup An-24, což vyústilo v An-26. Bylo vyrobeno 1 403 ks.
+
+STR_NAME_AIR_IL76       :Iljušin Il-76
+STR_DESC_AIR_IL76       :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Byl navržen tak, aby dodával těžké stroje do vzdálených, špatně obsluhovaných oblastí. Vojenské verze Il-76 byly široce používány v Evropě, Asii a Africe, včetně použití jako letecký tanker nebo velitelské středisko. Bylo vyrobeno přes 960 ks.
+
 
 STR_DESC_AIR_TMPL		:Země původu: {ORANGE}??? {}{BLACK}Historická fakta: {ORANGE}
 

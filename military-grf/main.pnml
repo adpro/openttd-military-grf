@@ -54,5 +54,9 @@
 
 #include "gfx/pnml/aircraft/rus/an-2.pnml"
 #include "gfx/pnml/aircraft/rus/an-12.pnml"
+#include "gfx/pnml/aircraft/rus/an-22.pnml"
+#include "gfx/pnml/aircraft/rus/an-24.pnml"
+#include "gfx/pnml/aircraft/rus/an-26.pnml"
+#include "gfx/pnml/aircraft/rus/il-76.pnml"
 
 
