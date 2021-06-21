@@ -19,7 +19,7 @@ if (is_aircraft_airlifter_enabled(param_aircraft_enable_rus)){
             reliability_decay:              5;
             refittable_cargo_classes:       bitmask(CC_PASSENGERS, CC_MAIL, CC_EXPRESS, CC_ARMOURED, CC_PIECE_GOODS, CC_LIQUID, CC_REFRIGERATED, CC_HAZARDOUS, CC_COVERED, CC_NON_POURABLE, CC_NEO_BULK);
             non_refittable_cargo_classes:   bitmask(CC_OVERSIZED, CC_BULK);
-            loading_speed:                  20;
+            loading_speed:                  10;
             cost_factor:                    12;
             running_cost_factor:            25;
             /* cargo_age_period is left at default */
