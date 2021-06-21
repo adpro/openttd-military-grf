@@ -11,3 +11,5 @@ if (param_standard_planes_disable)
 {
   disable_item(FEAT_AIRCRAFT, 0, 39);	
 }
+
+// max. purchase sprite 64x18 airplane, 27x18 flag, 27x18 aircraft type + 9x18 separator = 64+9+27+9+27 = 136x18
