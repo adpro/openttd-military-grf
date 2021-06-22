@@ -43,7 +43,7 @@ if (is_aircraft_airlifter_enabled(param_aircraft_enable_rus)){
             default:            spriteset_air_an24;
 
             //passenger_capacity: return 0;
-            mail_capacity:      return 60;    // callback for setting capacity
+            mail_capacity:      return 55;    // callback for setting capacity
             cost_factor:                    return 18;
             running_cost_factor:            return 1381;
     }
