@@ -1,0 +1,34 @@
+https://cs.wikipedia.org/wiki/Ozna%C4%8Den%C3%AD_letadel_pou%C5%BE%C3%ADvan%C3%BDch_v_%C4%8Ceskoslovensku_po_druh%C3%A9_sv%C4%9Btov%C3%A9_v%C3%A1lce
+
+Avia BH-11
+Letov Š-328
+Zlín K-72 / Z-XII
+Aero K-75 / Ae-45
+
+Aero A-18
+Avia BH-21
+Avia Ba-33
+Avia B-534
+Avia B-135
+Avia S-199
+Avia S-103 (Mig-15bis)
+Avia S-105 (Mig-19S)
+Aero L-29
+Aero L-39
+Aero L-159
+Aero L-39NG
+Aero A-304
+Let L-410
+
+
+
+
+B   bitevní
+C   cvičné
+CB  cvičné bitevní
+D   dopravní
+K   kurýrní
+LB  lehké bombardovací
+S   stíhací
+CS  cvičné stíhací
+NK  nákladní kluzák
