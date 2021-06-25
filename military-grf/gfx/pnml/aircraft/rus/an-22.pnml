@@ -1,10 +1,10 @@
 /* airplane Antonov An-22 */
 
-spriteset(spriteset_air_an22, "gfx/png/air_an12.png") {
-    // 55 x 63 x 18
+spriteset(spriteset_air_an22, "gfx/png/air_an22.png") {
+    // 56 x 64 x 13
     //left_x, upper_y, width, height, offset_x, offset_y
     //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
-    template_aircraft(0,0,42,45,59,47,55,33)
+    template_aircraft(0,0,42,41,60,43,56,29)
 }
 
 if (is_aircraft_airlifter_enabled(param_aircraft_enable_rus)){
