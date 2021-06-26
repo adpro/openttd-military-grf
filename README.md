@@ -82,10 +82,12 @@ Airplanes available in set:
 | Antonov An-2 | utility aircraft | small | 1947 | 54 | 258 | 169 |
 | Douglas C-124 Globemaster II | heavy lift cargo aircraft | small | 1949 | 6 | 489 | 1 298 |
 | Antonov An-12 | transport aircraft | small | 1957 | 13 | 660 | 720 |
+| Antonov An-24 | transport aircraft | small | 1959 | 20 | 450 | 480 |
 | Lockheed C-141 Starlifter | strategic airlifter | small | 1963 | 5 | 912 | 945 |
 | Grumman C-2 Greyhound | carrier-based COD | small | 1964 | 8 | 635 | 480 |
 | Antonov An-22 | large military transport aircraft | small | 1965 | 12 | 740 | 1000 |
 | Lockheed C-5 Galaxy | large military transport aircraft | large | 1968 | 21 | 856 | 852 |
+| Antonov An-26 | military transport aircraft | small | 1969 | 17 | 440 | 500 |
 | Ilyushin Il-76 | strategic airlifter | small | 1971 | 60 | 900 | 1000 |
 | Boeing C-17 Globemaster III | large military transport aircraft | small | 1991 | 24 | 1 080 | 896 |
 | Airbus A400M Atlas | military transport aircraft | small | 2009 | 30 | 858 | 660 |

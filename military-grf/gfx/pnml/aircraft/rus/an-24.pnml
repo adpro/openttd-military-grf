@@ -1,10 +1,10 @@
 /* airplane Antonov An-24 */
 
-spriteset(spriteset_air_an24, "gfx/png/air_an12.png") {
+spriteset(spriteset_air_an24, "gfx/png/air_an24.png") {
     // 55 x 63 x 18
     //left_x, upper_y, width, height, offset_x, offset_y
     //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
-    template_aircraft(0,0,42,45,59,47,55,33)
+    template_aircraft(0,0,32,33,43,35,39,26)
 }
 
 if (is_aircraft_airlifter_enabled(param_aircraft_enable_rus)){
@@ -19,7 +19,7 @@ if (is_aircraft_airlifter_enabled(param_aircraft_enable_rus)){
             reliability_decay:              5;
             refittable_cargo_classes:       bitmask(CC_MAIL, CC_EXPRESS, CC_ARMOURED, CC_PIECE_GOODS, CC_LIQUID, CC_REFRIGERATED, CC_HAZARDOUS, CC_COVERED, CC_NON_POURABLE, CC_NEO_BULK);
             non_refittable_cargo_classes:   bitmask(CC_PASSENGERS, CC_OVERSIZED, CC_BULK);
-            loading_speed:                  18;
+            loading_speed:                  7;
             cost_factor:                    12;
             running_cost_factor:            25;
             /* cargo_age_period is left at default */
