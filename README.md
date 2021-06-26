@@ -27,6 +27,16 @@ The set provides parameters:
   - Limits the range of aircraft. Range is set similar to World Airliners Set. Default *Limited Aircraft range*.
 - Disable date restrictions for airports
   - Make possibility to purchase airports without date limitations. Default *False*.
+- Enable custom airports
+  - Enable military theme airports in game
+- Enable Europian aircraft
+  - Enable types of aircraft according to option None, All, Fighters and reconnaissance aircraft only, Transport aircraft only, Helicopters only, Transport aircraft and helicopters.
+- Enable Soviet/Russian aircraft
+  - Enable types of aircraft according to option None, All, Fighters and reconnaissance aircraft only, Transport aircraft only, Helicopters only, Transport aircraft and helicopters.
+- Enable U.S. aircraft
+  - Enable types of aircraft according to option None, All, Fighters and reconnaissance aircraft only, Transport aircraft only, Helicopters only, Transport aircraft and helicopters.
+- Enable aircraft of other nations
+  - Enable types of aircraft according to option None, All, Fighters and reconnaissance aircraft only, Transport aircraft only, Helicopters only, Transport aircraft and helicopters.
 
 
 ### Contents

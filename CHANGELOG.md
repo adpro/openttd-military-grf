@@ -13,7 +13,7 @@ You can find these types of changes:
 - *Fixed* for any bug fixes.
 - *Security* in case of vulnerabilities.
 
-## [Unreleased]
+## [0.5.0] "Red Wings" - 2021-06-26
 ### Added
 - Polikarpov I-16 airplane
 - Yakovlev Yak-9 airplane
@@ -106,7 +106,8 @@ You can find these types of changes:
 - English translation from [@adpro](https://github.com/adpro).
 - Czech translation from [@adpro](https://github.com/adpro).
 
-[Unreleased]: https://github.com/adpro/openttd-military-grf/compare/v0.4.0...HEAD
+[Unreleased]: https://github.com/adpro/openttd-military-grf/compare/v0.5.0...HEAD
+[0.5.0]: https://github.com/adpro/openttd-military-grf/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/adpro/openttd-military-grf/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/adpro/openttd-military-grf/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/adpro/openttd-military-grf/compare/v0.1.0...v0.2.0
