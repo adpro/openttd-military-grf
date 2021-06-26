@@ -26,6 +26,7 @@ You can find these types of changes:
 - Antonov An-2 airplane
 - Antonov An-12 airplane
 - Antonov An-22 airplane
+- Ilyushin Il-76 airplane
 - Parameters to choose which aircraft to use in game
 - Parameter which airports to use in game
 - CSV version of Numbers spreadsheet

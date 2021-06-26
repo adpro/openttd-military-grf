@@ -86,6 +86,7 @@ Airplanes available in set:
 | Grumman C-2 Greyhound | carrier-based COD | small | 1964 | 8 | 635 | 480 |
 | Antonov An-22 | large military transport aircraft | small | 1965 | 12 | 740 | 1000 |
 | Lockheed C-5 Galaxy | large military transport aircraft | large | 1968 | 21 | 856 | 852 |
+| Ilyushin Il-76 | strategic airlifter | small | 1971 | 60 | 900 | 1000 |
 | Boeing C-17 Globemaster III | large military transport aircraft | small | 1991 | 24 | 1 080 | 896 |
 | Airbus A400M Atlas | military transport aircraft | small | 2009 | 30 | 858 | 660 |
 | Reconnaissance |||||||||
