@@ -31,6 +31,8 @@ The set provides parameters:
   - Enable military theme airports in game
 - Enable Europian aircraft
   - Enable types of aircraft according to option None, All, Fighters and reconnaissance aircraft only, Transport aircraft only, Helicopters only, Transport aircraft and helicopters.
+- Enable Czechoslovakian aircraft
+  - Enable types of aircraft according to option None, All, Fighters and reconnaissance aircraft only, Transport aircraft only, Helicopters only, Transport aircraft and helicopters.
 - Enable Soviet/Russian aircraft
   - Enable types of aircraft according to option None, All, Fighters and reconnaissance aircraft only, Transport aircraft only, Helicopters only, Transport aircraft and helicopters.
 - Enable U.S. aircraft
@@ -74,6 +76,7 @@ Airplanes available in set:
 | Hawker Sea Hawk | carrier-based fighter | small | 1947 | 9 | 970 | 238 |
 | Mikoyan-Gurevich MiG-15 | fighter | small | 1947 | 6 | 1076 | 504 |
 | North American F-86 Sabre | fighter | small | 1949 | 8 | 1 106 | 491 |
+| Aero S-103 | fighter | small | 1951 | 10 | 1076 | 504 |
 | Mikoyan-Gurevich MiG-19 | fighter | small | 1952 | 14 | 1452 | 440 |
 | Mikoyan-Gurevich MiG-21 | fighter | small | 1955 | 36 | 2175 | 159 |
 | Dassault Mirage III | fighter, IIIM carrier-based| small | 1956 | 24 | 2 350 | 667 |

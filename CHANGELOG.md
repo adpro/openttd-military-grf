@@ -17,7 +17,8 @@ You can find these types of changes:
 ## [Unreleased]
 
 ### Added
-
+- Avia S-103 airplane
+- Parameter to choose which Czechoslovakian aircraft to use in game
 
 ## [0.5.0] "Red Wings" - 2021-06-26
 ### Added
