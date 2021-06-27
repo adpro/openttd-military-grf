@@ -7,7 +7,7 @@ grf {
     grfid: "AD\01\01";  // TTDPatch ID and published version
     name: string(STR_GRF_NAME);
     desc: string(STR_GRF_DESCRIPTION);
-    version: 5; // OpenTTD published version
+    version: 6; // OpenTTD published version
     min_compatible_version: 0;
 
     // versions:

@@ -13,6 +13,12 @@ You can find these types of changes:
 - *Fixed* for any bug fixes.
 - *Security* in case of vulnerabilities.
 
+
+## [Unreleased]
+
+### Added
+
+
 ## [0.5.0] "Red Wings" - 2021-06-26
 ### Added
 - Polikarpov I-16 airplane
