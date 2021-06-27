@@ -54,24 +54,24 @@ grf {
             } ;
         }
     }
-    // param 3 {
-    //     param_aircraft_enable_cs {
-    //         type: int;
-    //         name: string(STR_PARAM_NAME_AIRCRAFT_ENABLE_CS);
-    //         desc: string(STR_PARAM_DESC_AIRCRAFT_ENABLE_CS);
-    //         min_value: 0;
-    //         max_value: 5;
-    //         def_value: 1;
-    //         names: {
-    //             0: string(STR_PARAM_VALUE_AIRCRAFT_NONE);
-    //             1: string(STR_PARAM_VALUE_AIRCRAFT_ALL);
-    //             2: string(STR_PARAM_VALUE_AIRCRAFT_FIGHTERS);
-    //             3: string(STR_PARAM_VALUE_AIRCRAFT_AIRLIFTERS);
-    //             4: string(STR_PARAM_VALUE_AIRCRAFT_HELIS);
-    //             5: string(STR_PARAM_VALUE_AIRCRAFT_AIRLIFTERS_AND_HELIS);
-    //         } ;
-    //     }
-    // }
+    param 3 {
+        param_aircraft_enable_cs {
+            type: int;
+            name: string(STR_PARAM_NAME_AIRCRAFT_ENABLE_CS);
+            desc: string(STR_PARAM_DESC_AIRCRAFT_ENABLE_CS);
+            min_value: 0;
+            max_value: 5;
+            def_value: 1;
+            names: {
+                0: string(STR_PARAM_VALUE_AIRCRAFT_NONE);
+                1: string(STR_PARAM_VALUE_AIRCRAFT_ALL);
+                2: string(STR_PARAM_VALUE_AIRCRAFT_FIGHTERS);
+                3: string(STR_PARAM_VALUE_AIRCRAFT_AIRLIFTERS);
+                4: string(STR_PARAM_VALUE_AIRCRAFT_HELIS);
+                5: string(STR_PARAM_VALUE_AIRCRAFT_AIRLIFTERS_AND_HELIS);
+            } ;
+        }
+    }
     param 4 {
         param_aircraft_enable_eu {
             type: int;

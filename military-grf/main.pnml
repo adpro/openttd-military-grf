@@ -59,4 +59,5 @@
 #include "gfx/pnml/aircraft/rus/an-26.pnml"
 #include "gfx/pnml/aircraft/rus/il-76.pnml"
 
-
+// v0.6.0
+#include "gfx/pnml/aircraft/cs/s-103.pnml"

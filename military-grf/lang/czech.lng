@@ -164,6 +164,9 @@ STR_DESC_AIR_AN26       :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta:
 STR_NAME_AIR_IL76       :Iljušin Il-76
 STR_DESC_AIR_IL76       :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Byl navržen tak, aby dodával těžké stroje do vzdálených, špatně obsluhovaných oblastí. Vojenské verze Il-76 byly široce používány v Evropě, Asii a Africe, včetně použití jako letecký tanker nebo velitelské středisko. Bylo vyrobeno přes 960 ks.
 
+STR_NAME_AIR_S103        :Avia S-103
+STR_DESC_AIR_S103        :Země původu: {ORANGE}ČSSR {}{BLACK}Historická fakta: {ORANGE}Licenční kopie MiGu-15bis vyráběný firmami Letov a Aero. Bylo vyrobeno přes 2 500 ks.
+
 
 STR_DESC_AIR_TMPL		:Země původu: {ORANGE}??? {}{BLACK}Historická fakta: {ORANGE}
 

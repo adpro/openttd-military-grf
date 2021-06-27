@@ -10,6 +10,7 @@ sort (FEAT_AIRCRAFT,
     ,item_air_hseahawk
     ,item_air_mig15
     ,item_air_f86
+    ,item_air_s103
     ,item_air_mig19
     ,item_air_mig21
     ,item_air_mirage3
