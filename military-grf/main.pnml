@@ -62,3 +62,6 @@
 // v0.6.0
 #include "gfx/pnml/aircraft/cs/s-103.pnml"
 #include "gfx/pnml/aircraft/cs/s-105.pnml"
+#include "gfx/pnml/aircraft/cs/a-304.pnml"
+#include "gfx/pnml/aircraft/cs/ae-45.pnml"
+#include "gfx/pnml/aircraft/cs/l-410.pnml"

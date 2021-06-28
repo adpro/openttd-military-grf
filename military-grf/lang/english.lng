@@ -150,26 +150,38 @@ STR_DESC_AIR_SU57       :Country of origin: {ORANGE}RUS {}{BLACK}Historic facts:
 STR_NAME_AIR_AN2        :Antonov An-2
 STR_DESC_AIR_AN2        :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}Its remarkable durability, high lifting power, and ability to take off and land from poor runways have given it a long service life. More than 18 000 An-2 were built.
 
-STR_NAME_AIR_AN12        :Antonov An-12
-STR_DESC_AIR_AN12        :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}For more than three decades the An-12 was the standard medium-range cargo and paratroop transport aircraft of the Soviet air forces. 1 248 An-12 were built.
+STR_NAME_AIR_AN12       :Antonov An-12
+STR_DESC_AIR_AN12       :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}For more than three decades the An-12 was the standard medium-range cargo and paratroop transport aircraft of the Soviet air forces. 1 248 An-12 were built.
 
-STR_NAME_AIR_AN22        :Antonov An-22
-STR_DESC_AIR_AN22        :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}The aircraft was designed as a strategic airlifter, designed specifically to expand the Soviet Airborne Troops' capability to land with their then-new BMD-1 armoured vehicles. 68 An-22 were built.
+STR_NAME_AIR_AN22       :Antonov An-22
+STR_DESC_AIR_AN22       :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}The aircraft was designed as a strategic airlifter, designed specifically to expand the Soviet Airborne Troops' capability to land with their then-new BMD-1 armoured vehicles. 68 An-22 were built.
 
-STR_NAME_AIR_AN24        :Antonov An-24
-STR_DESC_AIR_AN24        :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}It was designed to replace the veteran piston Ilyushin Il-14 transport on short to medium haul trips, optimised for operating from rough strips and unprepared airports in remote locations. 1 367 An-24 were built.
+STR_NAME_AIR_AN24       :Antonov An-24
+STR_DESC_AIR_AN24       :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}It was designed to replace the veteran piston Ilyushin Il-14 transport on short to medium haul trips, optimised for operating from rough strips and unprepared airports in remote locations. 1 367 An-24 were built.
 
-STR_NAME_AIR_AN26        :Antonov An-26
-STR_DESC_AIR_AN26        :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}When given the go-ahead for the An-26 in March 1968, the Antonov OKB adapted the ramp design of the An-40 to the An-24 fuselage, resulting in the An-26. 1 403 An-26 were built.
+STR_NAME_AIR_AN26       :Antonov An-26
+STR_DESC_AIR_AN26       :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}When given the go-ahead for the An-26 in March 1968, the Antonov OKB adapted the ramp design of the An-40 to the An-24 fuselage, resulting in the An-26. 1 403 An-26 were built.
 
-STR_NAME_AIR_IL76        :Ilyushin Il-76
-STR_DESC_AIR_IL76        :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}It was designed to deliver heavy machinery to remote, poorly served areas. Military versions of the Il-76 have been widely used in Europe, Asia and Africa, including use as an aerial refueling tanker or command center. More than 960 Il-76 were built.
+STR_NAME_AIR_IL76       :Ilyushin Il-76
+STR_DESC_AIR_IL76       :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}It was designed to deliver heavy machinery to remote, poorly served areas. Military versions of the Il-76 have been widely used in Europe, Asia and Africa, including use as an aerial refueling tanker or command center. More than 960 Il-76 were built.
 
-STR_NAME_AIR_S103        :Aero S-103
-STR_DESC_AIR_S103        :Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}Licensed copy of the MiG-15bis manufactured by Letov and Aero. More than 2 500 airplanes were built.
+STR_NAME_AIR_S103       :Aero S-103
+STR_DESC_AIR_S103       :Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}Licensed copy of the MiG-15bis manufactured by Letov and Aero. More than 2 500 airplanes were built.
 
-STR_NAME_AIR_S105        :Aero S-105
-STR_DESC_AIR_S105        :Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}Licensed copy of the MiG-19S manufactured by Aero. 104 airplanes were built.
+STR_NAME_AIR_S105       :Aero S-105
+STR_DESC_AIR_S105       :Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}Licensed copy of the MiG-19S manufactured by Aero. 104 airplanes were built.
+
+STR_NAME_AIR_AERO_A304  :Aero A.304
+STR_DESC_AIR_AERO_A304	 Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}.
+
+STR_NAME_AIR_AERO_AE45  :Aero K-75
+STR_DESC_AIR_AERO_AE45	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}.
+
+STR_NAME_AIR_LET_L410   :Let L-410
+STR_DESC_AIR_LET_L410	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}.
+
+STR_NAME_AIR_LET_L410NG :Let L-410NG
+STR_DESC_AIR_LET_L410NG	:Country of origin: {ORANGE}CZE {}{BLACK}Historic facts: {ORANGE}.
 
 
 STR_DESC_AIR_TMPL		:Country of origin: {ORANGE}??? {}{BLACK}Historic facts: {ORANGE}.

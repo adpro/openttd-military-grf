@@ -164,11 +164,24 @@ STR_DESC_AIR_AN26       :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta:
 STR_NAME_AIR_IL76       :Iljušin Il-76
 STR_DESC_AIR_IL76       :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Byl navržen tak, aby dodával těžké stroje do vzdálených, špatně obsluhovaných oblastí. Vojenské verze Il-76 byly široce používány v Evropě, Asii a Africe, včetně použití jako letecký tanker nebo velitelské středisko. Bylo vyrobeno přes 960 ks.
 
-STR_NAME_AIR_S103        :Aero S-103
-STR_DESC_AIR_S103        :Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Licenční kopie MiGu-15bis vyráběný firmami Letov a Aero. Bylo vyrobeno přes 2 500 ks.
+STR_NAME_AIR_S103       :Aero S-103
+STR_DESC_AIR_S103       :Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Licenční kopie MiGu-15bis vyráběný firmami Letov a Aero. Bylo vyrobeno přes 2 500 ks.
 
-STR_NAME_AIR_S105        :Aero S-105
-STR_DESC_AIR_S105        :Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Licenční kopie MiGu-19S vyráběný firmou Aero. Bylo vyrobeno 104 ks.
+STR_NAME_AIR_S105       :Aero S-105
+STR_DESC_AIR_S105       :Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Licenční kopie MiGu-19S vyráběný firmou Aero. Bylo vyrobeno 104 ks.
+
+STR_NAME_AIR_AERO_A304  :Aero A.304
+STR_DESC_AIR_AERO_A304	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}
+
+STR_NAME_AIR_AERO_AE45  :Aero K-75
+STR_DESC_AIR_AERO_AE45	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Aero Ae-45
+
+STR_NAME_AIR_LET_L410   :Let L-410
+STR_DESC_AIR_LET_L410	:Země původu: {ORANGE}ČSSR {}{BLACK}Historická fakta: {ORANGE}
+
+STR_NAME_AIR_LET_L410NG :Let L-410NG
+STR_DESC_AIR_LET_L410NG	:Země původu: {ORANGE}ČR {}{BLACK}Historická fakta: {ORANGE}
+
 
 STR_DESC_AIR_TMPL		:Země původu: {ORANGE}??? {}{BLACK}Historická fakta: {ORANGE}
 

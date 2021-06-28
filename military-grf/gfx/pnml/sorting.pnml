@@ -27,7 +27,9 @@ sort (FEAT_AIRCRAFT,
     ,item_air_su57
 
     // airlift
+    ,item_air_aero_a304
     ,item_air_c74
+    ,item_air_aero_ae45
     ,item_air_an2
     ,item_air_c124
     ,item_air_an12
@@ -36,10 +38,12 @@ sort (FEAT_AIRCRAFT,
     ,item_air_c2
     ,item_air_an22
     ,item_air_c5
+    ,item_air_let_l410
     ,item_air_an26
     ,item_air_il76
     ,item_air_c17
     ,item_air_a400
+    ,item_air_let_l410ng
 
     // reconnaissance
     ,item_air_rq4
