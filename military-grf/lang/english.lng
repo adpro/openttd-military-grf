@@ -165,8 +165,11 @@ STR_DESC_AIR_AN26        :Country of origin: {ORANGE}USSR {}{BLACK}Historic fact
 STR_NAME_AIR_IL76        :Ilyushin Il-76
 STR_DESC_AIR_IL76        :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}It was designed to deliver heavy machinery to remote, poorly served areas. Military versions of the Il-76 have been widely used in Europe, Asia and Africa, including use as an aerial refueling tanker or command center. More than 960 Il-76 were built.
 
-STR_NAME_AIR_S103        :Avia S-103
-STR_DESC_AIR_S103        :Country of origin: {ORANGE}CSSR {}{BLACK}Historic facts: {ORANGE}Licensed copy of the MiG-15bis manufactured by Letov and Aero. More than 2 500 airplanes were built.
+STR_NAME_AIR_S103        :Aero S-103
+STR_DESC_AIR_S103        :Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}Licensed copy of the MiG-15bis manufactured by Letov and Aero. More than 2 500 airplanes were built.
+
+STR_NAME_AIR_S105        :Aero S-105
+STR_DESC_AIR_S105        :Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}Licensed copy of the MiG-19S manufactured by Aero. 104 airplanes were built.
 
 
 STR_DESC_AIR_TMPL		:Country of origin: {ORANGE}??? {}{BLACK}Historic facts: {ORANGE}.

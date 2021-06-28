@@ -14,6 +14,7 @@ sort (FEAT_AIRCRAFT,
     ,item_air_mig19
     ,item_air_mig21
     ,item_air_mirage3
+    ,item_air_s105
     ,item_air_f4
     ,item_air_f16
     ,item_air_mig29

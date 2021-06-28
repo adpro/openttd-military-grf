@@ -80,6 +80,7 @@ Airplanes available in set:
 | Mikoyan-Gurevich MiG-19 | fighter | small | 1952 | 14 | 1452 | 440 |
 | Mikoyan-Gurevich MiG-21 | fighter | small | 1955 | 36 | 2175 | 159 |
 | Dassault Mirage III | fighter, IIIM carrier-based| small | 1956 | 24 | 2 350 | 667 |
+| Aero S-105 | fighter | small | 1957 | 4 | 1452 | 440 |
 | McDonnell F-4 Phantom II | carrier based fighter, bomber | small | 1958 | 24 | 2 370 | 540 |
 | General Dynamics F-16 Fighting Falcon | multirole fighter | small | 1976 | 55 | 2 124 | 840 |
 | Mikoyan-Gurevich MiG-29 | fighter | small | 1977 | 60 | 2400 | 420 |
