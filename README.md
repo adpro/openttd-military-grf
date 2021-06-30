@@ -82,6 +82,7 @@ Airplanes available in set:
 | Dassault Mirage III | fighter, IIIM carrier-based| small | 1956 | 24 | 2 350 | 667 |
 | Aero S-105 | fighter | small | 1957 | 4 | 1452 | 440 |
 | McDonnell F-4 Phantom II | carrier based fighter, bomber | small | 1958 | 24 | 2 370 | 540 |
+| Aero L-39 | trainer/light attack aircraft | small | 1968 | 28 | 750 | 350 |
 | General Dynamics F-16 Fighting Falcon | multirole fighter | small | 1976 | 55 | 2 124 | 840 |
 | Mikoyan-Gurevich MiG-29 | fighter | small | 1977 | 60 | 2400 | 420 |
 | Dassault Mirage 2000 | fighter | small | 1978 | 29 | 2 336 | 667 |
@@ -91,6 +92,7 @@ Airplanes available in set:
 | Dassault Rafale | multirole fighter, M carrier-based | small | 1991 | 40 | 1 912 | 740 |
 | Lockheed Martin F-35A Lightning II | multirole combat aircraft | small | 2006 | 34 | 1 930 | 560 |
 | Sukhoi Su-57 | multirole fighter | small | 2010 | 40 | 2 440 | 700 |
+| Aero L-39NG | trainer/light attack aircraft | small | 2018 | 25 | 780 | 500 |
 | Transport / Airlifters |||||||||
 | Douglas C-74 Globemaster | heavy lift cargo aircraft | small | 1945 | 2 | 528 | 1 100 |
 | Antonov An-2 | utility aircraft | small | 1947 | 54 | 258 | 169 |
