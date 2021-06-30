@@ -21,6 +21,7 @@ You can find these types of changes:
 - Aero S-105 airplane
 - Aero L-39 airplane
 - Aero L-39NG airplane
+- Aero L-159 airplane
 - Parameter to choose which Czechoslovakian aircraft to use in game
 
 ## [0.5.0] "Red Wings" - 2021-06-26

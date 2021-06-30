@@ -185,17 +185,17 @@ STR_DESC_AIR_LET_L410NG	:Země původu: {ORANGE}ČR {}{BLACK}Historická fakta: 
 STR_NAME_AIR_AERO_A18   :Aero A.18
 STR_DESC_AIR_AERO_A18	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}
 
-STR_NAME_AIR_AERO_L159  :Aero L-159
-STR_DESC_AIR_AERO_L159	:Země původu: {ORANGE}ČR {}{BLACK}Historická fakta: {ORANGE}
+STR_NAME_AIR_AERO_L159  :Aero L-159 "Alca"
+STR_DESC_AIR_AERO_L159	:Země původu: {ORANGE}ČR {}{BLACK}Historická fakta: {ORANGE}Vyvinut pro výcvik a kondiční létání pilotů, sekundárně může působit jako víceúčelový lehký bojové letoun. Vychází z L-59 Super Albatros, který vychází z L-39. Bylo vyrobeno 72 ks.
 
-STR_NAME_AIR_AERO_L29   :Aero L-29
+STR_NAME_AIR_AERO_L29   :Aero L-29 "Delfín"
 STR_DESC_AIR_AERO_L29	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}
 
-STR_NAME_AIR_AERO_L39   :Aero L-39
-STR_DESC_AIR_AERO_L39	:Země původu: {ORANGE}ČSSR {}{BLACK}Historická fakta: {ORANGE}
+STR_NAME_AIR_AERO_L39   :Aero L-39 "Albatros"
+STR_DESC_AIR_AERO_L39	:Země původu: {ORANGE}ČSSR {}{BLACK}Historická fakta: {ORANGE}Druhá generace lehkého cvičného letadla. L-39 se stal jednotným výcvikovým letounem armád Varšavské smlouvy s výjimkou Polska. Bylo vyrobeno 2900 ks.
 
 STR_NAME_AIR_AERO_L39NG :Aero L-39NG
-STR_DESC_AIR_AERO_L39NG	:Země původu: {ORANGE}ČR {}{BLACK}Historická fakta: {ORANGE}
+STR_DESC_AIR_AERO_L39NG	:Země původu: {ORANGE}ČR {}{BLACK}Historická fakta: {ORANGE}Je to nová generace podzvukového cvičného letounu Aero L-39 Albatros. L-39NG vychází z původní aerodynamické koncepce L-39, ale jeho konstrukčně a technologicky upravený trup doplňuje nové křídlo s integrální palivovou nádrží, moderní přístrojové vybavení a pohonná jednotka s vyšší životností. Byly zatím vyrobeny 4 ks.
 
 STR_NAME_AIR_AVIA_B11   :Avia B.11
 STR_DESC_AIR_AVIA_B11	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}

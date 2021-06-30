@@ -90,6 +90,7 @@ Airplanes available in set:
 | Saab JAS 39 Gripen | multirole fighter | small | 1989 | 50 | 2 460 | 640 |
 | Sukhoi Su-30 | multirole fighter | small | 1989 | 40 | 2 120 | 600 |
 | Dassault Rafale | multirole fighter, M carrier-based | small | 1991 | 40 | 1 912 | 740 |
+| Aero L-159 | trainer/light attack aircraft | small | 1997 | 6 | 960 | 506 |
 | Lockheed Martin F-35A Lightning II | multirole combat aircraft | small | 2006 | 34 | 1 930 | 560 |
 | Sukhoi Su-57 | multirole fighter | small | 2010 | 40 | 2 440 | 700 |
 | Aero L-39NG | trainer/light attack aircraft | small | 2018 | 25 | 780 | 500 |

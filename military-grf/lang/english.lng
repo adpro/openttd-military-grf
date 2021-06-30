@@ -187,16 +187,16 @@ STR_NAME_AIR_AERO_A18   :Aero A.18
 STR_DESC_AIR_AERO_A18	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}.
 
 STR_NAME_AIR_AERO_L159  :Aero L-159
-STR_DESC_AIR_AERO_L159	:Country of origin: {ORANGE}CZE {}{BLACK}Historic facts: {ORANGE}.
+STR_DESC_AIR_AERO_L159	:Country of origin: {ORANGE}CZE {}{BLACK}Historic facts: {ORANGE}Developed for training and fitness flying of military pilots, it can secondarily act as a multi-purpose light combat aircraft. It is based on the L-59 Super Albatros, which is based on the L-39. 72 Alcas were built.
 
 STR_NAME_AIR_AERO_L29   :Aero L-29
 STR_DESC_AIR_AERO_L29	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}.
 
 STR_NAME_AIR_AERO_L39   :Aero L-39
-STR_DESC_AIR_AERO_L39	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}.
+STR_DESC_AIR_AERO_L39	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}The second generation of light training aircraft. The L-39 became a unified training aircraft of the Warsaw Pact armies, with the exception of Poland. 2 900 airplanes were built.
 
 STR_NAME_AIR_AERO_L39NG :Aero L-39NG
-STR_DESC_AIR_AERO_L39NG	:Country of origin: {ORANGE}CZE {}{BLACK}Historic facts: {ORANGE}.
+STR_DESC_AIR_AERO_L39NG	:Country of origin: {ORANGE}CZE {}{BLACK}Historic facts: {ORANGE}It is a new generation of subsonic training aircraft Aero L-39 Albatros. The L-39NG is based on the original aerodynamic concept of the L-39, but its structurally and technologically modified fuselage is complemented by a new wing with an integral fuel tank, modern instrumentation and a longer-lasting power unit. 4 airplanes were built.
 
 STR_NAME_AIR_AVIA_B11   :Avia B.11
 STR_DESC_AIR_AVIA_B11	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}.
