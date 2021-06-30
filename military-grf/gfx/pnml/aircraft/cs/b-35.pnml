@@ -26,8 +26,8 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_cs)){
 
             /* airplane-specific properties */
             sprite_id:                      SPRITE_ID_NEW_AIRCRAFT; //enable new graphics
-            speed:                          485 km/h;
-            range:                          110;
+            speed:                          550 km/h;
+            range:                          188;
             misc_flags:                     bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
             refit_cost:                     0; // Refitting is free
             /* callback_flags are not set, no need to manually enable callbacks */
@@ -60,7 +60,7 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_cs)){
         {
             property	
             {
-                range: 110; 
+                range: 188; 
             }
         }
     }

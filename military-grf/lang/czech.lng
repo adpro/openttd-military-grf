@@ -171,19 +171,19 @@ STR_NAME_AIR_S105       :Aero S-105
 STR_DESC_AIR_S105       :Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Licenční kopie MiGu-19S vyráběný firmou Aero. Bylo vyrobeno 104 ks.
 
 STR_NAME_AIR_AERO_A304  :Aero A.304
-STR_DESC_AIR_AERO_A304	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}
+STR_DESC_AIR_AERO_A304	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Aero A-304 byl československý průzkumný a lehký bombardovací letoun vyvinutý v druhé polovině 30. let 20. století továrnou Aero. Vychází z dopravního letounu Aero A-204, které vzniklo na základě požadavků Československé armády, které ho však nepřijalo. Bylo postaveno 19 ks.
 
 STR_NAME_AIR_AERO_AE45  :Aero K-75
-STR_DESC_AIR_AERO_AE45	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Aero Ae-45
+STR_DESC_AIR_AERO_AE45	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}K-75 je militarizovaná verze letadla Aero Ae.45, která sloužila jako kurýrní letoun a aerotaxi. Je to první československý letoun, který překonal Atlantský oceán. Bylo vyrobeno 590 ks.
 
 STR_NAME_AIR_LET_L410   :Let L-410
-STR_DESC_AIR_LET_L410	:Země původu: {ORANGE}ČSSR {}{BLACK}Historická fakta: {ORANGE}
+STR_DESC_AIR_LET_L410	:Země původu: {ORANGE}ČSSR {}{BLACK}Historická fakta: {ORANGE}Byl vyvinut jako dopravní a transportní letoun, určený pro regionální dopravu, vojenské použití zahrnuje fotogrammetrickou, výsaddkovou a transportní variantu. Většina dodávek proběhla do SSSR/Ruska. Bylo vyrobeno 1200 ks.
 
 STR_NAME_AIR_LET_L410NG :Let L-410NG
-STR_DESC_AIR_LET_L410NG	:Země původu: {ORANGE}ČR {}{BLACK}Historická fakta: {ORANGE}
+STR_DESC_AIR_LET_L410NG	:Země původu: {ORANGE}ČR {}{BLACK}Historická fakta: {ORANGE}Jedná se o modernizovanou verzi Letu L-410 z verze UVP-E20. Je opět určen do odlehlejších míst, kde je problém s doplňováním paliva a krátkým přistávacím nezpevněným terénem. Není informace o vyrobených ks.
 
 STR_NAME_AIR_AERO_A18   :Aero A.18
-STR_DESC_AIR_AERO_A18	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}
+STR_DESC_AIR_AERO_A18	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Aero A-18 byl jedinou sériově vyráběnou stíhačkou firmy Aero. Bylo vyrobeno 20 ks.
 
 STR_NAME_AIR_AERO_L159  :Aero L-159 "Alca"
 STR_DESC_AIR_AERO_L159	:Země původu: {ORANGE}ČR {}{BLACK}Historická fakta: {ORANGE}Vyvinut pro výcvik a kondiční létání pilotů, sekundárně může působit jako víceúčelový lehký bojové letoun. Vychází z L-59 Super Albatros, který vychází z L-39. Bylo vyrobeno 72 ks.
@@ -198,28 +198,28 @@ STR_NAME_AIR_AERO_L39NG :Aero L-39NG
 STR_DESC_AIR_AERO_L39NG	:Země původu: {ORANGE}ČR {}{BLACK}Historická fakta: {ORANGE}Je to nová generace podzvukového cvičného letounu Aero L-39 Albatros. L-39NG vychází z původní aerodynamické koncepce L-39, ale jeho konstrukčně a technologicky upravený trup doplňuje nové křídlo s integrální palivovou nádrží, moderní přístrojové vybavení a pohonná jednotka s vyšší životností. Byly zatím vyrobeny 4 ks.
 
 STR_NAME_AIR_AVIA_B11   :Avia B.11
-STR_DESC_AIR_AVIA_B11	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}
+STR_DESC_AIR_AVIA_B11	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Letoun sloužil jako kurýrní a sportovní letadlo. Firemní označení je BH-11. Avia BH-11 bylo první československé letadlo, které v červenci 1924 přeletělo kanál La Manche a přistálo na anglické půdě. Bylo vyrobeno přes 25 ks.
 
 STR_NAME_AIR_AVIA_B21   :Avia B.21
-STR_DESC_AIR_AVIA_B21	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}
+STR_DESC_AIR_AVIA_B21	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Tento stíhací letoun s firemním označením BH-21 zvítězil v mezinárodní soutěži stíhacích letounů v Bruselu na jaře roku 1926. Bylo vyrobeno 137 ks.
 
 STR_NAME_AIR_AVIA_B35   :Avia B.35
-STR_DESC_AIR_AVIA_B35	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}
+STR_DESC_AIR_AVIA_B35	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Projekt na tento nadějný letoun byl zadán až v roce 1936. Prototypy připravené na sériovou výrobu byly k dispozici de facto až po okupaci nacistickým Německem v roce 1939. Nacistické Německo považovalo výsledný sériový letoun z roku 1940 za ekvivalent Bf-109 a jeho projekt následně ukončilo. Bylo postaveno 12 ks.
 
 STR_NAME_AIR_AVIA_B534  :Avia B.534
-STR_DESC_AIR_AVIA_B534	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}
+STR_DESC_AIR_AVIA_B534	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Tento stíhací dvouplošník byl hlavním typem stíhačky československého letectva od roku 1935 až do začátku okupace nacistickým Německem. Bylo vyrobeno 566 ks.
 
 STR_NAME_AIR_AVIA_BA33  :Avia Ba.33
-STR_DESC_AIR_AVIA_BA33	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}
+STR_DESC_AIR_AVIA_BA33	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Dvojplošník s firemním označením BH-33E byl přechodový typ stíhačky pro československou armádu mezi typy B.21 a B.534. Jeden z ukázkových kusů pro Mandžusko byl používán jako jediné československé letadlo japonským letectvem během mandžusko-japonského konfliktu. Bylo vyrobeno 81 ks.
 
 STR_NAME_AIR_AVIA_S199  :Avia S-199
-STR_DESC_AIR_AVIA_S199	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}
+STR_DESC_AIR_AVIA_S199	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}S-199 byl vyvinut z draku Messerschmittu Bf-109G s množstvím vylepšení, ale kvůli nedostatku vhodných motorů byla použita nevhodná vrtule i nevhodný motor Jumo 211 určený původně pro Junkers-88, kterých bylo po válce dostatek. Tento nouzový letoun si vysloužil přezdívku Mezek kvůli nevhodnému chování v určitých fázích letu. Bylo vyrobeno 603 ks.
 
 STR_NAME_AIR_LETOV_S328 :Letov Š-328
-STR_DESC_AIR_LETOV_S328 :Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}
+STR_DESC_AIR_LETOV_S328 :Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Š-328 byl v letectvu předválečného Československa nejrozšířenějším jednomotorovým bombardovacím a pozorovacím letounem. Byl úspěšně použit jako útočný a lehký bombardovací letoun k obraně republiky v roce 1938 proti maďarským jednotkám, které pronikly na území Slovenska. Bylo postaveno 312 ks.
 
 STR_NAME_AIR_ZLIN_Z12   :Zlín Z.12
-STR_DESC_AIR_ZLIN_Z12   :Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}
+STR_DESC_AIR_ZLIN_Z12   :Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Z.12 bylo vojenské označení pro Zlín Z.XII, sportovní a cvičný dvoumístný celodřevěný dolnoplošník, který byl používán pro kurýrní službu a kondiční létání. Bylo postaveno 201 ks.
 
 
 STR_DESC_AIR_TMPL		:Země původu: {ORANGE}??? {}{BLACK}Historická fakta: {ORANGE}
