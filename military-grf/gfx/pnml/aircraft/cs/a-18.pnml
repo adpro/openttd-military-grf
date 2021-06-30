@@ -39,7 +39,7 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_cs)){
             /* Visual effect is left at default (no effect) */
         }
         graphics {
-                additional_text:    return string(STR_NAME_AIR_AERO_A18); //Additional text shown in purchase list
+                additional_text:    return string(STR_DESC_AIR_AERO_A18); //Additional text shown in purchase list
                 default:            spriteset_air_aero_a18;
                 cost_factor:                    return 1;
                 running_cost_factor:            return 21;
