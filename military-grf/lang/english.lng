@@ -172,7 +172,7 @@ STR_NAME_AIR_S105       :Aero S-105
 STR_DESC_AIR_S105       :Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}Licensed copy of the MiG-19S manufactured by Aero. 104 airplanes were built.
 
 STR_NAME_AIR_AERO_A304  :Aero A.304
-STR_DESC_AIR_AERO_A304	 Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}.
+STR_DESC_AIR_AERO_A304	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}.
 
 STR_NAME_AIR_AERO_AE45  :Aero K-75
 STR_DESC_AIR_AERO_AE45	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}.
@@ -182,6 +182,45 @@ STR_DESC_AIR_LET_L410	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {
 
 STR_NAME_AIR_LET_L410NG :Let L-410NG
 STR_DESC_AIR_LET_L410NG	:Country of origin: {ORANGE}CZE {}{BLACK}Historic facts: {ORANGE}.
+
+STR_NAME_AIR_AERO_A18   :Aero A.18
+STR_DESC_AIR_AERO_A18	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}.
+
+STR_NAME_AIR_AERO_L159  :Aero L-159
+STR_DESC_AIR_AERO_L159	:Country of origin: {ORANGE}CZE {}{BLACK}Historic facts: {ORANGE}.
+
+STR_NAME_AIR_AERO_L29   :Aero L-29
+STR_DESC_AIR_AERO_L29	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}.
+
+STR_NAME_AIR_AERO_L39   :Aero L-39
+STR_DESC_AIR_AERO_L39	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}.
+
+STR_NAME_AIR_AERO_L39NG :Aero L-39NG
+STR_DESC_AIR_AERO_L39NG	:Country of origin: {ORANGE}CZE {}{BLACK}Historic facts: {ORANGE}.
+
+STR_NAME_AIR_AVIA_B11   :Avia B.11
+STR_DESC_AIR_AVIA_B11	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}.
+
+STR_NAME_AIR_AVIA_B21   :Avia B.21
+STR_DESC_AIR_AVIA_B21	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}.
+
+STR_NAME_AIR_AVIA_B35   :Avia B.35
+STR_DESC_AIR_AVIA_B35	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}.
+
+STR_NAME_AIR_AVIA_B534  :Avia B.534
+STR_DESC_AIR_AVIA_B534	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}.
+
+STR_NAME_AIR_AVIA_BA33  :Avia Ba.33
+STR_DESC_AIR_AVIA_BA33	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}.
+
+STR_NAME_AIR_AVIA_S199  :Avia S-199
+STR_DESC_AIR_AVIA_S199	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}.
+
+STR_NAME_AIR_LETOV_S328 :Letov Š-328
+STR_DESC_AIR_LETOV_S328 :Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}.
+
+STR_NAME_AIR_ZLIN_Z12   :Zlín Z.12
+STR_DESC_AIR_ZLIN_Z12   :Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}.
 
 
 STR_DESC_AIR_TMPL		:Country of origin: {ORANGE}??? {}{BLACK}Historic facts: {ORANGE}.

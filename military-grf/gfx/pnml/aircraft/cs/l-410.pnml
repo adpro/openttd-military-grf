@@ -37,13 +37,13 @@ if (is_aircraft_airlifter_enabled(param_aircraft_enable_cs)){
             mail_capacity:                  10;
             sound_effect:                   SOUND_PLANE_TAKE_OFF; // SOUND_PLANE_TAKE_OFF | SOUND_JET
             /* Visual effect is left at default (no effect) */
-    }
-    graphics {
-            additional_text:    return string(STR_DESC_AIR_LET_L410)); //Additional text shown in purchase list
-            default:            spriteset_air_let_l410;
-            cost_factor:                    return 22;
-            running_cost_factor:            return 664;
-    }
+        }
+        graphics {
+                additional_text:    return string(STR_DESC_AIR_LET_L410); //Additional text shown in purchase list
+                default:            spriteset_air_let_l410;
+                cost_factor:                    return 22;
+                running_cost_factor:            return 664;
+        }
     }
 
 
@@ -103,7 +103,7 @@ if (is_aircraft_airlifter_enabled(param_aircraft_enable_cs)){
             /* Visual effect is left at default (no effect) */
     }
     graphics {
-            additional_text:    return string(STR_DESC_AIR_LET_L410NG)); //Additional text shown in purchase list
+            additional_text:    return string(STR_DESC_AIR_LET_L410NG); //Additional text shown in purchase list
             default:            spriteset_air_let_l410;
             cost_factor:                    return 73;
             running_cost_factor:            return 701;

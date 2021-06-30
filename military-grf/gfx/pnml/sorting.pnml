@@ -3,10 +3,19 @@ sort (FEAT_AIRCRAFT,
     // fighters
     item_air_avro
     ,item_air_nid29
+    ,item_air_aero_a18
+    ,item_air_avia_b11
+    ,item_air_avia_b21
+    ,item_air_avia_ba33
+    ,item_air_avia_b534
+    ,item_air_letov_s328
     ,item_air_i16
+    ,item_air_zlin_z12
     ,item_air_hurricane
+    ,item_air_avia_b35
     ,item_air_hellcat
     ,item_air_yak9
+    ,item_air_avia_s199
     ,item_air_hseahawk
     ,item_air_mig15
     ,item_air_f86
@@ -16,6 +25,8 @@ sort (FEAT_AIRCRAFT,
     ,item_air_mirage3
     ,item_air_s105
     ,item_air_f4
+    ,item_air_aero_l29
+    ,item_air_aero_l39
     ,item_air_f16
     ,item_air_mig29
     ,item_air_mirage2k
@@ -23,8 +34,10 @@ sort (FEAT_AIRCRAFT,
     ,item_air_jas39
     ,item_air_su30
     ,item_air_rafale
+    ,item_air_aero_l159
     ,item_air_f35
     ,item_air_su57
+    ,item_air_aero_l39ng
 
     // airlift
     ,item_air_aero_a304
