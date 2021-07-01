@@ -19,6 +19,7 @@ You can find these types of changes:
 ### Added
 - Aero S-103 airplane
 - Aero S-105 airplane
+- Aero L-29 airplane
 - Aero L-39 airplane
 - Aero L-39NG airplane
 - Aero L-159 airplane

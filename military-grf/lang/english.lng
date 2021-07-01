@@ -190,7 +190,7 @@ STR_NAME_AIR_AERO_L159  :Aero L-159 "Alca"
 STR_DESC_AIR_AERO_L159	:Country of origin: {ORANGE}CZE {}{BLACK}Historic facts: {ORANGE}Developed for training and fitness flying of military pilots, it can secondarily act as a multi-purpose light combat aircraft. It is based on the L-59 Super Albatros, which is based on the L-39. {}{BLACK}Number built: {ORANGE}72
 
 STR_NAME_AIR_AERO_L29   :Aero L-29 "Dolphin"
-STR_DESC_AIR_AERO_L29	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}It was the first jet aircraft designed and manufactured in Czechoslovakia. In 1961, the Dolphin was compared to the TS-11 Iskra and Jak-30 aircraft and became the winner of the competition for the main training letound of the Warsaw Pact countries. Egyptian L-29s participated in the Yom Kippur War against Israel as light attack aircraft. {}{BLACK}Number built: {ORANGE}3665
+STR_DESC_AIR_AERO_L29	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}It was the first jet aircraft designed and manufactured in Czechoslovakia. In 1961, the Dolphin was compared to the TS-11 Iskra and Jak-30 aircraft and became the winner of the competition for the main training aircraft of the Warsaw Pact countries. Egyptian L-29s participated in the Yom Kippur War against Israel as light attack aircraft. {}{BLACK}Number built: {ORANGE}3665
 
 STR_NAME_AIR_AERO_L39   :Aero L-39 "Albatross"
 STR_DESC_AIR_AERO_L39	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}The second generation of light training aircraft. The L-39 became a unified training aircraft of the Warsaw Pact armies, with the exception of Poland. {}{BLACK}Number built: {ORANGE}2 900
