@@ -19,6 +19,7 @@ You can find these types of changes:
 ### Added
 - Avia B.534 airplane
 - Avia B.35 airplane
+- Letov Š.328 airplane
 - Avia S-199 airplane
 - Aero S-103 airplane
 - Aero S-105 airplane

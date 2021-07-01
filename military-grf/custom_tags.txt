@@ -1,2 +1,2 @@
-VERSION  :0.6.0dev10
+VERSION  :0.6.0dev11
 TITLE    :Military items
