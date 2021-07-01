@@ -17,6 +17,7 @@ You can find these types of changes:
 ## [Unreleased]
 
 ### Added
+- Avia B.534 airplane
 - Aero S-103 airplane
 - Aero S-105 airplane
 - Aero L-29 airplane
