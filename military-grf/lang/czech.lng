@@ -48,178 +48,178 @@ STR_PARAM_DESC_STD_PLANES   :Zakáže výchozí letadla a helikoptéry ve hře.
 
 # vehicle names
 STR_NAME_AIR_F86        :North American F-86 Sabre
-STR_DESC_AIR_F86		:Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Známý jako první americký stíhací letoun s šípovými křídly, který dokázal čelit sovětským MiGům-15 v rychlých soubojích na obloze korejské války. Vyrobeno 9 860 ks.
+STR_DESC_AIR_F86		:Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Známý jako první americký stíhací letoun s šípovými křídly, který dokázal čelit sovětským MiGům-15 v rychlých soubojích na obloze korejské války. {}{BLACK}Vyrobeno ks: {ORANGE}9 860
 
 STR_NAME_AIR_F4         :McDonnell F-4 Phantom II
-STR_DESC_AIR_F4		    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Nejvíce vyráběné americké nadzvukové vojenské letadlo v historii a ikonické bojové letadlo studené války. Vyrobeno 5 195 ks.
+STR_DESC_AIR_F4		    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Nejvíce vyráběné americké nadzvukové vojenské letadlo v historii a ikonické bojové letadlo studené války. {}{BLACK}Vyrobeno ks: {ORANGE}5 195
 
 STR_NAME_AIR_F16        :General Dynamics F-16 Fighting Falcon
-STR_DESC_AIR_F16		:Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Nejpočetnější letadlo s pevnými křídly na světě ve vojenské službě v roce 2015. Vyrobeno přes 4 600 ks.
+STR_DESC_AIR_F16		:Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Nejpočetnější letadlo s pevnými křídly na světě ve vojenské službě v roce 2015. {}{BLACK}Vyrobeno ks: {ORANGE}> 4 600
 
 STR_NAME_AIR_F18        :McDonnell Douglas F/A-18 Hornet
-STR_DESC_AIR_F18		:Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Letoun může provádět stíhací doprovod, protivzdušnou obranu flotily, potlačení nepřátelské protivzdušné obrany, přímou leteckou podporu a vzdušný průzkum. Vyrobeno 1 500 ks.
+STR_DESC_AIR_F18		:Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Letoun může provádět stíhací doprovod, protivzdušnou obranu flotily, potlačení nepřátelské protivzdušné obrany, přímou leteckou podporu a vzdušný průzkum. {}{BLACK}Vyrobeno ks: {ORANGE}1 500
 
 STR_NAME_AIR_F35        :Lockheed Martin F-35A Lightning II
-STR_DESC_AIR_F35		:Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Druhý letoun 5. generace ve službách USA. Letoun má tři hlavní varianty: konvenční vzlet a přistání (CTOL) F-35A, krátký vzlet a vertikální přistání (STOVL) F-35B a letadlový (CV / CATOBAR) F-35C. Bude vyrobeno přes 2 800 strojů.
+STR_DESC_AIR_F35		:Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Druhý letoun 5. generace ve službách USA. Letoun má tři hlavní varianty: konvenční vzlet a přistání (CTOL) F-35A, krátký vzlet a vertikální přistání (STOVL) F-35B a letadlový (CV / CATOBAR) F-35C. {}{BLACK}Vyrobeno ks: {ORANGE}> 2 800 strojů.
 
 STR_NAME_AIR_RQ4        :Northrop Grumman RQ-4 Global Hawk
-STR_DESC_AIR_RQ4		:Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Global Hawk vykonává povinnosti podobné úkolům Lockheed U-2. Může mapovat až 40 000 čtverečních mil (100 000 km čtverečních) terénu denně, což je oblast o velikosti Jižní Koreje nebo Islandu. Bylo vyrobeno přes 50 ks.
+STR_DESC_AIR_RQ4		:Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Global Hawk vykonává povinnosti podobné úkolům Lockheed U-2. Může mapovat až 40 000 čtverečních mil (100 000 km čtverečních) terénu denně, což je oblast o velikosti Jižní Koreje nebo Islandu. {}{BLACK}Vyrobeno ks: {ORANGE}> 50
 
 STR_NAME_AIR_HURRICANE  :Hawker Hurricane IIC
-STR_DESC_AIR_HURRICANE	:Země původu: {ORANGE}GBR {}{BLACK}Historická fakta: {ORANGE}Hurricane způsobil 60 procent ztrát Luftwaffe v bitvě o Británii a bojoval ve všech hlavních oblastech druhé světové války. Bylo vyrobeno 14 487 ks.
+STR_DESC_AIR_HURRICANE	:Země původu: {ORANGE}GBR {}{BLACK}Historická fakta: {ORANGE}Hurricane způsobil 60 procent ztrát Luftwaffe v bitvě o Británii a bojoval ve všech hlavních oblastech druhé světové války. {}{BLACK}Vyrobeno ks: {ORANGE}14 487
 
 STR_NAME_AIR_AVRO       :Avro 504
-STR_DESC_AIR_AVRO		:Země původu: {ORANGE}GBR {}{BLACK}Historická fakta: {ORANGE}Nejvíce vyráběné letadlo jakéhokoli druhu, které sloužilo na jakékoli straně během první světové války. Bylo vyrobeno 11 303 ks.
+STR_DESC_AIR_AVRO		:Země původu: {ORANGE}GBR {}{BLACK}Historická fakta: {ORANGE}Nejvíce vyráběné letadlo jakéhokoli druhu, které sloužilo na jakékoli straně během první světové války. {}{BLACK}Vyrobeno ks: {ORANGE}11 303
 
 STR_NAME_AIR_P51        :North American P-51 Mustang
 STR_DESC_AIR_P51		:Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}.
 
 STR_NAME_AIR_C5         :Lockheed C-5 Galaxy
-STR_DESC_AIR_C5 	    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}C-5 patří mezi největší vojenská letadla na světě. Bylo vyrobeno více než 130 ks.
+STR_DESC_AIR_C5 	    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}C-5 patří mezi největší vojenská letadla na světě. {}{BLACK}Vyrobeno ks: {ORANGE}> 130
 
 STR_NAME_AIR_C17        :Boeing C-17 Globemaster III
-STR_DESC_AIR_C17 	    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Původním vývojářem je McDonnell Douglas, sloučený s Boeingem v roce 1997. C-17 je navržen tak, aby fungoval z přistávacích drah pouhých 1 100 m a tak úzkých jako 27 m. Bylo vyrobeno 279 ks.
+STR_DESC_AIR_C17 	    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Původním vývojářem je McDonnell Douglas, sloučený s Boeingem v roce 1997. C-17 je navržen tak, aby fungoval z přistávacích drah pouhých 1 100 m a tak úzkých jako 27 m. {}{BLACK}Vyrobeno ks: {ORANGE}279
 
 STR_NAME_AIR_C74        :Douglas C-74 Globemaster
-STR_DESC_AIR_C74 	    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Letoun byl vyvinut jako reakce na potřebu zaoceánského těžkého vojenského transportního letadla během 2. sv. války. Bylo vyrobeno 14 ks.
+STR_DESC_AIR_C74 	    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Letoun byl vyvinut jako reakce na potřebu zaoceánského těžkého vojenského transportního letadla během 2. sv. války. {}{BLACK}Vyrobeno ks: {ORANGE}14
 
 STR_NAME_AIR_C124       :Douglas C-124 Globemaster II "Old Shaky"
-STR_DESC_AIR_C124 	    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Letoun byl vyvinut z prototypu Douglas C-74 Globemaster z druhé světové války a na základě poznatků získaných během berlínské přepravy. Bylo vyrobeno 448 ks.
+STR_DESC_AIR_C124 	    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Letoun byl vyvinut z prototypu Douglas C-74 Globemaster z druhé světové války a na základě poznatků získaných během berlínské přepravy. {}{BLACK}Vyrobeno ks: {ORANGE}448
 
 STR_NAME_AIR_C141       :Lockheed C-141 Starlifter
-STR_DESC_AIR_C141 	    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Představen jako náhrada za pomalejší nákladní vrtulová letadla, jako jsou Douglas C-124 Globemaster II a Douglas C-133 Cargomaster, byl C-141 navržen podle požadavků stanovených v roce 1960. Postaveno 285 ks.
+STR_DESC_AIR_C141 	    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Představen jako náhrada za pomalejší nákladní vrtulová letadla, jako jsou Douglas C-124 Globemaster II a Douglas C-133 Cargomaster, byl C-141 navržen podle požadavků stanovených v roce 1960. {}{BLACK}Vyrobeno ks: {ORANGE}285
 
 STR_NAME_AIR_A400       :Airbus A400M Atlas
-STR_DESC_AIR_A400 	    :Země původu: {ORANGE}EU {}{BLACK}Historická fakta: {ORANGE}Většina systémů je volně založená na systémech A380, ale je upravena pro vojenskou misi. Postaveno přes 100 ks.
+STR_DESC_AIR_A400 	    :Země původu: {ORANGE}EU {}{BLACK}Historická fakta: {ORANGE}Většina systémů je volně založená na systémech A380, ale je upravena pro vojenskou misi. {}{BLACK}Vyrobeno ks: {ORANGE}> 100
 
 STR_NAME_AIR_MIRAGE3    :Dassault Mirage III
-STR_DESC_AIR_MIRAGE3    :Země původu: {ORANGE}FRA {}{BLACK}Historická fakta: {ORANGE}První západoevropské bojové letadlo, které při vodorovném letu překročilo Mach 2. Vyrobeno 1422 ks.
+STR_DESC_AIR_MIRAGE3    :Země původu: {ORANGE}FRA {}{BLACK}Historická fakta: {ORANGE}První západoevropské bojové letadlo, které při vodorovném letu překročilo Mach 2. {}{BLACK}Vyrobeno ks: {ORANGE}1 422
 
 STR_NAME_AIR_NID29      :Nieuport-Delage NiD 29
-STR_DESC_AIR_NID29		:Země původu: {ORANGE}FRA {}{BLACK}Historická fakta: {ORANGE}NiD 29 byl bezpochyby nejlepším stíhacím letounem roku 1920. Vyrobeno bylo 1571 ks.
+STR_DESC_AIR_NID29		:Země původu: {ORANGE}FRA {}{BLACK}Historická fakta: {ORANGE}NiD 29 byl bezpochyby nejlepším stíhacím letounem roku 1920. {}{BLACK}Vyrobeno ks: {ORANGE}1 571
 
 STR_NAME_AIR_MIRAGE2K   :Dassault Mirage 2000
-STR_DESC_AIR_MIRAGE2K   :Země původu: {ORANGE}FRA {}{BLACK}Historická fakta: {ORANGE}Letoun je výsledkem vlastního vývoje Francie poté co odešla z evropského vývoje letounu, ze kterého vzniklo Tornado. Vyrobeno 601 ks.
+STR_DESC_AIR_MIRAGE2K   :Země původu: {ORANGE}FRA {}{BLACK}Historická fakta: {ORANGE}Letoun je výsledkem vlastního vývoje Francie poté co odešla z evropského vývoje letounu, ze kterého vzniklo Tornado. Vyrobeno 601
 
 STR_NAME_AIR_JAS39      :Saab JAS 39 Gripen
-STR_DESC_AIR_JAS39		:Země původu: {ORANGE}SWE {}{BLACK}Historická fakta: {ORANGE}Gripen byl plánován, aby splnil požadavek švédského letectva na cenově dostupné letadlo s rychlostí Mach 2 s dobrým výkonem na krátkých drahách pro plán obranného rozptýlení v případě invaze. Bylo vyrobeno přes 271 ks.
+STR_DESC_AIR_JAS39		:Země původu: {ORANGE}SWE {}{BLACK}Historická fakta: {ORANGE}Gripen byl plánován, aby splnil požadavek švédského letectva na cenově dostupné letadlo s rychlostí Mach 2 s dobrým výkonem na krátkých drahách pro plán obranného rozptýlení v případě invaze. {}{BLACK}Vyrobeno ks: {ORANGE}> 271
 
 STR_NAME_AIR_RAFALE     :Dassault Rafale
-STR_DESC_AIR_RAFALE     :Země původu: {ORANGE}FRA {}{BLACK}Historická fakta: {ORANGE}Letoun je výsledkem vlastního vývoje Francie poté co odešla z evropského vývoje letounu, ze kterého vznikl Typhoon. Vyrobeno přes 201 ks.
+STR_DESC_AIR_RAFALE     :Země původu: {ORANGE}FRA {}{BLACK}Historická fakta: {ORANGE}Letoun je výsledkem vlastního vývoje Francie poté co odešla z evropského vývoje letounu, ze kterého vznikl Typhoon. {}{BLACK}Vyrobeno ks: {ORANGE}> 201
 
 STR_NAME_AIR_RQ170      :Lockheed Martin RQ-170 Sentinel
-STR_DESC_AIR_RQ170      :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Letadlo je tajné. Některé obrázky a podrobnosti o letadle byly zveřejněny poté, co jej Írán v roce 2011 dopadl na svých hranicích. Bylo vyrobeno přibližně 30 ks.
+STR_DESC_AIR_RQ170      :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Letadlo je tajné. Některé obrázky a podrobnosti o letadle byly zveřejněny poté, co jej Írán v roce 2011 dopadl na svých hranicích. {}{BLACK}Vyrobeno ks: {ORANGE}cca 30
 
 STR_NAME_AIR_F6F        :Grumman F6F Hellcat
-STR_DESC_AIR_F6F	    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Dominantní bojovník námořnictva Spojených států ve druhé polovině války v Pacifiku. Vyrobeno 12 275 ks.
+STR_DESC_AIR_F6F	    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Dominantní bojovník námořnictva Spojených států ve druhé polovině války v Pacifiku. {}{BLACK}Vyrobeno ks: {ORANGE}12 275
 
 STR_NAME_AIR_HSEAHAWK   :Hawker Sea Hawk
-STR_DESC_AIR_HSEAHAWK   :Země původu: {ORANGE}GBR {}{BLACK}Historická fakta: {ORANGE}Sea Hawk se stal prvním proudovým letounem společnosti Hawker. Značný počet byl vyroben také pro vývozní trh. Bylo vyrobeno 542 ks.
+STR_DESC_AIR_HSEAHAWK   :Země původu: {ORANGE}GBR {}{BLACK}Historická fakta: {ORANGE}Sea Hawk se stal prvním proudovým letounem společnosti Hawker. Značný počet byl vyroben také pro vývozní trh. {}{BLACK}Vyrobeno ks: {ORANGE}542
 
 STR_NAME_AIR_C2         :Grumman C-2 Greyhound
-STR_DESC_AIR_C2 	    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Jeho hlavním posláním je doručování nákladů na palubu letadlových lodí (COD). C-2 se používá hlavně k přepravě nákladu, pošty a cestujících s vysokou prioritou mezi dopravci a pobřežními základnami a může také doručovat náklad, jako jsou proudové motory. Bylo vyrobeno 52 ks.
+STR_DESC_AIR_C2 	    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Jeho hlavním posláním je doručování nákladů na palubu letadlových lodí (COD). C-2 se používá hlavně k přepravě nákladu, pošty a cestujících s vysokou prioritou mezi dopravci a pobřežními základnami a může také doručovat náklad, jako jsou proudové motory. {}{BLACK}Vyrobeno ks: {ORANGE}52
 
 STR_NAME_AIR_UH1        :Bell UH-1 Iroquois / HU-1 "Huey"
-STR_DESC_AIR_UH1 	    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}UH-1 poprvé sloužil v bojových operacích během války ve Vietnamu, přičemž bylo nasazeno kolem 7 000 vrtulníků. Bylo vyrobeno přes 16 000 ks.
+STR_DESC_AIR_UH1 	    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}UH-1 poprvé sloužil v bojových operacích během války ve Vietnamu, přičemž bylo nasazeno kolem 7 000 vrtulníků. {}{BLACK}Vyrobeno ks: {ORANGE}> 16 000
 
 STR_NAME_AIR_I16        :Polikarpov I-16
-STR_DESC_AIR_I16 	    :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Jednalo se o první dolnoplošníkový samonosný jednoplošník na světě se zatahovacím podvozkem, který dosáhl provozního stavu, a jako takový „představil nový směr v stíhacím designu." Bylo vyrobeno 10 292 ks.
+STR_DESC_AIR_I16 	    :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Jednalo se o první dolnoplošníkový samonosný jednoplošník na světě se zatahovacím podvozkem, který dosáhl provozního stavu, a jako takový „představil nový směr v stíhacím designu." {}{BLACK}Vyrobeno ks: {ORANGE}10 292
 
 STR_NAME_AIR_YAK9       :Jakovlev Jak-9
-STR_DESC_AIR_YAK9       :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Jak-9 hrál hlavní roli při získávání vzdušné převahy nad esy Luftwaffe u nových stíhaček Focke-Wulf Fw 190 a Messerschmitt Bf 109G během velké bitvy u Kurska v létě 1943. Bylo vyrobeno 16 769 ks.
+STR_DESC_AIR_YAK9       :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Jak-9 hrál hlavní roli při získávání vzdušné převahy nad esy Luftwaffe u nových stíhaček Focke-Wulf Fw 190 a Messerschmitt Bf 109G během velké bitvy u Kurska v létě 1943. {}{BLACK}Vyrobeno ks: {ORANGE}16 769
 
 STR_NAME_AIR_MIG15      :Mikojan-Gurevič MiG-15
-STR_DESC_AIR_MIG15      :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}MiG-15 byl jedním z prvních úspěšných proudových stíhaček, které začleňovaly šípovitá křídla pro dosažení vysokých transonických rychlostí. V boji nad Koreou překonal stíhačky s přímými křídly, které byly z velké části odsunuty do rolí pozemního útoku, a rychle čelil podobnému severoamerickému F-86 Sabre. Bylo vyrobeno přes 17 310 ks.
+STR_DESC_AIR_MIG15      :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}MiG-15 byl jedním z prvních úspěšných proudových stíhaček, které začleňovaly šípovitá křídla pro dosažení vysokých transonických rychlostí. V boji nad Koreou překonal stíhačky s přímými křídly, které byly z velké části odsunuty do rolí pozemního útoku, a rychle čelil podobnému severoamerickému F-86 Sabre. {}{BLACK}Vyrobeno ks: {ORANGE}> 17 310
 
 STR_NAME_AIR_MIG19      :Mikojan-Gurevič MiG-19
-STR_DESC_AIR_MIG19      :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}První sériově vyráběné nadzvukové letadlo na světě. Jednalo se o první sovětské sériové letadlo schopné nadzvukových rychlostí ve vodorovném letu. Bylo vyrobeno přes 2 300 ks.
+STR_DESC_AIR_MIG19      :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}První sériově vyráběné nadzvukové letadlo na světě. Jednalo se o první sovětské sériové letadlo schopné nadzvukových rychlostí ve vodorovném letu. {}{BLACK}Vyrobeno ks: {ORANGE}> 2 300
 
 STR_NAME_AIR_MIG21      :Mikojan-Gurevič MiG-21
-STR_DESC_AIR_MIG21      :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}MiG-21 používalo přibližně 60 zemí na čtyřech kontinentech a šedesát let po svém prvním letu stále slouží mnoha národům. Dosáhlo mnoho leteckých rekordů, stalo se nejvíce vyráběným nadzvukovým proudovým letounem v historii letectví, nejvíce vyráběným bojovým letounem od korejské války a dříve nejdelší výrobní sérií bojového letounu (překronáno až McDonnell Douglas F-15 Eaglem, tak General Dynamics F-16 Fighting Falconem). Bylo vyrobeno 11 496 ks.
+STR_DESC_AIR_MIG21      :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}MiG-21 používalo přibližně 60 zemí na čtyřech kontinentech a šedesát let po svém prvním letu stále slouží mnoha národům. Dosáhlo mnoho leteckých rekordů, stalo se nejvíce vyráběným nadzvukovým proudovým letounem v historii letectví, nejvíce vyráběným bojovým letounem od korejské války a dříve nejdelší výrobní sérií bojového letounu (překronáno až McDonnell Douglas F-15 Eaglem, tak General Dynamics F-16 Fighting Falconem). {}{BLACK}Vyrobeno ks: {ORANGE}11 496
 
 STR_NAME_AIR_MIG29      :Mikojan MiG-29
-STR_DESC_AIR_MIG29      :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Byl vyvinut s cílem čelit novým americkým stíhačům, jako jsou McDonnell Douglas F-15 Eagle a General Dynamics F-16 Fighting Falcon. Bylo vyrobeno přes 1 600 ks.
+STR_DESC_AIR_MIG29      :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Byl vyvinut s cílem čelit novým americkým stíhačům, jako jsou McDonnell Douglas F-15 Eagle a General Dynamics F-16 Fighting Falcon. {}{BLACK}Vyrobeno ks: {ORANGE}> 1 600
 
 STR_NAME_AIR_SU30       :Suchoj Su-30
-STR_DESC_AIR_SU30       :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Jedná se o víceúčelový stíhací letoun do každého počasí, hlubokých misí vzduch-vzduch a vzduch-země. Je schopen provádět některé velmi pokročilé manévry, včetně Pugachevovy kobry a ocasu. Bylo vyrobeno přes 630 ks.
+STR_DESC_AIR_SU30       :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Jedná se o víceúčelový stíhací letoun do každého počasí, hlubokých misí vzduch-vzduch a vzduch-země. Je schopen provádět některé velmi pokročilé manévry, včetně Pugachevovy kobry a ocasu. {}{BLACK}Vyrobeno ks: {ORANGE}> 630
 
 STR_NAME_AIR_SU57       :Suchoj Su-57
-STR_DESC_AIR_SU57       :Země původu: {ORANGE}RUS {}{BLACK}Historická fakta: {ORANGE}Su-57 je prvním stíhačem ruské vojenské služby, který používá stealth technologii. Bylo vyrobeno 12 ks.
+STR_DESC_AIR_SU57       :Země původu: {ORANGE}RUS {}{BLACK}Historická fakta: {ORANGE}Su-57 je prvním stíhačem ruské vojenské služby, který používá stealth technologii. {}{BLACK}Vyrobeno ks: {ORANGE}12
 
 STR_NAME_AIR_AN2        :Antonov An-2
-STR_DESC_AIR_AN2        :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Jeho pozoruhodná odolnost, vysoká nosnost a schopnost vzletu a přistání ze špatných drah mu poskytly dlouhou životnost ve službě. Bylo vyrobeno více než 18 000 ks.
+STR_DESC_AIR_AN2        :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Jeho pozoruhodná odolnost, vysoká nosnost a schopnost vzletu a přistání ze špatných drah mu poskytly dlouhou životnost ve službě. {}{BLACK}Vyrobeno ks: {ORANGE}> 18 000
 
 STR_NAME_AIR_AN12       :Antonov An-12
-STR_DESC_AIR_AN12       :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Po více než tři desetiletí byl An-12 standardním nákladním a výsadkovým transportním letounem středního doletu sovětských vzdušných sil. Bylo vyrobeno 1 248 ks.
+STR_DESC_AIR_AN12       :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Po více než tři desetiletí byl An-12 standardním nákladním a výsadkovým transportním letounem středního doletu sovětských vzdušných sil. {}{BLACK}Vyrobeno ks: {ORANGE}1 248
 
 STR_NAME_AIR_AN22       :Antonov An-22
-STR_DESC_AIR_AN22       :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Letoun byl navržen jako strategický přepravní letoun, navržený speciálně pro rozšíření schopnosti sovětských výsadkových jednotek přistávat s jejich tehdy novými obrněnými vozidly BMD-1. Bylo vyrobeno 68 ks.
+STR_DESC_AIR_AN22       :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Letoun byl navržen jako strategický přepravní letoun, navržený speciálně pro rozšíření schopnosti sovětských výsadkových jednotek přistávat s jejich tehdy novými obrněnými vozidly BMD-1. {}{BLACK}Vyrobeno ks: {ORANGE}68
 
 STR_NAME_AIR_AN24       :Antonov An-24
-STR_DESC_AIR_AN24       :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Byl navržen tak, aby nahradil přepravu veteránského pístového Iljušina Il-14 na krátké a střední vzdálenosti, optimalizovaný pro provoz z drsných ploch a nepřipravených letišť ve vzdálených lokalitách. Bylo vyrobeno 1 367 ks.
+STR_DESC_AIR_AN24       :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Byl navržen tak, aby nahradil přepravu veteránského pístového Iljušina Il-14 na krátké a střední vzdálenosti, optimalizovaný pro provoz z drsných ploch a nepřipravených letišť ve vzdálených lokalitách. {}{BLACK}Vyrobeno ks: {ORANGE}1 367
 
 STR_NAME_AIR_AN26       :Antonov An-26
-STR_DESC_AIR_AN26       :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Když dostal v březnu 1968 zelenou pro An-26, přizpůsobil Antonov OKB konstrukci rampy An-40 pro trup An-24, což vyústilo v An-26. Bylo vyrobeno 1 403 ks.
+STR_DESC_AIR_AN26       :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Když dostal v březnu 1968 zelenou pro An-26, přizpůsobil Antonov OKB konstrukci rampy An-40 pro trup An-24, což vyústilo v An-26. {}{BLACK}Vyrobeno ks: {ORANGE}1 403
 
 STR_NAME_AIR_IL76       :Iljušin Il-76
-STR_DESC_AIR_IL76       :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Byl navržen tak, aby dodával těžké stroje do vzdálených, špatně obsluhovaných oblastí. Vojenské verze Il-76 byly široce používány v Evropě, Asii a Africe, včetně použití jako letecký tanker nebo velitelské středisko. Bylo vyrobeno přes 960 ks.
+STR_DESC_AIR_IL76       :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Byl navržen tak, aby dodával těžké stroje do vzdálených, špatně obsluhovaných oblastí. Vojenské verze Il-76 byly široce používány v Evropě, Asii a Africe, včetně použití jako letecký tanker nebo velitelské středisko. {}{BLACK}Vyrobeno ks: {ORANGE} > 960
 
 STR_NAME_AIR_S103       :Aero S-103
-STR_DESC_AIR_S103       :Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Licenční kopie MiGu-15bis vyráběný firmami Letov a Aero. Bylo vyrobeno přes 2 500 ks.
+STR_DESC_AIR_S103       :Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Licenční kopie MiGu-15bis vyráběný firmami Letov a Aero. {}{BLACK}Vyrobeno ks: {ORANGE}> 2 500
 
 STR_NAME_AIR_S105       :Aero S-105
-STR_DESC_AIR_S105       :Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Licenční kopie MiGu-19S vyráběný firmou Aero. Bylo vyrobeno 104 ks.
+STR_DESC_AIR_S105       :Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Licenční kopie MiGu-19S vyráběný firmou Aero. {}{BLACK}Vyrobeno ks: {ORANGE}104
 
 STR_NAME_AIR_AERO_A304  :Aero A.304
-STR_DESC_AIR_AERO_A304	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Aero A-304 byl československý průzkumný a lehký bombardovací letoun vyvinutý v druhé polovině 30. let 20. století továrnou Aero. Vychází z dopravního letounu Aero A-204, které vzniklo na základě požadavků Československé armády, které ho však nepřijalo. Bylo postaveno 19 ks.
+STR_DESC_AIR_AERO_A304	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Aero A-304 byl československý průzkumný a lehký bombardovací letoun vyvinutý v druhé polovině 30. let 20. století továrnou Aero. Vychází z dopravního letounu Aero A-204, které vzniklo na základě požadavků Československé armády, které ho však nepřijalo. {}{BLACK}Vyrobeno ks: {ORANGE}19
 
 STR_NAME_AIR_AERO_AE45  :Aero K-75
-STR_DESC_AIR_AERO_AE45	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}K-75 je militarizovaná verze letadla Aero Ae.45, která sloužila jako kurýrní letoun a aerotaxi. Je to první československý letoun, který překonal Atlantský oceán. Bylo vyrobeno 590 ks.
+STR_DESC_AIR_AERO_AE45	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}K-75 je militarizovaná verze letadla Aero Ae.45, která sloužila jako kurýrní letoun a aerotaxi. Je to první československý letoun, který překonal Atlantský oceán. {}{BLACK}Vyrobeno ks: {ORANGE}590
 
 STR_NAME_AIR_LET_L410   :Let L-410
-STR_DESC_AIR_LET_L410	:Země původu: {ORANGE}ČSSR {}{BLACK}Historická fakta: {ORANGE}Byl vyvinut jako dopravní a transportní letoun, určený pro regionální dopravu, vojenské použití zahrnuje fotogrammetrickou, výsaddkovou a transportní variantu. Většina dodávek proběhla do SSSR/Ruska. Bylo vyrobeno 1200 ks.
+STR_DESC_AIR_LET_L410	:Země původu: {ORANGE}ČSSR {}{BLACK}Historická fakta: {ORANGE}Byl vyvinut jako dopravní a transportní letoun, určený pro regionální dopravu, vojenské použití zahrnuje fotogrammetrickou, výsaddkovou a transportní variantu. Většina dodávek proběhla do SSSR/Ruska. {}{BLACK}Vyrobeno ks: {ORANGE}1 200
 
 STR_NAME_AIR_LET_L410NG :Let L-410NG
-STR_DESC_AIR_LET_L410NG	:Země původu: {ORANGE}ČR {}{BLACK}Historická fakta: {ORANGE}Jedná se o modernizovanou verzi Letu L-410 z verze UVP-E20. Je opět určen do odlehlejších míst, kde je problém s doplňováním paliva a krátkým přistávacím nezpevněným terénem. Není informace o vyrobených ks.
+STR_DESC_AIR_LET_L410NG	:Země původu: {ORANGE}ČR {}{BLACK}Historická fakta: {ORANGE}Jedná se o modernizovanou verzi Letu L-410 z verze UVP-E20. Je opět určen do odlehlejších míst, kde je problém s doplňováním paliva a krátkým přistávacím nezpevněným terénem. {}{BLACK}Vyrobeno ks: {ORANGE}neznámo
 
 STR_NAME_AIR_AERO_A18   :Aero A.18
-STR_DESC_AIR_AERO_A18	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Aero A-18 byl jedinou sériově vyráběnou stíhačkou firmy Aero. Bylo vyrobeno 20 ks.
+STR_DESC_AIR_AERO_A18	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Aero A-18 byl jedinou sériově vyráběnou stíhačkou firmy Aero. {}{BLACK}Vyrobeno ks: {ORANGE}20
 
 STR_NAME_AIR_AERO_L159  :Aero L-159 "Alca"
-STR_DESC_AIR_AERO_L159	:Země původu: {ORANGE}ČR {}{BLACK}Historická fakta: {ORANGE}Vyvinut pro výcvik a kondiční létání pilotů, sekundárně může působit jako víceúčelový lehký bojové letoun. Vychází z L-59 Super Albatros, který vychází z L-39. Bylo vyrobeno 72 ks.
+STR_DESC_AIR_AERO_L159	:Země původu: {ORANGE}ČR {}{BLACK}Historická fakta: {ORANGE}Vyvinut pro výcvik a kondiční létání pilotů, sekundárně může působit jako víceúčelový lehký bojové letoun. Vychází z L-59 Super Albatros, který vychází z L-39. {}{BLACK}Vyrobeno ks: {ORANGE}72
 
 STR_NAME_AIR_AERO_L29   :Aero L-29 "Delfín"
-STR_DESC_AIR_AERO_L29	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}
+STR_DESC_AIR_AERO_L29	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Šlo o první proudový letoun navržený a vyráběný v Československu. V roce 1961 byl Delfín porovnáván s letouny TS-11 Iskra a Jak-30 a stal se vítězem v soutěži o hlavní výcvikový letound zemí Varšavské smlouvy. Egyptské L-29 se zúčastnily jomkipurské války proti Izraeli jako lehké útočné letouny. {}{BLACK}Vyrobeno ks: {ORANGE}3 665
 
 STR_NAME_AIR_AERO_L39   :Aero L-39 "Albatros"
-STR_DESC_AIR_AERO_L39	:Země původu: {ORANGE}ČSSR {}{BLACK}Historická fakta: {ORANGE}Druhá generace lehkého cvičného letadla. L-39 se stal jednotným výcvikovým letounem armád Varšavské smlouvy s výjimkou Polska. Bylo vyrobeno 2900 ks.
+STR_DESC_AIR_AERO_L39	:Země původu: {ORANGE}ČSSR {}{BLACK}Historická fakta: {ORANGE}Druhá generace lehkého cvičného letadla. L-39 se stal jednotným výcvikovým letounem armád Varšavské smlouvy s výjimkou Polska. {}{BLACK}Vyrobeno ks: {ORANGE}2 900
 
 STR_NAME_AIR_AERO_L39NG :Aero L-39NG
-STR_DESC_AIR_AERO_L39NG	:Země původu: {ORANGE}ČR {}{BLACK}Historická fakta: {ORANGE}Je to nová generace podzvukového cvičného letounu Aero L-39 Albatros. L-39NG vychází z původní aerodynamické koncepce L-39, ale jeho konstrukčně a technologicky upravený trup doplňuje nové křídlo s integrální palivovou nádrží, moderní přístrojové vybavení a pohonná jednotka s vyšší životností. Byly zatím vyrobeny 4 ks.
+STR_DESC_AIR_AERO_L39NG	:Země původu: {ORANGE}ČR {}{BLACK}Historická fakta: {ORANGE}Je to nová generace podzvukového cvičného letounu Aero L-39 Albatros. L-39NG vychází z původní aerodynamické koncepce L-39, ale jeho konstrukčně a technologicky upravený trup doplňuje nové křídlo s integrální palivovou nádrží, moderní přístrojové vybavení a pohonná jednotka s vyšší životností. {}{BLACK}Vyrobeno ks: {ORANGE}4
 
 STR_NAME_AIR_AVIA_B11   :Avia B.11
-STR_DESC_AIR_AVIA_B11	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Letoun sloužil jako kurýrní a sportovní letadlo. Firemní označení je BH-11. Avia BH-11 bylo první československé letadlo, které v červenci 1924 přeletělo kanál La Manche a přistálo na anglické půdě. Bylo vyrobeno přes 25 ks.
+STR_DESC_AIR_AVIA_B11	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Letoun sloužil jako kurýrní a sportovní letadlo. Firemní označení je BH-11. Avia BH-11 bylo první československé letadlo, které v červenci 1924 přeletělo kanál La Manche a přistálo na anglické půdě. {}{BLACK}Vyrobeno ks: {ORANGE}> 25
 
 STR_NAME_AIR_AVIA_B21   :Avia B.21
-STR_DESC_AIR_AVIA_B21	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Tento stíhací letoun s firemním označením BH-21 zvítězil v mezinárodní soutěži stíhacích letounů v Bruselu na jaře roku 1926. Bylo vyrobeno 137 ks.
+STR_DESC_AIR_AVIA_B21	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Tento stíhací letoun s firemním označením BH-21 zvítězil v mezinárodní soutěži stíhacích letounů v Bruselu na jaře roku 1926. {}{BLACK}Vyrobeno ks: {ORANGE}137
 
 STR_NAME_AIR_AVIA_B35   :Avia B.35
-STR_DESC_AIR_AVIA_B35	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Projekt na tento nadějný letoun byl zadán až v roce 1936. Prototypy připravené na sériovou výrobu byly k dispozici de facto až po okupaci nacistickým Německem v roce 1939. Nacistické Německo považovalo výsledný sériový letoun z roku 1940 za ekvivalent Bf-109 a jeho projekt následně ukončilo. Bylo postaveno 12 ks.
+STR_DESC_AIR_AVIA_B35	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Projekt na tento nadějný letoun byl zadán až v roce 1936. Prototypy připravené na sériovou výrobu byly k dispozici de facto až po okupaci nacistickým Německem v roce 1939. Nacistické Německo považovalo výsledný sériový letoun z roku 1940 za ekvivalent Bf-109 a jeho projekt následně ukončilo. {}{BLACK}Vyrobeno ks: {ORANGE}12
 
 STR_NAME_AIR_AVIA_B534  :Avia B.534
-STR_DESC_AIR_AVIA_B534	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Tento stíhací dvouplošník byl hlavním typem stíhačky československého letectva od roku 1935 až do začátku okupace nacistickým Německem. Bylo vyrobeno 566 ks.
+STR_DESC_AIR_AVIA_B534	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Tento stíhací dvouplošník byl hlavním typem stíhačky československého letectva od roku 1935 až do začátku okupace nacistickým Německem. {}{BLACK}Vyrobeno ks: {ORANGE}566
 
 STR_NAME_AIR_AVIA_BA33  :Avia Ba.33
-STR_DESC_AIR_AVIA_BA33	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Dvojplošník s firemním označením BH-33E byl přechodový typ stíhačky pro československou armádu mezi typy B.21 a B.534. Jeden z ukázkových kusů pro Mandžusko byl používán jako jediné československé letadlo japonským letectvem během mandžusko-japonského konfliktu. Bylo vyrobeno 81 ks.
+STR_DESC_AIR_AVIA_BA33	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Dvojplošník s firemním označením BH-33E byl přechodový typ stíhačky pro československou armádu mezi typy B.21 a B.534. Jeden z ukázkových kusů pro Mandžusko byl používán jako jediné československé letadlo japonským letectvem během mandžusko-japonského konfliktu. {}{BLACK}Vyrobeno ks: {ORANGE}81
 
-STR_NAME_AIR_AVIA_S199  :Avia S-199
-STR_DESC_AIR_AVIA_S199	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}S-199 byl vyvinut z draku Messerschmittu Bf-109G s množstvím vylepšení, ale kvůli nedostatku vhodných motorů byla použita nevhodná vrtule i nevhodný motor Jumo 211 určený původně pro Junkers-88, kterých bylo po válce dostatek. Tento nouzový letoun si vysloužil přezdívku Mezek kvůli nevhodnému chování v určitých fázích letu. Bylo vyrobeno 603 ks.
+STR_NAME_AIR_AVIA_S199  :Avia S-199 "Mezek"
+STR_DESC_AIR_AVIA_S199	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}S-199 byl vyvinut z draku Messerschmittu Bf-109G s množstvím vylepšení, ale kvůli nedostatku vhodných motorů byla použita nevhodná vrtule i nevhodný motor Jumo 211 určený původně pro Junkers-88, kterých bylo po válce dostatek. Tento nouzový letoun si vysloužil přezdívku Mezek kvůli nevhodnému chování v určitých fázích letu. {}{BLACK}Vyrobeno ks: {ORANGE}603
 
 STR_NAME_AIR_LETOV_S328 :Letov Š-328
-STR_DESC_AIR_LETOV_S328 :Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Š-328 byl v letectvu předválečného Československa nejrozšířenějším jednomotorovým bombardovacím a pozorovacím letounem. Byl úspěšně použit jako útočný a lehký bombardovací letoun k obraně republiky v roce 1938 proti maďarským jednotkám, které pronikly na území Slovenska. Bylo postaveno 312 ks.
+STR_DESC_AIR_LETOV_S328 :Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Š-328 byl v letectvu předválečného Československa nejrozšířenějším jednomotorovým bombardovacím a pozorovacím letounem. Byl úspěšně použit jako útočný a lehký bombardovací letoun k obraně republiky v roce 1938 proti maďarským jednotkám, které pronikly na území Slovenska. {}{BLACK}Vyrobeno ks: {ORANGE}312
 
 STR_NAME_AIR_ZLIN_Z12   :Zlín Z.12
-STR_DESC_AIR_ZLIN_Z12   :Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Z.12 bylo vojenské označení pro Zlín Z.XII, sportovní a cvičný dvoumístný celodřevěný dolnoplošník, který byl používán pro kurýrní službu a kondiční létání. Bylo postaveno 201 ks.
+STR_DESC_AIR_ZLIN_Z12   :Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Z.12 bylo vojenské označení pro Zlín Z.XII, sportovní a cvičný dvoumístný celodřevěný dolnoplošník, který byl používán pro kurýrní službu a kondiční létání. {}{BLACK}Vyrobeno ks: {ORANGE}201
 
 
 STR_DESC_AIR_TMPL		:Země původu: {ORANGE}??? {}{BLACK}Historická fakta: {ORANGE}

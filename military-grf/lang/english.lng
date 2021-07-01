@@ -48,182 +48,182 @@ STR_PARAM_DESC_STD_PLANES   :Disables default airplanes and helicopters in game.
 
 # vehicle names
 STR_NAME_AIR_F86        :North American F-86 Sabre
-STR_DESC_AIR_F86		:Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}Best known as the US' first swept-wing fighter that could counter the swept-wing Soviet MiG-15 in high-speed dogfights in the skies of the Korean War. 9 860 Sabres were built.
+STR_DESC_AIR_F86		:Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}Best known as the US' first swept-wing fighter that could counter the swept-wing Soviet MiG-15 in high-speed dogfights in the skies of the Korean War. {}{BLACK}Number built: {ORANGE}9 860
 
 STR_NAME_AIR_F4         :McDonnell F-4 Phantom II
-STR_DESC_AIR_F4		    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The most produced American supersonic military aircraft in history, and cementing its position as an iconic combat aircraft of the Cold War. 5 195 Phantoms were built.
+STR_DESC_AIR_F4		    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The most produced American supersonic military aircraft in history, and cementing its position as an iconic combat aircraft of the Cold War. {}{BLACK}Number built: {ORANGE}5 195
 
 STR_NAME_AIR_F16        :General Dynamics F-16 Fighting Falcon
-STR_DESC_AIR_F16	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The world's most numerous fixed-wing aircraft in military service in 2015. Over 4 600 Falcons were built.
+STR_DESC_AIR_F16	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The world's most numerous fixed-wing aircraft in military service in 2015. {}{BLACK}Number built: {ORANGE}> 4 600
 
 STR_NAME_AIR_F18        :McDonnell Douglas F/A-18 Hornet
-STR_DESC_AIR_F18	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The aircraft can perform fighter escort, fleet air defense, suppression of enemy air defenses, air interdiction, close air support, and aerial reconnaissance. 1 500 Hornets were built.
+STR_DESC_AIR_F18	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The aircraft can perform fighter escort, fleet air defense, suppression of enemy air defenses, air interdiction, close air support, and aerial reconnaissance. {}{BLACK}Number built: {ORANGE}1 500
 
 STR_NAME_AIR_F35        :Lockheed Martin F-35A Lightning II
-STR_DESC_AIR_F35	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The 2nd 5th generation figher in US service. The aircraft has three main variants: the conventional takeoff and landing (CTOL) F-35A, the short take-off and vertical-landing (STOVL) F-35B, and the carrier-based (CV/CATOBAR) F-35C. Over 2 800 Lightnings will be built.
+STR_DESC_AIR_F35	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The 2nd 5th generation figher in US service. The aircraft has three main variants: the conventional takeoff and landing (CTOL) F-35A, the short take-off and vertical-landing (STOVL) F-35B, and the carrier-based (CV/CATOBAR) F-35C. {}{BLACK}Number built: {ORANGE}> 2 800
 
 STR_NAME_AIR_RQ4        :Northrop Grumman RQ-4 Global Hawk
-STR_DESC_AIR_RQ4	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The Global Hawk performs duties similar to that of the Lockheed U-2. It can survey as much as 40,000 square miles (100,000 square km) of terrain a day, an area the size of South Korea or Iceland. Over 50 Hawks were built.
+STR_DESC_AIR_RQ4	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The Global Hawk performs duties similar to that of the Lockheed U-2. It can survey as much as 40,000 square miles (100,000 square km) of terrain a day, an area the size of South Korea or Iceland. {}{BLACK}Number built: {ORANGE}> 50
 
 STR_NAME_AIR_HURRICANE  :Hawker Hurricane IIC
-STR_DESC_AIR_HURRICANE  :Country of origin: {ORANGE}GBR {}{BLACK}Historic facts: {ORANGE}The Hurricane inflicted 60 percent of the losses sustained by the Luftwaffe in the Battle of Britain, and fought in all the major theatres of the Second World War. 14 487 Hurricanes were built.
+STR_DESC_AIR_HURRICANE  :Country of origin: {ORANGE}GBR {}{BLACK}Historic facts: {ORANGE}The Hurricane inflicted 60 percent of the losses sustained by the Luftwaffe in the Battle of Britain, and fought in all the major theatres of the Second World War. {}{BLACK}Number built: {ORANGE}14 487
 
 STR_NAME_AIR_AVRO       :Avro 504
-STR_DESC_AIR_AVRO		:Country of origin: {ORANGE}GBR {}{BLACK}Historic facts: {ORANGE}The most-produced aircraft of any kind that served in any military capacity during the First World War. 11 303 aircraft were built.
+STR_DESC_AIR_AVRO		:Country of origin: {ORANGE}GBR {}{BLACK}Historic facts: {ORANGE}The most-produced aircraft of any kind that served in any military capacity during the First World War. {}{BLACK}Number built: {ORANGE}11 303
 
 STR_NAME_AIR_P51        :North American P-51 Mustang
 STR_DESC_AIR_P51	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}.
 
 STR_NAME_AIR_C5         :Lockheed C-5 Galaxy
-STR_DESC_AIR_C5 	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The C-5 is among the largest military aircraft in the world. Over 130 aircraft were built.
+STR_DESC_AIR_C5 	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The C-5 is among the largest military aircraft in the world. {}{BLACK}Number built: {ORANGE}> 130
 
 STR_NAME_AIR_C17        :Boeing C-17 Globemaster III
-STR_DESC_AIR_C17 	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}Original developer is McDonnel Douglas, merged to Boeing in 1997. The C-17 is designed to operate from runways as short as 3,500 ft (1,100 m) and as narrow as 90 ft (27 m). 279 airplanes were built.
+STR_DESC_AIR_C17 	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}Original developer is McDonnel Douglas, merged to Boeing in 1997. The C-17 is designed to operate from runways as short as 3,500 ft (1,100 m) and as narrow as 90 ft (27 m). {}{BLACK}Number built: {ORANGE}279
 
 STR_NAME_AIR_C74        :Douglas C-74 Globemaster
-STR_DESC_AIR_C74 	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}Airplane was developed in response to a need for a transoceanic heavy-lift military transport aircraft during WWII. 14 airplanes were built.
+STR_DESC_AIR_C74 	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}Airplane was developed in response to a need for a transoceanic heavy-lift military transport aircraft during WWII. {}{BLACK}Number built: {ORANGE}14
 
 STR_NAME_AIR_C124       :Douglas C-124 Globemaster II
-STR_DESC_AIR_C124 	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}It was developed from a prototype a World War II–design Douglas C-74 Globemaster, and based on lessons learned during the Berlin Airlift. 448 airplanes were built.
+STR_DESC_AIR_C124 	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}It was developed from a prototype a World War II–design Douglas C-74 Globemaster, and based on lessons learned during the Berlin Airlift. {}{BLACK}Number built: {ORANGE}448
 
 STR_NAME_AIR_C141       :Lockheed C-141 Starlifter
-STR_DESC_AIR_C141 	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}Introduced to replace slower propeller driven cargo planes such as the Douglas C-124 Globemaster II and Douglas C-133 Cargomaster, the C-141 was designed to requirements set in 1960. 285 C-124 were built.
+STR_DESC_AIR_C141 	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}Introduced to replace slower propeller driven cargo planes such as the Douglas C-124 Globemaster II and Douglas C-133 Cargomaster, the C-141 was designed to requirements set in 1960. {}{BLACK}Number built: {ORANGE}285
 
 STR_NAME_AIR_A400       :Airbus A400M Atlas
-STR_DESC_AIR_A400 	    :Country of origin: {ORANGE}EU {}{BLACK}Historic facts: {ORANGE}Most systems are loosely based on those of the A380, but modified for the military mission. Over 100 airplanes were built.
+STR_DESC_AIR_A400 	    :Country of origin: {ORANGE}EU {}{BLACK}Historic facts: {ORANGE}Most systems are loosely based on those of the A380, but modified for the military mission. {}{BLACK}Number built: {ORANGE}> 100
 
 STR_NAME_AIR_MIRAGE3    :Dassault Mirage III
-STR_DESC_AIR_MIRAGE3    :Country of origin: {ORANGE}FRA {}{BLACK}Historic facts: {ORANGE}The first Western European combat aircraft to exceed Mach 2 in horizontal flight. 1422 fighters were built.
+STR_DESC_AIR_MIRAGE3    :Country of origin: {ORANGE}FRA {}{BLACK}Historic facts: {ORANGE}The first Western European combat aircraft to exceed Mach 2 in horizontal flight. {}{BLACK}Number built: {ORANGE}1 422
 
 STR_NAME_AIR_NID29      :Nieuport-Delage NiD 29
-STR_DESC_AIR_NID29 	    :Country of origin: {ORANGE}FRA {}{BLACK}Historic facts: {ORANGE}NiD 29 was undoubtedly the greatest fighter aircraft of 1920. 1571 airplanes were built.
+STR_DESC_AIR_NID29 	    :Country of origin: {ORANGE}FRA {}{BLACK}Historic facts: {ORANGE}NiD 29 was undoubtedly the greatest fighter aircraft of 1920. {}{BLACK}Number built: {ORANGE}1 571
 
 STR_NAME_AIR_MIRAGE2K   :Dassault Mirage 2000
-STR_DESC_AIR_MIRAGE2K   :Country of origin: {ORANGE}FRA {}{BLACK}Historic facts: {ORANGE}The aircraft is the result of France's own development after it left the European development of the aircraft from which the Tornado emerged. 601 fighters were built.
+STR_DESC_AIR_MIRAGE2K   :Country of origin: {ORANGE}FRA {}{BLACK}Historic facts: {ORANGE}The aircraft is the result of France's own development after it left the European development of the aircraft from which the Tornado emerged. {}{BLACK}Number built: {ORANGE}601
 
 STR_NAME_AIR_JAS39      :Saab JAS 39 Gripen
-STR_DESC_AIR_JAS39 	    :Country of origin: {ORANGE}SWE {}{BLACK}Historic facts: {ORANGE}JAS 39 was planned to meet the Swedish Air Force's requirement for an affordable Mach 2 aircraft with good short-field performance for a defensive dispersed basing plan in the event of invasion. Over 271 Gripens were built.
+STR_DESC_AIR_JAS39 	    :Country of origin: {ORANGE}SWE {}{BLACK}Historic facts: {ORANGE}JAS 39 was planned to meet the Swedish Air Force's requirement for an affordable Mach 2 aircraft with good short-field performance for a defensive dispersed basing plan in the event of invasion. {}{BLACK}Number built: {ORANGE}> 271
 
 STR_NAME_AIR_RAFALE     :Dassault Rafale
-STR_DESC_AIR_RAFALE     :Country of origin: {ORANGE}FRA {}{BLACK}Historic facts: {ORANGE}The aircraft is the result of France's own development after it left the European development of the aircraft from which the Typhoon emerged. 201 fighters were built.
+STR_DESC_AIR_RAFALE     :Country of origin: {ORANGE}FRA {}{BLACK}Historic facts: {ORANGE}The aircraft is the result of France's own development after it left the European development of the aircraft from which the Typhoon emerged. {}{BLACK}Number built: {ORANGE}201
 
 STR_NAME_AIR_RQ170      :Lockheed Martin RQ-170 Sentinel
-STR_DESC_AIR_RQ170      :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}Plane is secret. Some images and details of the aircraft were released after Iran captured an RQ-170 in 2011. Around 30 Sentinels were built.
+STR_DESC_AIR_RQ170      :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}Plane is secret. Some images and details of the aircraft were released after Iran captured an RQ-170 in 2011. {}{BLACK}Number built: {ORANGE}30
 
 STR_NAME_AIR_F6F        :Grumman F6F Hellcat
-STR_DESC_AIR_F6F        :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}It was the United States Navy's dominant fighter in the second half of the Pacific War. 12 275 Hellcats were built.
+STR_DESC_AIR_F6F        :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}It was the United States Navy's dominant fighter in the second half of the Pacific War. {}{BLACK}Number built: {ORANGE}12 275
 
 STR_NAME_AIR_HSEAHAWK   :Hawker Sea Hawk
-STR_DESC_AIR_HSEAHAWK	:Country of origin: {ORANGE}GBR {}{BLACK}Historic facts: {ORANGE}The Sea Hawk became Hawker's first jet aircraft. A considerable number were also produced for the export market. 542 Sea Hawks were built.
+STR_DESC_AIR_HSEAHAWK	:Country of origin: {ORANGE}GBR {}{BLACK}Historic facts: {ORANGE}The Sea Hawk became Hawker's first jet aircraft. A considerable number were also produced for the export market. {}{BLACK}Number built: {ORANGE}542
 
 STR_NAME_AIR_C2         :Grumman C-2 Greyhound
-STR_DESC_AIR_C2 	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}Its primary mission is carrier onboard delivery (COD). C-2 is mainly used to transport high-priority cargo, mail, and passengers between carriers and shore bases, and can also deliver cargo such as jet engines and special stores. 52 Greyhounds were built.
+STR_DESC_AIR_C2 	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}Its primary mission is carrier onboard delivery (COD). C-2 is mainly used to transport high-priority cargo, mail, and passengers between carriers and shore bases, and can also deliver cargo such as jet engines and special stores. {}{BLACK}Number built: {ORANGE}52
 
 STR_NAME_AIR_UH1        :Bell UH-1 Iroquois / HU-1 "Huey"
-STR_DESC_AIR_UH1	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The UH-1 first saw service in combat operations during the Vietnam War, with around 7,000 helicopters deployed. More than 16 000 Hueys were built.
+STR_DESC_AIR_UH1	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The UH-1 first saw service in combat operations during the Vietnam War, with around 7,000 helicopters deployed. {}{BLACK}Number built: {ORANGE}> 16 000
 
 
 STR_NAME_AIR_I16        :Polikarpov I-16
-STR_DESC_AIR_I16 	    :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}It was the world's first low-wing cantilever monoplane fighter with retractable landing gear to attain operational status and as such "introduced a new vogue in fighter design." 10 292 I-16s were built.
+STR_DESC_AIR_I16 	    :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}It was the world's first low-wing cantilever monoplane fighter with retractable landing gear to attain operational status and as such "introduced a new vogue in fighter design." {}{BLACK}Number built: {ORANGE}10 292
 
 STR_NAME_AIR_YAK9       :Yakovlev Yak-9
-STR_DESC_AIR_YAK9       :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}Yak-9 played a major role in taking air superiority over Luftwaffe aces on the new Focke-Wulf Fw 190 and Messerschmitt Bf 109G fighters during the grand Battle of Kursk in summer 1943. 16 769 Yak-9s were built.
+STR_DESC_AIR_YAK9       :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}Yak-9 played a major role in taking air superiority over Luftwaffe aces on the new Focke-Wulf Fw 190 and Messerschmitt Bf 109G fighters during the grand Battle of Kursk in summer 1943. {}{BLACK}Number built: {ORANGE}16 769
 
 STR_NAME_AIR_MIG15      :Mikoyan-Gurevich MiG-15
-STR_DESC_AIR_MIG15      :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}The MiG-15 was one of the first successful jet fighters to incorporate swept wings to achieve high transonic speeds. In combat over Korea, it outclassed straight-winged jet day fighters, which were largely relegated to ground-attack roles, and quickly countered the similar American swept-wing North American F-86 Sabre. More than 17 310 MiGs were built.
+STR_DESC_AIR_MIG15      :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}The MiG-15 was one of the first successful jet fighters to incorporate swept wings to achieve high transonic speeds. In combat over Korea, it outclassed straight-winged jet day fighters, which were largely relegated to ground-attack roles, and quickly countered the similar American swept-wing North American F-86 Sabre. {}{BLACK}Number built: {ORANGE}> 17 310
 
 STR_NAME_AIR_MIG19      :Mikoyan-Gurevich MiG-19
-STR_DESC_AIR_MIG19      :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}The world's first mass-produced supersonic aircraft. It was the first Soviet production aircraft capable of supersonic speeds in level flight. More than 2 300 MiGs were built.
+STR_DESC_AIR_MIG19      :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}The world's first mass-produced supersonic aircraft. It was the first Soviet production aircraft capable of supersonic speeds in level flight. {}{BLACK}Number built: {ORANGE}> 2 300
 
 STR_NAME_AIR_MIG21      :Mikoyan-Gurevich MiG-21
-STR_DESC_AIR_MIG21      :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}Approximately 60 countries in four continents have flown the MiG-21, and it still serves many nations six decades after its maiden flight. It made aviation records, became the most-produced supersonic jet aircraft in aviation history, the most-produced combat aircraft since the Korean War and previously the longest production run of a combat aircraft (now exceeded by both the McDonnell Douglas F-15 Eagle and General Dynamics F-16 Fighting Falcon). 11 496 MiGs were built.
+STR_DESC_AIR_MIG21      :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}Approximately 60 countries in four continents have flown the MiG-21, and it still serves many nations six decades after its maiden flight. It made aviation records, became the most-produced supersonic jet aircraft in aviation history, the most-produced combat aircraft since the Korean War and previously the longest production run of a combat aircraft (now exceeded by both the McDonnell Douglas F-15 Eagle and General Dynamics F-16 Fighting Falcon). {}{BLACK}Number built: {ORANGE}11 496
 
 STR_NAME_AIR_MIG29      :Mikoyan MiG-29
-STR_DESC_AIR_MIG29      :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}It was developed to counter new U.S. fighters such as the McDonnell Douglas F-15 Eagle and the General Dynamics F-16 Fighting Falcon. More than 1 600 MiGs were built.
+STR_DESC_AIR_MIG29      :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}It was developed to counter new U.S. fighters such as the McDonnell Douglas F-15 Eagle and the General Dynamics F-16 Fighting Falcon. {}{BLACK}Number built: {ORANGE}> 1 600
 
 STR_NAME_AIR_SU30       :Sukhoi Su-30
-STR_DESC_AIR_SU30       :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}It is a multirole fighter for all-weather, air-to-air and air-to-surface deep interdiction missions. It is able to perform some very advanced manoeuvres, including the Pugachev's Cobra and the tailslide. More than 630 Su-30s were built.
+STR_DESC_AIR_SU30       :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}It is a multirole fighter for all-weather, air-to-air and air-to-surface deep interdiction missions. It is able to perform some very advanced manoeuvres, including the Pugachev's Cobra and the tailslide. {}{BLACK}Number built: {ORANGE}> 630
 
 STR_NAME_AIR_SU57       :Sukhoi Su-57
-STR_DESC_AIR_SU57       :Country of origin: {ORANGE}RUS {}{BLACK}Historic facts: {ORANGE}The Su-57 is the first fighter in Russian military service to use stealth technology. 12 Su-57s were built.
+STR_DESC_AIR_SU57       :Country of origin: {ORANGE}RUS {}{BLACK}Historic facts: {ORANGE}The Su-57 is the first fighter in Russian military service to use stealth technology. {}{BLACK}Number built: {ORANGE}12
 
 STR_NAME_AIR_AN2        :Antonov An-2
-STR_DESC_AIR_AN2        :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}Its remarkable durability, high lifting power, and ability to take off and land from poor runways have given it a long service life. More than 18 000 An-2 were built.
+STR_DESC_AIR_AN2        :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}Its remarkable durability, high lifting power, and ability to take off and land from poor runways have given it a long service life. {}{BLACK}Number built: {ORANGE}> 18 000
 
 STR_NAME_AIR_AN12       :Antonov An-12
-STR_DESC_AIR_AN12       :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}For more than three decades the An-12 was the standard medium-range cargo and paratroop transport aircraft of the Soviet air forces. 1 248 An-12 were built.
+STR_DESC_AIR_AN12       :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}For more than three decades the An-12 was the standard medium-range cargo and paratroop transport aircraft of the Soviet air forces. {}{BLACK}Number built: {ORANGE}1 248
 
 STR_NAME_AIR_AN22       :Antonov An-22
-STR_DESC_AIR_AN22       :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}The aircraft was designed as a strategic airlifter, designed specifically to expand the Soviet Airborne Troops' capability to land with their then-new BMD-1 armoured vehicles. 68 An-22 were built.
+STR_DESC_AIR_AN22       :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}The aircraft was designed as a strategic airlifter, designed specifically to expand the Soviet Airborne Troops' capability to land with their then-new BMD-1 armoured vehicles. {}{BLACK}Number built: {ORANGE}68
 
 STR_NAME_AIR_AN24       :Antonov An-24
-STR_DESC_AIR_AN24       :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}It was designed to replace the veteran piston Ilyushin Il-14 transport on short to medium haul trips, optimised for operating from rough strips and unprepared airports in remote locations. 1 367 An-24 were built.
+STR_DESC_AIR_AN24       :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}It was designed to replace the veteran piston Ilyushin Il-14 transport on short to medium haul trips, optimised for operating from rough strips and unprepared airports in remote locations. {}{BLACK}Number built: {ORANGE}1 367
 
 STR_NAME_AIR_AN26       :Antonov An-26
-STR_DESC_AIR_AN26       :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}When given the go-ahead for the An-26 in March 1968, the Antonov OKB adapted the ramp design of the An-40 to the An-24 fuselage, resulting in the An-26. 1 403 An-26 were built.
+STR_DESC_AIR_AN26       :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}When given the go-ahead for the An-26 in March 1968, the Antonov OKB adapted the ramp design of the An-40 to the An-24 fuselage, resulting in the An-26. {}{BLACK}Number built: {ORANGE}1 403
 
 STR_NAME_AIR_IL76       :Ilyushin Il-76
-STR_DESC_AIR_IL76       :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}It was designed to deliver heavy machinery to remote, poorly served areas. Military versions of the Il-76 have been widely used in Europe, Asia and Africa, including use as an aerial refueling tanker or command center. More than 960 Il-76 were built.
+STR_DESC_AIR_IL76       :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}It was designed to deliver heavy machinery to remote, poorly served areas. Military versions of the Il-76 have been widely used in Europe, Asia and Africa, including use as an aerial refueling tanker or command center. {}{BLACK}Number built: {ORANGE}> 960
 
 STR_NAME_AIR_S103       :Aero S-103
-STR_DESC_AIR_S103       :Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}Licensed copy of the MiG-15bis manufactured by Letov and Aero. More than 2 500 airplanes were built.
+STR_DESC_AIR_S103       :Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}Licensed copy of the MiG-15bis manufactured by Letov and Aero. {}{BLACK}Number built: {ORANGE}> 2 500
 
 STR_NAME_AIR_S105       :Aero S-105
-STR_DESC_AIR_S105       :Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}Licensed copy of the MiG-19S manufactured by Aero. 104 airplanes were built.
+STR_DESC_AIR_S105       :Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}Licensed copy of the MiG-19S manufactured by Aero. {}{BLACK}Number built: {ORANGE}104
 
 STR_NAME_AIR_AERO_A304  :Aero A.304
-STR_DESC_AIR_AERO_A304	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}The Aero A-304 was a Czechoslovak reconnaissance and light bomber developed in the second half of the 1930s by the Aero factory. It is based on the Aero A-204 transport aircraft, which was created on the basis of the requirements of the Czechoslovak Army, which, however, did not accept it. 19 airplanes were built.
+STR_DESC_AIR_AERO_A304	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}The Aero A-304 was a Czechoslovak reconnaissance and light bomber developed in the second half of the 1930s by the Aero factory. It is based on the Aero A-204 transport aircraft, which was created on the basis of the requirements of the Czechoslovak Army, which, however, did not accept it. {}{BLACK}Number built: {ORANGE}19
 
 STR_NAME_AIR_AERO_AE45  :Aero K-75
-STR_DESC_AIR_AERO_AE45	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}The K-75 is a militarized version of the Aero Ae.45 aircraft, which served as a courier airplane and air taxi. It is the first Czechoslovak aircraft to cross the Atlantic Ocean. 590 airplanes were built.
+STR_DESC_AIR_AERO_AE45	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}The K-75 is a militarized version of the Aero Ae.45 aircraft, which served as a courier airplane and air taxi. It is the first Czechoslovak aircraft to cross the Atlantic Ocean. {}{BLACK}Number built: {ORANGE}590
 
 STR_NAME_AIR_LET_L410   :Let L-410
-STR_DESC_AIR_LET_L410	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}It was developed as a small airliner and transportational aircraft, designed for regional transport. Military use includes photogrammetric, airborne and transport variants. Most deliveries took place to the USSR/Russia. 1 200 airplanes were built.
+STR_DESC_AIR_LET_L410	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}It was developed as a small airliner and transportational aircraft, designed for regional transport. Military use includes photogrammetric, airborne and transport variants. Most deliveries took place to the USSR/Russia. {}{BLACK}Number built: {ORANGE}1 200
 
 STR_NAME_AIR_LET_L410NG :Let L-410NG
-STR_DESC_AIR_LET_L410NG	:Country of origin: {ORANGE}CZE {}{BLACK}Historic facts: {ORANGE}This is an upgraded version of Let L-410 UVP-E20. It is again intended for more remote places, where there is a problem with refueling and short landing unpaved terrain. No information about production airplanes is provided.
+STR_DESC_AIR_LET_L410NG	:Country of origin: {ORANGE}CZE {}{BLACK}Historic facts: {ORANGE}This is an upgraded version of Let L-410 UVP-E20. It is again intended for more remote places, where there is a problem with refueling and short landing unpaved terrain. {}{BLACK}Number built: {ORANGE}unknown
 
 STR_NAME_AIR_AERO_A18   :Aero A.18
-STR_DESC_AIR_AERO_A18	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}Aero A-18 was the only mass-produced fighter of the Aero company. 20 pieces were built.
+STR_DESC_AIR_AERO_A18	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}Aero A-18 was the only mass-produced fighter of the Aero company. {}{BLACK}Number built: {ORANGE}20
 
-STR_NAME_AIR_AERO_L159  :Aero L-159
-STR_DESC_AIR_AERO_L159	:Country of origin: {ORANGE}CZE {}{BLACK}Historic facts: {ORANGE}Developed for training and fitness flying of military pilots, it can secondarily act as a multi-purpose light combat aircraft. It is based on the L-59 Super Albatros, which is based on the L-39. 72 Alcas were built.
+STR_NAME_AIR_AERO_L159  :Aero L-159 "Alca"
+STR_DESC_AIR_AERO_L159	:Country of origin: {ORANGE}CZE {}{BLACK}Historic facts: {ORANGE}Developed for training and fitness flying of military pilots, it can secondarily act as a multi-purpose light combat aircraft. It is based on the L-59 Super Albatros, which is based on the L-39. {}{BLACK}Number built: {ORANGE}72
 
-STR_NAME_AIR_AERO_L29   :Aero L-29
-STR_DESC_AIR_AERO_L29	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}.
+STR_NAME_AIR_AERO_L29   :Aero L-29 "Dolphin"
+STR_DESC_AIR_AERO_L29	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}It was the first jet aircraft designed and manufactured in Czechoslovakia. In 1961, the Dolphin was compared to the TS-11 Iskra and Jak-30 aircraft and became the winner of the competition for the main training letound of the Warsaw Pact countries. Egyptian L-29s participated in the Yom Kippur War against Israel as light attack aircraft. {}{BLACK}Number built: {ORANGE}3665
 
-STR_NAME_AIR_AERO_L39   :Aero L-39
-STR_DESC_AIR_AERO_L39	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}The second generation of light training aircraft. The L-39 became a unified training aircraft of the Warsaw Pact armies, with the exception of Poland. 2 900 airplanes were built.
+STR_NAME_AIR_AERO_L39   :Aero L-39 "Albatross"
+STR_DESC_AIR_AERO_L39	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}The second generation of light training aircraft. The L-39 became a unified training aircraft of the Warsaw Pact armies, with the exception of Poland. {}{BLACK}Number built: {ORANGE}2 900
 
 STR_NAME_AIR_AERO_L39NG :Aero L-39NG
-STR_DESC_AIR_AERO_L39NG	:Country of origin: {ORANGE}CZE {}{BLACK}Historic facts: {ORANGE}It is a new generation of subsonic training aircraft Aero L-39 Albatros. The L-39NG is based on the original aerodynamic concept of the L-39, but its structurally and technologically modified fuselage is complemented by a new wing with an integral fuel tank, modern instrumentation and a longer-lasting power unit. 4 airplanes were built.
+STR_DESC_AIR_AERO_L39NG	:Country of origin: {ORANGE}CZE {}{BLACK}Historic facts: {ORANGE}It is a new generation of subsonic training aircraft Aero L-39 Albatros. The L-39NG is based on the original aerodynamic concept of the L-39, but its structurally and technologically modified fuselage is complemented by a new wing with an integral fuel tank, modern instrumentation and a longer-lasting power unit. {}{BLACK}Number built: {ORANGE}4
 
 STR_NAME_AIR_AVIA_B11   :Avia B.11
-STR_DESC_AIR_AVIA_B11	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}The aircraft served as a courier and sports aircraft. The company designation was BH-11. The Avia BH-11 was the first Czechoslovak aircraft to fly across the English Channel in July 1924 and land on English soil. Over 25 pieces were produced.
+STR_DESC_AIR_AVIA_B11	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}The aircraft served as a courier and sports aircraft. The company designation was BH-11. The Avia BH-11 was the first Czechoslovak aircraft to fly across the English Channel in July 1924 and land on English soil. {}{BLACK}Number built: {ORANGE}> 25
 
 STR_NAME_AIR_AVIA_B21   :Avia B.21
-STR_DESC_AIR_AVIA_B21	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}This fighter with the company designation BH-21 won the international competition of fighters in Brussels in the spring of 1926. 137 pieces were built. 
+STR_DESC_AIR_AVIA_B21	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}This fighter with the company designation BH-21 won the international competition of fighters in Brussels in the spring of 1926. {}{BLACK}Number built: {ORANGE}137 
 
 STR_NAME_AIR_AVIA_B35   :Avia B.35
-STR_DESC_AIR_AVIA_B35	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}The project for this promising aircraft was commissioned in 1936. Prototypes ready for series production were available de facto only after the occupation by Nazi Germany in 1939. Nazi Germany considered the serial aircraft from 1940 as the possible equivalent of the Bf-109 and its project subsequently terminated. 12 pieces were built.
+STR_DESC_AIR_AVIA_B35	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}The project for this promising aircraft was commissioned in 1936. Prototypes ready for series production were available de facto only after the occupation by Nazi Germany in 1939. Nazi Germany considered the serial aircraft from 1940 as the possible equivalent of the Bf-109 and its project subsequently terminated. {}{BLACK}Number built: {ORANGE}12
 
 STR_NAME_AIR_AVIA_B534  :Avia B.534
-STR_DESC_AIR_AVIA_B534	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}This fighter biplane was the main type of fighter of the Czechoslovak Air Force from 1935 until the beginning of occupation by Nazi Germany. 566 pcs were built.
+STR_DESC_AIR_AVIA_B534	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}This fighter biplane was the main type of fighter of the Czechoslovak Air Force from 1935 until the beginning of occupation by Nazi Germany. {}{BLACK}Number built: {ORANGE}566
 
 STR_NAME_AIR_AVIA_BA33  :Avia Ba.33
-STR_DESC_AIR_AVIA_BA33	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}The biplane with the company designation BH-33E was a transitional type of fighter for the Czechoslovak army between types B.21 and B.534. One of the sample pieces for Manchuria was used as the only Czechoslovak aircraft by the Japanese Air Force during the Manchurian-Japanese conflict. 81 pieces were made.
+STR_DESC_AIR_AVIA_BA33	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}The biplane with the company designation BH-33E was a transitional type of fighter for the Czechoslovak army between types B.21 and B.534. One of the sample pieces for Manchuria was used as the only Czechoslovak aircraft by the Japanese Air Force during the Manchurian-Japanese conflict. {}{BLACK}Number built: {ORANGE}81
 
-STR_NAME_AIR_AVIA_S199  :Avia S-199
-STR_DESC_AIR_AVIA_S199	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}The S-199 was developed from the Messerschmitt Bf-109G airframe with a number of improvements, but due to the lack of suitable engines, an unsuitable propeller and an unsuitable Jumo 211 engine originally designed for Junkers-88s were used, of which there were enough after the war. This emergency aircraft earned the nickname Mule due to inappropriate behavior in certain phases of flight. 603 pcs were built.
+STR_NAME_AIR_AVIA_S199  :Avia S-199 "Mule"
+STR_DESC_AIR_AVIA_S199	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}The S-199 was developed from the Messerschmitt Bf-109G airframe with a number of improvements, but due to the lack of suitable engines, an unsuitable propeller and an unsuitable Jumo 211 engine originally designed for Junkers-88s were used, of which there were enough after the war. This emergency aircraft earned the nickname Mule due to inappropriate behavior in certain phases of flight. {}{BLACK}Number built: {ORANGE}603
 
 STR_NAME_AIR_LETOV_S328 :Letov Š-328
-STR_DESC_AIR_LETOV_S328 :Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}The Š-328 was the most widespread single-engine bomber and observation aircraft in the air force of pre-war Czechoslovakia. It was successfully used as an attack and light bomber to defend the republic in 1938 against Hungarian troops that penetrated the territory of Slovakia. 312 pieces were built.
+STR_DESC_AIR_LETOV_S328 :Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}The Š-328 was the most widespread single-engine bomber and observation aircraft in the air force of pre-war Czechoslovakia. It was successfully used as an attack and light bomber to defend the republic in 1938 against Hungarian troops that penetrated the territory of Slovakia. {}{BLACK}Number built: {ORANGE}312
 
 STR_NAME_AIR_ZLIN_Z12   :Zlín Z.12
-STR_DESC_AIR_ZLIN_Z12   :Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}Z.12 was a military designation for Zlín Z.XII, a sports and training two-seater all-wood low-flying aircraft, which was used for courier service and fitness flying. 201 pieces were built.
+STR_DESC_AIR_ZLIN_Z12   :Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}Z.12 was a military designation for Zlín Z.XII, a sports and training two-seater all-wood low-flying aircraft, which was used for courier service and fitness flying. {}{BLACK}Number built: {ORANGE}201
 
 
-STR_DESC_AIR_TMPL		:Country of origin: {ORANGE}??? {}{BLACK}Historic facts: {ORANGE}.
+STR_DESC_AIR_TMPL		:Country of origin: {ORANGE}??? {}{BLACK}Historic facts: {ORANGE}. {}{BLACK}Number built: {ORANGE}
 
 STR_NAME_AIR_SMALLAIRPORT   :USS Intrepid /CV-11/ (Essex class) 1943
 STR_NAME_AIR_SMALLAIRPORT2  :HMS Eagle /R05/ (Audacious class) 1956
