@@ -66,12 +66,11 @@ Airplanes available in set:
 
 | Name | Type | Game type | Intro date | Model life | Speed in km/h | Range | 
 | --- | --- | --- | --- | --- | ---: | ---: |
-| Fighters |||||||
+| **Fighters** |||||||
 | Avro 504 | fighter | small | 1913 | 19  | 153 | 80 |
 | Nieuport-Delage NiD 29 | fighter | small | 1918 | 10 | 235 | 116 |
 | Avia Ba.33 | fighter | small | 1929 | 4  | 315 | 90 |
 | Avia B.534 | fighter | small | 1933 | 6  | 380 | 120 |
-| Letov Š.328 | reconnaissance/light bomber | small | 1933 | 6 | 328 | 256 |
 | Polikarpov I-16 | fighter | small | 1933 | 9 | 489 | 140 |
 | Hawker Hurricane IIC | fighter | small | 1935 | 9 | 550 | 194 |
 | Avia B.35 | fighter | small | 1938 | 4  | 550 | 188 |
@@ -87,8 +86,6 @@ Airplanes available in set:
 | Dassault Mirage III | fighter, IIIM carrier-based| small | 1956 | 24 | 2 350 | 667 |
 | Aero S-105 | fighter | small | 1957 | 4 | 1452 | 440 |
 | McDonnell F-4 Phantom II | carrier based fighter, bomber | small | 1958 | 24 | 2 370 | 540 |
-| Aero L-29 | trainer/light attack aircraft | small | 1959 | 11 | 655 | 180 |
-| Aero L-39 | trainer/light attack aircraft | small | 1968 | 28 | 750 | 350 |
 | General Dynamics F-16 Fighting Falcon | multirole fighter | small | 1976 | 55 | 2 124 | 840 |
 | Mikoyan-Gurevich MiG-29 | fighter | small | 1977 | 60 | 2400 | 420 |
 | Dassault Mirage 2000 | fighter | small | 1978 | 29 | 2 336 | 667 |
@@ -96,11 +93,9 @@ Airplanes available in set:
 | Saab JAS 39 Gripen | multirole fighter | small | 1989 | 50 | 2 460 | 640 |
 | Sukhoi Su-30 | multirole fighter | small | 1989 | 40 | 2 120 | 600 |
 | Dassault Rafale | multirole fighter, M carrier-based | small | 1991 | 40 | 1 912 | 740 |
-| Aero L-159 | trainer/light attack aircraft | small | 1997 | 6 | 960 | 506 |
 | Lockheed Martin F-35A Lightning II | multirole combat aircraft | small | 2006 | 34 | 1 930 | 560 |
 | Sukhoi Su-57 | multirole fighter | small | 2010 | 40 | 2 440 | 700 |
-| Aero L-39NG | trainer/light attack aircraft | small | 2018 | 25 | 780 | 500 |
-| Transport / Airlifters |||||||||
+| **Transport / Airlifters** |||||||||
 | Douglas C-74 Globemaster | heavy lift cargo aircraft | small | 1945 | 2 | 528 | 1 100 |
 | Antonov An-2 | utility aircraft | small | 1947 | 54 | 258 | 169 |
 | Douglas C-124 Globemaster II | heavy lift cargo aircraft | small | 1949 | 6 | 489 | 1 298 |
@@ -114,10 +109,17 @@ Airplanes available in set:
 | Ilyushin Il-76 | strategic airlifter | small | 1971 | 60 | 900 | 1000 |
 | Boeing C-17 Globemaster III | large military transport aircraft | small | 1991 | 24 | 1 080 | 896 |
 | Airbus A400M Atlas | military transport aircraft | small | 2009 | 30 | 858 | 660 |
-| Reconnaissance |||||||||
+| **Reconnaissance** |||||||||
 | Northrop Grumman RQ-4 Global Hawk | remotely-piloted surveillance aircraft | small | 1998 | 40 | 609 | 4 560 |
 | Lockheed Martin RQ-170 Sentinel | unmanned aerial vehicle | small | 2007 | 30 | 710 | 2 000 |
-| Helicopters |||||||||
+| **Training / Courier Service / Light Bombers** |||||||||
+| Letov Š.328 | reconnaissance/light bomber | small | 1933 | 6 | 328 | 256 |
+| Zlín Z.12 | trainer/courier service | small | 1935 | 5 | 145 | 80 |
+| Aero L-29 | trainer/light attack aircraft | small | 1959 | 11 | 655 | 180 |
+| Aero L-39 | trainer/light attack aircraft | small | 1968 | 28 | 750 | 350 |
+| Aero L-159 | trainer/light attack aircraft | small | 1997 | 6 | 960 | 506 |
+| Aero L-39NG | trainer/light attack aircraft | small | 2018 | 25 | 780 | 500 |
+| **Helicopters** |||||||||
 | Bell UH-1 Iroquois / HU-1 "Huey" | utility military helicopter | helicopter | 1956 | 31 | 220 | 102 |
 
 [comment]: <tablex> (| | | | | | | |)

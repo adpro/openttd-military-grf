@@ -21,6 +21,7 @@ You can find these types of changes:
 - Avia B.534 airplane
 - Avia B.35 airplane
 - Letov Š.328 airplane
+- Zlín Z.12 airplane
 - Avia S-199 airplane
 - Aero S-103 airplane
 - Aero S-105 airplane
