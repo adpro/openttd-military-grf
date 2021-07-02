@@ -17,6 +17,7 @@ You can find these types of changes:
 ## [Unreleased]
 
 ### Added
+- Avia Ba.33 airplane
 - Avia B.534 airplane
 - Avia B.35 airplane
 - Letov Š.328 airplane

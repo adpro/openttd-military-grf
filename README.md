@@ -69,6 +69,7 @@ Airplanes available in set:
 | Fighters |||||||
 | Avro 504 | fighter | small | 1913 | 19  | 153 | 80 |
 | Nieuport-Delage NiD 29 | fighter | small | 1918 | 10 | 235 | 116 |
+| Avia Ba.33 | fighter | small | 1929 | 4  | 315 | 90 |
 | Avia B.534 | fighter | small | 1933 | 6  | 380 | 120 |
 | Letov Š.328 | reconnaissance/light bomber | small | 1933 | 6 | 328 | 256 |
 | Polikarpov I-16 | fighter | small | 1933 | 9 | 489 | 140 |
