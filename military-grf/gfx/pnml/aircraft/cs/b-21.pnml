@@ -1,11 +1,11 @@
 /* airplane Avia B.21 */
 
-spriteset(spriteset_air_avia_b21, "gfx/png/air_hurricane.png") {
-    // 16 x 21 x 7
-    //left_x, upper_y, width, height, offset_x, offset_y
-    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
-    template_aircraft(0,0,14,15,18,16,16,12)
-}
+// spriteset(spriteset_air_avia_b21, "gfx/png/air_hurricane.png") {
+//     // 16 x 21 x 7
+//     //left_x, upper_y, width, height, offset_x, offset_y
+//     //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+//     template_aircraft(0,0,14,15,18,16,16,12)
+// }
 
 if (is_aircraft_fighter_enabled(param_aircraft_enable_cs)){
     item (FEAT_AIRCRAFT, item_air_avia_b21) {
@@ -40,7 +40,7 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_cs)){
         }
         graphics {
                 additional_text:    return string(STR_DESC_AIR_AVIA_B21); //Additional text shown in purchase list
-                default:            spriteset_air_avia_b21;
+                default:            spriteset_air_avia_ba33;
                 cost_factor:                    return 1;
                 running_cost_factor:            return 22;
         }
