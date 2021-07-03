@@ -1,7 +1,7 @@
 ;State;GRF Version planned;Type;ID;STR ID;Introduction date;Model life;Vehicle life;Loading speed;Cost factor orig;Running cost orig;Speed kmh;Range;Refit cost;Acceleration;Passenger capacity;Mail capacity;Sound type;Passanger capacity callback;Mail capacity callback;Price ;Running cost;Price Calculated;Length pixels;Wingspan pixels;Height pixels;Capacity;Built;Length;Wingspan;Height;Real price;Maintenance cost;Real running cost;Real range full load in km
 Aero A-304;ALMOST DONE;0.6.0;C;aero_a304;AERO_A304;1937-07-01;4;12;10;2;3;322;240;0;30;8;12;propeller;;;2;80;1;16,9;24,6;4,4;6;19;13,2;19,2;3,4;150 000;1 500;;1200
 Douglas C-74 Globemaster;ALMOST DONE;0.2.0;C;c74;C74;1945-09-05;2;15;15;6;10;528;1100;0;27;0;0;propeller;;200;4;213;4;31,6;44,1;11,1;13;;37,8;52,8;13,34;1 000 000;4 000;;5500
-Aero K-75 / Ae-45;PLANNED;0.6.0;C;aero_ae45;AERO_AE45;1947-07-21;14;15;5;2;3;280;200;0;40;4;8;propeller;;;2;64;0;9,7;15,7;2,9;;590;7,54;12,25;2,3;100 000;1 200;;1000
+Aero K-75 / Ae-45;ALMOST DONE;0.6.0;C;aero_ae45;AERO_AE45;1947-07-21;14;15;5;2;3;280;200;0;40;4;8;propeller;;;2;64;0;9,7;15,7;2,9;;590;7,54;12,25;2,3;100 000;1 200;;1000
 Antonov An-2;ALMOST DONE;0.5.0;C;an2;AN2;1947-08-31;54;30;10;12;25;258;169;0;30;12;0;propeller;;;3;186;3;20,7;30,4;6,8;12;>18000;12,4;18,2;4,1;700 000;3 500;;845
 Douglas C-124 Globemaster II;ALMOST DONE;0.2.0;C;c124;C124;1949-11-27;6;24;18;7;15;489;1298;0;25;0;0;propeller;;350;6;266;6;33,2;44,3;12,3;7;;39,75;53;14,7;1 600 000;5 000;;6490
 Antonov An-12;ALMOST DONE;0.5.0;C;an12;AN12;1957-12-16;13;60;18;12;25;660;720;0;25;0;0;propeller;;200;22;1381;22;55,3;63,5;17,6;60;1248;33,1;38;10,54;6 000 000;26 000;;3600

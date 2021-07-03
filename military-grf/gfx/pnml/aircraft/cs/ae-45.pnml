@@ -1,10 +1,10 @@
 /* airplane Aero Ae-45 / K-75 */
 
-spriteset(spriteset_air_aero_ae45, "gfx/png/air_hurricane.png") {
+spriteset(spriteset_air_aero_ae45, "gfx/png/air_aero_ae45.png") {
     // 16 x 21 x 7
     //left_x, upper_y, width, height, offset_x, offset_y
     //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
-    template_aircraft(0,0,14,15,18,16,16,12)
+    template_aircraft(0,0,10,9,13,10,10,8)
 }
 
 if (is_aircraft_airlifter_enabled(param_aircraft_enable_cs)){
