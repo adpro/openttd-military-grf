@@ -120,6 +120,7 @@ Airplanes available in set:
 | **Training / Courier Service / Light Bombers** |||||||||
 | Letov Š.328 | reconnaissance/light bomber | small | 1933 | 6 | 328 | 256 |
 | Zlín Z.12 | trainer/courier service | small | 1935 | 5 | 145 | 80 |
+| Aero A.304 | reconnaissance and light bomber  | small | 1937 | 4 | 322 | 240 |
 | Aero L-29 | trainer/light attack aircraft | small | 1959 | 11 | 655 | 180 |
 | Aero L-39 | trainer/light attack aircraft | small | 1968 | 28 | 750 | 350 |
 | Aero L-159 | trainer/light attack aircraft | small | 1997 | 6 | 960 | 506 |
