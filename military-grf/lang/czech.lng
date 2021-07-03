@@ -200,7 +200,7 @@ STR_DESC_AIR_AERO_L39NG	:Země původu: {ORANGE}ČR {}{BLACK}Historická fakta: 
 STR_NAME_AIR_AVIA_B3    :Avia B.3 "Bejk"
 STR_DESC_AIR_AVIA_B3	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}První sériově vyráběná stíhačka vlastní konstrukce v novém Československu od jeho samostatnosti v roce 1918.{}{BLACK}Vyrobeno ks: {ORANGE}14
 
-STR_NAME_AIR_AVIA_B21   :Avia B.21
+STR_NAME_AIR_AVIA_B21   :Avia B.21 "Špaček"
 STR_DESC_AIR_AVIA_B21	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Tento stíhací letoun s firemním označením BH-21 zvítězil v mezinárodní soutěži stíhacích letounů v Bruselu na jaře roku 1926. {}{BLACK}Vyrobeno ks: {ORANGE}137
 
 STR_NAME_AIR_AVIA_B35   :Avia B.35
@@ -210,7 +210,7 @@ STR_NAME_AIR_AVIA_B534  :Avia B.534
 STR_DESC_AIR_AVIA_B534	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Tento stíhací dvouplošník byl hlavním typem stíhačky československého letectva od roku 1935 až do začátku okupace nacistickým Německem. {}{BLACK}Vyrobeno ks: {ORANGE}566
 
 STR_NAME_AIR_AVIA_BA33  :Avia Ba.33
-STR_DESC_AIR_AVIA_BA33	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Dvojplošník s firemním označením BH-33E byl přechodový typ stíhačky pro československou armádu mezi typy B.21 a B.534. Jeden z ukázkových kusů pro Mandžusko byl používán jako jediné československé letadlo japonským letectvem během mandžusko-japonského konfliktu. {}{BLACK}Vyrobeno ks: {ORANGE}81
+STR_DESC_AIR_AVIA_BA33	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Dvojplošník s firemním označením BH-33L byl přechodový typ stíhačky pro československou armádu mezi typy B.21 a B.534. Jeden z ukázkových kusů pro Mandžusko byl používán jako jediné československé letadlo japonským letectvem během mandžusko-japonského konfliktu. {}{BLACK}Vyrobeno ks: {ORANGE}81
 
 STR_NAME_AIR_AVIA_S199  :Avia S-199 "Mezek"
 STR_DESC_AIR_AVIA_S199	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}S-199 byl vyvinut z draku Messerschmittu Bf-109G s množstvím vylepšení, ale kvůli nedostatku vhodných motorů byla použita nevhodná vrtule i nevhodný motor Jumo 211 určený původně pro Junkers-88, kterých bylo po válce dostatek. Tento nouzový letoun si vysloužil přezdívku Mezek kvůli nevhodnému chování v určitých fázích letu. {}{BLACK}Vyrobeno ks: {ORANGE}603

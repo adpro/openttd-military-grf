@@ -201,7 +201,7 @@ STR_DESC_AIR_AERO_L39NG	:Country of origin: {ORANGE}CZE {}{BLACK}Historic facts:
 STR_NAME_AIR_AVIA_B3    :Avia B.3 "Bull"
 STR_DESC_AIR_AVIA_B3	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}The first mass-produced fighter of its own design in the new Czechoslovakia since its independence in 1918.{}{BLACK}Number built: {ORANGE}14
 
-STR_NAME_AIR_AVIA_B21   :Avia B.21
+STR_NAME_AIR_AVIA_B21   :Avia B.21 "Starling"
 STR_DESC_AIR_AVIA_B21	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}This fighter with the company designation BH-21 won the international competition of fighters in Brussels in the spring of 1926. {}{BLACK}Number built: {ORANGE}137 
 
 STR_NAME_AIR_AVIA_B35   :Avia B.35
@@ -211,7 +211,7 @@ STR_NAME_AIR_AVIA_B534  :Avia B.534
 STR_DESC_AIR_AVIA_B534	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}This fighter biplane was the main type of fighter of the Czechoslovak Air Force from 1935 until the beginning of occupation by Nazi Germany. {}{BLACK}Number built: {ORANGE}566
 
 STR_NAME_AIR_AVIA_BA33  :Avia Ba.33
-STR_DESC_AIR_AVIA_BA33	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}The biplane with the company designation BH-33E was a transitional type of fighter for the Czechoslovak army between types B.21 and B.534. One of the sample pieces for Manchuria was used as the only Czechoslovak aircraft by the Japanese Air Force during the Manchurian-Japanese conflict. {}{BLACK}Number built: {ORANGE}81
+STR_DESC_AIR_AVIA_BA33	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}The biplane with the company designation BH-33L was a transitional type of fighter for the Czechoslovak army between types B.21 and B.534. One of the sample pieces for Manchuria was used as the only Czechoslovak aircraft by the Japanese Air Force during the Manchurian-Japanese conflict. {}{BLACK}Number built: {ORANGE}81
 
 STR_NAME_AIR_AVIA_S199  :Avia S-199 "Mule"
 STR_DESC_AIR_AVIA_S199	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}The S-199 was developed from the Messerschmitt Bf-109G airframe with a number of improvements, but due to the lack of suitable engines, an unsuitable propeller and an unsuitable Jumo 211 engine originally designed for Junkers-88s were used, of which there were enough after the war. This emergency aircraft earned the nickname Mule due to inappropriate behavior in certain phases of flight. {}{BLACK}Number built: {ORANGE}603
