@@ -69,6 +69,7 @@ Airplanes available in set:
 | **Fighters** |||||||
 | Avro 504 | fighter | small | 1913 | 19  | 153 | 80 |
 | Nieuport-Delage NiD 29 | fighter | small | 1918 | 10 | 235 | 116 |
+| Aero A.18 | fighter | small | 1923 | 4  | 229 | 80 |
 | Avia B.21 | fighter | small | 1925 | 4  | 245 | 110 |
 | Avia Ba.33 | fighter | small | 1929 | 4  | 315 | 90 |
 | Avia B.534 | fighter | small | 1933 | 6  | 380 | 120 |

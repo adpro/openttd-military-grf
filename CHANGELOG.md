@@ -17,6 +17,7 @@ You can find these types of changes:
 ## [Unreleased]
 
 ### Added
+- Aero A.18 airplane
 - Avia B.21 airplane
 - Avia Ba.33 airplane
 - Avia B.534 airplane
