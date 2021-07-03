@@ -197,8 +197,8 @@ STR_DESC_AIR_AERO_L39	:Země původu: {ORANGE}ČSSR {}{BLACK}Historická fakta: 
 STR_NAME_AIR_AERO_L39NG :Aero L-39NG
 STR_DESC_AIR_AERO_L39NG	:Země původu: {ORANGE}ČR {}{BLACK}Historická fakta: {ORANGE}Je to nová generace podzvukového cvičného letounu Aero L-39 Albatros. L-39NG vychází z původní aerodynamické koncepce L-39, ale jeho konstrukčně a technologicky upravený trup doplňuje nové křídlo s integrální palivovou nádrží, moderní přístrojové vybavení a pohonná jednotka s vyšší životností. {}{BLACK}Vyrobeno ks: {ORANGE}4
 
-STR_NAME_AIR_AVIA_B11   :Avia B.11
-STR_DESC_AIR_AVIA_B11	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Letoun sloužil jako kurýrní a sportovní letadlo. Firemní označení je BH-11. Avia BH-11 bylo první československé letadlo, které v červenci 1924 přeletělo kanál La Manche a přistálo na anglické půdě. {}{BLACK}Vyrobeno ks: {ORANGE}> 25
+STR_NAME_AIR_AVIA_B3    :Avia B.3 "Bejk"
+STR_DESC_AIR_AVIA_B3	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}První sériově vyráběná stíhačka vlastní konstrukce v novém Československu od jeho samostatnosti v roce 1918.{}{BLACK}Vyrobeno ks: {ORANGE}14
 
 STR_NAME_AIR_AVIA_B21   :Avia B.21
 STR_DESC_AIR_AVIA_B21	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Tento stíhací letoun s firemním označením BH-21 zvítězil v mezinárodní soutěži stíhacích letounů v Bruselu na jaře roku 1926. {}{BLACK}Vyrobeno ks: {ORANGE}137

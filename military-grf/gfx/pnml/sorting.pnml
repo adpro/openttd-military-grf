@@ -3,8 +3,8 @@ sort (FEAT_AIRCRAFT,
     // fighters
     item_air_avro
     ,item_air_nid29
+    ,item_air_avia_b3
     ,item_air_aero_a18
-    ,item_air_avia_b11
     ,item_air_avia_b21
     ,item_air_avia_ba33
     ,item_air_avia_b534
