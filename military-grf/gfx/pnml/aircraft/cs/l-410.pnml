@@ -1,10 +1,10 @@
 /* airplane Let L-410 */
 
-spriteset(spriteset_air_let_l410, "gfx/png/air_hurricane.png") {
-    // 16 x 21 x 7
+spriteset(spriteset_air_let_l410, "gfx/png/air_let_l410.png") {
+    // 18 x 22 x 7
     //left_x, upper_y, width, height, offset_x, offset_y
     //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
-    template_aircraft(0,0,14,15,18,16,16,12)
+    template_aircraft(0,0,14,16,20,17,18,12)
 }
 
 if (is_aircraft_airlifter_enabled(param_aircraft_enable_cs)){

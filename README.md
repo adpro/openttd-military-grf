@@ -108,10 +108,12 @@ Airplanes available in set:
 | Grumman C-2 Greyhound | carrier-based COD | small | 1964 | 8 | 635 | 480 |
 | Antonov An-22 | large military transport aircraft | small | 1965 | 12 | 740 | 1000 |
 | Lockheed C-5 Galaxy | large military transport aircraft | large | 1968 | 21 | 856 | 852 |
+| Let L-410 | airliner and transport aircraft | small | 1969 | 50 | 335 | 300 |
 | Antonov An-26 | military transport aircraft | small | 1969 | 17 | 440 | 500 |
 | Ilyushin Il-76 | strategic airlifter | small | 1971 | 60 | 900 | 1000 |
 | Boeing C-17 Globemaster III | large military transport aircraft | small | 1991 | 24 | 1 080 | 896 |
 | Airbus A400M Atlas | military transport aircraft | small | 2009 | 30 | 858 | 660 |
+| Let L-410NG | airliner and transport aircraft | small | 2015 | 40 | 417 | 514 |
 | **Reconnaissance** |||||||||
 | Northrop Grumman RQ-4 Global Hawk | remotely-piloted surveillance aircraft | small | 1998 | 40 | 609 | 4 560 |
 | Lockheed Martin RQ-170 Sentinel | unmanned aerial vehicle | small | 2007 | 30 | 710 | 2 000 |
