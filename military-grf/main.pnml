@@ -69,7 +69,7 @@
 #include "gfx/pnml/aircraft/cs/l-159.pnml"
 #include "gfx/pnml/aircraft/cs/l-29.pnml"
 #include "gfx/pnml/aircraft/cs/l-39.pnml"
-#include "gfx/pnml/aircraft/cs/b-11.pnml"
+#include "gfx/pnml/aircraft/cs/b-3.pnml"
 #include "gfx/pnml/aircraft/cs/b-21.pnml"
 #include "gfx/pnml/aircraft/cs/b-35.pnml"
 #include "gfx/pnml/aircraft/cs/b-534.pnml"
