@@ -48,8 +48,8 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_eu)){
     graphics {
             additional_text:    return string(STR_DESC_AIR_JAS39); //Additional text shown in purchase list
             default:            spritegroup_air_jas39;
-            cost_factor:                    return 109;
-            running_cost_factor:            return 1434;
+            cost_factor:                    return 74;
+            running_cost_factor:            return 434;
     }
     }
 

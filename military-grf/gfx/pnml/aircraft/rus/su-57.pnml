@@ -40,8 +40,8 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_rus)){
     graphics {
             additional_text:    return string(STR_DESC_AIR_SU57); //Additional text shown in purchase list
             default:            spriteset_air_su57;
-            cost_factor:                    return 208;
-            running_cost_factor:            return 1275;
+            cost_factor:                    return 89;
+            running_cost_factor:            return 974;
     }
     }
 

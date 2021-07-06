@@ -44,8 +44,8 @@ if (is_aircraft_airlifter_enabled(param_aircraft_enable_rus)){
 
             //passenger_capacity: return 0;
             mail_capacity:      return 800;    // callback for setting capacity
-            cost_factor:                    return 474;
-            running_cost_factor:            return 3719;
+            cost_factor:                    return 894;
+            running_cost_factor:            return 6594;
     }
     }
 

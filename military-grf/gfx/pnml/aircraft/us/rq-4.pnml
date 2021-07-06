@@ -49,8 +49,8 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_us)){
     graphics {
             additional_text:    return string(STR_DESC_AIR_RQ4); //Additional text shown in purchase list
             default:            spriteset_air_rq4;
-            cost_factor:                    return 222;
-            running_cost_factor:            return 2656;
+            cost_factor:                    return 151;
+            running_cost_factor:            return 534;
     }
     }
 

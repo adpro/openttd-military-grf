@@ -34,8 +34,8 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_cs)){
     graphics {
             additional_text:    return string(STR_DESC_AIR_S103); //Additional text shown in purchase list
             default:            spriteset_air_mig15;
-            cost_factor:                    return 3;
-            running_cost_factor:            return 69;
+            cost_factor:                    return 2;
+            running_cost_factor:            return 155;
     }
     }
 

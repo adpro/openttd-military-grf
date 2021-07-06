@@ -49,8 +49,8 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_us)){
     graphics {
             additional_text:    return string(STR_DESC_AIR_F35); //Additional text shown in purchase list
             default:            spriteset_air_f35;
-            cost_factor:                    return 291;
-            running_cost_factor:            return 1116;
+            cost_factor:                    return 233;
+            running_cost_factor:            return 1051;
     }
     }
 

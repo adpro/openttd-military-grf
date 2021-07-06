@@ -41,8 +41,8 @@ if (is_aircraft_airlifter_enabled(param_aircraft_enable_cs)){
         graphics {
                 additional_text:    return string(STR_DESC_AIR_LET_L410); //Additional text shown in purchase list
                 default:            spriteset_air_let_l410;
-                cost_factor:                    return 22;
-                running_cost_factor:            return 664;
+                cost_factor:                    return 17;
+                running_cost_factor:            return 185;
         }
     }
 
@@ -105,8 +105,8 @@ if (is_aircraft_airlifter_enabled(param_aircraft_enable_cs)){
     graphics {
             additional_text:    return string(STR_DESC_AIR_LET_L410NG); //Additional text shown in purchase list
             default:            spriteset_air_let_l410;
-            cost_factor:                    return 73;
-            running_cost_factor:            return 701;
+            cost_factor:                    return 13;
+            running_cost_factor:            return 191;
     }
     }
 

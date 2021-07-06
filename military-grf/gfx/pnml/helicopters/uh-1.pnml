@@ -51,8 +51,8 @@ if (is_aircraft_helicopter_enabled(param_aircraft_enable_us)){
             additional_text:    return string(STR_DESC_AIR_UH1); //Additional text shown in purchase list
             default:            spriteset_air_uh1;
             rotor:              spriteset_air_uh1_rotor;
-            cost_factor:                    return 3;
-            running_cost_factor:            return 213;
+            cost_factor:                    return 43;
+            running_cost_factor:            return 156;
     }
     }
 

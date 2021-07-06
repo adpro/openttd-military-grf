@@ -49,8 +49,8 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_us)){
     graphics {
             additional_text:    return string(STR_DESC_AIR_F6F); //Additional text shown in purchase list
             default:            spriteset_air_hellcat;
-            cost_factor:                    return 2;
-            running_cost_factor:            return 53;
+            cost_factor:                    return 1;
+            running_cost_factor:            return 178;
     }
     }
 

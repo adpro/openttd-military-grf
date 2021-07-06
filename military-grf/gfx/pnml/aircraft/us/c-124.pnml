@@ -52,8 +52,8 @@ if (is_aircraft_airlifter_enabled(param_aircraft_enable_us)){
             default:            spriteset_air_c124;
 
             mail_capacity:      return 350;    // callback for setting capacity
-            cost_factor:                    return 6;
-            running_cost_factor:            return 266;
+            cost_factor:                    return 16;
+            running_cost_factor:            return 2170;
     }
     }
 

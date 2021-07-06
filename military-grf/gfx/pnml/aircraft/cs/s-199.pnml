@@ -41,8 +41,8 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_cs)){
         graphics {
                 additional_text:    return string(STR_DESC_AIR_AVIA_S199); //Additional text shown in purchase list
                 default:            spriteset_air_avia_s199;
-                cost_factor:                    return 1;
-                running_cost_factor:            return 53;
+                cost_factor:                    return 3;
+                running_cost_factor:            return 98;
         }
     }
 

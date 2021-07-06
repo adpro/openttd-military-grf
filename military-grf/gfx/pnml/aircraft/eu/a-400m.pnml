@@ -51,8 +51,8 @@ if (is_aircraft_airlifter_enabled(param_aircraft_enable_eu)){
             default:            spriteset_air_a400;
 
             mail_capacity:      return 385;    // callback for setting capacity
-            cost_factor:                    return 856;
-            running_cost_factor:            return 1063;
+            cost_factor:                    return 126;
+            running_cost_factor:            return 3490;
     }
     }
 

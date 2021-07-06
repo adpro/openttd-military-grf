@@ -42,7 +42,7 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_cs)){
                 additional_text:    return string(STR_DESC_AIR_AVIA_BA33); //Additional text shown in purchase list
                 default:            spriteset_air_avia_ba33;
                 cost_factor:                    return 1;
-                running_cost_factor:            return 27;
+                running_cost_factor:            return 40;
         }
     }
 

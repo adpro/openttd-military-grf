@@ -48,8 +48,8 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_eu)){
     graphics {
             additional_text:    return string(STR_DESC_AIR_RAFALE); //Additional text shown in purchase list
             default:            spritegroup_air_rafale;
-            cost_factor:                    return 219;
-            running_cost_factor:            return 877;
+            cost_factor:                    return 217;
+            running_cost_factor:            return 852;
     }
     }
 

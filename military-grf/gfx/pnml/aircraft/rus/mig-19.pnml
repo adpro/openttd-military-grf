@@ -40,8 +40,8 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_rus)){
     graphics {
             additional_text:    return string(STR_DESC_AIR_MIG19); //Additional text shown in purchase list
             default:            spriteset_air_mig19;
-            cost_factor:                    return 6;
-            running_cost_factor:            return 531;
+            cost_factor:                    return 10;
+            running_cost_factor:            return 234;
     }
     }
 
