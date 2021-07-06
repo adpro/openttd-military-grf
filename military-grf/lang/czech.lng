@@ -8,6 +8,7 @@ STR_GRF_DESCRIPTION :{TITLE} obsahuje několik vojenských letadel.{}{BLACK}Verz
 STR_MIN_OPENTTD_VERSION :1.2.0 or r22518
 
 
+# --------------------
 # parameters
 STR_PARAM_NAME_RANGES           :Povolit omezení doletu letadel
 STR_PARAM_DESC_RANGES           :Umožní omezit dolet letadel, jinak bez limitu.
@@ -224,7 +225,16 @@ STR_DESC_AIR_ZLIN_Z12   :Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta:
 
 STR_DESC_AIR_TMPL		:Země původu: {ORANGE}??? {}{BLACK}Historická fakta: {ORANGE}
 
+# --------------------
+# vehicle subversions
+STR_LIV_AIR_AF          : Vzdušné síly
+STR_LIV_AIR_AF_STRIPES  : Vzdušné síly s pruhy
+STR_LIV_AIR_2CC         : Dvoubarevné schéma s pruhy
+STR_LIV_AIR_2CC_REV     : Dvoubarevné schéma obrácené s pruhy
 
+
+# --------------------
+# airports
 STR_NAME_AIR_SMALLAIRPORT   :USS Intrepid /CV-11/ (třída Essex) 1943
 STR_NAME_AIR_SMALLAIRPORT2  :HMS Eagle /R05/ (třída Audacious) 1956
 STR_NAME_AIR_SMALLAIRPORT_MODERN    :USS Enterprise /CVAN-65/ 1980

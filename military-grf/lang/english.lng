@@ -7,7 +7,7 @@ STR_GRF_DESCRIPTION :{TITLE} contains several military airplanes.{}{BLACK}Versio
 
 STR_MIN_OPENTTD_VERSION :1.2.0 or r22518
 
-
+# --------------------
 # parameters
 STR_PARAM_NAME_RANGES           :Enable aircraft ranges
 STR_PARAM_DESC_RANGES           :Enable limit aircraft range, otherwise without limit.
@@ -46,6 +46,7 @@ STR_PARAM_NAME_STD_PLANES   :Disable default aircraft
 STR_PARAM_DESC_STD_PLANES   :Disables default airplanes and helicopters in game.
 
 
+# --------------------
 # vehicle names
 STR_NAME_AIR_F86        :North American F-86 Sabre
 STR_DESC_AIR_F86		:Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}Best known as the US' first swept-wing fighter that could counter the swept-wing Soviet MiG-15 in high-speed dogfights in the skies of the Korean War. {}{BLACK}Number built: {ORANGE}9 860
@@ -225,6 +226,15 @@ STR_DESC_AIR_ZLIN_Z12   :Country of origin: {ORANGE}CSK {}{BLACK}Historic facts:
 
 STR_DESC_AIR_TMPL		:Country of origin: {ORANGE}??? {}{BLACK}Historic facts: {ORANGE}. {}{BLACK}Number built: {ORANGE}
 
+# --------------------
+# vehicle subversions
+STR_LIV_AIR_AF          : Air Force
+STR_LIV_AIR_AF_STRIPES  : Air Force with stripes
+STR_LIV_AIR_2CC         : 2CC with stripes
+STR_LIV_AIR_2CC_REV     : 2CC Reversed with stripes
+
+# --------------------
+# airports
 STR_NAME_AIR_SMALLAIRPORT   :USS Intrepid /CV-11/ (Essex class) 1943
 STR_NAME_AIR_SMALLAIRPORT2  :HMS Eagle /R05/ (Audacious class) 1956
 STR_NAME_AIR_SMALLAIRPORT_MODERN    :USS Enterprise /CVAN-65/ 1980
