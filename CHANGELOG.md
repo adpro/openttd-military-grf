@@ -21,7 +21,7 @@ You can find these types of changes:
 - Aero A.18 airplane
 - Avia B.21 airplane
 - Avia Ba.33 airplane
-- Avia B.534 airplane
+- Avia B.534 airplane in 4 liveries
 - Aero A.304 airplane
 - Avia B.35 airplane
 - Letov Š.328 airplane

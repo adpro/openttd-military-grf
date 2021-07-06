@@ -181,6 +181,24 @@ Thanks go out to #openttdcoop and Richard Wheeler for [PixelTool](http://bundles
 
 Special thanks to OpenTTD community for wiki, NML tutorial and many other sources.
 
+Web sources for calculations and other sources:
+
+- https://wikipedia.org
+- https://cs.wikipedia.org/wiki/Kategorie:Československá_a_česká_dopravn%C3%AD_letadla
+- https://cs.wikipedia.org/wiki/Československé_vojenské_letouny_po_prvn%C3%AD_světové_válce
+- https://globaljournals.org/GJRE_Volume14/2-A-Comparative-Study.pdf
+- https://www.officialdata.org/us/inflation/1800?amount=1
+- https://dev.openttdcoop.org/projects/grfdev
+- https://dev.openttdcoop.org/projects/worldairlinersset
+- https://newgrf-specs.tt-wiki.net/wiki/PalettesAndCoordinates#Coordinates
+- https://wiki.openttd.org/en/Development/NewGRF/Debugging
+- https://newgrf-specs.tt-wiki.net/wiki/NML:Vehicles#Properties_common_to_all_vehicle_types
+- 
+
+Literature:
+
+- Čížek, M., *LETADLA ZRAZENÉHO NEBE*, Naše vojsko, 2015, EAN 9788020615763
+- Pavlůsek, A., *Československé stíhací letouny*, CPress, 2018, EAN 9788026418092
 ## License
 
 Military Items - military airplanes and other vehicles in 2CC for OpenTTD
