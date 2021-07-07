@@ -6,6 +6,41 @@ spriteset(spriteset_air_aero_ae45, "gfx/png/air_aero_ae45.png") {
     //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
     template_aircraft(0,0,10,9,13,10,10,8)
 }
+spriteset(spriteset_air_aero_ae45_stripes, "gfx/png/air_aero_ae45.png") {
+    // 16 x 21 x 7
+    //left_x, upper_y, width, height, offset_x, offset_y
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    template_aircraft(0,11,10,9,13,10,10,8)
+}
+spriteset(spriteset_air_aero_ae45_2cc, "gfx/png/air_aero_ae45.png") {
+    // 16 x 21 x 7
+    //left_x, upper_y, width, height, offset_x, offset_y
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    template_aircraft(0,22,10,9,13,10,10,8)
+}
+spriteset(spriteset_air_aero_ae45_2cc_rev, "gfx/png/air_aero_ae45.png") {
+    // 16 x 21 x 7
+    //left_x, upper_y, width, height, offset_x, offset_y
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    template_aircraft(0,33,10,9,13,10,10,8)
+}
+
+switch (FEAT_AIRCRAFT, SELF, spriteset_air_aero_ae45_switch, cargo_subtype)
+{
+  1: spriteset_air_aero_ae45_stripes;
+  2: spriteset_air_aero_ae45_2cc;
+  3: spriteset_air_aero_ae45_2cc_rev;
+     spriteset_air_aero_ae45;
+}
+
+switch (FEAT_AIRCRAFT, SELF, air_aero_ae45_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_LIV_AIR_AF);
+  1: string(STR_LIV_AIR_AF_STRIPES);
+  2: string(STR_LIV_AIR_2CC);
+  3: string(STR_LIV_AIR_2CC_REV);
+     return CB_RESULT_NO_TEXT;
+}
 
 if (is_aircraft_airlifter_enabled(param_aircraft_enable_cs)){
     item (FEAT_AIRCRAFT, item_air_aero_ae45) {
@@ -37,13 +72,14 @@ if (is_aircraft_airlifter_enabled(param_aircraft_enable_cs)){
             mail_capacity:                  8;
             sound_effect:                   SOUND_PLANE_TAKE_OFF; // SOUND_PLANE_TAKE_OFF | SOUND_JET
             /* Visual effect is left at default (no effect) */
-    }
-    graphics {
-            additional_text:    return string(STR_DESC_AIR_AERO_AE45); //Additional text shown in purchase list
-            default:            spriteset_air_aero_ae45;
-            cost_factor:                    return 1;
-            running_cost_factor:            return 36;
-    }
+        }
+        graphics {
+                additional_text:    return string(STR_DESC_AIR_AERO_AE45); //Additional text shown in purchase list
+                cargo_subtype_text: air_aero_ae45_cargo_subtype_text;
+                default:            spriteset_air_aero_ae45_switch;
+                cost_factor:                    return 1;
+                running_cost_factor:            return 36;
+        }
     }
 
 
