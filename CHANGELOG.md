@@ -31,8 +31,8 @@ You can find these types of changes:
 - Aero S-103 airplane
 - Aero S-105 airplane
 - Aero L-29 airplane
-- Aero L-39 airplane
-- Aero L-39NG airplane
+- Aero L-39 airplane in 4 liveries
+- Aero L-39NG airplane in 4 liveries
 - Aero L-159 airplane
 - Let L-410 airplane
 - Let L-410NG airplane
