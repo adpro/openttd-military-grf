@@ -1,5 +1,22 @@
 /* airplane Avia S-103 */
 
+switch (FEAT_AIRCRAFT, SELF, spriteset_air_avia_s103_switch, cargo_subtype)
+{
+  1: spriteset_air_mig15_stripes;
+  2: spriteset_air_mig15_2cc;
+  3: spriteset_air_mig15_2cc_rev;
+     spriteset_air_mig15;
+}
+
+switch (FEAT_AIRCRAFT, SELF, air_avia_s103_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_LIV_AIR_AF);
+  1: string(STR_LIV_AIR_AF_STRIPES);
+  2: string(STR_LIV_AIR_2CC);
+  3: string(STR_LIV_AIR_2CC_REV);
+     return CB_RESULT_NO_TEXT;
+}
+
 if (is_aircraft_fighter_enabled(param_aircraft_enable_cs)){
     item (FEAT_AIRCRAFT, item_air_s103) {
         property {
@@ -33,7 +50,8 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_cs)){
     }
     graphics {
             additional_text:    return string(STR_DESC_AIR_S103); //Additional text shown in purchase list
-            default:            spriteset_air_mig15;
+            default:            spriteset_air_avia_s103_switch;
+            cargo_subtype_text: air_avia_s103_cargo_subtype_text;
             cost_factor:                    return 2;
             running_cost_factor:            return 155;
     }

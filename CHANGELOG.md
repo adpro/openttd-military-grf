@@ -28,7 +28,7 @@ You can find these types of changes:
 - Zlín Z.12 airplane
 - Avia S-199 airplane
 - Aero K-75 airplane
-- Aero S-103 airplane
+- Aero S-103 airplane in 4 liveries
 - Aero S-105 airplane
 - Aero L-29 airplane in 4 liveries
 - Aero L-39 airplane in 4 liveries
