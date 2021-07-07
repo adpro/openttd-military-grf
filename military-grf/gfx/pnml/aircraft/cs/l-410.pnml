@@ -10,19 +10,19 @@ spriteset(spriteset_air_let_l410_stripes, "gfx/png/air_let_l410.png") {
     // 18 x 22 x 7
     //left_x, upper_y, width, height, offset_x, offset_y
     //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
-    template_aircraft(0,0,14,16,20,17,18,12)
+    template_aircraft(0,18,14,16,20,17,18,12)
 }
 spriteset(spriteset_air_let_l410_2cc, "gfx/png/air_let_l410.png") {
     // 18 x 22 x 7
     //left_x, upper_y, width, height, offset_x, offset_y
     //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
-    template_aircraft(0,0,14,16,20,17,18,12)
+    template_aircraft(0,36,14,16,20,17,18,12)
 }
 spriteset(spriteset_air_let_l410_2cc_rev, "gfx/png/air_let_l410.png") {
     // 18 x 22 x 7
     //left_x, upper_y, width, height, offset_x, offset_y
     //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
-    template_aircraft(0,0,14,16,20,17,18,12)
+    template_aircraft(0,54,14,16,20,17,18,12)
 }
 
 switch (FEAT_AIRCRAFT, SELF, spriteset_air_let_l410_switch, cargo_subtype)
