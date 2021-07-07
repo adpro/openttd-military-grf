@@ -29,7 +29,7 @@ You can find these types of changes:
 - Avia S-199 airplane
 - Aero K-75 airplane
 - Aero S-103 airplane in 4 liveries
-- Aero S-105 airplane
+- Aero S-105 airplane in 4 liveries
 - Aero L-29 airplane in 4 liveries
 - Aero L-39 airplane in 4 liveries
 - Aero L-39NG airplane in 4 liveries

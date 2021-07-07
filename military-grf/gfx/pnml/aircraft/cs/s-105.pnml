@@ -1,5 +1,22 @@
 /* airplane Aero S-105 */
 
+switch (FEAT_AIRCRAFT, SELF, spriteset_air_avia_s105_switch, cargo_subtype)
+{
+  1: spriteset_air_mig19_stripes;
+  2: spriteset_air_mig19_2cc;
+  3: spriteset_air_mig19_2cc_rev;
+     spriteset_air_mig19;
+}
+
+switch (FEAT_AIRCRAFT, SELF, air_avia_s105_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_LIV_AIR_AF);
+  1: string(STR_LIV_AIR_AF_STRIPES);
+  2: string(STR_LIV_AIR_2CC);
+  3: string(STR_LIV_AIR_2CC_REV);
+     return CB_RESULT_NO_TEXT;
+}
+
 if (is_aircraft_fighter_enabled(param_aircraft_enable_cs)){
     item (FEAT_AIRCRAFT, item_air_s105) {
         property {
@@ -33,7 +50,8 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_cs)){
     }
     graphics {
             additional_text:    return string(STR_DESC_AIR_S105); //Additional text shown in purchase list
-            default:            spriteset_air_mig19;
+            default:            spriteset_air_avia_s105_switch;
+            cargo_subtype_text: air_avia_s105_cargo_subtype_text;
             cost_factor:                    return 10;
             running_cost_factor:            return 224;
     }
