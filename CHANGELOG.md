@@ -33,7 +33,7 @@ You can find these types of changes:
 - Aero L-29 airplane
 - Aero L-39 airplane in 4 liveries
 - Aero L-39NG airplane in 4 liveries
-- Aero L-159 airplane
+- Aero L-159 airplane in 4 liveries
 - Let L-410 airplane in 4 liveries
 - Let L-410NG airplane in 4 liveries
 - Parameter to choose which Czechoslovakian aircraft to use in game
