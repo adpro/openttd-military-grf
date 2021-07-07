@@ -6,6 +6,41 @@ spriteset(spriteset_air_let_l410, "gfx/png/air_let_l410.png") {
     //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
     template_aircraft(0,0,14,16,20,17,18,12)
 }
+spriteset(spriteset_air_let_l410_stripes, "gfx/png/air_let_l410.png") {
+    // 18 x 22 x 7
+    //left_x, upper_y, width, height, offset_x, offset_y
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    template_aircraft(0,0,14,16,20,17,18,12)
+}
+spriteset(spriteset_air_let_l410_2cc, "gfx/png/air_let_l410.png") {
+    // 18 x 22 x 7
+    //left_x, upper_y, width, height, offset_x, offset_y
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    template_aircraft(0,0,14,16,20,17,18,12)
+}
+spriteset(spriteset_air_let_l410_2cc_rev, "gfx/png/air_let_l410.png") {
+    // 18 x 22 x 7
+    //left_x, upper_y, width, height, offset_x, offset_y
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    template_aircraft(0,0,14,16,20,17,18,12)
+}
+
+switch (FEAT_AIRCRAFT, SELF, spriteset_air_let_l410_switch, cargo_subtype)
+{
+  1: spriteset_air_let_l410_stripes;
+  2: spriteset_air_let_l410_2cc;
+  3: spriteset_air_let_l410_2cc_rev;
+     spriteset_air_let_l410;
+}
+
+switch (FEAT_AIRCRAFT, SELF, air_let_l410_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_LIV_AIR_AF);
+  1: string(STR_LIV_AIR_AF_STRIPES);
+  2: string(STR_LIV_AIR_2CC);
+  3: string(STR_LIV_AIR_2CC_REV);
+     return CB_RESULT_NO_TEXT;
+}
 
 if (is_aircraft_airlifter_enabled(param_aircraft_enable_cs)){
     item (FEAT_AIRCRAFT, item_air_let_l410) {
@@ -40,7 +75,8 @@ if (is_aircraft_airlifter_enabled(param_aircraft_enable_cs)){
         }
         graphics {
                 additional_text:    return string(STR_DESC_AIR_LET_L410); //Additional text shown in purchase list
-                default:            spriteset_air_let_l410;
+                cargo_subtype_text: air_let_l410_cargo_subtype_text;
+                default:            spriteset_air_let_l410_switch;
                 cost_factor:                    return 17;
                 running_cost_factor:            return 185;
         }
@@ -101,13 +137,14 @@ if (is_aircraft_airlifter_enabled(param_aircraft_enable_cs)){
             mail_capacity:                  10;
             sound_effect:                   SOUND_PLANE_TAKE_OFF; // SOUND_PLANE_TAKE_OFF | SOUND_JET
             /* Visual effect is left at default (no effect) */
-    }
-    graphics {
-            additional_text:    return string(STR_DESC_AIR_LET_L410NG); //Additional text shown in purchase list
-            default:            spriteset_air_let_l410;
-            cost_factor:                    return 13;
-            running_cost_factor:            return 191;
-    }
+        }
+        graphics {
+                additional_text:    return string(STR_DESC_AIR_LET_L410NG); //Additional text shown in purchase list
+                cargo_subtype_text: air_let_l410_cargo_subtype_text;
+                default:            spriteset_air_let_l410_switch;
+                cost_factor:                    return 13;
+                running_cost_factor:            return 191;
+        }
     }
 
 
