@@ -25,7 +25,7 @@ You can find these types of changes:
 - Aero A.304 airplane in 4 liveries
 - Avia B.35 airplane in 4 liveries
 - Letov Š.328 airplane in 4 liveries
-- Zlín Z.12 airplane
+- Zlín Z.12 airplane in 4 liveries
 - Avia S-199 airplane in 4 liveries
 - Aero K-75 airplane in 4 liveries
 - Aero S-103 airplane in 4 liveries
