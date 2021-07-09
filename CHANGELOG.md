@@ -17,7 +17,7 @@ You can find these types of changes:
 ## [Unreleased]
 
 ### Added
-- Avia B.3 airplane
+- Avia B.3 airplane in 4 liveries
 - Aero A.18 airplane
 - Avia B.21 airplane
 - Avia Ba.33 airplane
