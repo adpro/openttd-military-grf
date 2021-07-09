@@ -6,6 +6,32 @@ spriteset(spriteset_air_aero_a18, "gfx/png/air_aero_a18.png") {
     //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
     template_aircraft(0,0,6,8,9,8,8,6)
 }
+spriteset(spriteset_air_aero_a18_stripes, "gfx/png/air_aero_a18.png") {
+    template_aircraft(0,9,6,8,9,8,8,6)
+}
+spriteset(spriteset_air_aero_a18_2cc, "gfx/png/air_aero_a18.png") {
+    template_aircraft(0,18,6,8,9,8,8,6)
+}
+spriteset(spriteset_air_aero_a18_2cc_rev, "gfx/png/air_aero_a18.png") {
+    template_aircraft(0,27,6,8,9,8,8,6)
+}
+
+switch (FEAT_AIRCRAFT, SELF, spriteset_air_aero_a18_switch, cargo_subtype)
+{
+  1: spriteset_air_aero_a18_stripes;
+  2: spriteset_air_aero_a18_2cc;
+  3: spriteset_air_aero_a18_2cc_rev;
+     spriteset_air_aero_a18;
+}
+
+switch (FEAT_AIRCRAFT, SELF, air_aero_a18_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_LIV_AIR_AF);
+  1: string(STR_LIV_AIR_AF_STRIPES);
+  2: string(STR_LIV_AIR_2CC);
+  3: string(STR_LIV_AIR_2CC_REV);
+     return CB_RESULT_NO_TEXT;
+}
 
 if (is_aircraft_fighter_enabled(param_aircraft_enable_cs)){
     item (FEAT_AIRCRAFT, item_air_aero_a18) {
@@ -40,7 +66,8 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_cs)){
         }
         graphics {
                 additional_text:    return string(STR_DESC_AIR_AERO_A18); //Additional text shown in purchase list
-                default:            spriteset_air_aero_a18;
+                cargo_subtype_text: air_aero_a18_cargo_subtype_text;
+                default:            spriteset_air_aero_a18_switch;
                 cost_factor:                    return 1;
                 running_cost_factor:            return 22;
         }
