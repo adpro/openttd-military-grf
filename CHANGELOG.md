@@ -20,7 +20,7 @@ You can find these types of changes:
 - Avia B.3 airplane in 4 liveries
 - Aero A.18 airplane in 4 liveries
 - Avia B.21 airplane in 4 liveries
-- Avia Ba.33 airplane
+- Avia Ba.33 airplane in 4 liveries
 - Avia B.534 airplane in 4 liveries
 - Aero A.304 airplane
 - Avia B.35 airplane
