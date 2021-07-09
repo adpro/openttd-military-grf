@@ -23,7 +23,7 @@ You can find these types of changes:
 - Avia Ba.33 airplane in 4 liveries
 - Avia B.534 airplane in 4 liveries
 - Aero A.304 airplane in 4 liveries
-- Avia B.35 airplane
+- Avia B.35 airplane in 4 liveries
 - Letov Š.328 airplane in 4 liveries
 - Zlín Z.12 airplane
 - Avia S-199 airplane

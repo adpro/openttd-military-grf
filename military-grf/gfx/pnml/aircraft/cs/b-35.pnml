@@ -1,10 +1,36 @@
 /* airplane Avia B.35 */
 
-spriteset(spriteset_air_avia_b35, "gfx/png/air_bf109.png") {
+spriteset(spriteset_air_avia_b35, "gfx/png/air_avia_b35.png") {
     // 16 x 21 x 7
     //left_x, upper_y, width, height, offset_x, offset_y
     //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
     template_aircraft(0,0,9,10,13,10,12,7)
+}
+spriteset(spriteset_air_avia_b35_stripes, "gfx/png/air_avia_b35.png") {
+    template_aircraft(0,11,9,10,13,10,12,7)
+}
+spriteset(spriteset_air_avia_b35_2cc, "gfx/png/air_avia_b35.png") {
+    template_aircraft(0,22,9,10,13,10,12,7)
+}
+spriteset(spriteset_air_avia_b35_2cc_rev, "gfx/png/air_avia_b35.png") {
+    template_aircraft(0,33,9,10,13,10,12,7)
+}
+
+switch (FEAT_AIRCRAFT, SELF, spriteset_air_avia_b35_switch, cargo_subtype)
+{
+  1: spriteset_air_avia_b35_stripes;
+  2: spriteset_air_avia_b35_2cc;
+  3: spriteset_air_avia_b35_2cc_rev;
+     spriteset_air_avia_b35;
+}
+
+switch (FEAT_AIRCRAFT, SELF, air_avia_b35_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_LIV_AIR_AF);
+  1: string(STR_LIV_AIR_AF_STRIPES);
+  2: string(STR_LIV_AIR_2CC);
+  3: string(STR_LIV_AIR_2CC_REV);
+     return CB_RESULT_NO_TEXT;
 }
 
 if (is_aircraft_fighter_enabled(param_aircraft_enable_cs)){
@@ -40,7 +66,8 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_cs)){
         }
         graphics {
                 additional_text:    return string(STR_DESC_AIR_AVIA_B35); //Additional text shown in purchase list
-                default:            spriteset_air_avia_b35;
+                cargo_subtype_text: air_avia_b35_cargo_subtype_text;
+                default:            spriteset_air_avia_b35_switch;
                 cost_factor:                    return 1;
                 running_cost_factor:            return 61;
         }
