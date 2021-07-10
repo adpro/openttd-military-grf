@@ -38,6 +38,9 @@ You can find these types of changes:
 - Let L-410NG airplane in 4 liveries
 - Parameter to choose which Czechoslovakian aircraft to use in game
 
+### Changed
+- Adjusted the hue of the company colours for european planes
+
 ## [0.5.0] "Red Wings" - 2021-06-26
 ### Added
 - Polikarpov I-16 airplane
