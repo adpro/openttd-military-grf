@@ -40,6 +40,7 @@ You can find these types of changes:
 
 ### Changed
 - Adjusted the hue of the company colours for european planes
+- Adjusted the hue of the company colours for russian planes
 
 ## [0.5.0] "Red Wings" - 2021-06-26
 ### Added
