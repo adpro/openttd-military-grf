@@ -14,7 +14,7 @@ You can find these types of changes:
 - *Security* in case of vulnerabilities.
 
 
-## [Unreleased]
+## [0.6.0] "Red Wings" - 2021-07-11
 
 ### Added
 - Avia B.3 airplane in 4 liveries
@@ -39,9 +39,13 @@ You can find these types of changes:
 - Parameter to choose which Czechoslovakian aircraft to use in game
 
 ### Changed
+- Rebalanced purchase and running costs for all aircraft
 - Adjusted the hue of the company colours for european planes
 - Adjusted the hue of the company colours for russian planes
 - Adjusted the hue of the company colours for u.s. planes
+- XCF source files reorganization
+- JSON source files reorganization
+
 
 ## [0.5.0] "Red Wings" - 2021-06-26
 ### Added
@@ -136,7 +140,8 @@ You can find these types of changes:
 - English translation from [@adpro](https://github.com/adpro).
 - Czech translation from [@adpro](https://github.com/adpro).
 
-[Unreleased]: https://github.com/adpro/openttd-military-grf/compare/v0.5.0...HEAD
+[Unreleased]: https://github.com/adpro/openttd-military-grf/compare/v0.6.0...HEAD
+[0.6.0]: https://github.com/adpro/openttd-military-grf/compare/v0.5.0...v0.6.0
 [0.5.0]: https://github.com/adpro/openttd-military-grf/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/adpro/openttd-military-grf/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/adpro/openttd-military-grf/compare/v0.2.0...v0.3.0
