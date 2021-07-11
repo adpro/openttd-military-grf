@@ -14,7 +14,7 @@ You can find these types of changes:
 - *Security* in case of vulnerabilities.
 
 
-## [0.6.0] "Red Wings" - 2021-07-11
+## [0.6.0] "Czechoslovakian Wings" - 2021-07-11
 
 ### Added
 - Avia B.3 airplane in 4 liveries
