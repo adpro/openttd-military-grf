@@ -13,6 +13,10 @@ You can find these types of changes:
 - *Fixed* for any bug fixes.
 - *Security* in case of vulnerabilities.
 
+## Unreleased
+
+### Fixed
+- C-141 Starlifter sound changed from propeller to jet engine sound.
 
 ## [0.6.0] "Czechoslovakian Wings" - 2021-07-11
 
