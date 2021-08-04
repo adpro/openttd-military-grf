@@ -15,6 +15,10 @@ You can find these types of changes:
 
 ## Unreleased
 
+### Added
+- Aircraft purchase cost multiplier (1/16x-16x)
+- Aircraft running cost multiplier (1/16x-16x)
+
 ### Fixed
 - C-141 Starlifter sound changed from propeller to jet engine sound.
 

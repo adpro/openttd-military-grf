@@ -10,6 +10,22 @@ STR_MIN_OPENTTD_VERSION :1.2.0 or r22518
 
 # --------------------
 # parameters
+STR_PARAM_NAME_AIRCRAFT_PURCHASE    :Násobitel ceny letadel
+STR_PARAM_DESC_AIRCRAFT_PURCHASE    :Násobitel ceny letadel
+STR_PARAM_NAME_AIRCRAFT_RUNNING     :Násobitel provozní ceny letadel
+STR_PARAM_DESC_AIRCRAFT_RUNNING     :Násobitel provozní ceny letadel
+
+STR_PARAM_DIVIDE_16             : 1/16x
+STR_PARAM_DIVIDE_8              : 1/8x
+STR_PARAM_DIVIDE_4              : 1/4x
+STR_PARAM_DIVIDE_2              : 1/2x
+STR_PARAM_NORMAL                : 1x
+STR_PARAM_TIMES_2               : 2x
+STR_PARAM_TIMES_4               : 4x
+STR_PARAM_TIMES_8               : 8x
+STR_PARAM_TIMES_16              : 16x
+
+
 STR_PARAM_NAME_RANGES           :Povolit omezení doletu letadel
 STR_PARAM_DESC_RANGES           :Umožní omezit dolet letadel, jinak bez limitu.
 STR_PARAM_VALUE_RANGES_OFF      :Bez limitu doletu
