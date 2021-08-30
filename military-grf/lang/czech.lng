@@ -238,6 +238,8 @@ STR_DESC_AIR_LETOV_S328 :Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta:
 STR_NAME_AIR_ZLIN_Z12   :Zlín Z.12
 STR_DESC_AIR_ZLIN_Z12   :Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Z.12 bylo vojenské označení pro Zlín Z.XII, sportovní a cvičný dvoumístný celodřevěný dolnoplošník, který byl používán pro kurýrní službu a kondiční létání. {}{BLACK}Vyrobeno ks: {ORANGE}201
 
+STR_NAME_AIR_SA330      :Aérospatiale SA 330 Puma
+STR_DESC_AIR_SA330		:Země původu: {ORANGE}FRA {}{BLACK}Historická fakta: {ORANGE} {}{BLACK}Vyrobeno ks: {ORANGE}697
 
 STR_DESC_AIR_TMPL		:Země původu: {ORANGE}??? {}{BLACK}Historická fakta: {ORANGE}
 

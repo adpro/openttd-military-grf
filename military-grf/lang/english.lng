@@ -238,6 +238,9 @@ STR_DESC_AIR_LETOV_S328 :Country of origin: {ORANGE}CSK {}{BLACK}Historic facts:
 STR_NAME_AIR_ZLIN_Z12   :Zlín Z.12
 STR_DESC_AIR_ZLIN_Z12   :Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}Z.12 was a military designation for Zlín Z.XII, a sports and training two-seater all-wood low-flying aircraft, which was used for courier service and fitness flying. {}{BLACK}Number built: {ORANGE}201
 
+STR_NAME_AIR_SA330      :Aérospatiale SA 330 Puma
+STR_DESC_AIR_SA330      :Country of origin: {ORANGE}FRA {}{BLACK}Historic facts: {ORANGE} {}{BLACK}Number built: {ORANGE}697
+
 
 STR_DESC_AIR_TMPL		:Country of origin: {ORANGE}??? {}{BLACK}Historic facts: {ORANGE}. {}{BLACK}Number built: {ORANGE}
 

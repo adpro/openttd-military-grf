@@ -64,4 +64,5 @@ sort (FEAT_AIRCRAFT,
 
     // helicopters
     ,item_air_uh1
+    ,item_air_sa330
 ]);
