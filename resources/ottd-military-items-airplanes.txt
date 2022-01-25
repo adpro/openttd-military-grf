@@ -6,20 +6,20 @@ Letov Š-328
 Zlín K-72 / Z-XII
 Aero K-75 / Ae-45
 
-Aero A-18
-Avia BH-21
-Avia Ba-33
-Avia B-534
-Avia B-135
-Avia S-199
+Aero A-180
+Avia BH-210
+Avia Ba-330
+Avia B-5340
+Avia B-1350
+Avia S-1990
 Avia S-103 (Mig-15bis)
 Avia S-105 (Mig-19S)
-Aero L-29
-Aero L-39
-Aero L-159
-Aero L-39NG
-Aero A-304
-Let L-410
+Aero L-290
+Aero L-390
+Aero L-1590
+Aero L-309NG
+Aero A-3040
+Let L-4100
 
 
 
