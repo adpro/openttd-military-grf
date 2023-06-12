@@ -44,7 +44,7 @@ if (is_aircraft_helicopter_enabled(param_aircraft_enable_us)){
             acceleration:                   15;
             passenger_capacity:             14;
             mail_capacity:                  3;
-            sound_effect:                   SOUND_HELICOPTER; // SOUND_PLANE_TAKE_OFF | SOUND_JET
+            sound_effect:                   SOUND_TAKEOFF_HELICOPTER;
             /* Visual effect is left at default (no effect) */
     }
     graphics {

@@ -44,7 +44,7 @@ if (is_aircraft_airlifter_enabled(param_aircraft_enable_us)){
             acceleration:                   32;
             passenger_capacity:             0;
             mail_capacity:                  0;
-            sound_effect:                   SOUND_JET; // SOUND_PLANE_TAKE_OFF | SOUND_JET
+            sound_effect:                   SOUND_TAKEOFF_JET_BIG;
             /* Visual effect is left at default (no effect) */
     }
     graphics {

@@ -34,7 +34,7 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_rus)){
             acceleration:                   30;
             passenger_capacity:             0;
             mail_capacity:                  4;
-            sound_effect:                   SOUND_PLANE_TAKE_OFF; // SOUND_PLANE_TAKE_OFF | SOUND_JET
+            sound_effect:                   SOUND_TAKEOFF_PROPELLER;
             /* Visual effect is left at default (no effect) */
     }
     graphics {

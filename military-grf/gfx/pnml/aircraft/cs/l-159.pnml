@@ -70,7 +70,7 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_cs)){
             acceleration:                   75;
             passenger_capacity:             1;
             mail_capacity:                  4;
-            sound_effect:                   SOUND_JET; // SOUND_PLANE_TAKE_OFF | SOUND_JET
+            sound_effect:                   SOUND_TAKEOFF_JET;
             /* Visual effect is left at default (no effect) */
         }
         graphics {
