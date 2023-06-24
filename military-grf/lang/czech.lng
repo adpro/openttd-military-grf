@@ -5,7 +5,8 @@
 STR_GRF_NAME        :{TITLE} {VERSION}
 STR_GRF_DESCRIPTION :{TITLE} obsahuje několik vojenských letadel.{}{BLACK}Verze: {SILVER}{VERSION}{}{BLACK}Copyright: {SILVER}{COPYRIGHT}2021 adpro{}{BLACK}Licence:{SILVER} GPL v2{}{BLACK}Zdroj: {SILVER}https://github.com/adpro/openttd-military-grf/
 
-STR_MIN_OPENTTD_VERSION :1.2.0 or r22518
+# STR_MIN_OPENTTD_VERSION :1.2.0 or r22518
+STR_MIN_OPENTTD_VERSION :1.13.0
 
 
 # --------------------
@@ -30,6 +31,9 @@ STR_PARAM_NAME_RANGES           :Povolit omezení doletu letadel
 STR_PARAM_DESC_RANGES           :Umožní omezit dolet letadel, jinak bez limitu.
 STR_PARAM_VALUE_RANGES_OFF      :Bez limitu doletu
 STR_PARAM_VALUE_RANGES_NORMAL   :Omezený dolet
+
+STR_PARAM_DISABLE_NOISE         :Zakázat limity hluku pro letiště
+STR_PARAM_DISABLE_NOISE_DESC    :Nastaví hluk způsobený letištěm na 0. Toto umožňuje stavbu neomezeného množství letišť i přes zapnuté nastavení "Umožnit městům regulovat limit hluku pro letiště".
 
 STR_PARAM_NAME_AIRPORT_DATE_RESTRICTION :Zakázat omezení výstavby letišť let. lodí dle datumu
 STR_PARAM_DESC_AIRPORT_DATE_RESTRICTION :Umožní postavit letiště letadlových lodí bez ohledu na datum.

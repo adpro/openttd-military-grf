@@ -183,6 +183,7 @@ if (is_carrier_enabled(param_airport_enable)) {
 			catchment_area: 5;
 			maintenance_cost: 30;
 		}
+		if (param_disable_noise_level) { property { noise_level: 0; } }
 		graphics {
 			spriteset_air_small2_preview;
 		}

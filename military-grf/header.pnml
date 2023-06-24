@@ -1,4 +1,5 @@
-if (ttd_platform != PLATFORM_OPENTTD || openttd_version < version_openttd(1, 2, 0, 22518)) {
+if (ttd_platform != PLATFORM_OPENTTD || openttd_version < version_openttd(1, 13, 0)) {
+    // if (ttd_platform != PLATFORM_OPENTTD || openttd_version < version_openttd(1, 2, 0, 22518)) {
 	error(FATAL, REQUIRES_OPENTTD, string(STR_MIN_OPENTTD_VERSION));
 	exit;
 }
@@ -15,6 +16,32 @@ grf {
     // 2 = 0.2.0 (post alpha 8)
     // 5 = 0.5.0 (post alpha 30)
     // 7 = 0.7.0 - breaking change
+    param {
+        param_airport_enable {
+            type: int;
+            name: string(STR_PARAM_NAME_AIRPORT_ENABLE);
+            desc: string(STR_PARAM_DESC_AIRPORT_ENABLE);
+            min_value: 0;
+            max_value: 4;
+            def_value: 1;
+            names: {
+                0: string(STR_PARAM_VALUE_AIRPORT_NONE);
+                1: string(STR_PARAM_VALUE_AIRPORT_ALL);
+                2: string(STR_PARAM_VALUE_AIRPORT_CLASSIC_ONLY);
+                3: string(STR_PARAM_VALUE_AIRPORT_CARRIER_ONLY);
+                4: string(STR_PARAM_VALUE_AIRPORT_HELIPORTS_ONLY);
+            } ;
+        }
+    }
+    param {
+		param_disable_noise_level {
+			type: bool;
+			name: string(STR_PARAM_DISABLE_NOISE);
+			desc: string(STR_PARAM_DISABLE_NOISE_DESC);
+			def_value: 0;
+			bit:       0;
+		}
+    }
     param {
         param_aircraft_purchase_cost {
             type: int;
@@ -80,23 +107,6 @@ grf {
             desc: string(STR_PARAM_DESC_AIRPORT_DATE_RESTRICTION);
             def_value: 0;
             bit: 1;
-        }
-    }
-    param {
-        param_airport_enable {
-            type: int;
-            name: string(STR_PARAM_NAME_AIRPORT_ENABLE);
-            desc: string(STR_PARAM_DESC_AIRPORT_ENABLE);
-            min_value: 0;
-            max_value: 4;
-            def_value: 1;
-            names: {
-                0: string(STR_PARAM_VALUE_AIRPORT_NONE);
-                1: string(STR_PARAM_VALUE_AIRPORT_ALL);
-                2: string(STR_PARAM_VALUE_AIRPORT_CLASSIC_ONLY);
-                3: string(STR_PARAM_VALUE_AIRPORT_CARRIER_ONLY);
-                4: string(STR_PARAM_VALUE_AIRPORT_HELIPORTS_ONLY);
-            } ;
         }
     }
     param {

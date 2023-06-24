@@ -719,6 +719,7 @@ if (is_afb_enabled(param_airport_enable)) {
 			//catchment_area: 6;
 			//maintenance_cost: 50;
 		}
+		if (param_disable_noise_level) { property { noise_level: 0; } }
 		graphics {
 			spriteset_air_afb_city_preview;
 		}
