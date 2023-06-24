@@ -46,15 +46,14 @@ if (is_aircraft_airlifter_enabled(param_aircraft_enable_us)){
             mail_capacity:                  0;
             sound_effect:                   SOUND_TAKEOFF_PROPELLER;
             /* Visual effect is left at default (no effect) */
-    }
-    graphics {
-            additional_text:    return string(STR_DESC_AIR_C124); //Additional text shown in purchase list
-            default:            spriteset_air_c124;
-
-            mail_capacity:      return 350;    // callback for setting capacity
+        }
+        graphics {
+            additional_text:                return string(STR_DESC_AIR_C124); //Additional text shown in purchase list
+            default:                        spriteset_air_c124;
+            mail_capacity:                  return 350;    // callback for setting capacity
             cost_factor:                    return 16;
             running_cost_factor:            return 2170;
-    }
+        }
     }
 
     if (Aircraft_Ranges == 0) {
