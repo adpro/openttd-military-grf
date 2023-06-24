@@ -54,7 +54,7 @@ STR_PARAM_VALUE_AIRCRAFT_HELIS                  :Pouze vrtulníky
 STR_PARAM_VALUE_AIRCRAFT_AIRLIFTERS_AND_HELIS   :Pouze vrtulníky a transportní letouny
 STR_PARAM_NAME_AIRCRAFT_ENABLE_CS               :Povolit československé letouny
 STR_PARAM_DESC_AIRCRAFT_ENABLE_CS               :Povolit existenci letadel a vrtulníků Československa/Česka ve hře.
-STR_PARAM_NAME_AIRCRAFT_ENABLE_EU               :Povolit evrospké letouny
+STR_PARAM_NAME_AIRCRAFT_ENABLE_EU               :Povolit evropské letouny
 STR_PARAM_DESC_AIRCRAFT_ENABLE_EU               :Povolit existenci evropských letadel a vrtulníků ve hře (britské, fransouzské, švédské).
 STR_PARAM_NAME_AIRCRAFT_ENABLE_RUS              :Povolit sovětské/ruské letouny
 STR_PARAM_DESC_AIRCRAFT_ENABLE_RUS              :Povolit existenci letadel a vrtulníků Sovětského svazu/Ruska ve hře.
@@ -177,9 +177,11 @@ STR_NAME_AIR_AN22       :Antonov An-22
 STR_DESC_AIR_AN22       :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Letoun byl navržen jako strategický přepravní letoun, navržený speciálně pro rozšíření schopnosti sovětských výsadkových jednotek přistávat s jejich tehdy novými obrněnými vozidly BMD-1. {}{BLACK}Vyrobeno ks: {ORANGE}68
 
 STR_NAME_AIR_AN24       :Antonov An-24
+STR_NAME_AIR_AN24T      :Antonov An-24T
 STR_DESC_AIR_AN24       :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Byl navržen tak, aby nahradil přepravu veteránského pístového Iljušina Il-14 na krátké a střední vzdálenosti, optimalizovaný pro provoz z drsných ploch a nepřipravených letišť ve vzdálených lokalitách. {}{BLACK}Vyrobeno ks: {ORANGE}1 367
 
 STR_NAME_AIR_AN26       :Antonov An-26
+STR_NAME_AIR_AN26A      :Antonov An-26A
 STR_DESC_AIR_AN26       :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Když dostal v březnu 1968 zelenou pro An-26, přizpůsobil Antonov OKB konstrukci rampy An-40 pro trup An-24, což vyústilo v An-26. {}{BLACK}Vyrobeno ks: {ORANGE}1 403
 
 STR_NAME_AIR_IL76       :Iljušin Il-76

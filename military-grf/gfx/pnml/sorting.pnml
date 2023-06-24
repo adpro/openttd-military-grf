@@ -47,12 +47,14 @@ sort (FEAT_AIRCRAFT,
     ,item_air_c124
     ,item_air_an12
     ,item_air_an24
+    ,item_air_an24t
     ,item_air_c141
     ,item_air_c2
     ,item_air_an22
     ,item_air_c5
     ,item_air_let_l410
     ,item_air_an26
+    ,item_air_an26a
     ,item_air_il76
     ,item_air_c17
     ,item_air_a400
@@ -71,6 +73,7 @@ sort (FEAT_AIRCRAFT,
     ,item_air_ch53e
     ,item_air_mi26
     ,item_air_as532
+    // ,item_air_as532c
     ,item_air_uh60
     ,item_air_mi17
     ,item_air_aw101

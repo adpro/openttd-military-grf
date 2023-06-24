@@ -177,9 +177,11 @@ STR_NAME_AIR_AN22       :Antonov An-22
 STR_DESC_AIR_AN22       :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}The aircraft was designed as a strategic airlifter, designed specifically to expand the Soviet Airborne Troops' capability to land with their then-new BMD-1 armoured vehicles. {}{BLACK}Number built: {ORANGE}68
 
 STR_NAME_AIR_AN24       :Antonov An-24
+STR_NAME_AIR_AN24T      :Antonov An-24T
 STR_DESC_AIR_AN24       :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}It was designed to replace the veteran piston Ilyushin Il-14 transport on short to medium haul trips, optimised for operating from rough strips and unprepared airports in remote locations. {}{BLACK}Number built: {ORANGE}1 367
 
 STR_NAME_AIR_AN26       :Antonov An-26
+STR_NAME_AIR_AN26A      :Antonov An-26A
 STR_DESC_AIR_AN26       :Country of origin: {ORANGE}USSR {}{BLACK}Historic facts: {ORANGE}When given the go-ahead for the An-26 in March 1968, the Antonov OKB adapted the ramp design of the An-40 to the An-24 fuselage, resulting in the An-26. {}{BLACK}Number built: {ORANGE}1 403
 
 STR_NAME_AIR_IL76       :Ilyushin Il-76
@@ -255,7 +257,6 @@ STR_NAME_AIR_AW139      :AgustaWestland AW139
 STR_DESC_AIR_AW139      :Country of origin: {ORANGE}ITA {}{BLACK}Historic facts: {ORANGE}It was originally designed jointly by Agusta and Bell Helicopters, thus it was marketed as the Agusta-Bell AB139, but was redesignated as the AW139 after Bell withdrew from the project. {}{BLACK}Number built: {ORANGE}1,100+
 
 STR_NAME_AIR_AS532      :Eurocopter AS 532 Cougar
-STR_NAME_AIR_AS532C     :Eurocopter AS 532 Cougar cargo
 STR_DESC_AIR_AS532      :Country of origin: {ORANGE}FRA {}{BLACK}Historic facts: {ORANGE}Cougar is a development and upgrade of the Aérospatiale SA 330 Puma in its militarized form with its civilian counterpart AS 332 Super Puma. {}{BLACK}Number built: {ORANGE}350+
 
 STR_NAME_AIR_EC725      :Eurocopter EC725 Caracal
