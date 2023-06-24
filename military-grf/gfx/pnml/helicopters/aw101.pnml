@@ -53,7 +53,6 @@ if (is_aircraft_helicopter_enabled(param_aircraft_enable_eu)){
                 rotor:                      spriteset_air_aw101_rotor;
                 cost_factor:                return 46;
                 running_cost_factor:        return 418;
-                mail_capacity:              return 24;
         }
     }
 

@@ -53,7 +53,6 @@ if (is_aircraft_helicopter_enabled(param_aircraft_enable_rus)){
                 rotor:                      spriteset_air_mi6_rotor;
                 cost_factor:                return 26;
                 running_cost_factor:        return 1125;
-                mail_capacity:              return 72;
         }
     }
 

@@ -51,7 +51,6 @@ if (is_aircraft_helicopter_enabled(param_aircraft_enable_eu)){
                 additional_text:            return string(STR_DESC_AIR_SA330); //Additional text shown in purchase list
                 default:                    spriteset_air_sa330;
                 rotor:                      spriteset_air_sa330_rotor;
-                mail_capacity:              return 16;
                 cost_factor:                return 8;
                 running_cost_factor:        return 186;
         }

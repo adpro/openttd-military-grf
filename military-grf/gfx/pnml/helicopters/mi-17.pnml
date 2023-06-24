@@ -43,7 +43,7 @@ if (is_aircraft_helicopter_enabled(param_aircraft_enable_rus)){
             aircraft_type:                  AIRCRAFT_TYPE_HELICOPTER;
             acceleration:                   15;
             passenger_capacity:             24;
-            mail_capacity:                  0;
+            mail_capacity:                  8;
             sound_effect:                   SOUND_TAKEOFF_HELICOPTER;
             /* Visual effect is left at default (no effect) */
         }
@@ -53,7 +53,6 @@ if (is_aircraft_helicopter_enabled(param_aircraft_enable_rus)){
                 rotor:                      spriteset_air_mi17_rotor;
                 cost_factor:                return 18;
                 running_cost_factor:        return 348;
-                mail_capacity:              return 32;
         }
     }
 
