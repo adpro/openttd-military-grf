@@ -1,0 +1,431 @@
+###
+# Source codes from github.com/OpenTTD/OpenTTD
+###
+
+
+### aircraft_cmd.cpp
+
+/**
+ * Special velocities for aircraft
+ */
+enum AircraftSpeedLimits {
+	SPEED_LIMIT_TAXI     =     50,  ///< Maximum speed of an aircraft while taxiing
+	SPEED_LIMIT_APPROACH =    230,  ///< Maximum speed of an aircraft on finals
+	SPEED_LIMIT_BROKEN   =    320,  ///< Maximum speed of an aircraft that is broken
+	SPEED_LIMIT_HOLD     =    425,  ///< Maximum speed of an aircraft that flies the holding pattern
+	SPEED_LIMIT_NONE     = 0xFFFF,  ///< No environmental speed limit. Speed limit is type dependent
+};
+
+/**
+ * Signature of the aircraft handler function.
+ * @param v Aircraft to handle.
+ * @param apc Airport state machine.
+ */
+typedef void AircraftStateHandler(Aircraft *v, const AirportFTAClass *apc);
+/** Array of handler functions for each target of the aircraft. */
+static AircraftStateHandler * const _aircraft_state_handlers[] = {
+	AircraftEventHandler_General,        // TO_ALL         =  0
+	AircraftEventHandler_InHangar,       // HANGAR         =  1
+	AircraftEventHandler_AtTerminal,     // TERM1          =  2
+	AircraftEventHandler_AtTerminal,     // TERM2          =  3
+	AircraftEventHandler_AtTerminal,     // TERM3          =  4
+	AircraftEventHandler_AtTerminal,     // TERM4          =  5
+	AircraftEventHandler_AtTerminal,     // TERM5          =  6
+	AircraftEventHandler_AtTerminal,     // TERM6          =  7
+	AircraftEventHandler_AtTerminal,     // HELIPAD1       =  8
+	AircraftEventHandler_AtTerminal,     // HELIPAD2       =  9
+	AircraftEventHandler_TakeOff,        // TAKEOFF        = 10
+	AircraftEventHandler_StartTakeOff,   // STARTTAKEOFF   = 11
+	AircraftEventHandler_EndTakeOff,     // ENDTAKEOFF     = 12
+	AircraftEventHandler_HeliTakeOff,    // HELITAKEOFF    = 13
+	AircraftEventHandler_Flying,         // FLYING         = 14
+	AircraftEventHandler_Landing,        // LANDING        = 15
+	AircraftEventHandler_EndLanding,     // ENDLANDING     = 16
+	AircraftEventHandler_HeliLanding,    // HELILANDING    = 17
+	AircraftEventHandler_HeliEndLanding, // HELIENDLANDING = 18
+	AircraftEventHandler_AtTerminal,     // TERM7          = 19
+	AircraftEventHandler_AtTerminal,     // TERM8          = 20
+	AircraftEventHandler_AtTerminal,     // HELIPAD3       = 21
+};
+
+
+
+### airport.h
+
+/** Movement States on Airports (headings target) */
+enum AirportMovementStates {
+	TO_ALL         =   0, ///< Go in this direction for every target.
+	HANGAR         =   1, ///< Heading for hangar.
+	TERM1          =   2, ///< Heading for terminal 1.
+	TERM2          =   3, ///< Heading for terminal 2.
+	TERM3          =   4, ///< Heading for terminal 3.
+	TERM4          =   5, ///< Heading for terminal 4.
+	TERM5          =   6, ///< Heading for terminal 5.
+	TERM6          =   7, ///< Heading for terminal 6.
+	HELIPAD1       =   8, ///< Heading for helipad 1.
+	HELIPAD2       =   9, ///< Heading for helipad 2.
+	TAKEOFF        =  10, ///< Airplane wants to leave the airport.
+	STARTTAKEOFF   =  11, ///< Airplane has arrived at a runway for take-off.
+	ENDTAKEOFF     =  12, ///< Airplane has reached end-point of the take-off runway.
+	HELITAKEOFF    =  13, ///< Helicopter wants to leave the airport.
+	FLYING         =  14, ///< %Vehicle is flying in the air.
+	LANDING        =  15, ///< Airplane wants to land.
+	ENDLANDING     =  16, ///< Airplane wants to finish landing.
+	HELILANDING    =  17, ///< Helicopter wants to land.
+	HELIENDLANDING =  18, ///< Helicopter wants to finish landing.
+	TERM7          =  19, ///< Heading for terminal 7.
+	TERM8          =  20, ///< Heading for terminal 8.
+	HELIPAD3       =  21, ///< Heading for helipad 3.
+	MAX_HEADINGS   =  21, ///< Last valid target to head for.
+	TERMGROUP      = 255, ///< Aircraft is looking for a free terminal in a terminalgroup.
+};
+
+
+
+### engine_type.h
+
+/** Information about a aircraft vehicle. */
+struct AircraftVehicleInfo {
+    ...
+	uint16 max_speed;           ///< Maximum speed (1 unit = 8 mph = 12.8 km-ish/h)
+    ...
+};
+/** Information about a rail vehicle. */
+struct RailVehicleInfo {
+    ...
+	uint16 max_speed;               ///< Maximum speed (1 unit = 1/1.6 mph = 1 km-ish/h)
+    ...
+};
+/** Information about a ship vehicle. */
+struct ShipVehicleInfo {
+	...
+    uint16 max_speed;      ///< Maximum speed (1 unit = 1/3.2 mph = 0.5 km-ish/h)
+    ...
+	/** Apply ocean/canal speed fraction to a velocity */
+	uint ApplyWaterClassSpeedFrac(uint raw_speed, bool is_ocean) const
+	{
+		/* speed_frac == 0 means no reduction while 0xFF means reduction to 1/256. */
+		return raw_speed * (256 - (is_ocean ? this->ocean_speed_frac : this->canal_speed_frac)) / 256;
+	}
+};
+/** Information about a road vehicle. */
+struct RoadVehicleInfo {
+    ...
+	uint16 max_speed;        ///< Maximum speed (1 unit = 1/3.2 mph = 0.5 km-ish/h)
+    ...
+};
+
+
+
+### newgrf_engine.cpp
+
+/* TTDP style aircraft movement states for GRF Action 2 Var 0xE2 */
+enum TTDPAircraftMovementStates {
+	AMS_TTDP_HANGAR,                    // 0  ? In hanger
+	AMS_TTDP_TO_HANGAR,                 // 1  Still moving towards hangar
+	AMS_TTDP_TO_PAD1,                   // 2
+	AMS_TTDP_TO_PAD2,                   // 3
+	AMS_TTDP_TO_PAD3,                   // 4
+	AMS_TTDP_TO_ENTRY_2_AND_3,          // 5
+	AMS_TTDP_TO_ENTRY_2_AND_3_AND_H,    // 6
+	AMS_TTDP_TO_JUNCTION,               // 7  On the ground.
+	AMS_TTDP_LEAVE_RUNWAY,              // 8
+	AMS_TTDP_TO_INWAY,                  // 9  Landed - moving off runway
+	AMS_TTDP_TO_RUNWAY,                 // 10
+	AMS_TTDP_TO_OUTWAY,                 // 11 Moving to takeoff position.
+	AMS_TTDP_WAITING,                   // 12 ? Airplane waiting for take-off clearance
+	AMS_TTDP_TAKEOFF,                   // 13 Accelerating down runway.
+	AMS_TTDP_TO_TAKEOFF,                // 14
+	AMS_TTDP_CLIMBING,                  // 15 Ascent
+	AMS_TTDP_FLIGHT_APPROACH,           // 16 In flight
+	AMS_TTDP_UNUSED_0x11,               // 17 In flight
+	AMS_TTDP_FLIGHT_TO_TOWER,           // 18 In flight, still hasn't started descent, heading for tower contact point
+	AMS_TTDP_UNUSED_0x13,               // 19 In flight
+	AMS_TTDP_FLIGHT_FINAL,              // 20 In flight
+	AMS_TTDP_FLIGHT_DESCENT,            // 21 Descent
+	AMS_TTDP_BRAKING,                   // 22 On the runway braking
+	AMS_TTDP_HELI_TAKEOFF_AIRPORT,      // 23
+	AMS_TTDP_HELI_TO_TAKEOFF_AIRPORT,   // 24
+	AMS_TTDP_HELI_LAND_AIRPORT,         // 25 Descending.
+	AMS_TTDP_HELI_TAKEOFF_HELIPORT,     // 26
+	AMS_TTDP_HELI_TO_TAKEOFF_HELIPORT,  // 27 Helicopter is moving to take off position.
+	AMS_TTDP_HELI_LAND_HELIPORT,        // 28
+};
+
+
+
+###
+# Source codes from World Airliners Set http://bundles.openttdcoop.org/worldairlinersset/nightlies/
+###
+
+### WAS.nml
+
+// version check
+// only for OpenTTD >= r23744
+if (ttd_platform != PLATFORM_OPENTTD ||
+  openttd_version < version_openttd(1, 2, 0, 23744))
+{
+  error(ERROR, REQUIRES_OPENTTD, string(STR_MIN_OPENTTD_VERSION));
+}
+// Airbus-A300_600R
+spriteset (Airbus_A300_600R_Greyscale_Flight, "src/gfx/Airbus/A300/A300-600R/(0)Greyscale.png") { [ 1, 1, 52, 29, -26, -15, ANIM] [ 60, 1, 52, 26, -26, -13, ANIM] [120, 1, 64, 27, -32, -14, ANIM] [190, 1, 52, 38, -26, -19, ANIM] [250, 1, 52, 41, -26, -21, ANIM] [310, 1, 52, 38, -26, -19, ANIM] [370, 1, 64, 26, -32, -14, ANIM] [444, 1, 52, 26, -26, -13, ANIM] } 
+spriteset (Airbus_A300_600R_Greyscale_Grounded, "src/gfx/Airbus/A300/A300-600R/(0)Greyscale.png") { [ 1, 55, 52, 29, -26, -15, ANIM] [ 60, 55, 52, 26, -26, -13, ANIM] [120, 55, 64, 27, -32, -14, ANIM] [190, 55, 52, 40, -26, -20, ANIM] [250, 55, 52, 43, -26, -22, ANIM] [310, 55, 52, 40, -26, -20, ANIM] [370, 55, 64, 27, -32, -14, ANIM] [444, 55, 52, 26, -26, -13, ANIM] } 
+spriteset (Airbus_A300_600R_Greyscale_Climbing, "src/gfx/Airbus/A300/A300-600R/(0)Greyscale.png") { [ 1, 120, 52, 46, -26, -23, ANIM] [ 60, 120, 50, 41, -25, -15, ANIM] [120, 120, 63, 27, -32, -14, ANIM] [190, 120, 48, 26, -24, -13, ANIM] [250, 120, 52, 18, -26, -9, ANIM] [310, 120, 48, 26, -24, -13, ANIM] [370, 120, 63, 27, -32, -14, ANIM] [444, 120, 50, 41, -25, -21, ANIM] } 
+spriteset (Airbus_A300_600R_Greyscale_Touchdown, "src/gfx/Airbus/A300/A300-600R/(0)Greyscale.png") { [ 1, 175, 52, 29, -26, -15, ANIM] [ 60, 175, 52, 26, -26, -13, ANIM] [120, 175, 64, 27, -32, -14, ANIM] [190, 175, 52, 40, -26, -20, ANIM] [250, 175, 52, 38, -26, -19, ANIM] [310, 175, 52, 40, -26, -20, ANIM] [370, 175, 64, 27, -32, -14, ANIM] [444, 175, 51, 26, -26, -13, ANIM] } 
+spriteset (Airbus_A300_600R_Greyscale_Landing, "src/gfx/Airbus/A300/A300-600R/(0)Greyscale.png") { [ 1, 235, 52, 38, -26, -19, ANIM] [ 62, 235, 51, 33, -26, -17, ANIM] [120, 235, 65, 28, -33, -14, ANIM] [190, 235, 51, 33, -26, -17, ANIM] [250, 235, 52, 30, -26, -15, ANIM] [310, 235, 51, 33, -26, -17, ANIM] [370, 235, 65, 28, -33, -14, ANIM] [445, 235, 51, 33, -26, -17, ANIM] }
+switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600R_Greyscale, (var[0xE2, 0, 0xFF]))
+{
+  15: Airbus_A300_600R_Greyscale_Climbing;
+  18: Airbus_A300_600R_Greyscale_Flight;
+  21: Airbus_A300_600R_Greyscale_Landing;
+  22: Airbus_A300_600R_Greyscale_Touchdown;
+      Airbus_A300_600R_Greyscale_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600R_sprites, cargo_subtype)
+{
+  1: Airbus_A300_600R_American;
+  2: Airbus_A300_600R_Emirates;
+     Airbus_A300_600R_Greyscale;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600R_running_cost_factor, (var[0xE2, 0, 0xFF]))
+{
+  8..12: return 117 *50/100 ; 13..15: return 117 *1 ; 18: return 117 *88/100 ; 16..20: return 117 *91/100 ; 21..22: return 117 *95/100 ; return 117 *37/100 ;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600R_speed, (var[0xE2, 0, 0xFF]))
+{
+  12..13: return int(249*5/64); // airplane waiting for take-off clearance, airplane taking off
+      15: return int(354*5/64); // airplane climbing after take-off
+      18: return int(870*5/64); // heading for tower contact point
+  16..20: return int(338*5/64); // in flight
+  21..22: return int(233*5/64); // airplane landing, airplane braking after touchdown
+          return int(201*5/64);
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600R_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_AIRBUS);
+  1: string(STR_VLIV_AMERICAN_AIRLINES);
+  2: string(STR_VLIV_EMIRATES);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600R_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 266;
+  2: return 216;
+  return 220;
+}
+item (FEAT_AIRCRAFT, Airbus_A300_600R)
+{
+  property
+  {
+    name: string(STR_AIRV_AIRBUS_A300_600R);
+    climates_available: bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL, CLIMATE_TOYLAND);
+    introduction_date: date(1988 - 2, 1, 1);
+    vehicle_life: 22;
+    model_life: 2002 >= 2050 ? VEHICLE_NEVER_EXPIRES : (1988 -2002 -2 < retire_early_default ? 2002 -1988 +2 : -retire_early_default);
+    retire_early: 1988 -2002 -2 < retire_early_default ? retire_early_default+1 : 1988 -2002 -1;
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_LARGE;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 49;
+    passenger_capacity: 220;
+    mail_capacity: 26;
+    acceleration: 27; // in 27,75 mph/day
+    range: 2230;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Airbus_A300_600R_sprites;
+    purchase: Airbus_A300_600R_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Airbus_A300_600R_cargo_subtype_text;
+    passenger_capacity: Airbus_A300_600R_cargo_subtype_capacity;
+    speed: Airbus_A300_600R_speed;
+    running_cost_factor: Airbus_A300_600R_running_cost_factor;
+    sound_effect: Airbus_A300_600R_sound_effect;
+
+    cost_factor: 122;
+    purchase_running_cost_factor: 117;
+    purchase_speed: int(870*5/64);
+  }
+}
+item (FEAT_AIRCRAFT, Airbus_A300_600F)
+{
+  property
+  {
+    name: string(STR_AIRV_AIRBUS_A300_600F);
+    climates_available: bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL, CLIMATE_TOYLAND);
+    introduction_date: date(1986 - 2, 1, 1);
+    vehicle_life: 35;
+    model_life: 2009 >= 2050 ? VEHICLE_NEVER_EXPIRES : (1986 -2009 -2 < retire_early_default ? 2009 -1986 +2 : -retire_early_default);
+    retire_early: 1986 -2009 -2 < retire_early_default ? retire_early_default+1 : 1986 -2009 -1;
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_LARGE;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
+    cargo_allow_refit: [BATT, CERE, JAVA, COLA, CTCD, DIAM, DYES, ENSP, FMSP, FERT, FICR, FISH, FZDR, FOOD, FRUT, FRVG, GLAS, GOLD, GOOD, LVST, MAIL, MAIZ, MNSP, MILK, OIL_, OLSD, PAPR, PLST, PLAS, RSGR, RFPR, RUBR, STEL, SUGR, SGBT, SGCN, SWET, TOFF, TOYS, VALU, VEHI, WHEA, WDPR, WOOL];
+    reliability_decay: 20;
+    loading_speed: 20;
+    passenger_capacity: 0;
+    mail_capacity: 0;
+    acceleration: 27; // in 27,75 mph/day
+    range: 2565;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Airbus_A300_600F_sprites;
+    purchase: Airbus_A300_600F_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Airbus_A300_600F_cargo_subtype_text;
+    speed: Airbus_A300_600F_speed;
+    running_cost_factor: Airbus_A300_600F_running_cost_factor;
+    sound_effect: Airbus_A300_600F_sound_effect;
+    mail_capacity: return 438;
+
+    cost_factor: 122;
+    purchase_running_cost_factor: 128;
+    purchase_speed: int(870*5/64);
+  }
+}
+
+/* Concorde */
+spriteset (BAC_CONCORDE_purchase_sprite, "src/gfx/BAC/Concorde/(0)Greyscale.png") { [364, 0, 74, 22, -37, -11, ANIM] }
+
+spriteset (BAC_CONCORDE_Greyscale_Flight, "src/gfx/BAC/Concorde/(0)Greyscale.png") { [ 0, 0, 36, 34, -18, -17, ANIM] [ 45, 0, 52, 29, -26, -15, ANIM] [108, 0, 74, 22, -37, -11, ANIM] [192, 0, 53, 35, -27, -18, ANIM] [255, 0, 36, 38, -18, -19, ANIM] [301, 0, 53, 35, -27, -18, ANIM] [364, 0, 74, 22, -37, -11, ANIM] [448, 0, 52, 29, -26, -15, ANIM] } 
+spriteset (BAC_CONCORDE_Greyscale_Grounded, "src/gfx/BAC/Concorde/(0)Greyscale.png") { [ 0, 50, 36, 37, -18, -19, ANIM] [ 45, 50, 52, 30, -26, -15, ANIM] [108, 50, 72, 22, -36, -11, ANIM] [192, 50, 54, 34, -27, -17, ANIM] [255, 50, 34, 39, -19, -20, ANIM] [301, 50, 54, 34, -27, -17, ANIM] [364, 50, 72, 23, -36, -12, ANIM] [448, 50, 52, 30, -26, -15, ANIM] } 
+spriteset (BAC_CONCORDE_Greyscale_Climbing, "src/gfx/BAC/Concorde/(0)Greyscale.png") { [ 0, 100, 36, 50, -18, -25, ANIM] [ 45, 100, 46, 50, -23, -25, ANIM] [108, 100, 65, 35, -33, -18, ANIM] [192, 100, 46, 20, -23, -10, ANIM] [255, 100, 28, 12, -14, -6 , ANIM] [301, 100, 46, 20, -23, -10, ANIM] [364, 100, 65, 35, -33, -18, ANIM] [448, 100, 46, 50, -23, -25, ANIM] } 
+spriteset (BAC_CONCORDE_Greyscale_Touchdown, "src/gfx/BAC/Concorde/(0)Greyscale.png") { [ 0, 175, 36, 34, -18, -17, ANIM] [ 45, 175, 52, 29, -26, -11, ANIM] [108, 175, 73, 22, -37, -11, ANIM] [192, 175, 53, 36, -27, -18, ANIM] [255, 175, 34, 42, -17, -21, ANIM] [301, 175, 53, 36, -27, -18, ANIM] [364, 175, 73, 23, -37, -12, ANIM] [448, 175, 52, 29, -26, -15, ANIM] } 
+spriteset (BAC_CONCORDE_Greyscale_Landing, "src/gfx/BAC/Concorde/(0)Greyscale.png") { [ 0, 225, 36, 41, -18, -21, ANIM] [ 45, 225, 51, 36, -26, -18, ANIM] [108, 225, 72, 22, -36, -11, ANIM] [192, 225, 52, 27, -26, -14, ANIM] [255, 225, 34, 32, -17, -16, ANIM] [301, 225, 52, 27, -26, -14, ANIM] [364, 225, 72, 22, -36, -11, ANIM] [448, 225, 51, 26, -26, -18, ANIM] }
+
+spriteset (BAC_CONCORDE_AirFrance_Flight, "src/gfx/BAC/Concorde/AirFrance.png") { [ 0, 0, 36, 34, -18, -17, ANIM] [ 45, 0, 52, 29, -26, -15, ANIM] [108, 0, 74, 22, -37, -11, ANIM] [192, 0, 53, 35, -27, -18, ANIM] [255, 0, 36, 38, -18, -19, ANIM] [301, 0, 53, 35, -27, -18, ANIM] [364, 0, 74, 22, -37, -11, ANIM] [448, 0, 52, 29, -26, -15, ANIM] } 
+spriteset (BAC_CONCORDE_AirFrance_Grounded, "src/gfx/BAC/Concorde/AirFrance.png") { [ 0, 50, 36, 37, -18, -19, ANIM] [ 45, 50, 52, 30, -26, -15, ANIM] [108, 50, 72, 22, -36, -11, ANIM] [192, 50, 54, 34, -27, -17, ANIM] [255, 50, 34, 39, -19, -20, ANIM] [301, 50, 54, 34, -27, -17, ANIM] [364, 50, 72, 23, -36, -12, ANIM] [448, 50, 52, 30, -26, -15, ANIM] } 
+spriteset (BAC_CONCORDE_AirFrance_Climbing, "src/gfx/BAC/Concorde/AirFrance.png") { [ 0, 100, 36, 50, -18, -25, ANIM] [ 45, 100, 46, 50, -23, -25, ANIM] [108, 100, 65, 35, -33, -18, ANIM] [192, 100, 46, 20, -23, -10, ANIM] [255, 100, 28, 12, -14, -6 , ANIM] [301, 100, 46, 20, -23, -10, ANIM] [364, 100, 65, 35, -33, -18, ANIM] [448, 100, 46, 50, -23, -25, ANIM] } 
+spriteset (BAC_CONCORDE_AirFrance_Touchdown, "src/gfx/BAC/Concorde/AirFrance.png") { [ 0, 175, 36, 34, -18, -17, ANIM] [ 45, 175, 52, 29, -26, -11, ANIM] [108, 175, 73, 22, -37, -11, ANIM] [192, 175, 53, 36, -27, -18, ANIM] [255, 175, 34, 42, -17, -21, ANIM] [301, 175, 53, 36, -27, -18, ANIM] [364, 175, 73, 23, -37, -12, ANIM] [448, 175, 52, 29, -26, -15, ANIM] } 
+spriteset (BAC_CONCORDE_AirFrance_Landing, "src/gfx/BAC/Concorde/AirFrance.png") { [ 0, 225, 36, 41, -18, -21, ANIM] [ 45, 225, 51, 36, -26, -18, ANIM] [108, 225, 72, 22, -36, -11, ANIM] [192, 225, 52, 27, -26, -14, ANIM] [255, 225, 34, 32, -17, -16, ANIM] [301, 225, 52, 27, -26, -14, ANIM] [364, 225, 72, 22, -36, -11, ANIM] [448, 225, 51, 26, -26, -18, ANIM] }
+
+switch (FEAT_AIRCRAFT, SELF, BAC_CONCORDE_Greyscale, (var[0xE2, 0, 0xFF]))
+{
+  15: BAC_CONCORDE_Greyscale_Climbing;
+  18: BAC_CONCORDE_Greyscale_Flight;
+  21: BAC_CONCORDE_Greyscale_Landing;
+  22: BAC_CONCORDE_Greyscale_Touchdown;
+      BAC_CONCORDE_Greyscale_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, BAC_CONCORDE_AirFrance, (var[0xE2, 0, 0xFF]))
+{
+  15: BAC_CONCORDE_AirFrance_Climbing;
+  18: BAC_CONCORDE_AirFrance_Flight;
+  21: BAC_CONCORDE_AirFrance_Landing;
+  22: BAC_CONCORDE_AirFrance_Touchdown;
+      BAC_CONCORDE_AirFrance_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, BAC_CONCORDE_sprites, cargo_subtype)
+{
+  1: BAC_CONCORDE_AirFrance;
+     BAC_CONCORDE_Greyscale;
+}
+switch (FEAT_AIRCRAFT, SELF, BAC_CONCORDE_running_cost_factor, (var[0xE2, 0, 0xFF]))
+{
+  8..12: return 198 *50/100 ; 13..15: return 198 *1 ; 18: return 198 *88/100 ; 16..20: return 198 *91/100 ; 21..22: return 198 *95/100 ; return 198 *37/100 ;
+}
+switch (FEAT_AIRCRAFT, SELF, BAC_CONCORDE_speed, (var[0xE2, 0, 0xFF]))
+{
+  12..13: return int(451*5/64); // airplane waiting for take-off clearance, airplane taking off
+      15: return int(515*5/64); // airplane climbing after take-off
+      18: return int(2337*5/64); // heading for tower contact point
+  16..20: return int(547*5/64); // in flight
+  21..22: return int(298*5/64); // airplane landing, airplane braking after touchdown
+          return int(201*5/64);
+}
+switch (FEAT_AIRCRAFT, SELF, BAC_CONCORDE_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_BAC);
+  1: string(STR_VLIV_AIR_FRANCE);
+     return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_AIRCRAFT, BAC_CONCORDE)
+{
+  property
+  {
+    name: string(STR_AIRV_BAC_CONCORDE);
+    climates_available: bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL, CLIMATE_TOYLAND);
+    introduction_date: date(1976 - 2, 1, 1);
+    vehicle_life: 27;
+    model_life: 2003 >= 2050 ? VEHICLE_NEVER_EXPIRES : (1976 -2003 -2 < retire_early_default ? 2003 -1976 +2 : -retire_early_default);
+    retire_early: 1976 -2003 -2 < retire_early_default ? retire_early_default+1 : 1976 -2003 -1;
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_LARGE;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 11;
+    passenger_capacity: 100;
+    mail_capacity: 10;
+    acceleration: 27; // in 27,75 mph/day
+    range: 1230;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: BAC_CONCORDE_sprites;
+    purchase: BAC_CONCORDE_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: BAC_CONCORDE_cargo_subtype_text;
+    speed: BAC_CONCORDE_speed;
+    running_cost_factor: BAC_CONCORDE_running_cost_factor;
+    sound_effect: BAC_CONCORDE_sound_effect;
+
+    cost_factor: 160;
+    purchase_running_cost_factor: 198;
+    purchase_speed: int(2337*5/64);
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, BAC_CONCORDE)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, BAC_CONCORDE)
+  {
+    property
+    { range: 1230; }
+  }
+}
+
+
+
+
+enum AircraftSpeedLimits {
+	SPEED_LIMIT_TAXI     =     50,  ///< Maximum speed of an aircraft while taxiing
+	SPEED_LIMIT_APPROACH =    230,  ///< Maximum speed of an aircraft on finals
+	SPEED_LIMIT_BROKEN   =    320,  ///< Maximum speed of an aircraft that is broken
+	SPEED_LIMIT_HOLD     =    425,  ///< Maximum speed of an aircraft that flies the holding pattern
+/* A300-600R */
+  12..13: return int(249*5/64); // airplane waiting for take-off clearance, airplane taking off
+      15: return int(354*5/64); // airplane climbing after take-off
+      18: return int(870*5/64); // heading for tower contact point
+  16..20: return int(338*5/64); // in flight
+  21..22: return int(233*5/64); // airplane landing, airplane braking after touchdown
+          return int(201*5/64);
+/* Concorde speed */
+  12..13: return int(451*5/64); // airplane waiting for take-off clearance, airplane taking off
+      15: return int(515*5/64); // airplane climbing after take-off
+      18: return int(2337*5/64); // heading for tower contact point
+  16..20: return int(547*5/64); // in flight
+  21..22: return int(298*5/64); // airplane landing, airplane braking after touchdown
+          return int(201*5/64);
