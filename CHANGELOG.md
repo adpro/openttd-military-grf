@@ -16,8 +16,24 @@ You can find these types of changes:
 ## Unreleased
 
 ### Added
+- Parameters was rewritten from base
 - Aircraft purchase cost multiplier (1/16x-16x)
 - Aircraft running cost multiplier (1/16x-16x)
+- helicopter Aérospatiale SA 321
+- helicopter Aérospatiale SA 330
+- helicopter Eurocopter AS532
+- helicopter AgustaWestland AW101
+- helicopter AgustaWestland AW139
+- helicopter Eurocopter EC725
+- helicopter Sikorsky CH-37
+- helicopter Sikorsky CH-53E
+- helicopter Sikorsky CH-53K
+- helicopter Sikorsky CH-148
+- helicopter Sikorsky UH-60
+- helicopter Mil Mi-6
+- helicopter Mil Mi-17
+- helicopter Mil Mi-26
+- helicopter Mil Mi-38
 
 ### Fixed
 - C-141 Starlifter sound changed from propeller to jet engine sound.
