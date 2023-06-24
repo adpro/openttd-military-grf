@@ -239,7 +239,50 @@ STR_NAME_AIR_ZLIN_Z12   :Zlín Z.12
 STR_DESC_AIR_ZLIN_Z12   :Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Z.12 bylo vojenské označení pro Zlín Z.XII, sportovní a cvičný dvoumístný celodřevěný dolnoplošník, který byl používán pro kurýrní službu a kondiční létání. {}{BLACK}Vyrobeno ks: {ORANGE}201
 
 STR_NAME_AIR_SA330      :Aérospatiale SA 330 Puma
-STR_DESC_AIR_SA330		:Země původu: {ORANGE}FRA {}{BLACK}Historická fakta: {ORANGE} {}{BLACK}Vyrobeno ks: {ORANGE}697
+STR_DESC_AIR_SA330      :Země původu: {ORANGE}FRA {}{BLACK}Historická fakta: {ORANGE}Puma byla původně vyvinuta jako zcela nový design v polovině 60. let v reakci na požadavek francouzské armády na středně velký vrtulník do každého počasí. {}{BLACK}Vyrobeno ks: {ORANGE}697
+
+STR_NAME_AIR_SA321      :Aérospatiale SA 321 Super Frelon
+STR_DESC_AIR_SA321      :Země původu: {ORANGE}FRA {}{BLACK}Historická fakta: {ORANGE}Super Frelon držel rekord jako nejvýkonnější vrtulník, který byl v Evropě postaven, a také jako nejrychlejší vrtulník na světě. {}{BLACK}Vyrobeno ks: {ORANGE}110
+
+STR_NAME_AIR_AW101      :AgustaWestland AW101 Merlin
+STR_DESC_AIR_AW101      :Země původu: {ORANGE}GBR/ITA {}{BLACK}Historická fakta: {ORANGE}Merlin byl vyvinut společným podnikem Westland Helicopters ve Spojeném království a Agusta v Itálii v reakci na národní požadavky na moderní námořní užitkový vrtulník. {}{BLACK}Vyrobeno ks: {ORANGE}180+
+
+STR_NAME_AIR_AW139      :AgustaWestland AW139
+STR_DESC_AIR_AW139      :Země původu: {ORANGE}ITA {}{BLACK}Historická fakta: {ORANGE}Původně byl navržen společně Agusta a Bell Helicopters, takže byl prodáván jako Agusta-Bell AB139, ale byl přeznačen na AW139 poté, co Bell odstoupil od projektu. {}{BLACK}Vyrobeno ks: {ORANGE}1,100+
+
+STR_NAME_AIR_AS532      :Eurocopter AS 532 Cougar
+STR_DESC_AIR_AS532      :Země původu: {ORANGE}FRA {}{BLACK}Historická fakta: {ORANGE}Cougar je vyvinut jako modernizovaná verze Aérospatiale SA 330 Puma v jeho militarizované podobě s jeho civilním protějškem AS 332 Super Puma. {}{BLACK}Vyrobeno ks: {ORANGE}350+
+
+STR_NAME_AIR_EC725      :Eurocopter EC725 Caracal
+STR_DESC_AIR_EC725      :Země původu: {ORANGE}FRA {}{BLACK}Historická fakta: {ORANGE}Caracal byl vyvinut pro splnění požadavku francouzského letectva na speciální vrtulník pro bojové pátrací a záchranné operace. {}{BLACK}Vyrobeno ks: {ORANGE}90
+
+STR_NAME_AIR_MI17       :Mil Mi-17
+STR_DESC_AIR_MI17       :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Označení Mi-17 je pro export; Ruské ozbrojené síly jej nazývají Mi-8MT. {}{BLACK}Vyrobeno ks: {ORANGE}12,000
+
+STR_NAME_AIR_MI26       :Mil Mi-26
+STR_DESC_AIR_MI26       :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Je to největší vrtulník, který se dostal do sériové výroby. {}{BLACK}Vyrobeno ks: {ORANGE}316
+
+STR_NAME_AIR_MI38       :Mil Mi-38
+STR_DESC_AIR_MI38       :Země původu: {ORANGE}RUS {}{BLACK}Historická fakta: {ORANGE}Pratt & Whitney Canada se také měli zúčastnit programu jako dodavatelé avioniky Mi-38 a vybavení pohonných jednotek. {}{BLACK}Vyrobeno ks: {ORANGE}10
+
+STR_NAME_AIR_MI6        :Mil Mi-6
+STR_DESC_AIR_MI6        :Země původu: {ORANGE}SSSR {}{BLACK}Historická fakta: {ORANGE}Mi-6 vyplynul ze společného civilně-vojenského požadavku na velmi velké letadlo s vertikálním vztlakem, které by mohlo být použito pro zvýšení mobility ve vojenských operacích a také jako pomoc při průzkumu a rozvoji rozsáhlých středních a východních oblastí SSSR. {}{BLACK}Vyrobeno ks: {ORANGE}926
+
+STR_NAME_AIR_CH53E      :Sikorsky CH-53E Super Stallion
+STR_DESC_AIR_CH53E      :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}V říjnu 1967 vydala americká námořní pěchota požadavek na vrtulník s nosností 1,8krát větší než CH-53D, který by se vešel na obojživelné válečné lodě. {}{BLACK}Vyrobeno ks: {ORANGE}234
+
+STR_NAME_AIR_CH53K      :Sikorsky CH-53K King Stallion
+STR_DESC_AIR_CH53K      :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}King Stallion je evolucí dlouhé řady vrtulníků CH-53, které jsou v nepřetržitém provozu od roku 1966. Je to největší a nejtěžší vrtulník v americké armádě. {}{BLACK}Vyrobeno ks: {ORANGE}9+
+
+STR_NAME_AIR_UH60       :Sikorsky UH-60 Black Hawk
+STR_DESC_AIR_UH60       :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Sikorsky předložil návrh S-70 do soutěže UTTAS (United States Army's Utility Tactical Transport Aircraft System) v roce 1972 a v roce 1976 vyhrál. {}{BLACK}Vyrobeno ks: {ORANGE}5,000+
+
+STR_NAME_AIR_CH148      :Sikorsky CH-148 Cyclone
+STR_DESC_AIR_CH148      :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Cyclone je dvoumotorový víceúčelový lodní vrtulník vyvinutý společností Sikorsky Aircraft Corporation pro kanadské ozbrojené síly jako vojenská varianta Sikorsky S-92. {}{BLACK}Vyrobeno ks: {ORANGE}26
+
+STR_NAME_AIR_CH37       :Sikorsky CH-37 Mojave
+STR_DESC_AIR_CH37       :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Mojave vznikl jako útočný transport pro námořní pěchotu Spojených států. V době dodání byl CH-37 největším vrtulníkem v západním světě. {}{BLACK}Vyrobeno ks: {ORANGE}154
+
 
 STR_DESC_AIR_TMPL		:Země původu: {ORANGE}??? {}{BLACK}Historická fakta: {ORANGE}
 
