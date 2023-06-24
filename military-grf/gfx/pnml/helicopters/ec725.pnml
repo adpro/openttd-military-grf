@@ -1,13 +1,13 @@
-/* helicopter Aérospatiale SA 330 Puma */
+/* helicopter Eurocopter EC 725 */
 
-spriteset(spriteset_air_sa330, "gfx/png/air_sa330.png") {
+spriteset(spriteset_air_ec725, "gfx/png/air_sa330.png") {
     // 15 x 19 x 5
     //left_x, upper_y, width, height, offset_x, offset_y
     //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
     template_aircraft(0,0,6,28,25,20,41,10)
 }
 
-spriteset(spriteset_air_sa330_rotor, "gfx/png/air_sa330_rotor.png") {
+spriteset(spriteset_air_ec725_rotor, "gfx/png/air_sa330_rotor.png") {
     // [ 0, 12, 21, 11, -10, -4]
     // [22, 12, 21, 11, -10, -4]
     // [44, 12, 21, 11, -10, -4]
@@ -17,12 +17,12 @@ spriteset(spriteset_air_sa330_rotor, "gfx/png/air_sa330_rotor.png") {
 
 
 if (is_aircraft_helicopter_enabled(param_aircraft_enable_eu)){
-    item (FEAT_AIRCRAFT, item_air_sa330) {
+    item (FEAT_AIRCRAFT, item_air_ec725) {
         property {
-            name:                           string(STR_NAME_AIR_SA330);
+            name:                           string(STR_NAME_AIR_EC725);
             climates_available:             bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
-            introduction_date:              date(1965,04,15);
-            model_life:                     22;
+            introduction_date:              date(2005,02,01);
+            model_life:                     50;
             /* retire_early not set, use default retirement behaviour */
             vehicle_life:                   40;
             reliability_decay:              5;
@@ -35,30 +35,30 @@ if (is_aircraft_helicopter_enabled(param_aircraft_enable_eu)){
 
             /* airplane-specific properties */
             sprite_id:                      SPRITE_ID_NEW_AIRCRAFT; //enable new graphics
-            speed:                          257 km/h;
-            range:                          116;
+            speed:                          262 km/h;
+            range:                          184;
             misc_flags:                     bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
             refit_cost:                     0; // Refitting is free
             /* callback_flags are not set, no need to manually enable callbacks */
             aircraft_type:                  AIRCRAFT_TYPE_HELICOPTER;
             acceleration:                   15;
-            passenger_capacity:             16;
+            passenger_capacity:             29;
             mail_capacity:                  0;
             sound_effect:                   SOUND_TAKEOFF_HELICOPTER;
             /* Visual effect is left at default (no effect) */
         }
         graphics {
-                additional_text:            return string(STR_DESC_AIR_SA330); //Additional text shown in purchase list
-                default:                    spriteset_air_sa330;
-                rotor:                      spriteset_air_sa330_rotor;
-                mail_capacity:              return 16;
-                cost_factor:                return 8;
-                running_cost_factor:        return 186;
+                additional_text:            return string(STR_DESC_AIR_EC725); //Additional text shown in purchase list
+                default:                    spriteset_air_ec725;
+                rotor:                      spriteset_air_ec725_rotor;
+                cost_factor:                return 28;
+                running_cost_factor:        return 313;
+                mail_capacity:              return 45; // real cargo weight in kgs / 125
         }
     }
 
     if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_sa330)
+        item (FEAT_AIRCRAFT, item_air_ec725)
         {
             property	
             {
@@ -67,11 +67,11 @@ if (is_aircraft_helicopter_enabled(param_aircraft_enable_eu)){
         }
     }
     if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_sa330)
+        item (FEAT_AIRCRAFT, item_air_ec725)
         {
             property	
             {
-                range: 116; 
+                range: 184; 
             }
         }
     }

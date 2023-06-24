@@ -1,13 +1,13 @@
-/* helicopter Aérospatiale SA 330 Puma */
+/* helicopter Mil Mi-26 */
 
-spriteset(spriteset_air_sa330, "gfx/png/air_sa330.png") {
+spriteset(spriteset_air_mi26, "gfx/png/air_sa330.png") {
     // 15 x 19 x 5
     //left_x, upper_y, width, height, offset_x, offset_y
     //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
     template_aircraft(0,0,6,28,25,20,41,10)
 }
 
-spriteset(spriteset_air_sa330_rotor, "gfx/png/air_sa330_rotor.png") {
+spriteset(spriteset_air_mi26_rotor, "gfx/png/air_sa330_rotor.png") {
     // [ 0, 12, 21, 11, -10, -4]
     // [22, 12, 21, 11, -10, -4]
     // [44, 12, 21, 11, -10, -4]
@@ -16,49 +16,49 @@ spriteset(spriteset_air_sa330_rotor, "gfx/png/air_sa330_rotor.png") {
 }
 
 
-if (is_aircraft_helicopter_enabled(param_aircraft_enable_eu)){
-    item (FEAT_AIRCRAFT, item_air_sa330) {
+if (is_aircraft_helicopter_enabled(param_aircraft_enable_rus)){
+    item (FEAT_AIRCRAFT, item_air_mi26) {
         property {
-            name:                           string(STR_NAME_AIR_SA330);
+            name:                           string(STR_NAME_AIR_MI26);
             climates_available:             bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
-            introduction_date:              date(1965,04,15);
-            model_life:                     22;
+            introduction_date:              date(1977,12,17);
+            model_life:                     60;
             /* retire_early not set, use default retirement behaviour */
             vehicle_life:                   40;
             reliability_decay:              5;
             refittable_cargo_classes:       bitmask(CC_PASSENGERS, CC_MAIL, CC_EXPRESS, CC_ARMOURED, CC_PIECE_GOODS, CC_HAZARDOUS, CC_COVERED);
             non_refittable_cargo_classes:   bitmask(CC_REFRIGERATED);
-            loading_speed:                  15;
+            loading_speed:                  20;
             cost_factor:                    0;
             running_cost_factor:            0;
             /* cargo_age_period is left at default */
 
             /* airplane-specific properties */
             sprite_id:                      SPRITE_ID_NEW_AIRCRAFT; //enable new graphics
-            speed:                          257 km/h;
-            range:                          116;
+            speed:                          295 km/h;
+            range:                          384;
             misc_flags:                     bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
             refit_cost:                     0; // Refitting is free
             /* callback_flags are not set, no need to manually enable callbacks */
             aircraft_type:                  AIRCRAFT_TYPE_HELICOPTER;
             acceleration:                   15;
-            passenger_capacity:             16;
+            passenger_capacity:             90;
             mail_capacity:                  0;
             sound_effect:                   SOUND_TAKEOFF_HELICOPTER;
             /* Visual effect is left at default (no effect) */
         }
         graphics {
-                additional_text:            return string(STR_DESC_AIR_SA330); //Additional text shown in purchase list
-                default:                    spriteset_air_sa330;
-                rotor:                      spriteset_air_sa330_rotor;
-                mail_capacity:              return 16;
-                cost_factor:                return 8;
-                running_cost_factor:        return 186;
+                additional_text:            return string(STR_DESC_AIR_MI26); //Additional text shown in purchase list
+                default:                    spriteset_air_mi26;
+                rotor:                      spriteset_air_mi26_rotor;
+                cost_factor:                return 31;
+                running_cost_factor:        return 1421;
+                mail_capacity:              return 160;    // callback for setting capacity
         }
     }
 
     if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_sa330)
+        item (FEAT_AIRCRAFT, item_air_mi26)
         {
             property	
             {
@@ -67,11 +67,11 @@ if (is_aircraft_helicopter_enabled(param_aircraft_enable_eu)){
         }
     }
     if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_sa330)
+        item (FEAT_AIRCRAFT, item_air_mi26)
         {
             property	
             {
-                range: 116; 
+                range: 384; 
             }
         }
     }
