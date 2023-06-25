@@ -296,8 +296,8 @@ STR_DESC_AIR_TMPL		:Země původu: {ORANGE}??? {}{BLACK}Historická fakta: {ORAN
 # vehicle subversions
 STR_LIV_AIR_AF          : Vzdušné síly
 STR_LIV_AIR_AF_STRIPES  : Vzdušné síly s pruhy
-STR_LIV_AIR_2CC         : Dvoubarevné schéma s pruhy
-STR_LIV_AIR_2CC_REV     : Dvoubarevné schéma obrácené s pruhy
+STR_LIV_AIR_2CC         : Dvoubarevné schéma 
+STR_LIV_AIR_2CC_REV     : Dvoubarevné schéma obrácené
 
 
 # --------------------

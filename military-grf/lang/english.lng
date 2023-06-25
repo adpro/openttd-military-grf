@@ -295,8 +295,8 @@ STR_DESC_AIR_TMPL		:Country of origin: {ORANGE}??? {}{BLACK}Historic facts: {ORA
 # vehicle subversions
 STR_LIV_AIR_AF          : Air Force
 STR_LIV_AIR_AF_STRIPES  : Air Force with stripes
-STR_LIV_AIR_2CC         : 2CC with stripes
-STR_LIV_AIR_2CC_REV     : 2CC Reversed with stripes
+STR_LIV_AIR_2CC         : 2CC
+STR_LIV_AIR_2CC_REV     : 2CC Reversed
 
 # --------------------
 # airports
