@@ -1,18 +1,41 @@
 /* helicopter Aérospatiale SA 321 Super Frelon */
 
-spriteset(spriteset_air_sa321, "gfx/png/air_sa330.png") {
-    // 15 x 19 x 5
-    //left_x, upper_y, width, height, offset_x, offset_y
-    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
-    template_aircraft(0,0,6,28,25,20,41,10)
+spriteset(spriteset_air_sa321, "gfx/png/air_sa321_2cc_1x_8bpp.png") {
+    // 38 x 9 x 11
+    template_aircraft_voxel_zoom(0,0,9,27,23,17,38,12,1)
+}
+alternative_sprites(spriteset_air_sa321, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/png/air_sa321_2cc_2x_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,9,27,23,17,38,12,2)
+}
+alternative_sprites(spriteset_air_sa321, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "gfx/png/air_sa321_2cc_4x_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,9,27,23,17,38,12,4)
+}
+spriteset(spriteset_air_sa321_landing, "gfx/png/air_sa321_2cc_landing_1x_8bpp.png") {
+    // 38 x 9 x 7
+    template_aircraft_voxel_zoom(0,0,9,27,23,17,38,12,1)
+}
+alternative_sprites(spriteset_air_sa321_landing, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/png/air_sa321_2cc_landing_2x_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,9,27,23,17,38,12,2)
+}
+alternative_sprites(spriteset_air_sa321_landing, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "gfx/png/air_sa321_2cc_landing_4x_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,9,27,23,17,38,12,4)
 }
 
-spriteset(spriteset_air_sa321_rotor, "gfx/png/air_sa330_rotor.png") {
-    // [ 0, 12, 21, 11, -10, -4]
-    // [22, 12, 21, 11, -10, -4]
-    // [44, 12, 21, 11, -10, -4]
-    // [66, 12, 21, 11, -10, -4]
-    template_rotor(0,0,29,15)
+spriteset(spriteset_air_sa321_rotor, "gfx/png/air_sa321_rotor_1x_8bpp.png") {
+    template_rotor_voxel_zoom(0,0,29,15,1)
+}
+alternative_sprites(spriteset_air_sa321_rotor, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/png/air_sa321_rotor_2x_8bpp.png") {
+    template_rotor_voxel_zoom(0,0,29,15,2)
+}
+alternative_sprites(spriteset_air_sa321_rotor, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "gfx/png/air_sa321_rotor_4x_8bpp.png") {
+    template_rotor_voxel_zoom(0,0,29,15,4)
+}
+
+switch (FEAT_AIRCRAFT, SELF, air_sa321_status, (var[0xE2, 0, 0xFF])) {
+    16..20: spriteset_air_sa321; // flight
+    24: spriteset_air_sa321; // helicopter preparing to land at airport
+    27: spriteset_air_sa321; // helicopter preparing to land at heliport    
+        spriteset_air_sa321_landing; // default
 }
 
 
@@ -49,8 +72,9 @@ if (is_aircraft_helicopter_enabled(param_aircraft_enable_eu)){
         }
         graphics {
                 additional_text:            return string(STR_DESC_AIR_SA321); //Additional text shown in purchase list
-                default:                    spriteset_air_sa321;
+                default:                    air_sa321_status; // spriteset_air_sa321;
                 rotor:                      spriteset_air_sa321_rotor;
+                // rotor: 3901;
                 cost_factor:                return 10;
                 running_cost_factor:        return 339;
         }
