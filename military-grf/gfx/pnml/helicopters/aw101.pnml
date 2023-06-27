@@ -1,19 +1,44 @@
 /* helicopter AgustaWestland AW101 */
 
-spriteset(spriteset_air_aw101, "gfx/png/air_sa330.png") {
-    // 15 x 19 x 5
-    //left_x, upper_y, width, height, offset_x, offset_y
-    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
-    template_aircraft(0,0,6,28,25,20,41,10)
+spriteset(spriteset_air_aw101, "gfx/png/air_aw101_2cc.png") {
+    // 35 x 10 x 10
+    template_aircraft_voxel_zoom(0,1,10,29,35,27,43,15,1)
+}
+alternative_sprites(spriteset_air_aw101, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/png/air_aw101_2cc.png") {
+    template_aircraft_voxel_zoom(0,32,10,29,35,27,43,15,2)
+}
+alternative_sprites(spriteset_air_aw101, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "gfx/png/air_aw101_2cc.png") {
+    template_aircraft_voxel_zoom(0,92,10,29,35,27,43,15,4)
+}
+spriteset(spriteset_air_aw101_landing, "gfx/png/air_aw101_2cc.png") {
+    // 35 x 10 x 10
+    template_aircraft_voxel_zoom(0,210,10,29,35,27,43,15,1)
+}
+alternative_sprites(spriteset_air_aw101_landing, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/png/air_aw101_2cc.png") {
+    template_aircraft_voxel_zoom(0,241,10,29,35,27,43,15,2)
+}
+alternative_sprites(spriteset_air_aw101_landing, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "gfx/png/air_aw101_2cc.png") {
+    template_aircraft_voxel_zoom(0,301,10,29,35,27,43,15,4)
 }
 
-spriteset(spriteset_air_aw101_rotor, "gfx/png/air_sa330_rotor.png") {
-    // [ 0, 12, 21, 11, -10, -4]
-    // [22, 12, 21, 11, -10, -4]
-    // [44, 12, 21, 11, -10, -4]
-    // [66, 12, 21, 11, -10, -4]
-    template_rotor(0,0,29,15)
+spriteset(spriteset_air_aw101_rotor, "gfx/png/air_aw101_rotor.png") {
+    template_rotor_voxel_zoom(0,1,29,16,1)
 }
+alternative_sprites(spriteset_air_aw101_rotor, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/png/air_aw101_rotor.png") {
+    template_rotor_voxel_zoom(0,19,29,16,2)
+}
+alternative_sprites(spriteset_air_aw101_rotor, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "gfx/png/air_aw101_rotor.png") {
+    template_rotor_voxel_zoom(0,53,29,16,4)
+}
+
+
+switch (FEAT_AIRCRAFT, SELF, air_aw101_status, (var[0xE2, 0, 0xFF])) {
+    16..20: spriteset_air_aw101; // flight
+    24: spriteset_air_aw101; // helicopter preparing to land at airport
+    27: spriteset_air_aw101; // helicopter preparing to land at heliport    
+        spriteset_air_aw101_landing; // default
+}
+
 
 
 if (is_aircraft_helicopter_enabled(param_aircraft_enable_eu)){
@@ -49,8 +74,8 @@ if (is_aircraft_helicopter_enabled(param_aircraft_enable_eu)){
         }
         graphics {
                 additional_text:            return string(STR_DESC_AIR_AW101); //Additional text shown in purchase list
-                default:                    spriteset_air_aw101;
-                rotor:                      spriteset_air_aw101_rotor;
+                default:                    air_aw101_status; //spriteset_air_aw101;
+                rotor:                      spriteset_air_aw101_rotor; //spriteset_air_ec725_rotor; //spriteset_air_aw101_rotor;
                 cost_factor:                return 46;
                 running_cost_factor:        return 418;
         }
