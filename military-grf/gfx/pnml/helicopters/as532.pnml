@@ -1,34 +1,24 @@
 /* helicopter Eurocopter SA 532 */
 
-spriteset(spriteset_air_as532, "gfx/png/air_sa532_2cc_1x_8bpp.png") {
+spriteset(spriteset_air_as532, "gfx/png/air_sa532_2cc.png") {
     // 41 x 11 x 9
-    template_aircraft_voxel_zoom(0,0,8,27,28,22,37,13,1)
+    template_aircraft_voxel_zoom(0,1,8,27,28,22,37,13,1)
 }
-alternative_sprites(spriteset_air_as532, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/png/air_sa532_2cc_2x_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,8,27,28,22,37,13,2)
+alternative_sprites(spriteset_air_as532, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/png/air_sa532_2cc.png") {
+    template_aircraft_voxel_zoom(0,30,8,27,28,22,37,13,2)
 }
-alternative_sprites(spriteset_air_as532, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "gfx/png/air_sa532_2cc_4x_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,8,27,28,22,37,13,4)
+alternative_sprites(spriteset_air_as532, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "gfx/png/air_sa532_2cc.png") {
+    template_aircraft_voxel_zoom(0,86,8,27,28,22,37,13,4)
 }
-spriteset(spriteset_air_as532_landing, "gfx/png/air_sa532_2cc_landing_1x_8bpp.png") {
+spriteset(spriteset_air_as532_landing, "gfx/png/air_sa532_2cc.png") {
     // 41 x 11 x 9
-    template_aircraft_voxel_zoom(0,0,8,27,28,22,37,13,1)
+    template_aircraft_voxel_zoom(0,196,8,27,28,22,37,13,1)
 }
-alternative_sprites(spriteset_air_as532_landing, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/png/air_sa532_2cc_landing_2x_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,8,27,28,22,37,13,2)
+alternative_sprites(spriteset_air_as532_landing, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/png/air_sa532_2cc.png") {
+    template_aircraft_voxel_zoom(0,225,8,27,28,22,37,13,2)
 }
-alternative_sprites(spriteset_air_as532_landing, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "gfx/png/air_sa532_2cc_landing_4x_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,8,27,28,22,37,13,4)
-}
-
-spriteset(spriteset_air_as532_rotor, "gfx/png/air_sa330_rotor_1x_8bpp.png") {
-    template_rotor_voxel_zoom(0,0,29,15,1)
-}
-alternative_sprites(spriteset_air_as532_rotor, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/png/air_sa330_rotor_2x_8bpp.png") {
-    template_rotor_voxel_zoom(0,0,29,15,2)
-}
-alternative_sprites(spriteset_air_as532_rotor, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "gfx/png/air_sa330_rotor_4x_8bpp.png") {
-    template_rotor_voxel_zoom(0,0,29,15,4)
+alternative_sprites(spriteset_air_as532_landing, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "gfx/png/air_sa532_2cc.png") {
+    template_aircraft_voxel_zoom(0,281,8,27,28,22,37,13,4)
 }
 
 switch (FEAT_AIRCRAFT, SELF, air_as532_status, (var[0xE2, 0, 0xFF])) {
@@ -73,7 +63,7 @@ if (is_aircraft_helicopter_enabled(param_aircraft_enable_eu)){
                 // name:                       foo_switch_name;
                 additional_text:            return string(STR_DESC_AIR_AS532); //Additional text shown in purchase list
                 default:                    air_as532_status; //spriteset_air_as532;
-                rotor:                      spriteset_air_as532_rotor;
+                rotor:                      spriteset_air_sa330_rotor;
                 cost_factor:                return 23;
                 running_cost_factor:        return 253;
         }

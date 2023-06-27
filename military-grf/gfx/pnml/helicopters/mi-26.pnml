@@ -1,10 +1,10 @@
 /* helicopter Mil Mi-26 */
 
-spriteset(spriteset_air_mi26, "gfx/png/air_sa330.png") {
+spriteset(spriteset_air_mi26, "gfx/png/air_sa330_2cc.png") {
     // 15 x 19 x 5
     //left_x, upper_y, width, height, offset_x, offset_y
     //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
-    template_aircraft(0,0,6,28,25,20,41,10)
+    template_aircraft(0,1,6,28,25,20,41,10)
 }
 
 spriteset(spriteset_air_mi26_rotor, "gfx/png/air_sa330_rotor.png") {
@@ -50,7 +50,7 @@ if (is_aircraft_helicopter_enabled(param_aircraft_enable_rus)){
         graphics {
                 additional_text:            return string(STR_DESC_AIR_MI26); //Additional text shown in purchase list
                 default:                    spriteset_air_mi26;
-                rotor:                      spriteset_air_mi26_rotor;
+                rotor:                      3901; //spriteset_air_mi26_rotor;
                 cost_factor:                return 31;
                 running_cost_factor:        return 1421;
         }
