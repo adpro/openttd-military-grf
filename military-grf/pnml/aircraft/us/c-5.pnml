@@ -1,0 +1,78 @@
+/* airplane C-5 Galaxy */
+
+spriteset(spriteset_air_c5, "gfx/air_c5.png") {
+    // 126 x 114 x 33 ratio 1,67
+    // 63 x 56 x 16 ratio 0,835
+    //left_x, upper_y, width, height, offset_x, offset_y
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    template_aircraft(0,0,37,47,59,45,63,30)
+    // [   0,     0,       37,    47,    -18,       -22]
+    // [  38,     0,       59,    45,    -29,       -21]
+    // [  98,     0,       63,    30,    -31,       -14]
+    // [ 162,     0,       59,    45,    -29,       -21]
+    // [ 222,     0,       37,    47,    -18,       -22]
+    // [ 260,     0,       59,    45,    -29,       -21]
+    // [ 320,     0,       63,    30,    -31,       -14]
+    // [ 384,     0,       59,    45,    -29,       -21]
+}
+
+if (is_aircraft_airlifter_enabled(param_aircraft_enable_us)){
+    item (FEAT_AIRCRAFT, item_air_c5) {
+        property {
+            name:                           string(STR_NAME_AIR_C5);
+            climates_available:             bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+            introduction_date:              date(1968,07,01);
+            model_life:                     21;
+            /* retire_early not set, use default retirement behaviour */
+            vehicle_life:                   60;
+            reliability_decay:              5;
+            refittable_cargo_classes:       bitmask(CC_MAIL, CC_EXPRESS, CC_ARMOURED, CC_PIECE_GOODS, CC_LIQUID, CC_REFRIGERATED, CC_HAZARDOUS, CC_COVERED, CC_OVERSIZED, CC_NON_POURABLE, CC_NEO_BULK);
+            non_refittable_cargo_classes:   bitmask(CC_PASSENGERS, CC_BULK);
+            loading_speed:                  20;
+            cost_factor:                    158;
+            running_cost_factor:            255;
+            /* cargo_age_period is left at default */
+
+            /* airplane-specific properties */
+            sprite_id:                      SPRITE_ID_NEW_AIRCRAFT; //enable new graphics
+            speed:                          856 km/h;
+            range:                          852;
+            misc_flags:                     bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
+            refit_cost:                     0; // Refitting is free
+            /* callback_flags are not set, no need to manually enable callbacks */
+            aircraft_type:                  AIRCRAFT_TYPE_LARGE;
+            acceleration:                   32;
+            passenger_capacity:             0;
+            mail_capacity:                  0;
+            sound_effect:                   SOUND_TAKEOFF_JET_BIG;
+            /* Visual effect is left at default (no effect) */
+    }
+    graphics {
+            additional_text:    return string(STR_DESC_AIR_C5); //Additional text shown in purchase list
+            default:            spriteset_air_c5;
+
+            mail_capacity:      return 1020;    // callback for setting capacity
+            cost_factor:                    return 1227;
+            running_cost_factor:            return 9306;
+    }
+    }
+
+    if (Aircraft_Ranges == 0) {
+        item (FEAT_AIRCRAFT, item_air_c5)
+        {
+            property	
+            {
+                range: 0; 
+            }
+        }
+    }
+    if (Aircraft_Ranges == 1) {
+        item (FEAT_AIRCRAFT, item_air_c5)
+        {
+            property	
+            {
+                range: 852; 
+            }
+        }
+    }
+}

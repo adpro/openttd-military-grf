@@ -1,0 +1,152 @@
+/* helicopter Eurocopter SA 532 */
+
+spriteset(spriteset_air_as532, "gfx/air_sa532_2cc.png") {
+    // 41 x 11 x 9
+    template_aircraft_voxel_zoom(0,1,8,27,28,22,37,13,1)
+}
+alternative_sprites(spriteset_air_as532, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/air_sa532_2cc.png") {
+    template_aircraft_voxel_zoom(0,30,8,27,28,22,37,13,2)
+}
+alternative_sprites(spriteset_air_as532, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "gfx/air_sa532_2cc.png") {
+    template_aircraft_voxel_zoom(0,86,8,27,28,22,37,13,4)
+}
+spriteset(spriteset_air_as532_landing, "gfx/air_sa532_2cc.png") {
+    // 41 x 11 x 9
+    template_aircraft_voxel_zoom(0,196,8,27,28,22,37,13,1)
+}
+alternative_sprites(spriteset_air_as532_landing, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/air_sa532_2cc.png") {
+    template_aircraft_voxel_zoom(0,225,8,27,28,22,37,13,2)
+}
+alternative_sprites(spriteset_air_as532_landing, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "gfx/air_sa532_2cc.png") {
+    template_aircraft_voxel_zoom(0,281,8,27,28,22,37,13,4)
+}
+
+switch (FEAT_AIRCRAFT, SELF, air_as532_status, (var[0xE2, 0, 0xFF])) {
+    16..20: spriteset_air_as532; // flight
+    24: spriteset_air_as532; // helicopter preparing to land at airport
+    27: spriteset_air_as532; // helicopter preparing to land at heliport    
+        spriteset_air_as532_landing; // default
+}
+
+if (is_aircraft_helicopter_enabled(param_aircraft_enable_eu)){
+    item (FEAT_AIRCRAFT, item_air_as532) {
+        property {
+            name:                           string(STR_NAME_AIR_AS532);
+            climates_available:             bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+            introduction_date:              date(1978,01,01);
+            model_life:                     60;
+            /* retire_early not set, use default retirement behaviour */
+            vehicle_life:                   40;
+            reliability_decay:              5;
+            refittable_cargo_classes:       bitmask(CC_PASSENGERS, CC_MAIL, CC_EXPRESS, CC_ARMOURED, CC_PIECE_GOODS, CC_HAZARDOUS, CC_COVERED);
+            non_refittable_cargo_classes:   bitmask(CC_REFRIGERATED);
+            loading_speed:                  15;
+            cost_factor:                    0;
+            running_cost_factor:            0;
+            /* cargo_age_period is left at default */
+
+            /* airplane-specific properties */
+            sprite_id:                      SPRITE_ID_NEW_AIRCRAFT; //enable new graphics
+            speed:                          239 km/h;
+            range:                          115;
+            misc_flags:                     bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
+            refit_cost:                     0; // Refitting is free
+            /* callback_flags are not set, no need to manually enable callbacks */
+            aircraft_type:                  AIRCRAFT_TYPE_HELICOPTER;
+            acceleration:                   15;
+            passenger_capacity:             20;
+            mail_capacity:                  17;
+            sound_effect:                   SOUND_TAKEOFF_HELICOPTER;
+            /* Visual effect is left at default (no effect) */
+        }
+        graphics {
+                // name:                       foo_switch_name;
+                additional_text:            return string(STR_DESC_AIR_AS532); //Additional text shown in purchase list
+                default:                    air_as532_status; //spriteset_air_as532;
+                rotor:                      spriteset_air_sa330_rotor;
+                cost_factor:                return 23;
+                running_cost_factor:        return 253;
+        }
+    }
+
+    if (Aircraft_Ranges == 0) {
+        item (FEAT_AIRCRAFT, item_air_as532)
+        {
+            property	
+            {
+                range: 0; 
+            }
+        }
+    }
+    if (Aircraft_Ranges == 1) {
+        item (FEAT_AIRCRAFT, item_air_as532)
+        {
+            property	
+            {
+                range: 115; 
+            }
+        }
+    }
+}
+/* cargo variant */
+// if (is_aircraft_helicopter_enabled(param_aircraft_enable_eu)){
+//     item (FEAT_AIRCRAFT, item_air_as532c) {
+//         property {
+//             name:                           string(STR_NAME_AIR_AS532);
+//             climates_available:             bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+//             introduction_date:              date(1978,01,01);
+//             model_life:                     60;
+//             /* retire_early not set, use default retirement behaviour */
+//             vehicle_life:                   40;
+//             reliability_decay:              5;
+//             refittable_cargo_classes:       bitmask(CC_MAIL, CC_EXPRESS, CC_ARMOURED, CC_PIECE_GOODS, CC_HAZARDOUS, CC_COVERED);
+//             non_refittable_cargo_classes:   bitmask(CC_PASSENGERS, CC_REFRIGERATED);
+//             loading_speed:                  15;
+//             cost_factor:                    0;
+//             running_cost_factor:            0;
+//             /* cargo_age_period is left at default */
+
+//             /* airplane-specific properties */
+//             sprite_id:                      SPRITE_ID_NEW_AIRCRAFT; //enable new graphics
+//             speed:                          239 km/h;
+//             range:                          115;
+//             misc_flags:                     bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
+//             refit_cost:                     0; // Refitting is free
+//             /* callback_flags are not set, no need to manually enable callbacks */
+//             aircraft_type:                  AIRCRAFT_TYPE_HELICOPTER;
+//             acceleration:                   15;
+//             passenger_capacity:             0;
+//             mail_capacity:                  0;
+//             sound_effect:                   SOUND_TAKEOFF_HELICOPTER;
+//             /* Visual effect is left at default (no effect) */
+//             variant_group:                  item_air_as532;
+//         }
+//         graphics {
+//                 additional_text:            return string(STR_DESC_AIR_AS532); //Additional text shown in purchase list
+//                 default:                    spriteset_air_as532;
+//                 rotor:                      spriteset_air_as532_rotor;
+//                 cost_factor:                return 23;
+//                 running_cost_factor:        return 253;
+//                 mail_capacity:              return 37;
+//         }
+//     }
+
+//     if (Aircraft_Ranges == 0) {
+//         item (FEAT_AIRCRAFT, item_air_as532c)
+//         {
+//             property	
+//             {
+//                 range: 0; 
+//             }
+//         }
+//     }
+//     if (Aircraft_Ranges == 1) {
+//         item (FEAT_AIRCRAFT, item_air_as532c)
+//         {
+//             property	
+//             {
+//                 range: 115; 
+//             }
+//         }
+//     }
+// }
