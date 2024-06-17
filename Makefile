@@ -7,15 +7,18 @@ BUNDLEDIR=output/bundle
 MKDIR_P=mkdir -p
 NMLFILE=military_items.nml
 
-VERSION="$(shell cat $(SRCDIR)/custom_tags.txt | awk '/VERSION/ {print $2}' | sed -e 's/://' -e 's/VERSION//' -e 's/^[ \t]*//')"
+VERSION="cat $(SRCDIR)/custom_tags.txt | awk '/VERSION/ {print $2}' | sed -e 's/://' -e 's/VERSION//' -e 's/^[ \t]*//')"
+
+LIST_HEL := air_sa321 air_sa330 air_sa532 air_ec725 air_aw101
+LIST_ROTORS := air_sa321 air_sa330 air_ec725 air_aw101
 
 
 ifdef NMLFILE
-	CC             ?= "$(shell which cc 2>/dev/null)"
+	CC             ?= "which cc 2>/dev/null)"
 	CC_FLAGS       ?= -C -E -nostdinc -x c-header
 endif
 
-.PHONY: help build bundle clean deploy copy test
+.PHONY: help build bundle clean deploy copy test gfx
 
 # self-documenting function is made based on https://marmelab.com/blog/2016/02/29/auto-documented-makefile.html
 help: ## Shows this help message
@@ -58,3 +61,6 @@ copy: ## copies data
 	@[ ! -d $(OUTDIR) ] || cp -f $(OUTDIR)/$(NAME).grf ~/Documents/OpenTTD/newgrf
 
 test: clean build copy ## run clean, build and copy
+
+gfx:	## generate PNGs from vox files
+	@/bin/bash make_gfx.sh "$(LIST_HEL)" "$(LIST_ROTORS)"
