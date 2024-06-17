@@ -1,24 +1,24 @@
 /* helicopter Eurocopter SA 532 */
 
-spriteset(spriteset_air_as532, "gfx/air_sa532_2cc.png") {
+spriteset(spriteset_air_as532, "../intermediate/gfx/1x/air_sa532_2cc_8bpp.png") {
     // 41 x 11 x 9
-    template_aircraft_voxel_zoom(0,1,8,27,28,22,37,13,1)
+    template_aircraft_voxel_zoom(0,0,8,27,28,22,37,13,1)
 }
-alternative_sprites(spriteset_air_as532, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/air_sa532_2cc.png") {
-    template_aircraft_voxel_zoom(0,30,8,27,28,22,37,13,2)
+alternative_sprites(spriteset_air_as532, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_sa532_2cc_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,8,27,28,22,37,13,2)
 }
-alternative_sprites(spriteset_air_as532, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "gfx/air_sa532_2cc.png") {
-    template_aircraft_voxel_zoom(0,86,8,27,28,22,37,13,4)
+alternative_sprites(spriteset_air_as532, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_sa532_2cc_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,8,27,28,22,37,13,4)
 }
-spriteset(spriteset_air_as532_landing, "gfx/air_sa532_2cc.png") {
+spriteset(spriteset_air_as532_landing, "../intermediate/gfx/1x/air_sa532_2cc_landing_8bpp.png") {
     // 41 x 11 x 9
-    template_aircraft_voxel_zoom(0,196,8,27,28,22,37,13,1)
+    template_aircraft_voxel_zoom(0,0,8,27,28,22,37,13,1)
 }
-alternative_sprites(spriteset_air_as532_landing, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/air_sa532_2cc.png") {
-    template_aircraft_voxel_zoom(0,225,8,27,28,22,37,13,2)
+alternative_sprites(spriteset_air_as532_landing, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_sa532_2cc_landing_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,8,27,28,22,37,13,2)
 }
-alternative_sprites(spriteset_air_as532_landing, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "gfx/air_sa532_2cc.png") {
-    template_aircraft_voxel_zoom(0,281,8,27,28,22,37,13,4)
+alternative_sprites(spriteset_air_as532_landing, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_sa532_2cc_landing_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,8,27,28,22,37,13,4)
 }
 
 switch (FEAT_AIRCRAFT, SELF, air_as532_status, (var[0xE2, 0, 0xFF])) {

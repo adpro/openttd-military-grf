@@ -3,6 +3,7 @@ MAKE?=make
 PYTHON?=/usr/bin/env python3
 SRCDIR=military-grf
 OUTDIR=output
+INTERDIR=intermediate
 BUNDLEDIR=output/bundle
 MKDIR_P=mkdir -p
 NMLFILE=military_items.nml
@@ -18,7 +19,7 @@ ifdef NMLFILE
 	CC_FLAGS       ?= -C -E -nostdinc -x c-header
 endif
 
-.PHONY: help build bundle clean deploy copy test gfx
+.PHONY: help build bundle clean deploy copy test gfx cleaninter
 
 # self-documenting function is made based on https://marmelab.com/blog/2016/02/29/auto-documented-makefile.html
 help: ## Shows this help message
@@ -53,6 +54,10 @@ clean: ## deletes output dir with its content
 	@[ ! -d $(OUTDIR) ] || rm -rf $(OUTDIR)
 	@[ ! -f $(SRCDIR)/$(NMLFILE) ] || rm $(SRCDIR)/$(NMLFILE)
 
+cleaninter: ## deletes intermediate dir
+	@echo "[CLEAN] Cleaning itermediate directory..."
+	@[ ! -d $(INTERDIR) ] || rm -rf $(INTERDIR)
+
 deploy: ## deploys grf to BananaS server
 	@echo 'NOT IMPLEMENTED'
 
@@ -63,4 +68,4 @@ copy: ## copies data
 test: clean build copy ## run clean, build and copy
 
 gfx:	## generate PNGs from vox files
-	@/bin/bash make_gfx.sh "$(LIST_HEL)" "$(LIST_ROTORS)"
+	@/bin/bash make_gfx.sh "$(INTERDIR)/gfx" "$(LIST_HEL)" "$(LIST_ROTORS)"
