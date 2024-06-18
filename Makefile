@@ -4,18 +4,24 @@ PYTHON?=/usr/bin/env python3
 SRCDIR=military-grf
 OUTDIR=output
 INTERDIR=intermediate
-BUNDLEDIR=output/bundle
+BUNDLEDIR=${OUTDIR}/bundle
 MKDIR_P=mkdir -p
 NMLFILE=military_items.nml
 
-VERSION="cat $(SRCDIR)/custom_tags.txt | awk '/VERSION/ {print $2}' | sed -e 's/://' -e 's/VERSION//' -e 's/^[ \t]*//')"
+BUILD_NUMBER_FILE=build-number.txt
+VERSION_FILE="military-grf/custom_tags.txt"
+CURRENT_VERSION=$$(awk -F ':' '/^VERSION/ {print $2}' $(VERSION_FILE))
+
+VERSION=$$(cat $(SRCDIR)/custom_tags.txt | awk '/VERSION/ {print $2}' | sed -e 's/://' -e 's/VERSION//' -e 's/^[ \t]*//')
+VERSION_NO_BUILD=$$(echo $(VERSION) | sed 's/\+.*//')
+
 
 LIST_HEL := air_sa321 air_sa330 air_sa532 air_ec725 air_aw101
 LIST_ROTORS := air_sa321 air_sa330 air_ec725 air_aw101
 
 
 ifdef NMLFILE
-	CC             ?= "which cc 2>/dev/null)"
+	CC             ?= "which cc 2>/dev/null"
 	CC_FLAGS       ?= -C -E -nostdinc -x c-header
 endif
 
@@ -31,14 +37,25 @@ ${OUTDIR}:
 ${BUNDLEDIR}:
 	@${MKDIR_P} ${BUNDLEDIR}
 
+# Build number file.  Increment if any object file changes.
+$(BUILD_NUMBER_FILE): $(OUTDIR)
+	@if ! test -f $(BUILD_NUMBER_FILE); then echo 0 > $(BUILD_NUMBER_FILE); fi
+	@echo $$(($$(cat $(BUILD_NUMBER_FILE)) + 1)) > $(BUILD_NUMBER_FILE)
+	
 
-build: ${OUTDIR} ## builds nml files into grf file
+build: ${OUTDIR} $(BUILD_NUMBER_FILE) ## builds nml files into grf file
 	@echo "[CC] Compiling NML..."
 	@cd $(SRCDIR) \
 	&& $(CC) $(CC_FLAGS) -o $(NMLFILE) main.pnml
+	@echo "[Make] Build number: " $$(cat $(BUILD_NUMBER_FILE))
+	$(eval $@_BUILD_VERSION := $(shell cat $(BUILD_NUMBER_FILE)))
+# @echo "Current NML version:" $(CURRENT_VERSION) "|" $(VERSION) "|" $(VERSION_NO_BUILD)
+# $(eval $@_NEW_VERSION := $$(VERSION_NO_BUILD)"+"$(shell cat $(BUILD_NUMBER_FILE)))
+# @echo "New version with build:" $($@_NEW_VERSION)
+	@sed -i "" "1s/+[0-9]*/+$($@_BUILD_VERSION)/" $(VERSION_FILE)
 	@echo "[NML] Compiling NewGRF..."
 	@cd $(SRCDIR) \
-	&& nmlc --grf ../output/$(NAME).grf $(NMLFILE)
+	&& nmlc --grf ../${OUTDIR}/$(NAME).grf $(NMLFILE)
 
 bundle: build ${BUNDLEDIR} ## make tar bundle
 	@echo "[PANDOC] Compiling text files from markdown..."
