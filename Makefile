@@ -9,11 +9,9 @@ MKDIR_P=mkdir -p
 NMLFILE=military_items.nml
 
 BUILD_NUMBER_FILE=build-number.txt
-VERSION_FILE="military-grf/custom_tags.txt"
-CURRENT_VERSION=$$(awk -F ':' '/^VERSION/ {print $2}' $(VERSION_FILE))
+VERSION_FILE="$(SRCDIR)/custom_tags.txt"
 
-VERSION=$$(cat $(SRCDIR)/custom_tags.txt | awk '/VERSION/ {print $2}' | sed -e 's/://' -e 's/VERSION//' -e 's/^[ \t]*//')
-VERSION_NO_BUILD=$$(echo $(VERSION) | sed 's/\+.*//')
+VERSION=$$(cat $(VERSION_FILE) | awk '/VERSION/ {print $2}' | sed -e 's/://' -e 's/VERSION//' -e 's/^[ \t]*//')
 
 
 LIST_HEL := air_sa321 air_sa330 air_sa532 air_ec725 air_aw101
@@ -49,9 +47,6 @@ build: ${OUTDIR} $(BUILD_NUMBER_FILE) ## builds nml files into grf file
 	&& $(CC) $(CC_FLAGS) -o $(NMLFILE) main.pnml
 	@echo "[Make] Build number: " $$(cat $(BUILD_NUMBER_FILE))
 	$(eval $@_BUILD_VERSION := $(shell cat $(BUILD_NUMBER_FILE)))
-# @echo "Current NML version:" $(CURRENT_VERSION) "|" $(VERSION) "|" $(VERSION_NO_BUILD)
-# $(eval $@_NEW_VERSION := $$(VERSION_NO_BUILD)"+"$(shell cat $(BUILD_NUMBER_FILE)))
-# @echo "New version with build:" $($@_NEW_VERSION)
 	@sed -i "" "1s/+[0-9]*/+$($@_BUILD_VERSION)/" $(VERSION_FILE)
 	@echo "[NML] Compiling NewGRF..."
 	@cd $(SRCDIR) \
