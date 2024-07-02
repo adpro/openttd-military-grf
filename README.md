@@ -127,7 +127,12 @@ Airplanes available in set:
 | Aero L-159 | trainer/light attack aircraft | small | 1997 | 6 | 960 | 506 |
 | Aero L-39NG | trainer/light attack aircraft | small | 2018 | 25 | 780 | 500 |
 | **Helicopters** |||||||||
-| Bell UH-1 Iroquois / HU-1 "Huey" | utility military helicopter | helicopter | 1956 | 31 | 220 | 102 |
+| Bell UH-1 Iroquois / HU-1 "Huey" | utility military helicopter | heli | 1956 | 31 | 220 | 102 |
+| Aérospatiale SA 321 Super Frelon | heavy transport helicopter | heli | 1962 | 20 | 249 | 204 |
+| Aérospatiale SA 330 Puma | medium transport/utility helicopter | heli | 1965 | 22 | 257 | 116 |
+| Eurocopter AS 532 Cougar | medium multipurpose helicopter | heli | 1978 | 60 | 239 | 115 |
+| AgustaWestland AW101 Merlin | medium-lift helicopter | heli | 1997 | 30 | 278 | 272 |
+| Eurocopter EC725 Caracal | tactical transport military helicopter | heli | 2005 | 50 | 262 | 184 |
 
 [comment]: <tablex> (| | | | | | | |)
 
@@ -193,7 +198,7 @@ Web sources for calculations and other sources:
 - https://newgrf-specs.tt-wiki.net/wiki/PalettesAndCoordinates#Coordinates
 - https://wiki.openttd.org/en/Development/NewGRF/Debugging
 - https://newgrf-specs.tt-wiki.net/wiki/NML:Vehicles#Properties_common_to_all_vehicle_types
-- 
+ 
 
 Literature:
 
