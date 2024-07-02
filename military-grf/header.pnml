@@ -1,4 +1,5 @@
-if (ttd_platform != PLATFORM_OPENTTD || openttd_version < version_openttd(1, 2, 0, 22518)) {
+if (ttd_platform != PLATFORM_OPENTTD || openttd_version < version_openttd(1, 13, 0)) {
+    // if (ttd_platform != PLATFORM_OPENTTD || openttd_version < version_openttd(1, 2, 0, 22518)) {
 	error(FATAL, REQUIRES_OPENTTD, string(STR_MIN_OPENTTD_VERSION));
 	exit;
 }
@@ -7,37 +8,15 @@ grf {
     grfid: "AD\01\01";  // TTDPatch ID and published version
     name: string(STR_GRF_NAME);
     desc: string(STR_GRF_DESCRIPTION);
-    version: 6; // OpenTTD published version
-    min_compatible_version: 0;
+    version: 7; // OpenTTD published version
+    min_compatible_version: 7;
 
     // versions:
     // 1 = 0.1.0alpha9
     // 2 = 0.2.0 (post alpha 8)
     // 5 = 0.5.0 (post alpha 30)
-    param 0 {
-        Aircraft_Ranges {
-            type: int;
-            name: string(STR_PARAM_NAME_RANGES);
-            desc: string(STR_PARAM_DESC_RANGES);
-            min_value: 0;
-            max_value: 1;
-            def_value: 1;
-            names: {
-                0: string(STR_PARAM_VALUE_RANGES_OFF);
-                1: string(STR_PARAM_VALUE_RANGES_NORMAL);
-            } ;
-        }
-    }
-    param 1 {
-        airport_disable_date_restrictions {
-            type: bool;
-            name: string(STR_PARAM_NAME_AIRPORT_DATE_RESTRICTION);
-            desc: string(STR_PARAM_DESC_AIRPORT_DATE_RESTRICTION);
-            def_value: 0;
-            bit: 1;
-        }
-    }
-    param 2 {
+    // 7 = 0.7.0 - breaking change
+    param {
         param_airport_enable {
             type: int;
             name: string(STR_PARAM_NAME_AIRPORT_ENABLE);
@@ -54,7 +33,83 @@ grf {
             } ;
         }
     }
-    param 3 {
+    param {
+		param_disable_noise_level {
+			type: bool;
+			name: string(STR_PARAM_DISABLE_NOISE);
+			desc: string(STR_PARAM_DISABLE_NOISE_DESC);
+			def_value: 0;
+			bit:       0;
+		}
+    }
+    param {
+        param_aircraft_purchase_cost {
+            type: int;
+            name: string(STR_PARAM_NAME_AIRCRAFT_PURCHASE);
+            desc: string(STR_PARAM_DESC_AIRCRAFT_PURCHASE);
+            min_value: 0;
+            max_value: 8;
+            def_value: 4;
+            names: {
+                        0: string(STR_PARAM_DIVIDE_16);
+                        1: string(STR_PARAM_DIVIDE_8);
+                        2: string(STR_PARAM_DIVIDE_4);
+                        3: string(STR_PARAM_DIVIDE_2);
+                        4: string(STR_PARAM_NORMAL);
+                        5: string(STR_PARAM_TIMES_2);
+                        6: string(STR_PARAM_TIMES_4);
+                        7: string(STR_PARAM_TIMES_8);
+                        8: string(STR_PARAM_TIMES_16);
+            };
+        }
+    }
+
+    param {
+        param_aircraft_running_cost {
+            type: int;
+            name: string(STR_PARAM_NAME_AIRCRAFT_RUNNING);
+            desc: string(STR_PARAM_DESC_AIRCRAFT_RUNNING);
+            min_value: 0;
+            max_value: 8;
+            def_value: 4;
+            names: {
+                        0: string(STR_PARAM_DIVIDE_16);
+                        1: string(STR_PARAM_DIVIDE_8);
+                        2: string(STR_PARAM_DIVIDE_4);
+                        3: string(STR_PARAM_DIVIDE_2);
+                        4: string(STR_PARAM_NORMAL);
+                        5: string(STR_PARAM_TIMES_2);
+                        6: string(STR_PARAM_TIMES_4);
+                        7: string(STR_PARAM_TIMES_8);
+                        8: string(STR_PARAM_TIMES_16);
+            };
+        }
+    }
+
+    param {
+        Aircraft_Ranges {
+            type: int;
+            name: string(STR_PARAM_NAME_RANGES);
+            desc: string(STR_PARAM_DESC_RANGES);
+            min_value: 0;
+            max_value: 1;
+            def_value: 1;
+            names: {
+                0: string(STR_PARAM_VALUE_RANGES_OFF);
+                1: string(STR_PARAM_VALUE_RANGES_NORMAL);
+            } ;
+        }
+    }
+    param {
+        airport_disable_date_restrictions {
+            type: bool;
+            name: string(STR_PARAM_NAME_AIRPORT_DATE_RESTRICTION);
+            desc: string(STR_PARAM_DESC_AIRPORT_DATE_RESTRICTION);
+            def_value: 0;
+            bit: 1;
+        }
+    }
+    param {
         param_aircraft_enable_cs {
             type: int;
             name: string(STR_PARAM_NAME_AIRCRAFT_ENABLE_CS);
@@ -72,7 +127,7 @@ grf {
             } ;
         }
     }
-    param 4 {
+    param {
         param_aircraft_enable_eu {
             type: int;
             name: string(STR_PARAM_NAME_AIRCRAFT_ENABLE_EU);
@@ -90,7 +145,7 @@ grf {
             } ;
         }
     }
-    param 5 {
+    param {
         param_aircraft_enable_rus {
             type: int;
             name: string(STR_PARAM_NAME_AIRCRAFT_ENABLE_RUS);
@@ -108,7 +163,7 @@ grf {
             } ;
         }
     }
-    param 6 {
+    param {
         param_aircraft_enable_us {
             type: int;
             name: string(STR_PARAM_NAME_AIRCRAFT_ENABLE_US);
@@ -126,7 +181,7 @@ grf {
             } ;
         }
     }
-    param 7 {
+    param {
         param_aircraft_enable_other {
             type: int;
             name: string(STR_PARAM_NAME_AIRCRAFT_ENABLE_OTHER);
@@ -144,7 +199,7 @@ grf {
             } ;
         }
     }
-    param 8 {
+    param {
         param_standard_planes_disable {
             type: bool;
             name: string(STR_PARAM_NAME_STD_PLANES);
@@ -153,4 +208,10 @@ grf {
             bit: 2;
         }
     }
+}
+
+//set base cost multiplier for this set
+basecost {
+	PR_BUILD_VEHICLE_AIRCRAFT: param_aircraft_purchase_cost - 4;
+	PR_RUNNING_AIRCRAFT:       param_aircraft_running_cost  - 4;
 }

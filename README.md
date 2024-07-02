@@ -29,7 +29,7 @@ The set provides parameters:
   - Make possibility to purchase airports without date limitations. Default *False*.
 - Enable custom airports
   - Enable military theme airports in game
-- Enable Europian aircraft
+- Enable European aircraft
   - Enable types of aircraft according to option None, All, Fighters and reconnaissance aircraft only, Transport aircraft only, Helicopters only, Transport aircraft and helicopters.
 - Enable Czechoslovakian aircraft
   - Enable types of aircraft according to option None, All, Fighters and reconnaissance aircraft only, Transport aircraft only, Helicopters only, Transport aircraft and helicopters.

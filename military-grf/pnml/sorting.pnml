@@ -1,0 +1,84 @@
+sort (FEAT_AIRCRAFT,	
+[
+    // fighters
+    item_air_avro
+    ,item_air_nid29
+    ,item_air_avia_b3
+    ,item_air_aero_a18
+    ,item_air_avia_b21
+    ,item_air_avia_ba33
+    ,item_air_avia_b534
+    ,item_air_letov_s328
+    ,item_air_i16
+    ,item_air_zlin_z12
+    ,item_air_hurricane
+    ,item_air_avia_b35
+    ,item_air_hellcat
+    ,item_air_yak9
+    ,item_air_avia_s199
+    ,item_air_hseahawk
+    ,item_air_mig15
+    ,item_air_f86
+    ,item_air_s103
+    ,item_air_mig19
+    ,item_air_mig21
+    ,item_air_mirage3
+    ,item_air_s105
+    ,item_air_f4
+    ,item_air_aero_l29
+    ,item_air_aero_l39
+    ,item_air_f16
+    ,item_air_mig29
+    ,item_air_mirage2k
+    ,item_air_f18
+    ,item_air_jas39
+    ,item_air_su30
+    ,item_air_rafale
+    ,item_air_aero_l159
+    ,item_air_f35
+    ,item_air_su57
+    ,item_air_aero_l39ng
+
+    // airlift
+    ,item_air_aero_a304
+    ,item_air_c74
+    ,item_air_aero_ae45
+    ,item_air_an2
+    ,item_air_c124
+    ,item_air_an12
+    ,item_air_an24
+    ,item_air_an24t
+    ,item_air_c141
+    ,item_air_c2
+    ,item_air_an22
+    ,item_air_c5
+    ,item_air_let_l410
+    ,item_air_an26
+    ,item_air_an26a
+    ,item_air_il76
+    ,item_air_c17
+    ,item_air_a400
+    ,item_air_let_l410ng
+
+    // reconnaissance
+    ,item_air_rq4
+    ,item_air_rq170
+
+    // helicopters
+    // ,item_air_ch37
+    ,item_air_uh1
+    // ,item_air_mi6
+    ,item_air_sa321
+    ,item_air_sa330
+    // ,item_air_ch53e
+    // ,item_air_mi26
+    ,item_air_as532
+    // ,item_air_uh60
+    // ,item_air_mi17
+    ,item_air_aw101
+    // ,item_air_aw139
+    ,item_air_ec725
+    // ,item_air_ch148
+    // ,item_air_ch53k
+    // ,item_air_mi38
+]);

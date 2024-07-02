@@ -1,0 +1,66 @@
+/* airplane MiG-21 */
+
+spriteset(spriteset_air_mig21, "gfx/air_mig21.png") {
+    //left_x, upper_y, width, height, offset_x, offset_y
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    template_fighter_26(0)
+}
+
+if (is_aircraft_fighter_enabled(param_aircraft_enable_rus)){
+    item (FEAT_AIRCRAFT, item_air_mig21) {
+        property {
+            name:                           string(STR_NAME_AIR_MIG21);
+            climates_available:             bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+            introduction_date:              date(1955,06,16);
+            model_life:                     36;
+            /* retire_early not set, use default retirement behaviour */
+            vehicle_life:                   40;
+            reliability_decay:              5;
+            refittable_cargo_classes:       bitmask(CC_MAIL, CC_EXPRESS, CC_ARMOURED, CC_LIQUID);
+            non_refittable_cargo_classes:   bitmask(CC_PASSENGERS, CC_REFRIGERATED);
+            loading_speed:                  5;
+            cost_factor:                    27;
+            running_cost_factor:            18;
+            /* cargo_age_period is left at default */
+
+            /* airplane-specific properties */
+            sprite_id:                      SPRITE_ID_NEW_AIRCRAFT; //enable new graphics
+            speed:                          2175 km/h;
+            range:                          159;
+            misc_flags:                     bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
+            refit_cost:                     0; // Refitting is free
+            /* callback_flags are not set, no need to manually enable callbacks */
+            aircraft_type:                  AIRCRAFT_TYPE_SMALL;
+            acceleration:                   83;
+            passenger_capacity:             0;
+            mail_capacity:                  4;
+            sound_effect:                   SOUND_TAKEOFF_JET_FAST;
+            /* Visual effect is left at default (no effect) */
+    }
+    graphics {
+            additional_text:    return string(STR_DESC_AIR_MIG21); //Additional text shown in purchase list
+            default:            spriteset_air_mig21;
+            cost_factor:                    return 27;
+            running_cost_factor:            return 292;
+    }
+    }
+
+    if (Aircraft_Ranges == 0) {
+        item (FEAT_AIRCRAFT, item_air_mig21)
+        {
+            property	
+            {
+                range: 0; 
+            }
+        }
+    }
+    if (Aircraft_Ranges == 1) {
+        item (FEAT_AIRCRAFT, item_air_mig21)
+        {
+            property	
+            {
+                range: 1595; 
+            }
+        }
+    }
+}

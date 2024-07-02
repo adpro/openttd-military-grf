@@ -1,0 +1,75 @@
+/* airplane Lockheed Martin RQ-170 Sentinel */
+
+spriteset(spriteset_air_rq170, "gfx/air_rq170.png") {
+    // 26 x 34 x 9
+    //left_x, upper_y, width, height, offset_x, offset_y
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    template_aircraft(0,0,22,22,30,24,26,17)
+    // [   0,     0,       22,    22,    -11,       -10]
+    // [  23,     0,       30,    24,    -15,       -11]
+    // [  54,     0,       26,    17,    -13,        -7]
+    // [  81,     0,       30,    24,    -15,       -11]
+    // [ 112,     0,       22,    22,    -11,       -10]
+    // [ 135,     0,       30,    24,    -15,       -11]
+    // [ 166,     0,       26,    17,    -13,        -7]
+    // [ 193,     0,       30,    24,    -15,       -12]
+}
+
+if (is_aircraft_fighter_enabled(param_aircraft_enable_us)){
+    item (FEAT_AIRCRAFT, item_air_rq170) {
+        property {
+            name:                           string(STR_NAME_AIR_RQ170);
+            climates_available:             bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+            introduction_date:              date(2007,07,01);
+            model_life:                     30;
+            /* retire_early not set, use default retirement behaviour */
+            vehicle_life:                   30;
+            reliability_decay:              5;
+            refittable_cargo_classes:       bitmask(CC_MAIL, CC_EXPRESS, CC_ARMOURED);
+            non_refittable_cargo_classes:   bitmask(CC_PASSENGERS, CC_REFRIGERATED);
+            loading_speed:                  5;
+            cost_factor:                    70;
+            running_cost_factor:            145;
+            /* cargo_age_period is left at default */
+
+            /* airplane-specific properties */
+            sprite_id:                      SPRITE_ID_NEW_AIRCRAFT; //enable new graphics
+            speed:                          710 km/h;
+            range:                          2000;  // max range
+            misc_flags:                     bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
+            refit_cost:                     0; // Refitting is free
+            /* callback_flags are not set, no need to manually enable callbacks */
+            aircraft_type:                  AIRCRAFT_TYPE_SMALL;
+            acceleration:                   55;
+            passenger_capacity:             0;
+            mail_capacity:                  2;
+            sound_effect:                   SOUND_TAKEOFF_JET;
+            /* Visual effect is left at default (no effect) */
+    }
+    graphics {
+            additional_text:    return string(STR_DESC_AIR_RQ170); //Additional text shown in purchase list
+            default:            spriteset_air_rq170;
+            cost_factor:                    return 7;
+            running_cost_factor:            return 1732;
+    }
+    }
+
+    if (Aircraft_Ranges == 0) {
+        item (FEAT_AIRCRAFT, item_air_rq170)
+        {
+            property	
+            {
+                range: 0; 
+            }
+        }
+    }
+    if (Aircraft_Ranges == 1) {
+        item (FEAT_AIRCRAFT, item_air_rq170)
+        {
+            property	
+            {
+                range: 2000; 
+            }
+        }
+    }
+}

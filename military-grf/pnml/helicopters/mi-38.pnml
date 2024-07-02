@@ -1,0 +1,77 @@
+/* helicopter Mil Mi-38 */
+
+spriteset(spriteset_air_mi38, "gfx/air_sa330_2cc.png") {
+    // 15 x 19 x 5
+    //left_x, upper_y, width, height, offset_x, offset_y
+    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
+    template_aircraft(0,1,6,28,25,20,41,10)
+}
+
+spriteset(spriteset_air_mi38_rotor, "gfx/air_sa330_rotor.png") {
+    // [ 0, 12, 21, 11, -10, -4]
+    // [22, 12, 21, 11, -10, -4]
+    // [44, 12, 21, 11, -10, -4]
+    // [66, 12, 21, 11, -10, -4]
+    template_rotor(0,0,29,15)
+}
+
+
+if (is_aircraft_helicopter_enabled(param_aircraft_enable_rus)){
+    item (FEAT_AIRCRAFT, item_air_mi38) {
+        property {
+            name:                           string(STR_NAME_AIR_MI38);
+            climates_available:             bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+            introduction_date:              date(2015,12,30);
+            model_life:                     45;
+            /* retire_early not set, use default retirement behaviour */
+            vehicle_life:                   30;
+            reliability_decay:              5;
+            refittable_cargo_classes:       bitmask(CC_PASSENGERS, CC_MAIL, CC_EXPRESS, CC_ARMOURED, CC_PIECE_GOODS, CC_HAZARDOUS, CC_COVERED);
+            non_refittable_cargo_classes:   bitmask(CC_REFRIGERATED);
+            loading_speed:                  15;
+            cost_factor:                    0;
+            running_cost_factor:            0;
+            /* cargo_age_period is left at default */
+
+            /* airplane-specific properties */
+            sprite_id:                      SPRITE_ID_NEW_AIRCRAFT; //enable new graphics
+            speed:                          250 km/h;
+            range:                          176;
+            misc_flags:                     bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
+            refit_cost:                     0; // Refitting is free
+            /* callback_flags are not set, no need to manually enable callbacks */
+            aircraft_type:                  AIRCRAFT_TYPE_HELICOPTER;
+            acceleration:                   15;
+            passenger_capacity:             30;
+            mail_capacity:                  18;
+            sound_effect:                   SOUND_TAKEOFF_HELICOPTER;
+            /* Visual effect is left at default (no effect) */
+        }
+        graphics {
+                additional_text:            return string(STR_DESC_AIR_MI38); //Additional text shown in purchase list
+                default:                    spriteset_air_mi38;
+                rotor:                      3901; //spriteset_air_mi38_rotor;
+                cost_factor:                return 15;
+                running_cost_factor:        return 410;
+        }
+    }
+
+    if (Aircraft_Ranges == 0) {
+        item (FEAT_AIRCRAFT, item_air_mi38)
+        {
+            property	
+            {
+                range: 0; 
+            }
+        }
+    }
+    if (Aircraft_Ranges == 1) {
+        item (FEAT_AIRCRAFT, item_air_mi38)
+        {
+            property	
+            {
+                range: 176; 
+            }
+        }
+    }
+}

@@ -1,3 +1,27 @@
+template template_aircraft_voxel(x,y,a,b,c,d,e,f,zoom){
+    [                             x,  y,  a,  b,  -(a/2),  -((b/2)-1)]
+    [                x+a+(1*8*zoom),  y,  c,  d,  -(c/2),  -((d/2)-1)]
+    [              x+a+c+(2*8*zoom),  y,  e,  f,  -(e/2),  -((f/2)-1)]
+    [            x+a+c+e+(3*8*zoom),  y,  c,  d,  -(c/2),  -((d/2)-1)]
+    [        x+a+(2*c)+e+(4*8*zoom),  y,  a,  b,  -(a/2),  -((b/2)-1)]
+    [    x+(2*a)+(2*c)+e+(5*8*zoom),  y,  c,  d,  -(c/2),  -((d/2)-1)]
+    [    x+(2*a)+(3*c)+e+(6*8*zoom),  y,  e,  f,  -(e/2),  -((f/2)-1)]
+    [x+(2*a)+(3*c)+(2*e)+(7*8*zoom),  y,  c,  d,  -(c/2),  -((d/2)-1)]
+}
+template template_aircraft_voxel_zoom(x,y,a,b,c,d,e,f,zoom){
+    template_aircraft_voxel(x,y,a*zoom,b*zoom,c*zoom,d*zoom,e*zoom,f*zoom,zoom)
+}
+
+template template_rotor_voxel(x,y,a,b,zoom){
+    [x                 , y, a, b, -(a/2), -((b/2)-(2*zoom))]
+    [x+ a   +(1*8*zoom), y, a, b, -(a/2), -((b/2)-(2*zoom))]
+    [x+(2*a)+(2*8*zoom), y, a, b, -(a/2), -((b/2)-(2*zoom))]
+    [x+(3*a)+(3*8*zoom), y, a, b, -(a/2), -((b/2)-(2*zoom))]
+}
+template template_rotor_voxel_zoom(x,y,a,b,zoom){
+    template_rotor_voxel(x,y,a*zoom,b*zoom,zoom)
+}
+
 template template_aircraft(x,y,a,b,c,d,e,f){
     [                    x,  y,  a,  b,  -(a/2),  -((b/2)-1)]
     [                x+a+1,  y,  c,  d,  -(c/2),  -((d/2)-1)]
@@ -14,7 +38,6 @@ template template_rotor(x,y,a,b){
     [x+ a   +1, y, a, b, -(a/2), -((b/2)-1)]
     [x+(2*a)+2, y, a, b, -(a/2), -((b/2)-1)]
     [x+(3*a)+3, y, a, b, -(a/2), -((b/2)-1)]
-
 }
 
 template template_fighter_26(x) { //x=0
