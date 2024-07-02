@@ -15,16 +15,8 @@ You can find these types of changes:
 
 ## Unreleased
 
-### Added
-- Parameters was rewritten from base
-- Aircraft purchase cost multiplier (1/16x-16x)
-- Aircraft running cost multiplier (1/16x-16x)
-- helicopter Aérospatiale SA 321
-- helicopter Aérospatiale SA 330
-- helicopter Eurocopter AS532
-- helicopter AgustaWestland AW101
+### Coded without voxel model
 - helicopter AgustaWestland AW139
-- helicopter Eurocopter EC725
 - helicopter Sikorsky CH-37
 - helicopter Sikorsky CH-53E
 - helicopter Sikorsky CH-53K
@@ -35,8 +27,34 @@ You can find these types of changes:
 - helicopter Mil Mi-26
 - helicopter Mil Mi-38
 
+
+## [0.7.0] "Less is more" - 2024-07-02
+
+### Added
+- Airport noise parameter
+- Aircraft purchase cost multiplier (1/16x-16x)
+- Aircraft running cost multiplier (1/16x-16x)
+- Helicopter Aérospatiale SA 321
+- Helicopter Aérospatiale SA 330
+- Helicopter Eurocopter AS532
+- Helicopter AgustaWestland AW101
+- Helicopter Eurocopter EC725
+- Helicopter models uses voxel and gorender for sprite generation
+- Automatic build increment method implemented
+- Voxel models in repository
+- Makefile command for sprite creation implemented
+
+### Changed
+- Parameters was rewritten from base
+- Minimal version of OpenTTD changed to v1.13 (airport noise parameter)
+- Update nmlc dependency to v0.7.3
+- Update sound_effect constant to nmlc v0.7
+- Change format for aircraft evidence to OpenOffice ODS format
+- Rearrange repo content into folders
+
 ### Fixed
 - C-141 Starlifter sound changed from propeller to jet engine sound.
+
 
 ## [0.6.0] "Czechoslovakian Wings" - 2021-07-11
 
@@ -164,7 +182,8 @@ You can find these types of changes:
 - English translation from [@adpro](https://github.com/adpro).
 - Czech translation from [@adpro](https://github.com/adpro).
 
-[Unreleased]: https://github.com/adpro/openttd-military-grf/compare/v0.6.0...HEAD
+[Unreleased]: https://github.com/adpro/openttd-military-grf/compare/v0.7.0...HEAD
+[0.7.0]: https://github.com/adpro/openttd-military-grf/compare/v0.6.0...v0.7.0
 [0.6.0]: https://github.com/adpro/openttd-military-grf/compare/v0.5.0...v0.6.0
 [0.5.0]: https://github.com/adpro/openttd-military-grf/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/adpro/openttd-military-grf/compare/v0.3.0...v0.4.0
