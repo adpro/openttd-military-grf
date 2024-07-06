@@ -1,20 +1,30 @@
 /* helicopter Sikorsky CH-53K */
 
-spriteset(spriteset_air_ch53k, "gfx/air_uh1.png") {
-    // 15 x 19 x 5
-    //left_x, upper_y, width, height, offset_x, offset_y
-    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
-    template_heli_30_h6(0)
+spriteset(spriteset_air_ch53k, "../intermediate/gfx/1x/air_ch53k_2cc_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,12,40,48,37,53,18,1)
+}
+alternative_sprites(spriteset_air_ch53k, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_ch53k_2cc_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,12,40,48,37,53,18,2)
+}
+alternative_sprites(spriteset_air_ch53k, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_ch53k_2cc_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,12,40,48,37,53,18,4)
+}
+spriteset(spriteset_air_ch53k_landing, "../intermediate/gfx/1x/air_ch53k_2cc_landing_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,12,40,48,37,53,18,1)
+}
+alternative_sprites(spriteset_air_ch53k_landing, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_ch53k_2cc_landing_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,12,40,48,37,53,18,2)
+}
+alternative_sprites(spriteset_air_ch53k_landing, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_ch53k_2cc_landing_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,12,40,48,37,53,18,4)
 }
 
-spriteset(spriteset_air_ch53k_rotor, "gfx/air_uh1_rotor.png") {
-    // [ 0, 12, 21, 11, -10, -4]
-    // [22, 12, 21, 11, -10, -4]
-    // [44, 12, 21, 11, -10, -4]
-    // [66, 12, 21, 11, -10, -4]
-    template_rotor(0,12,21,11)
+switch (FEAT_AIRCRAFT, SELF, air_ch53k_status, (var[0xE2, 0, 0xFF])) {
+    16..20: spriteset_air_ch53k; // flight
+    24: spriteset_air_ch53k; // helicopter preparing to land at airport
+    27: spriteset_air_ch53k; // helicopter preparing to land at heliport    
+        spriteset_air_ch53k_landing; // default
 }
-
 
 if (is_aircraft_helicopter_enabled(param_aircraft_enable_us)){
     item (FEAT_AIRCRAFT, item_air_ch53k) {
@@ -49,8 +59,8 @@ if (is_aircraft_helicopter_enabled(param_aircraft_enable_us)){
         }
         graphics {
             additional_text:                return string(STR_DESC_AIR_CH53K); //Additional text shown in purchase list
-            default:                        spriteset_air_ch53k;
-            rotor:                          spriteset_air_ch53k_rotor;
+            default:                        air_ch53k_status;
+            rotor:                          spriteset_air_ch53e_rotor;
             cost_factor:                    return 123;
             running_cost_factor:            return 975;
         }

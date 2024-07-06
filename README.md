@@ -138,9 +138,11 @@ Airplanes available in set:
 | Bell UH-1 Iroquois / HU-1 "Huey" | utility military helicopter | heli | 1956 | 31 | 220 | 102 |
 | Aérospatiale SA 321 Super Frelon | heavy transport helicopter | heli | 1962 | 20 | 249 | 204 |
 | Aérospatiale SA 330 Puma | medium transport/utility helicopter | heli | 1965 | 22 | 257 | 116 |
+| Sikorsky CH-53E Super Stallion | heavy transport military helicopter | heli | 1974 | 50 | 280 | 200 |
 | Eurocopter AS 532 Cougar | medium multipurpose helicopter | heli | 1978 | 60 | 239 | 115 |
 | AgustaWestland AW101 Merlin | medium-lift helicopter | heli | 1997 | 30 | 278 | 272 |
 | Eurocopter EC725 Caracal | tactical transport military helicopter | heli | 2005 | 50 | 262 | 184 |
+| Sikorsky CH-53K King Stallion | heavy transport military helicopter | heli | 2015 | 40 | 310 | 170 |
 
 [comment]: <tablex> (| | | | | | | |)
 
@@ -163,7 +165,7 @@ To avoid disappointment, consider the following rules for requests:
 
 ## Translations
 
-Graphic set support these translations:
+Graphic set supports these translations:
 
 - English
 - Czech
@@ -173,7 +175,10 @@ There are only one way how to add new translation - add pull request to github r
 
 ## Useful links
 
-TT-forums topic: *will be edit soon after first entry in topic*
+TT-forums topic:
+
+ - [releases](https://www.tt-forums.net/viewtopic.php?t=91790)
+ - [development](https://www.tt-forums.net/viewtopic.php?t=88858)
 
 
 ## Obtaining the source
@@ -190,7 +195,7 @@ Graphics design: adpro
 Code programming: adpro
 Makefile development: adpro
 
-Thanks go out to #openttdcoop and Richard Wheeler for [PixelTool](http://bundles.openttdcoop.org/pixeltool/push/LATEST/).
+Thanks go out to #openttdcoop, Richard Wheeler for [PixelTool](http://bundles.openttdcoop.org/pixeltool/push/LATEST/) and Matt Kimber for [GoRender](https://github.com/mattkimber/gorender).
 
 Special thanks to OpenTTD community for wiki, NML tutorial and many other sources.
 
