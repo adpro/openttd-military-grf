@@ -85,8 +85,10 @@
 #include "pnml/helicopters/ec725.pnml"
 #include "pnml/helicopters/aw101.pnml"
 
-// #include "pnml/helicopters/ch53e.pnml"
-// #include "pnml/helicopters/ch53k.pnml"
+// v0.8.0
+#include "pnml/helicopters/ch53e.pnml"
+#include "pnml/helicopters/ch53k.pnml"
+
 // #include "pnml/helicopters/uh-60.pnml"
 // #include "pnml/helicopters/mi-17.pnml"
 // #include "pnml/helicopters/aw139.pnml"
