@@ -165,7 +165,7 @@ To avoid disappointment, consider the following rules for requests:
 
 ## Translations
 
-Graphic set support these translations:
+Graphic set supports these translations:
 
 - English
 - Czech

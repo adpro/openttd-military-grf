@@ -5,6 +5,7 @@
 - increase version in text in `/military-grf/custom_tags.txt`
 - increase `version` in `/military-grf/header.pnml`
 - update `/README.md` - Content chapter
+- update `/CHANGELOG.md`
 
 ## New content
 

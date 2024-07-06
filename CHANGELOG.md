@@ -18,14 +18,18 @@ You can find these types of changes:
 ### Coded without voxel model
 - helicopter AgustaWestland AW139
 - helicopter Sikorsky CH-37
-- helicopter Sikorsky CH-53E
-- helicopter Sikorsky CH-53K
 - helicopter Sikorsky CH-148
 - helicopter Sikorsky UH-60
 - helicopter Mil Mi-6
 - helicopter Mil Mi-17
 - helicopter Mil Mi-26
 - helicopter Mil Mi-38
+
+## [0.8.0] - 2024-07-06
+
+### Added
+- helicopter Sikorsky CH-53E
+- helicopter Sikorsky CH-53K
 
 
 ## [0.7.0] "Less is more" - 2024-07-02
@@ -90,6 +94,7 @@ You can find these types of changes:
 
 
 ## [0.5.0] "Red Wings" - 2021-06-26
+
 ### Added
 - Polikarpov I-16 airplane
 - Yakovlev Yak-9 airplane
@@ -166,6 +171,7 @@ You can find these types of changes:
 - Move to partial nml files (pnml) and gcc preprocessor from coding in one NML file.
 
 ## [0.1.0] "Fighters" - 2021-05-07
+
 ### Added
 - Avro 504 aircraft.
 - Hawker Hurricane IIC aircraft.
@@ -182,7 +188,8 @@ You can find these types of changes:
 - English translation from [@adpro](https://github.com/adpro).
 - Czech translation from [@adpro](https://github.com/adpro).
 
-[Unreleased]: https://github.com/adpro/openttd-military-grf/compare/v0.7.0...HEAD
+[Unreleased]: https://github.com/adpro/openttd-military-grf/compare/v0.8.0...HEAD
+[0.8.0]: https://github.com/adpro/openttd-military-grf/compare/v0.7.0...v0.8.0
 [0.7.0]: https://github.com/adpro/openttd-military-grf/compare/v0.6.0...v0.7.0
 [0.6.0]: https://github.com/adpro/openttd-military-grf/compare/v0.5.0...v0.6.0
 [0.5.0]: https://github.com/adpro/openttd-military-grf/compare/v0.4.0...v0.5.0
