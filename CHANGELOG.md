@@ -30,6 +30,9 @@ You can find these types of changes:
 - switch from pipenv virtual environment to poetry
 - upgrade from python 3.9 to 3.12
 
+### Fixed
+- sorting of helicopters with CH-53E and CH-53K
+
 ## [0.8.0] - 2024-07-06
 
 ### Added
