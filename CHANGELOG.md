@@ -25,6 +25,11 @@ You can find these types of changes:
 - helicopter Mil Mi-26
 - helicopter Mil Mi-38
 
+### Changed
+- upgrade NML to version 0.7.5
+- switch from pipenv virtual environment to poetry
+- upgrade from python 3.9 to 3.12
+
 ## [0.8.0] - 2024-07-06
 
 ### Added
