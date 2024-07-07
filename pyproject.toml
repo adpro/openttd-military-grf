@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "military-grf"
+version = "0.8.0"
+description = "OpenTTD NewGRF library with military objects"
+authors = ["adpro <info@adpro.cz>"]
+license = "GNU GPL v2"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+nml = "^0.7.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
