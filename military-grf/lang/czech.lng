@@ -301,6 +301,7 @@ STR_LIV_AIR_AF          : Vzdušné síly
 STR_LIV_AIR_AF_STRIPES  : Vzdušné síly s pruhy
 STR_LIV_AIR_2CC         : Dvoubarevné schéma 
 STR_LIV_AIR_2CC_REV     : Dvoubarevné schéma obrácené
+STR_LIV_AIR_BASE        : Základní schéma
 
 
 # --------------------
