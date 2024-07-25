@@ -16,7 +16,7 @@ VERSION=$$(cat $(VERSION_FILE) | awk '/VERSION/ {print $2}' | sed -e 's/://' -e 
 
 LIST_HEL := air_sa321 air_sa330 air_sa532 air_ec725 air_aw101 air_ch53 air_ch53k
 LIST_ROTORS := air_sa321 air_sa330 air_ec725 air_aw101 air_ch53
-
+LIST_AIR := air_a6m
 
 ifdef NMLFILE
 	CC             ?= "which cc 2>/dev/null"
@@ -80,4 +80,4 @@ copy: ## copies data
 test: clean build copy ## run clean, build and copy
 
 gfx:	## generate PNGs from vox files
-	@/bin/bash make_gfx.sh "$(INTERDIR)/gfx" "$(LIST_HEL)" "$(LIST_ROTORS)"
+	@/bin/bash make_gfx.sh "$(INTERDIR)/gfx" "$(LIST_HEL) $(LIST_AIR)" "$(LIST_ROTORS)"

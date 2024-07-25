@@ -1,22 +1,22 @@
 /* airplane A6M Zero */
 
 spriteset(spriteset_air_a6m, "../intermediate/gfx/1x/air_a6m_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,12,40,48,37,53,18,1)
+    template_aircraft_voxel_zoom(0,0,20,13,18,13,15,15,1)
 }
 alternative_sprites(spriteset_air_a6m, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_a6m_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,12,40,48,37,53,18,2)
+    template_aircraft_voxel_zoom(0,0,20,13,18,13,15,15,2)
 }
 alternative_sprites(spriteset_air_a6m, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_a6m_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,12,40,48,37,53,18,4)
+    template_aircraft_voxel_zoom(0,0,20,13,18,13,15,15,4)
 }
 spriteset(spriteset_air_a6m_landing, "../intermediate/gfx/1x/air_a6m_2cc_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,12,40,48,37,53,18,1)
+    template_aircraft_voxel_zoom(0,0,20,13,18,13,15,15,1)
 }
 alternative_sprites(spriteset_air_a6m_landing, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_a6m_2cc_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,12,40,48,37,53,18,2)
+    template_aircraft_voxel_zoom(0,0,20,13,18,13,15,15,2)
 }
 alternative_sprites(spriteset_air_a6m_landing, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_a6m_2cc_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,12,40,48,37,53,18,4)
+    template_aircraft_voxel_zoom(0,0,20,13,18,13,15,15,4)
 }
 
 if (is_aircraft_fighter_enabled(param_aircraft_enable_other)){
