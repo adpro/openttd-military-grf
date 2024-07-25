@@ -85,6 +85,7 @@ Airplanes available in set:
 | Polikarpov I-16 | fighter | small | 1933 | 9 | 489 | 140 |
 | Hawker Hurricane IIC | fighter | small | 1935 | 9 | 550 | 194 |
 | Avia B.35 | fighter | small | 1938 | 4  | 550 | 188 |
+| Mitsubishi A6M Zero | carrier-based fighter | small | 1940 | 4 | 533 | 620 |
 | Grumman F6F Hellcat | carrier-based fighter | small | 1942 | 4 | 629 | 492 |
 | Yakovlev Yak-9 | fighter | small | 1942 | 6 | 600 | 182 |
 | Avia S-199 | fighter | small | 1947 | 4  | 590 | 170 |

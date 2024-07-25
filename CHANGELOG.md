@@ -25,6 +25,9 @@ You can find these types of changes:
 - helicopter Mil Mi-26
 - helicopter Mil Mi-38
 
+### Added
+- fighter Mitsubishi A6M Zero in 4x zoom
+
 ### Changed
 - upgrade NML to version 0.7.5
 - switch from pipenv virtual environment to poetry
@@ -36,8 +39,8 @@ You can find these types of changes:
 ## [0.8.0] - 2024-07-06
 
 ### Added
-- helicopter Sikorsky CH-53E
-- helicopter Sikorsky CH-53K
+- helicopter Sikorsky CH-53E in 4x zoom
+- helicopter Sikorsky CH-53K in 4x zoom
 
 
 ## [0.7.0] "Less is more" - 2024-07-02
@@ -46,11 +49,11 @@ You can find these types of changes:
 - Airport noise parameter
 - Aircraft purchase cost multiplier (1/16x-16x)
 - Aircraft running cost multiplier (1/16x-16x)
-- Helicopter Aérospatiale SA 321
-- Helicopter Aérospatiale SA 330
-- Helicopter Eurocopter AS532
-- Helicopter AgustaWestland AW101
-- Helicopter Eurocopter EC725
+- Helicopter Aérospatiale SA 321 in 4x zoom
+- Helicopter Aérospatiale SA 330 in 4x zoom
+- Helicopter Eurocopter AS532 in 4x zoom
+- Helicopter AgustaWestland AW101 in 4x zoom
+- Helicopter Eurocopter EC725 in 4x zoom
 - Helicopter models uses voxel and gorender for sprite generation
 - Automatic build increment method implemented
 - Voxel models in repository
