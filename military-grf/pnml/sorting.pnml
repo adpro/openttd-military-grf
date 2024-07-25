@@ -13,6 +13,7 @@ sort (FEAT_AIRCRAFT,
     ,item_air_zlin_z12
     ,item_air_hurricane
     ,item_air_avia_b35
+    ,item_air_a6m
     ,item_air_hellcat
     ,item_air_yak9
     ,item_air_avia_s199

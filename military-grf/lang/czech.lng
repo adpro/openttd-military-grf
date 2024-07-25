@@ -289,6 +289,9 @@ STR_DESC_AIR_CH148      :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: 
 STR_NAME_AIR_CH37       :Sikorsky CH-37 Mojave
 STR_DESC_AIR_CH37       :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Mojave vznikl jako útočný transport pro námořní pěchotu Spojených států. V době dodání byl CH-37 největším vrtulníkem v západním světě. {}{BLACK}Vyrobeno ks: {ORANGE}154
 
+STR_NAME_AIR_A6M        :Micubiši A6M Zero
+STR_DESC_AIR_A6M	    :Země původu: {ORANGE}JPN {}{BLACK}Historická fakta: {ORANGE}Letoun Zero je považován za nejschopnější stíhací letoun na světě v době počátku 2. sv. války, protože kombinoval vynikající manévrovací schopnosti a velmi dlouhý dolet. {}{BLACK}Vyrobeno ks: {ORANGE}10 939
+
 
 STR_DESC_AIR_TMPL		:Země původu: {ORANGE}??? {}{BLACK}Historická fakta: {ORANGE}
 

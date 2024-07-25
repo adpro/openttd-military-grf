@@ -90,6 +90,7 @@
 #include "pnml/helicopters/ch53k.pnml"
 
 // v0.9.0
+#include "pnml/aircraft/jap/a6m.pnml"
 // #include "pnml/helicopters/uh-60.pnml"
 // #include "pnml/helicopters/mi-17.pnml"
 // #include "pnml/helicopters/aw139.pnml"
