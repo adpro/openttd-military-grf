@@ -18,7 +18,6 @@ You can find these types of changes:
 ### Coded without voxel model
 - helicopter AgustaWestland AW139
 - helicopter Sikorsky CH-37
-- helicopter Sikorsky CH-148
 - helicopter Sikorsky UH-60
 - helicopter Mil Mi-6
 - helicopter Mil Mi-17
@@ -27,7 +26,8 @@ You can find these types of changes:
 
 ### Added
 - fighter Mitsubishi A6M Zero in 4x zoom
-
+- helicopter Sikorsky CH-148 in 4x zoom
+  
 ### Changed
 - upgrade NML to version 0.7.5
 - switch from pipenv virtual environment to poetry

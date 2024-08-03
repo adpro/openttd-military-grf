@@ -1,0 +1,70 @@
+{
+  "lighting_angle": 50,
+  "lighting_elevation": 45,
+  "depth_influence": 0,
+  "tiled_normals": false,
+  "soften_edges": 1.5,
+  "alpha_edge_threshold": 0.75,
+  "sampler": "square",
+  "accuracy": 7,
+  "overlap": 0.05,
+  "brightness": -0.025,
+  "contrast": 0.025,
+  "pad_to_full_length": false,
+  "detail_boost": 10.0,
+  "falloff_adjustment": 0.5,
+  "size": {
+    "x": 150,
+    "y": 50,
+    "z": 27
+  },
+  "render_elevation": 30,
+  "sprites": [
+    {
+      "angle": 180,
+      "width": 13,
+      "height": 0,
+      "render_elevation": 33
+    },
+    {
+      "angle": 225,
+      "width": 48,
+      "height": 0
+    },
+    {
+      "angle": 270,
+      "width": 38
+    },
+    {
+      "angle": 315,
+      "width": 48,
+      "height": 0
+    },
+    {
+      "angle": 0,
+      "width": 13,
+      "height": 0,
+      "render_elevation": 33
+    },
+    {
+      "angle": 45,
+      "width": 48,
+      "height": 0
+    },
+    {
+      "angle": 90,
+      "width": 38,
+      "height": 0
+    },
+    {
+      "angle": 135,
+      "width": 48,
+      "height": 0
+    },
+    {
+      "angle": 90,
+      "width": 64,
+      "height": 18
+    }
+  ]
+}

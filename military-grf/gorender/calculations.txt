@@ -1,0 +1,18 @@
+Voxel object workflow
+https://www.youtube.com/watch?v=kI1hpgqkK9I
+
+voxel 4x zoom 126 40 48
+1x 32 10 12
+
+angle width, height
+0 9, 25
+45 26, 24
+90 36, 20
+
+Drawing tutorial
+https://www.tt-wiki.net/wiki/DrawingSprites
+
+37px x 8px x 11px
+0: 11(8) 36(49=1,33)    10(1,25x8) 29(0,785x37)
+45: 40 30   31(0,84x37) 26(2,36*11)
+90: 49() 16     37(1x37) 15(1,33x11)

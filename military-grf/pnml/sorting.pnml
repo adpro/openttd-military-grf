@@ -79,7 +79,7 @@ sort (FEAT_AIRCRAFT,
     ,item_air_aw101
     // ,item_air_aw139
     ,item_air_ec725
-    // ,item_air_ch148
+    ,item_air_ch148
     ,item_air_ch53k
     // ,item_air_mi38
 ]);
