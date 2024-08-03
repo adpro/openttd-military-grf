@@ -141,9 +141,10 @@ Airplanes available in set:
 | Aérospatiale SA 330 Puma | medium transport/utility helicopter | heli | 1965 | 22 | 257 | 116 |
 | Sikorsky CH-53E Super Stallion | heavy transport military helicopter | heli | 1974 | 50 | 280 | 200 |
 | Eurocopter AS 532 Cougar | medium multipurpose helicopter | heli | 1978 | 60 | 239 | 115 |
+| Sikorsky UH-60 Black Hawk | utility military helicopter | heli | 1978 | 50 | 282 | 118 |
 | AgustaWestland AW101 Merlin | medium-lift helicopter | heli | 1997 | 30 | 278 | 272 |
 | Eurocopter EC725 Caracal | tactical transport military helicopter | heli | 2005 | 50 | 262 | 184 |
-| Sikorsky CH-148 Cyclone | heavy transport military helicopter | heli | 2008 | 40 | 254 | 200 |
+| Sikorsky CH-148 Cyclone | heavy transport military helicopter | heli | 2008 | 30 | 254 | 200 |
 | Sikorsky CH-53K King Stallion | heavy transport military helicopter | heli | 2015 | 40 | 310 | 170 |
 
 [comment]: <tablex> (| | | | | | | |)

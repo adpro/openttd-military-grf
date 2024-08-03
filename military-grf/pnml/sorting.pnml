@@ -74,7 +74,7 @@ sort (FEAT_AIRCRAFT,
     ,item_air_ch53e
     // ,item_air_mi26
     ,item_air_as532
-    // ,item_air_uh60
+    ,item_air_uh60
     // ,item_air_mi17
     ,item_air_aw101
     // ,item_air_aw139

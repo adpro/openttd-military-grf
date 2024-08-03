@@ -14,8 +14,8 @@ VERSION_FILE="$(SRCDIR)/custom_tags.txt"
 VERSION=$$(cat $(VERSION_FILE) | awk '/VERSION/ {print $2}' | sed -e 's/://' -e 's/VERSION//' -e 's/^[ \t]*//')
 
 
-LIST_HEL := air_sa321 air_sa330 air_sa532 air_ec725 air_aw101 air_ch53 air_ch53k air_ch148
-LIST_ROTORS := air_sa321 air_sa330 air_ec725 air_aw101 air_ch53
+LIST_HEL := air_sa321 air_sa330 air_sa532 air_ec725 air_aw101 air_ch53 air_ch53k air_ch148 air_uh60
+LIST_ROTORS := air_sa321 air_sa330 air_ec725 air_aw101 air_ch53 air_uh60
 LIST_AIR := air_a6m
 
 ifdef NMLFILE

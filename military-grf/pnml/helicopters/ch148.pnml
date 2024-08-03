@@ -60,7 +60,7 @@ if (is_aircraft_helicopter_enabled(param_aircraft_enable_us)){
         graphics {
             additional_text:                 return string(STR_DESC_AIR_CH148); //Additional text shown in purchase list
             default:                        air_ch148_status;
-            rotor:                          spriteset_air_sa330_rotor;
+            rotor:                          spriteset_air_uh60_rotor;
             cost_factor:                    return 60;
             running_cost_factor:            return 402;
         }
