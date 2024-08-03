@@ -1,23 +1,23 @@
 /* helicopter UH-60 */
 
 spriteset(spriteset_air_uh60, "../intermediate/gfx/1x/air_uh60_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,8,30,23,34,37,12,1)
+    template_aircraft_voxel_zoom(0,0,8,27,30,23,37,12,1)
 }
 alternative_sprites(spriteset_air_uh60, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_uh60_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,8,30,23,34,37,12,2)
+    template_aircraft_voxel_zoom(0,0,8,27,30,23,37,12,2)
 }
 alternative_sprites(spriteset_air_uh60, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_uh60_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,8,30,23,34,37,12,4)
+    template_aircraft_voxel_zoom(0,0,8,27,30,23,37,12,4)
 }
 
 spriteset(spriteset_air_uh60_rotor, "../intermediate/gfx/1x/air_uh60_rotor_8bpp.png") {
-    template_rotor_voxel_zoom(0,0,27,25,1)
+    template_rotor_voxel_zoom(0,0,28,16,1)
 }
 alternative_sprites(spriteset_air_uh60_rotor, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_uh60_rotor_8bpp.png") {
-    template_rotor_voxel_zoom(0,0,27,25,2)
+    template_rotor_voxel_zoom(0,0,28,16,2)
 }
 alternative_sprites(spriteset_air_uh60_rotor, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_uh60_rotor_8bpp.png") {
-    template_rotor_voxel_zoom(0,0,27,25,4)
+    template_rotor_voxel_zoom(0,0,28,16,4)
 }
 
 if (is_aircraft_helicopter_enabled(param_aircraft_enable_us)){
