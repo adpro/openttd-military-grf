@@ -220,6 +220,16 @@ Literature:
 
 - Čížek, M., *LETADLA ZRAZENÉHO NEBE*, Naše vojsko, 2015, EAN 9788020615763
 - Pavlůsek, A., *Československé stíhací letouny*, CPress, 2018, EAN 9788026418092
+
+### 3D models
+
+Some voxel models are based on existing free 3D models. These models are often converted and heavily edited in Magica Voxel. However, without the original 3D models, they would not have been created so easily and accurately. Therefore, credit to their authors.
+
+- ["Aérospatiale SA 321 Super Frelon"](https://skfb.ly/JGYE), ["Sikorsky CH-37 Mojave"](https://skfb.ly/oopHN) by helijah is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
+- UH-60 - ["Helicopter N050614"](https://skfb.ly/o6zxN) by hemantrk40 is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
+- SA321, SA330, AS532, EC725, AW101 - base models by unknown user from open3model.com, Commercial Use Not Allowed license.
+
+
 ## License
 
 Military Items - military airplanes and other vehicles in 2CC for OpenTTD
