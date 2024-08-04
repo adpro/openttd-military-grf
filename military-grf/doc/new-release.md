@@ -12,3 +12,4 @@
 - create `pnml` file in `/military-grf/pnml/`
 - add `pnml` file to `/military-grf/main.pnml`
 - add spritesets PNG file to `/military-grf/gfx/` or create spriteset from voxel file by `make gfx`
+- check license for external 3d models - add to `/README.md` if external model is used for import into voxels
