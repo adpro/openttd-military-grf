@@ -5,3 +5,6 @@ intermediate/
 
 # pyenv
 .python-version
+
+# other
+.*.md
