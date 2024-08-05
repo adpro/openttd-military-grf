@@ -136,6 +136,7 @@ Airplanes available in set:
 | Aero L-159 | trainer/light attack aircraft | small | 1997 | 6 | 960 | 506 |
 | Aero L-39NG | trainer/light attack aircraft | small | 2018 | 25 | 780 | 500 |
 | **Helicopters** |||||||||
+| Sikorsky CH-37 Mojave | heavy transport military helicopter | heli | 1953 | 10 | 190 | 47 |
 | Bell UH-1 Iroquois / HU-1 "Huey" | utility military helicopter | heli | 1956 | 31 | 220 | 102 |
 | Aérospatiale SA 321 Super Frelon | heavy transport helicopter | heli | 1962 | 20 | 249 | 204 |
 | Aérospatiale SA 330 Puma | medium transport/utility helicopter | heli | 1965 | 22 | 257 | 116 |
