@@ -16,7 +16,7 @@ VERSION=$$(cat $(VERSION_FILE) | awk '/VERSION/ {print $2}' | sed -e 's/://' -e 
 
 LIST_HEL := air_sa321 air_sa330 air_sa532 air_ec725 air_aw101 air_ch53 air_ch53k air_ch148 air_uh60 air_ch37
 LIST_ROTORS := air_sa321 air_sa330 air_ec725 air_aw101 air_ch53 air_uh60 air_ch37
-LIST_AIR := air_a6m
+LIST_AIR := air_a6m air_aero_l39_v2 air_aero_l39ng_v2
 
 ifdef NMLFILE
 	CC             ?= "which cc 2>/dev/null"
