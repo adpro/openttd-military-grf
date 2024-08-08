@@ -27,6 +27,10 @@ You can find these types of changes:
 ### Added
 - helicopter Sikorsky CH-37 in 4x zoom
 
+### Changed
+- L-39 upgraded to 4x zoom with 4 liveries
+- L-39NG upgraded to 4x zoom with 2 liveries
+
 
 ## [0.9.0] - 2024-08-03
 
