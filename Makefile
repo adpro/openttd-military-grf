@@ -11,6 +11,19 @@ NMLFILE=military_items.nml
 BUILD_NUMBER_FILE=build-number.txt
 VERSION_FILE="$(SRCDIR)/custom_tags.txt"
 
+# https://stackoverflow.com/questions/714100/os-detecting-makefile
+ifeq ($(OS),Windows_NT)
+    SED=sed -i 
+else
+    UNAME_S := $(shell uname -s)
+    ifeq ($(UNAME_S),Linux)
+        SED=sed -i
+    endif
+    ifeq ($(UNAME_S),Darwin)
+        SED=sed -i ""
+    endif
+endif
+
 VERSION=$$(cat $(VERSION_FILE) | awk '/VERSION/ {print $2}' | sed -e 's/://' -e 's/VERSION//' -e 's/^[ \t]*//')
 
 
@@ -47,7 +60,7 @@ build: ${OUTDIR} $(BUILD_NUMBER_FILE) ## builds nml files into grf file
 	&& $(CC) $(CC_FLAGS) -o $(NMLFILE) main.pnml
 	@echo "[Make] Build number: " $$(cat $(BUILD_NUMBER_FILE))
 	$(eval $@_BUILD_VERSION := $(shell cat $(BUILD_NUMBER_FILE)))
-	@sed -i "" "1s/+[0-9]*/+$($@_BUILD_VERSION)/" $(VERSION_FILE)
+	@$(SED) "1s/+[0-9]*/+$($@_BUILD_VERSION)/" $(VERSION_FILE)
 	@echo "[NML] Compiling NewGRF..."
 	@cd $(SRCDIR) \
 	&& nmlc --grf ../${OUTDIR}/$(NAME).grf $(NMLFILE)
