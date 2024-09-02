@@ -16,7 +16,7 @@ You can find these types of changes:
 ## Unreleased
 
 
-## [1.0.0] - 2024-09-xx
+## [1.0.0] - 2024-09-02
 
 ### Added
 - helicopter Sikorsky CH-37 in 4x zoom
