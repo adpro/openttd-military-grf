@@ -16,6 +16,7 @@ grf {
     // 2 = 0.2.0 (post alpha 8)
     // 5 = 0.5.0 (post alpha 30)
     // 7 = 0.7.0 - breaking change
+    // 10 = 1.0.0
     param {
         param_airport_enable {
             type: int;

@@ -230,7 +230,7 @@ Literature:
 
 ### 3D models
 
-Some voxel models are based on existing free 3D models. These models are often converted and heavily edited in Magica Voxel. However, without the original 3D models, they would not have been created so easily and accurately. Therefore, credit to their authors.
+Some voxel models are based on existing free 3D models. These models are often converted and heavily edited in Magica Voxel. However, without the original 3D models, they would not have been created so easily and accurately. Therefore, credit to their authors:
 
 - ["Aérospatiale SA 321 Super Frelon"](https://skfb.ly/JGYE), ["Sikorsky CH-37 Mojave"](https://skfb.ly/oopHN) by helijah is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
 - UH-60 - ["Helicopter N050614"](https://skfb.ly/o6zxN) by hemantrk40 is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).

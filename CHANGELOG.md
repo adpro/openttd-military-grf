@@ -15,8 +15,6 @@ You can find these types of changes:
 
 ## Unreleased
 
-### Coded without voxel model
-
 
 ## [1.0.0] - 2024-09-xx
 
@@ -47,6 +45,7 @@ You can find these types of changes:
 
 ### Fixed
 - sorting of helicopters with CH-53E and CH-53K
+
 
 ## [0.8.0] - 2024-07-06
 
