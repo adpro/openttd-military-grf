@@ -1,18 +1,23 @@
 /* helicopter Mil Mi-17 */
 
-spriteset(spriteset_air_mi17, "gfx/air_sa330_2cc.png") {
-    // 15 x 19 x 5
-    //left_x, upper_y, width, height, offset_x, offset_y
-    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
-    template_aircraft(0,1,6,28,25,20,41,10)
+spriteset(spriteset_air_mi17, "../intermediate/gfx/1x/air_mi17_2cc_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,9,33,42,31,47,14,1)
+}
+alternative_sprites(spriteset_air_mi17, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_mi17_2cc_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,9,33,42,31,47,14,2)
+}
+alternative_sprites(spriteset_air_mi17, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_mi17_2cc_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,9,33,42,31,47,14,4)
 }
 
-spriteset(spriteset_air_mi17_rotor, "gfx/air_sa330_rotor.png") {
-    // [ 0, 12, 21, 11, -10, -4]
-    // [22, 12, 21, 11, -10, -4]
-    // [44, 12, 21, 11, -10, -4]
-    // [66, 12, 21, 11, -10, -4]
-    template_rotor(0,0,29,15)
+spriteset(spriteset_air_mi17_rotor, "../intermediate/gfx/1x/air_mi17_rotor_8bpp.png") {
+    template_rotor_voxel_zoom(0,0,43,23,1)
+}
+alternative_sprites(spriteset_air_mi17_rotor, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_mi17_rotor_8bpp.png") {
+    template_rotor_voxel_zoom(0,0,43,23,2)
+}
+alternative_sprites(spriteset_air_mi17_rotor, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_mi17_rotor_8bpp.png") {
+    template_rotor_voxel_zoom(0,0,43,23,4)
 }
 
 
@@ -50,7 +55,7 @@ if (is_aircraft_helicopter_enabled(param_aircraft_enable_rus)){
         graphics {
                 additional_text:            return string(STR_DESC_AIR_MI17); //Additional text shown in purchase list
                 default:                    spriteset_air_mi17;
-                rotor:                      3901; //spriteset_air_mi17_rotor;
+                rotor:                      spriteset_air_mi17_rotor;
                 cost_factor:                return 18;
                 running_cost_factor:        return 348;
         }

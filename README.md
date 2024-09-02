@@ -138,15 +138,21 @@ Airplanes available in set:
 | **Helicopters** |||||||||
 | Sikorsky CH-37 Mojave | heavy transport military helicopter | heli | 1953 | 10 | 190 | 47 |
 | Bell UH-1 Iroquois / HU-1 "Huey" | utility military helicopter | heli | 1956 | 31 | 220 | 102 |
+| Mil Mi-6 | heavy transport military helicopter | heli | 1959 | 21 | 250 | 194 |
 | Aérospatiale SA 321 Super Frelon | heavy transport helicopter | heli | 1962 | 20 | 249 | 204 |
 | Aérospatiale SA 330 Puma | medium transport/utility helicopter | heli | 1965 | 22 | 257 | 116 |
 | Sikorsky CH-53E Super Stallion | heavy transport military helicopter | heli | 1974 | 11 | 280 | 200 |
+| Mil Mi-26 | heavy transport military helicopter | heli | 1977 | 60 | 295 | 384 |
 | Eurocopter AS 532 Cougar | medium multipurpose helicopter | heli | 1978 | 60 | 239 | 115 |
 | Sikorsky UH-60 Black Hawk | utility military helicopter | heli | 1978 | 50 | 282 | 118 |
+| Mil Mi-17 | medium-lift helicopter | heli | 1981 | 60 | 260 | 260 |
 | AgustaWestland AW101 Merlin | medium-lift helicopter | heli | 1997 | 30 | 278 | 272 |
+| AgustaWestland AW139 | medium-lift helicopter | heli | 2002 | 30 | 306 | 212 |
 | Eurocopter EC725 Caracal | tactical transport military helicopter | heli | 2005 | 50 | 262 | 184 |
 | Sikorsky CH-148 Cyclone | heavy transport military helicopter | heli | 2008 | 30 | 254 | 200 |
 | Sikorsky CH-53K King Stallion | heavy transport military helicopter | heli | 2015 | 15 | 310 | 170 |
+| Mil Mi-38 | medium-lift helicopter | heli | 2015 | 45 | 250 | 176 |
+
 
 [comment]: <tablex> (| | | | | | | |)
 
@@ -229,6 +235,9 @@ Some voxel models are based on existing free 3D models. These models are often c
 - ["Aérospatiale SA 321 Super Frelon"](https://skfb.ly/JGYE), ["Sikorsky CH-37 Mojave"](https://skfb.ly/oopHN) by helijah is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
 - UH-60 - ["Helicopter N050614"](https://skfb.ly/o6zxN) by hemantrk40 is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
 - SA321, SA330, AS532, EC725, AW101 - base models by unknown user from open3model.com, Commercial Use Not Allowed license.
+- ["Aw139 Chopper"](https://skfb.ly/XyXn) by Bannerz is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
+- ["Mi6"](https://skfb.ly/YWRu), ["Mi8"](https://skfb.ly/YWYr) aka Mi-17, ["Mi26"](https://skfb.ly/YX6r) by manilov.ap is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
+- ["Mi-38"](https://desirefx.me/3d_models/mi-38-helicopter-3d-model/) by desirefx.me is licensed under free for all license.
 
 
 ## License

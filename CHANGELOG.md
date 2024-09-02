@@ -16,16 +16,17 @@ You can find these types of changes:
 ## Unreleased
 
 ### Coded without voxel model
-- helicopter AgustaWestland AW139
-- helicopter Mil Mi-6
-- helicopter Mil Mi-17
-- helicopter Mil Mi-26
-- helicopter Mil Mi-38
 
-## [0.10.0] - 2024-0x-xx
+
+## [1.0.0] - 2024-09-xx
 
 ### Added
 - helicopter Sikorsky CH-37 in 4x zoom
+- helicopter AgustaWestland AW139 in 4x zoom
+- helicopter Mil Mi-6 in 4x zoom
+- helicopter Mil Mi-17 in 4x zoom
+- helicopter Mil Mi-26 in 4x zoom
+- helicopter Mil Mi-38 in 4x zoom
 
 ### Changed
 - L-39 upgraded to 4x zoom with 4 liveries
@@ -211,8 +212,8 @@ You can find these types of changes:
 - Czech translation from [@adpro](https://github.com/adpro).
 
 
-[Unreleased]: https://github.com/adpro/openttd-military-grf/compare/v0.10.0...HEAD
-[0.10.0]: https://github.com/adpro/openttd-military-grf/compare/v0.9.0...v0.10.0
+[Unreleased]: https://github.com/adpro/openttd-military-grf/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/adpro/openttd-military-grf/compare/v0.9.0...v1.0.0
 [0.9.0]: https://github.com/adpro/openttd-military-grf/compare/v0.8.0...v0.9.0
 [0.8.0]: https://github.com/adpro/openttd-military-grf/compare/v0.7.0...v0.8.0
 [0.7.0]: https://github.com/adpro/openttd-military-grf/compare/v0.6.0...v0.7.0

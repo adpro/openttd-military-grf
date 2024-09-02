@@ -68,18 +68,18 @@ sort (FEAT_AIRCRAFT,
     // helicopters
     ,item_air_ch37
     ,item_air_uh1
-    // ,item_air_mi6
+    ,item_air_mi6
     ,item_air_sa321
     ,item_air_sa330
     ,item_air_ch53e
-    // ,item_air_mi26
+    ,item_air_mi26
     ,item_air_as532
     ,item_air_uh60
-    // ,item_air_mi17
+    ,item_air_mi17
     ,item_air_aw101
-    // ,item_air_aw139
+    ,item_air_aw139
     ,item_air_ec725
     ,item_air_ch148
     ,item_air_ch53k
-    // ,item_air_mi38
+    ,item_air_mi38
 ]);
