@@ -1,22 +1,49 @@
 /* airplane A6M Zero */
 
-spriteset(spriteset_air_a6m, "../intermediate/gfx/1x/air_a6m_2cc_8bpp.png") {
+// 2CC
+spriteset(spriteset_air_a6m_2cc, "../intermediate/gfx/1x/air_a6m_2cc_8bpp.png") {
     template_aircraft_voxel_zoom(0,0,20,13,18,13,15,15,1)
 }
-alternative_sprites(spriteset_air_a6m, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_a6m_2cc_8bpp.png") {
+alternative_sprites(spriteset_air_a6m_2cc, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_a6m_2cc_8bpp.png") {
     template_aircraft_voxel_zoom(0,0,20,13,18,13,15,15,2)
 }
-alternative_sprites(spriteset_air_a6m, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_a6m_2cc_8bpp.png") {
+alternative_sprites(spriteset_air_a6m_2cc, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_a6m_2cc_8bpp.png") {
     template_aircraft_voxel_zoom(0,0,20,13,18,13,15,15,4)
 }
-spriteset(spriteset_air_a6m_landing, "../intermediate/gfx/1x/air_a6m_2cc_landing_8bpp.png") {
+// spriteset(spriteset_air_a6m_landing, "../intermediate/gfx/1x/air_a6m_2cc_landing_8bpp.png") {
+//     template_aircraft_voxel_zoom(0,0,20,13,18,13,15,15,1)
+// }
+// alternative_sprites(spriteset_air_a6m_landing, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_a6m_2cc_landing_8bpp.png") {
+//     template_aircraft_voxel_zoom(0,0,20,13,18,13,15,15,2)
+// }
+// alternative_sprites(spriteset_air_a6m_landing, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_a6m_2cc_landing_8bpp.png") {
+//     template_aircraft_voxel_zoom(0,0,20,13,18,13,15,15,4)
+// }
+
+// AF
+spriteset(spriteset_air_a6m_af, "../intermediate/gfx/1x/air_a6m_af_8bpp.png") {
     template_aircraft_voxel_zoom(0,0,20,13,18,13,15,15,1)
 }
-alternative_sprites(spriteset_air_a6m_landing, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_a6m_2cc_landing_8bpp.png") {
+alternative_sprites(spriteset_air_a6m_af, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_a6m_af_8bpp.png") {
     template_aircraft_voxel_zoom(0,0,20,13,18,13,15,15,2)
 }
-alternative_sprites(spriteset_air_a6m_landing, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_a6m_2cc_landing_8bpp.png") {
+alternative_sprites(spriteset_air_a6m_af, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_a6m_af_8bpp.png") {
     template_aircraft_voxel_zoom(0,0,20,13,18,13,15,15,4)
+}
+
+// liveries switches
+
+switch (FEAT_AIRCRAFT, SELF, spriteset_air_a6m_switch, cargo_subtype)
+{
+  1: spriteset_air_a6m_2cc;
+     spriteset_air_a6m_af;
+}
+
+switch (FEAT_AIRCRAFT, SELF, air_a6m_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_LIV_AIR_AF);
+  1: string(STR_LIV_AIR_2CC);
+     return CB_RESULT_NO_TEXT;
 }
 
 if (is_aircraft_fighter_enabled(param_aircraft_enable_other)){
@@ -49,13 +76,14 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_other)){
             mail_capacity:                  4;
             sound_effect:                   SOUND_TAKEOFF_PROPELLER;
             /* Visual effect is left at default (no effect) */
-    }
-    graphics {
-            additional_text:                return string(STR_DESC_AIR_A6M); //Additional text shown in purchase list
-            default:                        spriteset_air_a6m;
-            cost_factor:                    return 1;
-            running_cost_factor:            return 72;
-    }
+        }
+        graphics {
+                additional_text:                return string(STR_DESC_AIR_A6M); //Additional text shown in purchase list
+                cargo_subtype_text:             air_a6m_cargo_subtype_text;
+                default:                        spriteset_air_a6m_switch;
+                cost_factor:                    return 1;
+                running_cost_factor:            return 72;
+        }
     }
 
 

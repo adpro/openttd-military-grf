@@ -1,15 +1,28 @@
 /* helicopter Mil Mi-38 */
 
-spriteset(spriteset_air_mi38, "../intermediate/gfx/1x/air_mi38_2cc_8bpp.png") {
+// 2CC
+spriteset(spriteset_air_mi38_2cc, "../intermediate/gfx/1x/air_mi38_2cc_8bpp.png") {
     template_aircraft_voxel_zoom(0,0,8,32,36,29,43,15,1)
 }
-alternative_sprites(spriteset_air_mi38, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_mi38_2cc_8bpp.png") {
+alternative_sprites(spriteset_air_mi38_2cc, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_mi38_2cc_8bpp.png") {
     template_aircraft_voxel_zoom(0,0,8,32,36,29,43,15,2)
 }
-alternative_sprites(spriteset_air_mi38, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_mi38_2cc_8bpp.png") {
+alternative_sprites(spriteset_air_mi38_2cc, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_mi38_2cc_8bpp.png") {
     template_aircraft_voxel_zoom(0,0,8,32,36,29,43,15,4)
 }
 
+// AF
+spriteset(spriteset_air_mi38_af, "../intermediate/gfx/1x/air_mi38_af_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,8,32,36,29,43,15,1)
+}
+alternative_sprites(spriteset_air_mi38_af, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_mi38_af_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,8,32,36,29,43,15,2)
+}
+alternative_sprites(spriteset_air_mi38_af, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_mi38_af_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,8,32,36,29,43,15,4)
+}
+
+// rotor
 spriteset(spriteset_air_mi38_rotor, "../intermediate/gfx/1x/air_mi38_rotor_8bpp.png") {
     template_rotor_voxel_zoom(0,0,35,19,1)
 }
@@ -20,6 +33,20 @@ alternative_sprites(spriteset_air_mi38_rotor, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, 
     template_rotor_voxel_zoom(0,0,35,19,4)
 }
 
+// livery switches
+
+switch (FEAT_AIRCRAFT, SELF, spriteset_air_mi38_switch, cargo_subtype)
+{
+  1: spriteset_air_mi38_2cc;
+     spriteset_air_mi38_af;
+}
+
+switch (FEAT_AIRCRAFT, SELF, air_mi38_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_LIV_AIR_AF);
+  1: string(STR_LIV_AIR_2CC);
+     return CB_RESULT_NO_TEXT;
+}
 
 if (is_aircraft_helicopter_enabled(param_aircraft_enable_rus)){
     item (FEAT_AIRCRAFT, item_air_mi38) {
@@ -54,7 +81,8 @@ if (is_aircraft_helicopter_enabled(param_aircraft_enable_rus)){
         }
         graphics {
                 additional_text:            return string(STR_DESC_AIR_MI38); //Additional text shown in purchase list
-                default:                    spriteset_air_mi38;
+                cargo_subtype_text:         air_mi38_cargo_subtype_text;
+                default:                    spriteset_air_mi38_switch;
                 rotor:                      spriteset_air_mi38_rotor;
                 cost_factor:                return 15;
                 running_cost_factor:        return 410;

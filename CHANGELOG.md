@@ -15,6 +15,11 @@ You can find these types of changes:
 
 ## Unreleased
 
+### Added
+
+- Mitsubishi A6M Zero Air Force livery
+- Air Force liveries for helicopters with 4x zoom
+
 
 ## [1.0.0] - 2024-09-02
 

@@ -1,43 +1,85 @@
 /* helicopter Aérospatiale SA 330 Puma */
 
-spriteset(spriteset_air_sa330, "gfx/air_sa330_2cc.png") {
+// 2cc
+spriteset(spriteset_air_sa330_2cc, "../intermediate/gfx/1x/air_sa330_2cc_8bpp.png") {
     // 41 x 11 x 9
-    template_aircraft_voxel_zoom(0,1,11,30,28,21,43,15,1)
+    template_aircraft_voxel_zoom(0,0,11,30,28,21,43,15,1)
 }
-alternative_sprites(spriteset_air_sa330, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/air_sa330_2cc.png") {
-    template_aircraft_voxel_zoom(0,33,11,30,28,21,43,15,2)
+alternative_sprites(spriteset_air_sa330_2cc, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_sa330_2cc_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,11,30,28,21,43,15,2)
 }
-alternative_sprites(spriteset_air_sa330, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "gfx/air_sa330_2cc.png") {
-    template_aircraft_voxel_zoom(0,95,11,30,28,21,43,15,4)
+alternative_sprites(spriteset_air_sa330_2cc, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_sa330_2cc_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,11,30,28,21,43,15,4)
 }
-spriteset(spriteset_air_sa330_landing, "gfx/air_sa330_2cc.png") {
+spriteset(spriteset_air_sa330_2cc_landing, "../intermediate/gfx/1x/air_sa330_2cc_landing_8bpp.png") {
     // 41 x 11 x 9
-    template_aircraft_voxel_zoom(0,217,11,30,28,21,43,15,1)
+    template_aircraft_voxel_zoom(0,0,11,30,28,21,43,15,1)
 }
-alternative_sprites(spriteset_air_sa330_landing, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/air_sa330_2cc.png") {
-    template_aircraft_voxel_zoom(0,249,11,30,28,21,43,15,2)
+alternative_sprites(spriteset_air_sa330_2cc_landing, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_sa330_2cc_landing_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,11,30,28,21,43,15,2)
 }
-alternative_sprites(spriteset_air_sa330_landing, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "gfx/air_sa330_2cc.png") {
-    template_aircraft_voxel_zoom(0,311,11,30,28,21,43,15,4)
-}
-
-spriteset(spriteset_air_sa330_rotor, "gfx/air_sa330_rotor.png") {
-    template_rotor_voxel_zoom(0,1,29,15,1)
-}
-alternative_sprites(spriteset_air_sa330_rotor, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/air_sa330_rotor.png") {
-    template_rotor_voxel_zoom(0,18,29,15,2)
-}
-alternative_sprites(spriteset_air_sa330_rotor, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "gfx/air_sa330_rotor.png") {
-    template_rotor_voxel_zoom(0,50,29,15,4)
+alternative_sprites(spriteset_air_sa330_2cc_landing, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_sa330_2cc_landing_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,11,30,28,21,43,15,4)
 }
 
-switch (FEAT_AIRCRAFT, SELF, air_sa330_status, (var[0xE2, 0, 0xFF])) {
-    16..20: spriteset_air_sa330; // flight
-    24: spriteset_air_sa330; // helicopter preparing to land at airport
-    27: spriteset_air_sa330; // helicopter preparing to land at heliport    
-        spriteset_air_sa330_landing; // default
+// AF
+spriteset(spriteset_air_sa330_af, "../intermediate/gfx/1x/air_sa330_af_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,11,30,28,21,43,15,1)
+}
+alternative_sprites(spriteset_air_sa330_af, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_sa330_af_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,11,30,28,21,43,15,2)
+}
+alternative_sprites(spriteset_air_sa330_af, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_sa330_af_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,11,30,28,21,43,15,4)
+}
+spriteset(spriteset_air_sa330_af_landing, "../intermediate/gfx/1x/air_sa330_af_landing_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,11,30,28,21,43,15,1)
+}
+alternative_sprites(spriteset_air_sa330_af_landing, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_sa330_af_landing_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,11,30,28,21,43,15,2)
+}
+alternative_sprites(spriteset_air_sa330_af_landing, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_sa330_af_landing_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,11,30,28,21,43,15,4)
 }
 
+// rotor
+spriteset(spriteset_air_sa330_rotor, "../intermediate/gfx/1x/air_sa330_rotor_8bpp.png") {
+    template_rotor_voxel_zoom(0,0,29,15,1)
+}
+alternative_sprites(spriteset_air_sa330_rotor, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_sa330_rotor_8bpp.png") {
+    template_rotor_voxel_zoom(0,0,29,15,2)
+}
+alternative_sprites(spriteset_air_sa330_rotor, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_sa330_rotor_8bpp.png") {
+    template_rotor_voxel_zoom(0,0,29,15,4)
+}
+
+// flight status
+switch (FEAT_AIRCRAFT, SELF, spriteset_air_sa330_2cc_status, (var[0xE2, 0, 0xFF])) {
+    16..20: spriteset_air_sa330_2cc; // flight
+    24: spriteset_air_sa330_2cc; // helicopter preparing to land at airport
+    27: spriteset_air_sa330_2cc; // helicopter preparing to land at heliport    
+        spriteset_air_sa330_2cc_landing; // default
+}
+switch (FEAT_AIRCRAFT, SELF, spriteset_air_sa330_af_status, (var[0xE2, 0, 0xFF])) {
+    16..20: spriteset_air_sa330_af; // flight
+    24: spriteset_air_sa330_af; // helicopter preparing to land at airport
+    27: spriteset_air_sa330_af; // helicopter preparing to land at heliport    
+        spriteset_air_sa330_af_landing; // default
+}
+
+// liveries switch
+switch (FEAT_AIRCRAFT, SELF, spriteset_air_sa330_switch, cargo_subtype)
+{
+  1: spriteset_air_sa330_2cc_status;
+     spriteset_air_sa330_af_status;
+}
+
+switch (FEAT_AIRCRAFT, SELF, air_sa330_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_LIV_AIR_AF);
+  1: string(STR_LIV_AIR_2CC);
+     return CB_RESULT_NO_TEXT;
+}
 
 if (is_aircraft_helicopter_enabled(param_aircraft_enable_eu)){
     item (FEAT_AIRCRAFT, item_air_sa330) {
@@ -72,7 +114,8 @@ if (is_aircraft_helicopter_enabled(param_aircraft_enable_eu)){
         }
         graphics {
                 additional_text:            return string(STR_DESC_AIR_SA330); //Additional text shown in purchase list
-                default:                    air_sa330_status; // spriteset_air_sa330;
+                cargo_subtype_text:         air_sa330_cargo_subtype_text;
+                default:                    spriteset_air_sa330_switch;
                 rotor:                      spriteset_air_sa330_rotor;
                 cost_factor:                return 8;
                 running_cost_factor:        return 186;

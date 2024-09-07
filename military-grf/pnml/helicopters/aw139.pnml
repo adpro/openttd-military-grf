@@ -1,24 +1,46 @@
 /* helicopter AgustaWestland AW139 */
 
-spriteset(spriteset_air_aw139, "../intermediate/gfx/1x/air_aw139_2cc_8bpp.png") {
+// 2cc
+spriteset(spriteset_air_aw139_2cc, "../intermediate/gfx/1x/air_aw139_2cc_8bpp.png") {
     template_aircraft_voxel_zoom(0,0,10,26,32,24,38,13,1)
 }
-alternative_sprites(spriteset_air_aw139, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_aw139_2cc_8bpp.png") {
+alternative_sprites(spriteset_air_aw139_2cc, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_aw139_2cc_8bpp.png") {
     template_aircraft_voxel_zoom(0,0,10,26,32,24,38,13,2)
 }
-alternative_sprites(spriteset_air_aw139, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_aw139_2cc_8bpp.png") {
+alternative_sprites(spriteset_air_aw139_2cc, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_aw139_2cc_8bpp.png") {
     template_aircraft_voxel_zoom(0,0,10,26,32,24,38,13,4)
 }
-spriteset(spriteset_air_aw139_landing, "../intermediate/gfx/1x/air_aw139_2cc_landing_8bpp.png") {
+spriteset(spriteset_air_aw139_2cc_landing, "../intermediate/gfx/1x/air_aw139_2cc_landing_8bpp.png") {
     template_aircraft_voxel_zoom(0,0,10,26,32,24,38,13,1)
 }
-alternative_sprites(spriteset_air_aw139_landing, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_aw139_2cc_landing_8bpp.png") {
+alternative_sprites(spriteset_air_aw139_2cc_landing, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_aw139_2cc_landing_8bpp.png") {
     template_aircraft_voxel_zoom(0,0,10,26,32,24,38,13,2)
 }
-alternative_sprites(spriteset_air_aw139_landing, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_aw139_2cc_landing_8bpp.png") {
+alternative_sprites(spriteset_air_aw139_2cc_landing, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_aw139_2cc_landing_8bpp.png") {
     template_aircraft_voxel_zoom(0,0,10,26,32,24,38,13,4)
 }
 
+// AF
+spriteset(spriteset_air_aw139_af, "../intermediate/gfx/1x/air_aw139_af_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,10,26,32,24,38,13,1)
+}
+alternative_sprites(spriteset_air_aw139_af, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_aw139_af_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,10,26,32,24,38,13,2)
+}
+alternative_sprites(spriteset_air_aw139_af, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_aw139_af_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,10,26,32,24,38,13,4)
+}
+spriteset(spriteset_air_aw139_af_landing, "../intermediate/gfx/1x/air_aw139_af_landing_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,10,26,32,24,38,13,1)
+}
+alternative_sprites(spriteset_air_aw139_af_landing, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_aw139_af_landing_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,10,26,32,24,38,13,2)
+}
+alternative_sprites(spriteset_air_aw139_af_landing, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_aw139_af_landing_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,10,26,32,24,38,13,4)
+}
+
+// rotor
 spriteset(spriteset_air_aw139_rotor, "../intermediate/gfx/1x/air_aw139_rotor_8bpp.png") {
     template_rotor_voxel_zoom(0,0,28,15,1)
 }
@@ -29,13 +51,33 @@ alternative_sprites(spriteset_air_aw139_rotor, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP,
     template_rotor_voxel_zoom(0,0,28,15,4)
 }
 
-switch (FEAT_AIRCRAFT, SELF, air_aw139_status, (var[0xE2, 0, 0xFF])) {
-    16..20: spriteset_air_aw139; // flight
-    24: spriteset_air_aw139; // helicopter preparing to land at airport
-    27: spriteset_air_aw139; // helicopter preparing to land at heliport    
-        spriteset_air_aw139_landing; // default
+// flight status
+switch (FEAT_AIRCRAFT, SELF, spriteset_air_aw139_2cc_status, (var[0xE2, 0, 0xFF])) {
+    16..20: spriteset_air_aw139_2cc; // flight
+    24: spriteset_air_aw139_2cc; // helicopter preparing to land at airport
+    27: spriteset_air_aw139_2cc; // helicopter preparing to land at heliport    
+        spriteset_air_aw139_2cc_landing; // default
+}
+switch (FEAT_AIRCRAFT, SELF, spriteset_air_aw139_af_status, (var[0xE2, 0, 0xFF])) {
+    16..20: spriteset_air_aw139_af; // flight
+    24: spriteset_air_aw139_af; // helicopter preparing to land at airport
+    27: spriteset_air_aw139_af; // helicopter preparing to land at heliport    
+        spriteset_air_aw139_af_landing; // default
 }
 
+// liveries switch
+switch (FEAT_AIRCRAFT, SELF, spriteset_air_aw139_switch, cargo_subtype)
+{
+  1: spriteset_air_aw139_2cc_status;
+     spriteset_air_aw139_af_status;
+}
+
+switch (FEAT_AIRCRAFT, SELF, air_aw139_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_LIV_AIR_AF);
+  1: string(STR_LIV_AIR_2CC);
+     return CB_RESULT_NO_TEXT;
+}
 
 if (is_aircraft_helicopter_enabled(param_aircraft_enable_eu)){
     item (FEAT_AIRCRAFT, item_air_aw139) {
@@ -70,7 +112,8 @@ if (is_aircraft_helicopter_enabled(param_aircraft_enable_eu)){
         }
         graphics {
                 additional_text:            return string(STR_DESC_AIR_AW139); //Additional text shown in purchase list
-                default:                    air_aw139_status;
+                cargo_subtype_text:         air_aw139_cargo_subtype_text;
+                default:                    spriteset_air_aw139_switch;
                 rotor:                      spriteset_air_aw139_rotor;
                 cost_factor:                return 9;
                 running_cost_factor:        return 172;

@@ -1,15 +1,28 @@
 /* helicopter UH-60 */
 
-spriteset(spriteset_air_uh60, "../intermediate/gfx/1x/air_uh60_2cc_8bpp.png") {
+// 2cc
+spriteset(spriteset_air_uh60_2cc, "../intermediate/gfx/1x/air_uh60_2cc_8bpp.png") {
     template_aircraft_voxel_zoom(0,0,8,27,30,23,37,12,1)
 }
-alternative_sprites(spriteset_air_uh60, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_uh60_2cc_8bpp.png") {
+alternative_sprites(spriteset_air_uh60_2cc, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_uh60_2cc_8bpp.png") {
     template_aircraft_voxel_zoom(0,0,8,27,30,23,37,12,2)
 }
-alternative_sprites(spriteset_air_uh60, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_uh60_2cc_8bpp.png") {
+alternative_sprites(spriteset_air_uh60_2cc, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_uh60_2cc_8bpp.png") {
     template_aircraft_voxel_zoom(0,0,8,27,30,23,37,12,4)
 }
 
+// AF
+spriteset(spriteset_air_uh60_af, "../intermediate/gfx/1x/air_uh60_af_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,8,27,30,23,37,12,1)
+}
+alternative_sprites(spriteset_air_uh60_af, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_uh60_af_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,8,27,30,23,37,12,2)
+}
+alternative_sprites(spriteset_air_uh60_af, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_uh60_af_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,8,27,30,23,37,12,4)
+}
+
+// rotor
 spriteset(spriteset_air_uh60_rotor, "../intermediate/gfx/1x/air_uh60_rotor_8bpp.png") {
     template_rotor_voxel_zoom(0,0,28,16,1)
 }
@@ -18,6 +31,20 @@ alternative_sprites(spriteset_air_uh60_rotor, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, 
 }
 alternative_sprites(spriteset_air_uh60_rotor, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_uh60_rotor_8bpp.png") {
     template_rotor_voxel_zoom(0,0,28,16,4)
+}
+
+// livery switches
+switch (FEAT_AIRCRAFT, SELF, spriteset_air_uh60_switch, cargo_subtype)
+{
+  1: spriteset_air_uh60_2cc;
+     spriteset_air_uh60_af;
+}
+
+switch (FEAT_AIRCRAFT, SELF, air_uh60_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_LIV_AIR_AF);
+  1: string(STR_LIV_AIR_2CC);
+     return CB_RESULT_NO_TEXT;
 }
 
 if (is_aircraft_helicopter_enabled(param_aircraft_enable_us)){
@@ -53,7 +80,8 @@ if (is_aircraft_helicopter_enabled(param_aircraft_enable_us)){
         }
         graphics {
             additional_text:                return string(STR_DESC_AIR_UH60); //Additional text shown in purchase list
-            default:                        spriteset_air_uh60;
+            default:                        spriteset_air_uh60_switch;
+            cargo_subtype_text:             air_uh60_cargo_subtype_text;
             rotor:                          spriteset_air_uh60_rotor;
             cost_factor:                    return 18;
             running_cost_factor:            return 273;

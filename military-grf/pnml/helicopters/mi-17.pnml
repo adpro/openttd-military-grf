@@ -1,15 +1,28 @@
 /* helicopter Mil Mi-17 */
 
-spriteset(spriteset_air_mi17, "../intermediate/gfx/1x/air_mi17_2cc_8bpp.png") {
+// 2cc
+spriteset(spriteset_air_mi17_2cc, "../intermediate/gfx/1x/air_mi17_2cc_8bpp.png") {
     template_aircraft_voxel_zoom(0,0,9,33,42,31,47,14,1)
 }
-alternative_sprites(spriteset_air_mi17, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_mi17_2cc_8bpp.png") {
+alternative_sprites(spriteset_air_mi17_2cc, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_mi17_2cc_8bpp.png") {
     template_aircraft_voxel_zoom(0,0,9,33,42,31,47,14,2)
 }
-alternative_sprites(spriteset_air_mi17, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_mi17_2cc_8bpp.png") {
+alternative_sprites(spriteset_air_mi17_2cc, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_mi17_2cc_8bpp.png") {
     template_aircraft_voxel_zoom(0,0,9,33,42,31,47,14,4)
 }
 
+// AF
+spriteset(spriteset_air_mi17_af, "../intermediate/gfx/1x/air_mi17_af_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,9,33,42,31,47,14,1)
+}
+alternative_sprites(spriteset_air_mi17_af, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_mi17_af_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,9,33,42,31,47,14,2)
+}
+alternative_sprites(spriteset_air_mi17_af, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_mi17_af_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,9,33,42,31,47,14,4)
+}
+
+// rotor
 spriteset(spriteset_air_mi17_rotor, "../intermediate/gfx/1x/air_mi17_rotor_8bpp.png") {
     template_rotor_voxel_zoom(0,0,43,23,1)
 }
@@ -18,6 +31,20 @@ alternative_sprites(spriteset_air_mi17_rotor, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, 
 }
 alternative_sprites(spriteset_air_mi17_rotor, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_mi17_rotor_8bpp.png") {
     template_rotor_voxel_zoom(0,0,43,23,4)
+}
+
+// liveries switch
+switch (FEAT_AIRCRAFT, SELF, spriteset_air_mi17_switch, cargo_subtype)
+{
+  1: spriteset_air_mi17_2cc;
+     spriteset_air_mi17_af;
+}
+
+switch (FEAT_AIRCRAFT, SELF, air_mi17_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_LIV_AIR_AF);
+  1: string(STR_LIV_AIR_2CC);
+     return CB_RESULT_NO_TEXT;
 }
 
 
@@ -54,7 +81,8 @@ if (is_aircraft_helicopter_enabled(param_aircraft_enable_rus)){
         }
         graphics {
                 additional_text:            return string(STR_DESC_AIR_MI17); //Additional text shown in purchase list
-                default:                    spriteset_air_mi17;
+                cargo_subtype_text:         air_mi17_cargo_subtype_text;
+                default:                    spriteset_air_mi17_switch;
                 rotor:                      spriteset_air_mi17_rotor;
                 cost_factor:                return 18;
                 running_cost_factor:        return 348;
