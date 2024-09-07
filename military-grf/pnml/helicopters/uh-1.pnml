@@ -1,19 +1,52 @@
 /* helicopter UH-1 */
 
-spriteset(spriteset_air_uh1, "gfx/air_uh1.png") {
-    // 15 x 19 x 5
-    //left_x, upper_y, width, height, offset_x, offset_y
-    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
-    template_heli_30_h6(0)
+// 2cc
+spriteset(spriteset_air_uh1_2cc, "../intermediate/gfx/1x/air_uh1_2cc_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,5,21,25,19,30,9,1)
+}
+alternative_sprites(spriteset_air_uh1_2cc, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_uh1_2cc_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,5,21,25,19,30,9,2)
+}
+alternative_sprites(spriteset_air_uh1_2cc, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_uh1_2cc_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,5,21,25,19,30,9,4)
 }
 
-spriteset(spriteset_air_uh1_rotor, "gfx/air_uh1_rotor.png") {
-    // [ 0, 12, 21, 11, -10, -4]
-    // [22, 12, 21, 11, -10, -4]
-    // [44, 12, 21, 11, -10, -4]
-    // [66, 12, 21, 11, -10, -4]
-    template_rotor(0,12,21,11)
+// AF
+spriteset(spriteset_air_uh1_af, "../intermediate/gfx/1x/air_uh1_af_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,5,21,25,19,30,9,1)
 }
+alternative_sprites(spriteset_air_uh1_af, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_uh1_af_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,5,21,25,19,30,9,2)
+}
+alternative_sprites(spriteset_air_uh1_af, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_uh1_af_8bpp.png") {
+    template_aircraft_voxel_zoom(0,0,5,21,25,19,30,9,4)
+}
+
+// rotor
+spriteset(spriteset_air_uh1_rotor, "../intermediate/gfx/1x/air_uh1_rotor_8bpp.png") {
+    template_rotor_voxel_zoom(0,0,20,12,1)
+}
+alternative_sprites(spriteset_air_uh1_rotor, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_uh1_rotor_8bpp.png") {
+    template_rotor_voxel_zoom(0,0,20,12,2)
+}
+alternative_sprites(spriteset_air_uh1_rotor, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_uh1_rotor_8bpp.png") {
+    template_rotor_voxel_zoom(0,0,20,12,4)
+}
+
+// livery switches
+switch (FEAT_AIRCRAFT, SELF, spriteset_air_uh1_switch, cargo_subtype)
+{
+  1: spriteset_air_uh1_2cc;
+     spriteset_air_uh1_af;
+}
+
+switch (FEAT_AIRCRAFT, SELF, air_uh1_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_LIV_AIR_AF);
+  1: string(STR_LIV_AIR_2CC);
+     return CB_RESULT_NO_TEXT;
+}
+
 
 
 if (is_aircraft_helicopter_enabled(param_aircraft_enable_us)){
@@ -46,14 +79,15 @@ if (is_aircraft_helicopter_enabled(param_aircraft_enable_us)){
             mail_capacity:                  3;
             sound_effect:                   SOUND_TAKEOFF_HELICOPTER;
             /* Visual effect is left at default (no effect) */
-    }
-    graphics {
-            additional_text:    return string(STR_DESC_AIR_UH1); //Additional text shown in purchase list
-            default:            spriteset_air_uh1;
-            rotor:              spriteset_air_uh1_rotor;
+        }
+        graphics {
+            additional_text:                return string(STR_DESC_AIR_UH1); //Additional text shown in purchase list
+            cargo_subtype_text:             air_uh1_cargo_subtype_text;
+            default:                        spriteset_air_uh1_switch;
+            rotor:                          spriteset_air_uh1_rotor;
             cost_factor:                    return 43;
             running_cost_factor:            return 156;
-    }
+        }
     }
 
     if (Aircraft_Ranges == 0) {

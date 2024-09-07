@@ -18,7 +18,11 @@ You can find these types of changes:
 ### Added
 
 - Mitsubishi A6M Zero Air Force livery
-- Air Force liveries for helicopters with 4x zoom
+- Air Force liveries for all helicopters with 4x zoom
+
+### Changed
+
+- helicopter model of Bell UH-1 Iroquois / HU-1 "Huey" in voxels for sprites with 4x zoom and 2 liveries
 
 
 ## [1.0.0] - 2024-09-02
