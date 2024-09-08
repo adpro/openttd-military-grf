@@ -15,6 +15,8 @@ You can find these types of changes:
 
 ## Unreleased
 
+## [1.1.0] - 2024-09-08
+
 ### Added
 
 - Mitsubishi A6M Zero Air Force livery

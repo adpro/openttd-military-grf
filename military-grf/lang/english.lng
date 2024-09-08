@@ -296,12 +296,15 @@ STR_DESC_AIR_A6M        :Country of origin: {ORANGE}JPN {}{BLACK}Historic facts:
 STR_DESC_AIR_TMPL		:Country of origin: {ORANGE}??? {}{BLACK}Historic facts: {ORANGE}. {}{BLACK}Number built: {ORANGE}
 
 # --------------------
-# vehicle subversions
+# vehicle subversions - liveries
 STR_LIV_AIR_AF          : Air Force
 STR_LIV_AIR_AF_STRIPES  : Air Force with stripes
 STR_LIV_AIR_2CC         : 2CC
 STR_LIV_AIR_2CC_REV     : 2CC Reversed
 STR_LIV_AIR_BASE        : Basic camouflage
+# real base liveries
+STR_LIV_AIR_USN_VF24    : U.S. Navy VF-24
+
 
 # --------------------
 # airports

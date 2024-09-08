@@ -173,6 +173,66 @@ To avoid disappointment, consider the following rules for requests:
 - The development team and author reserves the right to interpret these rules more 
   like guidelines.
 
+## Liveries
+
+**Pull-requests (PRs) with new liveries are welcomed.** Identification by country, 
+military branch (air force, navy, army), wing/squadron are needed for proper 
+naming scheme. In this case, best to use my voxel model for the aircraft/helicopter 
+and paint the livery on it (e.g. in MagicaVoxel). Ideally a PR voxel of the model 
+with the livery, write the designation in English in `military-grf/lang/english.lng` 
+in the livery section (line 306+) to uniquely identify the livery.
+
+The form of the ID to identify the livery in the language file is 
+STR_LIV_AIR_{[country iso alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#GB)}{military branch abbrev}_{unit}, e.g. 
+`STR_LIV_AIR_USN_VF24 : U.S. Navy VF-24`.
+The voxel model identification corresponding to the designation above is always 
+based on the 2CC or AF variant. If the model has the `_landing` variant, then 
+paint this variant. It is always easier to erase the landing gear than to draw it :) 
+If the original model name with Air Force (AF) livery is e.g. `air_f14_af_landing.vox`, 
+then the VF-24 livery should be in the file `air_f14_usnvf24_landing.vox`.
+
+If you don't master github, it is possible to submit the livery as a vox model 
+in a post to the forum [development thread](https://www.tt-forums.net/viewtopic.php?t=88858). 
+I will read it and convert it to grf in next possible release with credit. 
+**All your contributions are considered to be under GNU GPL v2 license.**
+
+For help with identification here are some useful tables.
+
+Common [ISO Alpha-2 country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#GB) 
+for aircraft in this set:
+
+| ISO Alpha-2 Code | Country |
+| --- | --- |
+| BR | Brazil |
+| CA | Canada |
+| CN | China |
+| CS | Czechoslovakia (1918-1992)
+| CZ | Czech republic (1993+) |
+| DE | Germany |
+| FR | France |
+| GB | United Kingdom of Great Britain and Northern Ireland |
+| IT | Italy |
+| JP | Japan |
+| RU | Russian Federation (1992+) |
+| SE | Sweden |
+| SU | Soviet Union (1922-1991) |
+| US | United States of America |
+
+
+Common military branch abbreviations for this set:
+
+| Abbrev | Military Branch |
+| --- | --- |
+| A | Army |
+| AF | Air Force | 
+| CG | Coast Guard |
+| G | Gendarmerie |
+| M | Marines |
+| MR | Military Reserve (U.S. Nat. Guard, U.K. Army Reserve) |
+| N | Navy |
+| SF | Special forces |
+
+
 ## Translations
 
 Graphic set supports these translations:
@@ -232,7 +292,7 @@ Literature:
 
 Some voxel models are based on existing free 3D models. These models are often converted and heavily edited in Magica Voxel. However, without the original 3D models, they would not have been created so easily and accurately. Therefore, credit to their authors:
 
-- ["Aérospatiale SA 321 Super Frelon"](https://skfb.ly/JGYE), ["Sikorsky CH-37 Mojave"](https://skfb.ly/oopHN) by helijah is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
+- ["Aérospatiale SA 321 Super Frelon"](https://skfb.ly/JGYE), ["Sikorsky CH-37 Mojave"](https://skfb.ly/oopHN), ["Bell UH-1 Iroquois (Huey)"](https://skfb.ly/6QY7R) by helijah is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
 - UH-60 - ["Helicopter N050614"](https://skfb.ly/o6zxN) by hemantrk40 is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
 - SA321, SA330, AS532, EC725, AW101 - base models by unknown user from open3model.com, Commercial Use Not Allowed license.
 - ["Aw139 Chopper"](https://skfb.ly/XyXn) by Bannerz is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
