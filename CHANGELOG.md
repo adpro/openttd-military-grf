@@ -15,6 +15,15 @@ You can find these types of changes:
 
 ## Unreleased
 
+### Added
+
+### Changed
+
+### Removed
+
+- Old GFX sprites for EC 725, SA 321, SA 330, SA 532, UH-1
+
+
 ## [1.1.0] - 2024-09-08
 
 ### Added
