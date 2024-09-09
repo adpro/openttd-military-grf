@@ -93,4 +93,4 @@ copy: ## copies data
 test: clean build copy ## run clean, build and copy
 
 gfx:	## generate PNGs from vox files
-	@/bin/bash make_gfx.sh "$(INTERDIR)/gfx" "$(LIST_HEL) $(LIST_AIR)" "$(LIST_ROTORS)"
+	@/bin/bash make_gfx.sh "$(INTERDIR)" "$(LIST_HEL) $(LIST_AIR)" "$(LIST_ROTORS)"

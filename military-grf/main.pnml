@@ -43,21 +43,21 @@
 #include "pnml/airport/afb_city.pnml"
 
 // v0.5.0
-#include "pnml/aircraft/rus/i-16.pnml"
-#include "pnml/aircraft/rus/yak-9.pnml"
-#include "pnml/aircraft/rus/mig-15.pnml"
-#include "pnml/aircraft/rus/mig-19.pnml"
-#include "pnml/aircraft/rus/mig-21.pnml"
-#include "pnml/aircraft/rus/mig-29.pnml"
-#include "pnml/aircraft/rus/su-30.pnml"
-#include "pnml/aircraft/rus/su-57.pnml"
+#include "pnml/aircraft/ru/i-16.pnml"
+#include "pnml/aircraft/ru/yak-9.pnml"
+#include "pnml/aircraft/ru/mig-15.pnml"
+#include "pnml/aircraft/ru/mig-19.pnml"
+#include "pnml/aircraft/ru/mig-21.pnml"
+#include "pnml/aircraft/ru/mig-29.pnml"
+#include "pnml/aircraft/ru/su-30.pnml"
+#include "pnml/aircraft/ru/su-57.pnml"
 
-#include "pnml/aircraft/rus/an-2.pnml"
-#include "pnml/aircraft/rus/an-12.pnml"
-#include "pnml/aircraft/rus/an-22.pnml"
-#include "pnml/aircraft/rus/an-24.pnml"
-#include "pnml/aircraft/rus/an-26.pnml"
-#include "pnml/aircraft/rus/il-76.pnml"
+#include "pnml/aircraft/ru/an-2.pnml"
+#include "pnml/aircraft/ru/an-12.pnml"
+#include "pnml/aircraft/ru/an-22.pnml"
+#include "pnml/aircraft/ru/an-24.pnml"
+#include "pnml/aircraft/ru/an-26.pnml"
+#include "pnml/aircraft/ru/il-76.pnml"
 
 // v0.6.0
 #include "pnml/aircraft/cs/s-103.pnml"
@@ -90,7 +90,7 @@
 #include "pnml/helicopters/ch53k.pnml"
 
 // v0.9.0
-#include "pnml/aircraft/jap/a6m.pnml"
+#include "pnml/aircraft/other/jp/a6m.pnml"
 #include "pnml/helicopters/ch148.pnml"
 #include "pnml/helicopters/uh-60.pnml"
 #include "pnml/helicopters/ch37.pnml"
