@@ -215,6 +215,9 @@ STR_NAME_AIR_AERO_L29   :Aero L-29 "Delfín"
 STR_DESC_AIR_AERO_L29	:Země původu: {ORANGE}ČSR {}{BLACK}Historická fakta: {ORANGE}Šlo o první proudový letoun navržený a vyráběný v Československu. V roce 1961 byl Delfín porovnáván s letouny TS-11 Iskra a Jak-30 a stal se vítězem v soutěži o hlavní výcvikový letoun zemí Varšavské smlouvy. Egyptské L-29 se zúčastnily jomkipurské války proti Izraeli jako lehké útočné letouny. {}{BLACK}Vyrobeno ks: {ORANGE}3 665
 
 STR_NAME_AIR_AERO_L39   :Aero L-39 "Albatros"
+STR_NAME_AIR_AERO_L39C  :Aero L-39 C
+STR_NAME_AIR_AERO_L39ZA :Aero L-39 ZA
+STR_NAME_AIR_AERO_L39MS :Aero L-39 MS "Super Albatros"
 STR_DESC_AIR_AERO_L39	:Země původu: {ORANGE}ČSSR {}{BLACK}Historická fakta: {ORANGE}Druhá generace lehkého cvičného letadla. L-39 se stal jednotným výcvikovým letounem armád Varšavské smlouvy s výjimkou Polska. {}{BLACK}Vyrobeno ks: {ORANGE}2 900
 
 STR_NAME_AIR_AERO_L39NG :Aero L-39NG

@@ -215,6 +215,9 @@ STR_NAME_AIR_AERO_L29   :Aero L-29 "Dolphin"
 STR_DESC_AIR_AERO_L29	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}It was the first jet aircraft designed and manufactured in Czechoslovakia. In 1961, the Dolphin was compared to the TS-11 Iskra and Jak-30 aircraft and became the winner of the competition for the main training aircraft of the Warsaw Pact countries. Egyptian L-29s participated in the Yom Kippur War against Israel as light attack aircraft. {}{BLACK}Number built: {ORANGE}3,665
 
 STR_NAME_AIR_AERO_L39   :Aero L-39 "Albatross"
+STR_NAME_AIR_AERO_L39C  :Aero L-39 C
+STR_NAME_AIR_AERO_L39ZA :Aero L-39 ZA
+STR_NAME_AIR_AERO_L39MS :Aero L-39 MS "Super Albatross"
 STR_DESC_AIR_AERO_L39	:Country of origin: {ORANGE}CSK {}{BLACK}Historic facts: {ORANGE}The second generation of light training aircraft. The L-39 became a unified training aircraft of the Warsaw Pact armies, with the exception of Poland. {}{BLACK}Number built: {ORANGE}2,900
 
 STR_NAME_AIR_AERO_L39NG :Aero L-39NG
@@ -301,7 +304,7 @@ STR_LIV_AIR_AF          : Air Force
 STR_LIV_AIR_AF_STRIPES  : Air Force with stripes
 STR_LIV_AIR_2CC         : 2CC
 STR_LIV_AIR_2CC_REV     : 2CC Reversed
-STR_LIV_AIR_BASE        : Basic camouflage
+STR_LIV_AIR_BASE        : Default
 # real base liveries
 STR_LIV_AIR_USN_VF24    : U.S. Navy VF-24
 

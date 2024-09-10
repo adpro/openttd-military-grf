@@ -28,6 +28,8 @@ sort (FEAT_AIRCRAFT,
     ,item_air_f4
     ,item_air_aero_l29
     ,item_air_aero_l39
+    ,item_air_aero_l39za
+    ,item_air_aero_l39ms
     ,item_air_f16
     ,item_air_mig29
     ,item_air_mirage2k
