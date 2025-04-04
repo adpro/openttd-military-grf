@@ -3,8 +3,12 @@ intermediate/
 **/.nmlcache
 **/*.nml
 
-# pyenv
+# python
+*.whl
+
+# pyenv, asdf
 .python-version
+.tool-version
 
 # other
 .*.md
