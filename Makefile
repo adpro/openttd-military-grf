@@ -29,7 +29,8 @@ VERSION=$$(cat $(VERSION_FILE) | awk '/VERSION/ {print $2}' | sed -e 's/://' -e 
 
 LIST_HEL := air_sa321 air_sa330 air_sa532 air_ec725 air_aw101 air_ch53 air_ch53k air_ch148 air_uh60 air_ch37 air_aw139 air_mi6 air_mi17 air_mi26 air_mi38 air_uh1
 LIST_ROTORS := air_sa321 air_sa330 air_ec725 air_aw101 air_ch53 air_uh60 air_ch37 air_aw139 air_mi6 air_mi17 air_mi26 air_mi38 air_uh1
-LIST_AIR := air_a6m air_aero_l39_v2 air_aero_l39ng_v2
+LIST_AIR_F16 := air_f16a air_f16c air_f16c30 air_f16c50 air_f16c70 air_f16d air_f16e60 air_f16f60
+LIST_AIR := air_a6m air_aero_l39_v2 air_aero_l39ng_v2 air_f16
 
 ifdef NMLFILE
 	CC             ?= "which cc 2>/dev/null"
@@ -63,7 +64,7 @@ build: ${OUTDIR} $(BUILD_NUMBER_FILE) ## builds nml files into grf file
 	@$(SED) "1s/+[0-9]*/+$($@_BUILD_VERSION)/" $(VERSION_FILE)
 	@echo "[NML] Compiling NewGRF..."
 	@cd $(SRCDIR) \
-	&& nmlc --grf ../${OUTDIR}/$(NAME).grf $(NMLFILE)
+	&& poetry run nmlc --grf ../${OUTDIR}/$(NAME).grf $(NMLFILE)
 
 bundle: build ${BUNDLEDIR} ## make tar bundle
 	@echo "[PANDOC] Compiling text files from markdown..."
