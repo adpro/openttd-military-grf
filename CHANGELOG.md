@@ -19,9 +19,14 @@ You can find these types of changes:
 
 ### Changed
 
+- L-39 liveries changed to variant groups
+- upgrade to python 3.13
+- upgrade to nml 0.7.6
+
 ### Removed
 
 - Old GFX sprites for EC 725, SA 321, SA 330, SA 532, UH-1
+- Voxel, gorender json and pnml files restructure into subdirs in repository
 
 
 ## [1.1.0] - 2024-09-08
