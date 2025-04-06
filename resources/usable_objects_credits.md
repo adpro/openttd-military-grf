@@ -1,6 +1,8 @@
 # Usable 3D objects
 
 ## Not Used 3D object credits
+- "F 16 C" (https://skfb.ly/6XHQo) by Usman Zia is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Lockheed Martin F-16e/f "Fighting Falcon"" (https://skfb.ly/po69q) by andertan is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 - "Antonov An 12" (https://skfb.ly/nm4jf1dcb) by helijah is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 - "Antonov AN 22 "Antei"" () by helijah is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
@@ -12,6 +14,9 @@
 - "mirage2000" (https://skfb.ly/5j3hca) by helijah is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 - "Mirage IIIE" (https://skfb.ly/oQP8R) by helijah is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 - "Grumman F7F Tigercat" (https://skfb.ly/BEp6) by helijah is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "MiG 29" (https://skfb.ly/6XBBu) by Usman Zia is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "JASDF F-2A Low Poly model" (https://skfb.ly/ovWqR) by Yi Tsung Lee is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "FREE - Fighter Jet Collection - Low Poly" (f14, f15, f16, f18, f22, f35) (https://skfb.ly/oOMJr) by bohmerang is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 - ["Lockheed AC-130 "Hercules"](https://skfb.ly/ASw7) by helijah is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
 - "C160-Transall" (https://skfb.ly/UnCH) by helijah is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
