@@ -1,101 +1,25 @@
 /* airplane Aero L-39 */
 
 // 2CC
-spriteset(spriteset_air_aero_l39_v2_2cc, "../intermediate/gfx/1x/air_aero_l39_v2_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,1)
-}
-alternative_sprites(spriteset_air_aero_l39_v2_2cc, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_aero_l39_v2_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,2)
-}
-alternative_sprites(spriteset_air_aero_l39_v2_2cc, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_aero_l39_v2_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,4)
-}
-spriteset(spriteset_air_aero_l39_v2_2cc_landing, "../intermediate/gfx/1x/air_aero_l39_v2_2cc_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,1)
-}
-alternative_sprites(spriteset_air_aero_l39_v2_2cc_landing, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_aero_l39_v2_2cc_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,2)
-}
-alternative_sprites(spriteset_air_aero_l39_v2_2cc_landing, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_aero_l39_v2_2cc_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,4)
-}
+make_spriteset_zoomx4(spriteset_air_aero_l39_v2_2cc, "air_aero_l39_v2_2cc", 0,0,16,18,25,20,21,16)
+make_spriteset_zoomx4(spriteset_air_aero_l39_v2_2cc_landing, "air_aero_l39_v2_2cc_landing", 0,0,16,18,25,20,21,16)
+make_aircraft_landing_switch(air_aero_l39_2cc_status, spriteset_air_aero_l39_v2_2cc, spriteset_air_aero_l39_v2_2cc_landing)
+
 // AF - L39 ZA
-spriteset(spriteset_air_aero_l39_v2_airforce_za, "../intermediate/gfx/1x/air_aero_l39_v2_airforce_za_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,1)
-}
-alternative_sprites(spriteset_air_aero_l39_v2_airforce_za, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_aero_l39_v2_airforce_za_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,2)
-}
-alternative_sprites(spriteset_air_aero_l39_v2_airforce_za, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_aero_l39_v2_airforce_za_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,4)
-}
-spriteset(spriteset_air_aero_l39_v2_airforce_za_landing, "../intermediate/gfx/1x/air_aero_l39_v2_airforce_za_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,1)
-}
-alternative_sprites(spriteset_air_aero_l39_v2_airforce_za_landing, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_aero_l39_v2_airforce_za_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,2)
-}
-alternative_sprites(spriteset_air_aero_l39_v2_airforce_za_landing, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_aero_l39_v2_airforce_za_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,4)
-}
+make_spriteset_zoomx4(spriteset_air_aero_l39_v2_airforce_za, "air_aero_l39_v2_airforce_za", 0,0,16,18,25,20,21,16)
+make_spriteset_zoomx4(spriteset_air_aero_l39_v2_airforce_za_landing, "air_aero_l39_v2_airforce_za_landing", 0,0,16,18,25,20,21,16)
+make_aircraft_landing_switch(air_aero_l39_airforce_za_status, spriteset_air_aero_l39_v2_airforce_za, spriteset_air_aero_l39_v2_airforce_za_landing)
+
 // AF STRIPES - L39 C - used as MS 
-spriteset(spriteset_air_aero_l39_v2_airforce, "../intermediate/gfx/1x/air_aero_l39_v2_airforce_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,1)
-}
-alternative_sprites(spriteset_air_aero_l39_v2_airforce, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_aero_l39_v2_airforce_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,2)
-}
-alternative_sprites(spriteset_air_aero_l39_v2_airforce, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_aero_l39_v2_airforce_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,4)
-}
-spriteset(spriteset_air_aero_l39_v2_airforce_landing, "../intermediate/gfx/1x/air_aero_l39_v2_airforce_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,1)
-}
-alternative_sprites(spriteset_air_aero_l39_v2_airforce_landing, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_aero_l39_v2_airforce_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,2)
-}
-alternative_sprites(spriteset_air_aero_l39_v2_airforce_landing, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_aero_l39_v2_airforce_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,4)
-}
+make_spriteset_zoomx4(spriteset_air_aero_l39_v2_airforce, "air_aero_l39_v2_airforce", 0,0,16,18,25,20,21,16)
+make_spriteset_zoomx4(spriteset_air_aero_l39_v2_airforce_landing, "air_aero_l39_v2_airforce_landing", 0,0,16,18,25,20,21,16)
+make_aircraft_landing_switch(air_aero_l39_airforce_status, spriteset_air_aero_l39_v2_airforce, spriteset_air_aero_l39_v2_airforce_landing)
+
 // BASE - L39 C initial
-spriteset(spriteset_air_aero_l39_v2_c, "../intermediate/gfx/1x/air_aero_l39_v2_c_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,1)
-}
-alternative_sprites(spriteset_air_aero_l39_v2_c, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_aero_l39_v2_c_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,2)
-}
-alternative_sprites(spriteset_air_aero_l39_v2_c, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_aero_l39_v2_c_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,4)
-}
-spriteset(spriteset_air_aero_l39_v2_c_landing, "../intermediate/gfx/1x/air_aero_l39_v2_c_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,1)
-}
-alternative_sprites(spriteset_air_aero_l39_v2_c_landing, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_aero_l39_v2_c_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,2)
-}
-alternative_sprites(spriteset_air_aero_l39_v2_c_landing, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_aero_l39_v2_c_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,4)
-}
+make_spriteset_zoomx4(spriteset_air_aero_l39_v2_c, "air_aero_l39_v2_c", 0,0,16,18,25,20,21,16)
+make_spriteset_zoomx4(spriteset_air_aero_l39_v2_c_landing, "air_aero_l39_v2_c_landing", 0,0,16,18,25,20,21,16)
+make_aircraft_landing_switch(air_aero_l39_c_status, spriteset_air_aero_l39_v2_c, spriteset_air_aero_l39_v2_c_landing)
 
-switch (FEAT_AIRCRAFT, SELF, air_aero_l39_2cc_status, (var[0xE2, 0, 0xFF])) {
-    16..20: spriteset_air_aero_l39_v2_2cc; // flight
-        spriteset_air_aero_l39_v2_2cc_landing; // default
-}
-
-switch (FEAT_AIRCRAFT, SELF, air_aero_l39_airforce_za_status, (var[0xE2, 0, 0xFF])) {
-    16..20: spriteset_air_aero_l39_v2_airforce_za; // flight
-        spriteset_air_aero_l39_v2_airforce_za_landing; // default
-}
-
-switch (FEAT_AIRCRAFT, SELF, air_aero_l39_airforce_status, (var[0xE2, 0, 0xFF])) {
-    16..20: spriteset_air_aero_l39_v2_airforce; // flight
-        spriteset_air_aero_l39_v2_airforce_landing; // default
-}
-
-switch (FEAT_AIRCRAFT, SELF, air_aero_l39_c_status, (var[0xE2, 0, 0xFF])) {
-    16..20: spriteset_air_aero_l39_v2_c; // flight
-        spriteset_air_aero_l39_v2_c_landing; // default
-}
 
 switch (FEAT_AIRCRAFT, SELF, spriteset_air_aero_l39_switch, cargo_subtype)
 {
@@ -161,24 +85,7 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_cs)){
             running_cost_factor:            return 121;
         }
     }
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_aero_l39)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_aero_l39)
-        {
-            property	
-            {
-                range: 350; 
-            }
-        }
-    }
+    set_aircraft_range_basedon_param(item_air_aero_l39, 0, 350)
 
 // *** ZA variant
     item (FEAT_AIRCRAFT, item_air_aero_l39za) {
@@ -221,24 +128,7 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_cs)){
             running_cost_factor:            return 122;
         }
     }
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_aero_l39za)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_aero_l39za)
-        {
-            property	
-            {
-                range: 350; 
-            }
-        }
-    }
+    set_aircraft_range_basedon_param(item_air_aero_l39za, 0, 350)
 
 // *** MS variant
     item (FEAT_AIRCRAFT, item_air_aero_l39ms) {
@@ -281,24 +171,8 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_cs)){
             running_cost_factor:            return 124;
         }
     }
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_aero_l39ms)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_aero_l39ms)
-        {
-            property	
-            {
-                range: 350; 
-            }
-        }
-    }
+    set_aircraft_range_basedon_param(item_air_aero_l39ms, 0, 350)
+
 }
 
 
@@ -308,53 +182,15 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_cs)){
 // *****
 
 // 2CC
-spriteset(spriteset_air_aero_l39ng_v2_2cc, "../intermediate/gfx/1x/air_aero_l39ng_v2_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,1)
-}
-alternative_sprites(spriteset_air_aero_l39ng_v2_2cc, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_aero_l39ng_v2_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,2)
-}
-alternative_sprites(spriteset_air_aero_l39ng_v2_2cc, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_aero_l39ng_v2_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,4)
-}
-spriteset(spriteset_air_aero_l39ng_v2_2cc_landing, "../intermediate/gfx/1x/air_aero_l39ng_v2_2cc_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,1)
-}
-alternative_sprites(spriteset_air_aero_l39ng_v2_2cc_landing, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_aero_l39ng_v2_2cc_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,2)
-}
-alternative_sprites(spriteset_air_aero_l39ng_v2_2cc_landing, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_aero_l39ng_v2_2cc_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,4)
-}
+make_spriteset_zoomx4(spriteset_air_aero_l39ng_v2_2cc, "air_aero_l39ng_v2_2cc", 0,0,16,18,25,20,21,16)
+make_spriteset_zoomx4(spriteset_air_aero_l39ng_v2_2cc_landing, "air_aero_l39ng_v2_2cc_landing", 0,0,16,18,25,20,21,16)
+make_aircraft_landing_switch(air_aero_l39ng_2cc_status, spriteset_air_aero_l39ng_v2_2cc, spriteset_air_aero_l39ng_v2_2cc_landing)
+
 // BASE
-spriteset(spriteset_air_aero_l39ng_v2_base, "../intermediate/gfx/1x/air_aero_l39ng_v2_base_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,1)
-}
-alternative_sprites(spriteset_air_aero_l39ng_v2_base, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_aero_l39ng_v2_base_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,2)
-}
-alternative_sprites(spriteset_air_aero_l39ng_v2_base, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_aero_l39ng_v2_base_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,4)
-}
-spriteset(spriteset_air_aero_l39ng_v2_base_landing, "../intermediate/gfx/1x/air_aero_l39ng_v2_base_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,1)
-}
-alternative_sprites(spriteset_air_aero_l39ng_v2_base_landing, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_aero_l39ng_v2_base_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,2)
-}
-alternative_sprites(spriteset_air_aero_l39ng_v2_base_landing, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_aero_l39ng_v2_base_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,16,18,25,20,21,16,4)
-}
+make_spriteset_zoomx4(spriteset_air_aero_l39ng_v2_base, "air_aero_l39ng_v2_base", 0,0,16,18,25,20,21,16)
+make_spriteset_zoomx4(spriteset_air_aero_l39ng_v2_base_landing, "air_aero_l39ng_v2_base_landing", 0,0,16,18,25,20,21,16)
+make_aircraft_landing_switch(air_aero_l39ng_base_status, spriteset_air_aero_l39ng_v2_base, spriteset_air_aero_l39ng_v2_base_landing)
 
-switch (FEAT_AIRCRAFT, SELF, air_aero_l39ng_2cc_status, (var[0xE2, 0, 0xFF])) {
-    16..20: spriteset_air_aero_l39ng_v2_2cc; // flight
-        spriteset_air_aero_l39ng_v2_2cc_landing; // default
-}
-
-switch (FEAT_AIRCRAFT, SELF, air_aero_l39ng_base_status, (var[0xE2, 0, 0xFF])) {
-    16..20: spriteset_air_aero_l39ng_v2_base; // flight
-        spriteset_air_aero_l39ng_v2_base_landing; // default
-}
 
 switch (FEAT_AIRCRAFT, SELF, spriteset_air_aero_l39ng_switch, cargo_subtype)
 {
@@ -409,22 +245,5 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_cs)){
             running_cost_factor:            return 160;
         }
     }
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_aero_l39ng)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_aero_l39ng)
-        {
-            property	
-            {
-                range: 500; 
-            }
-        }
-    }
+    set_aircraft_range_basedon_param(item_air_aero_l39ng, 0, 500)
 }

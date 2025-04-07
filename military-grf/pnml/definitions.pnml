@@ -10,3 +10,34 @@
 if (param_standard_planes_disable)	{ disable_item(FEAT_AIRCRAFT, 0, 39);	}
 
 // max. purchase sprite 64x18 airplane, 27x18 flag, 27x18 aircraft type + 9x18 separator = 64+9+27+9+27 = 136x18
+
+/**
+ * Macro for offset generation for template_aircraft_voxel_zoom template.
+ */
+#define make_spriteset_zoomx4(name, base_path, \
+                              x1, y1, a1, b1, c1, d1, e1, f1) \
+spriteset(name, ("../intermediate/gfx/1x/" + base_path + "_8bpp.png")) { \
+    template_aircraft_voxel_zoom(x1, y1, a1, b1, c1, d1, e1, f1, 1) \
+} \
+alternative_sprites(name, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, ("../intermediate/gfx/2x/" + base_path + "_8bpp.png")) { \
+    template_aircraft_voxel_zoom(x1, y1, a1, b1, c1, d1, e1, f1, 2) \
+} \
+alternative_sprites(name, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, ("../intermediate/gfx/4x/" + base_path + "_8bpp.png")) { \
+    template_aircraft_voxel_zoom(x1, y1, a1, b1, c1, d1, e1, f1, 4) \
+}
+
+
+#define make_aircraft_landing_switch(switch_name, flight_spriteset, landing_spriteset) \
+switch (FEAT_AIRCRAFT, SELF, switch_name, (var[0xE2, 0, 0xFF])) { \
+    16..20: flight_spriteset; \
+    landing_spriteset; /* default */ \
+}
+
+
+#define set_aircraft_range_basedon_param(item_id, range_0, range_1) \
+if (Aircraft_Ranges == 0) { \
+    item (FEAT_AIRCRAFT, item_id) { property { range: range_0; } } \
+} \
+if (Aircraft_Ranges == 1) { \
+    item (FEAT_AIRCRAFT, item_id) { property { range: range_1; } } \
+}
