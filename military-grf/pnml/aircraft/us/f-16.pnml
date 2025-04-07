@@ -1,18 +1,7 @@
 /* airplane F-16 */
 
 spriteset(spriteset_air_f16, "gfx/air_f16.png") {
-    // 25 x 17 x 8
-    //left_x, upper_y, width, height, offset_x, offset_y
-    //xoff = round.down(-xsize/2); yoff = round.down(-ysize/2)+1
     template_aircraft(0,0,11,20,21,18,25,12)
-    // [   0,     0,       11,    20,     -5,        -9]
-    // [  12,     0,       21,    18,    -10,        -8]
-    // [  34,     0,       25,    12,    -12,        -5]
-    // [  60,     0,       21,    18,    -10,        -8]
-    // [  82,     0,       11,    20,     -5,        -9]
-    // [  94,     0,       21,    18,    -10,        -8]
-    // [ 116,     0,       24,    12,    -12,        -5]
-    // [ 142,     0,       21,    18,    -10,        -8]
 }
 
 if (is_aircraft_fighter_enabled(param_aircraft_enable_us)){
