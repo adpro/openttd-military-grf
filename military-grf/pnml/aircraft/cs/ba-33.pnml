@@ -65,30 +65,13 @@ if (IS_AIRCRAFT_FIGHTER_ENABLED(param_aircraft_enable_cs)){
             /* Visual effect is left at default (no effect) */
         }
         graphics {
-                additional_text:    return string(STR_DESC_AIR_AVIA_BA33); //Additional text shown in purchase list
-                cargo_subtype_text: air_avia_ba33_cargo_subtype_text;
-                default:            spriteset_air_avia_ba33_switch;
-                cost_factor:                    return 1;
-                running_cost_factor:            return 40;
+            additional_text:    return string(STR_DESC_AIR_AVIA_BA33); //Additional text shown in purchase list
+            cargo_subtype_text: air_avia_ba33_cargo_subtype_text;
+            default:            spriteset_air_avia_ba33_switch;
+            cost_factor:                    return 1;
+            running_cost_factor:            return 40;
         }
     }
 
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_avia_ba33)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_avia_ba33)
-        {
-            property	
-            {
-                range: 90; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_avia_ba33, 0, 90)
 }

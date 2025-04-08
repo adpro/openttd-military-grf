@@ -37,8 +37,8 @@ if (IS_AIRCRAFT_AIRLIFTER_ENABLED(param_aircraft_enable_rus)){
             mail_capacity:                  0; // 80 t
             sound_effect:                   SOUND_TAKEOFF_PROPELLER;
             /* Visual effect is left at default (no effect) */
-    }
-    graphics {
+        }
+        graphics {
             additional_text:    return string(STR_DESC_AIR_AN22); //Additional text shown in purchase list
             default:            spriteset_air_an22;
 
@@ -46,25 +46,8 @@ if (IS_AIRCRAFT_AIRLIFTER_ENABLED(param_aircraft_enable_rus)){
             mail_capacity:      return 800;    // callback for setting capacity
             cost_factor:                    return 894;
             running_cost_factor:            return 6594;
-    }
+        }
     }
 
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_an22)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_an22)
-        {
-            property	
-            {
-                range: 1000; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_an22, 0, 1000)
 }

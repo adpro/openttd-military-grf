@@ -74,33 +74,15 @@ if (IS_AIRCRAFT_AIRLIFTER_ENABLED(param_aircraft_enable_cs)){
             /* Visual effect is left at default (no effect) */
         }
         graphics {
-                additional_text:    return string(STR_DESC_AIR_LET_L410); //Additional text shown in purchase list
-                cargo_subtype_text: air_let_l410_cargo_subtype_text;
-                default:            spriteset_air_let_l410_switch;
-                cost_factor:                    return 17;
-                running_cost_factor:            return 185;
+            additional_text:    return string(STR_DESC_AIR_LET_L410); //Additional text shown in purchase list
+            cargo_subtype_text: air_let_l410_cargo_subtype_text;
+            default:            spriteset_air_let_l410_switch;
+            cost_factor:                    return 17;
+            running_cost_factor:            return 185;
         }
     }
 
-
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_let_l410)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_let_l410)
-        {
-            property	
-            {
-                range: 300; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_let_l410, 0, 300)
 }
 
 // *******
@@ -139,31 +121,13 @@ if (IS_AIRCRAFT_AIRLIFTER_ENABLED(param_aircraft_enable_cs)){
             /* Visual effect is left at default (no effect) */
         }
         graphics {
-                additional_text:    return string(STR_DESC_AIR_LET_L410NG); //Additional text shown in purchase list
-                cargo_subtype_text: air_let_l410_cargo_subtype_text;
-                default:            spriteset_air_let_l410_switch;
-                cost_factor:                    return 13;
-                running_cost_factor:            return 191;
+            additional_text:    return string(STR_DESC_AIR_LET_L410NG); //Additional text shown in purchase list
+            cargo_subtype_text: air_let_l410_cargo_subtype_text;
+            default:            spriteset_air_let_l410_switch;
+            cost_factor:                    return 13;
+            running_cost_factor:            return 191;
         }
     }
 
-
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_let_l410ng)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_let_l410ng)
-        {
-            property	
-            {
-                range: 514; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_let_l410ng, 0, 514)
 }

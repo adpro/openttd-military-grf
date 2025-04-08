@@ -36,31 +36,14 @@ if (IS_AIRCRAFT_FIGHTER_ENABLED(param_aircraft_enable_rus)){
             mail_capacity:                  4;
             sound_effect:                   SOUND_TAKEOFF_JET_FAST;
             /* Visual effect is left at default (no effect) */
-    }
-    graphics {
+        }
+        graphics {
             additional_text:    return string(STR_DESC_AIR_SU57); //Additional text shown in purchase list
             default:            spriteset_air_su57;
             cost_factor:                    return 89;
             running_cost_factor:            return 974;
-    }
+        }
     }
 
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_su57)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_su57)
-        {
-            property	
-            {
-                range: 700; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_su57, 0, 700)
 }

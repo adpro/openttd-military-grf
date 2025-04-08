@@ -45,33 +45,16 @@ if (IS_AIRCRAFT_AIRLIFTER_ENABLED(param_aircraft_enable_eu)){
             mail_capacity:                  0;
             sound_effect:                   SOUND_TAKEOFF_PROPELLER;
             /* Visual effect is left at default (no effect) */
-    }
-    graphics {
+        }
+        graphics {
             additional_text:    return string(STR_DESC_AIR_A400); //Additional text shown in purchase list
             default:            spriteset_air_a400;
 
             mail_capacity:      return 385;    // callback for setting capacity
             cost_factor:                    return 126;
             running_cost_factor:            return 3490;
-    }
+        }
     }
 
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_a400)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_a400)
-        {
-            property	
-            {
-                range: 660; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_a400, 0, 660)
 }

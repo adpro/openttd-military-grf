@@ -49,24 +49,8 @@ if (IS_AIRCRAFT_AIRLIFTER_ENABLED(param_aircraft_enable_rus)){
         }
     }
 
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_an26)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_an26)
-        {
-            property	
-            {
-                range: 500; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_an26, 0, 500)
+
 // passenger version
     item (FEAT_AIRCRAFT, item_air_an26a) {
         property {
@@ -108,22 +92,5 @@ if (IS_AIRCRAFT_AIRLIFTER_ENABLED(param_aircraft_enable_rus)){
         }
     }
 
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_an26a)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_an26a)
-        {
-            property	
-            {
-                range: 500; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_an26a, 0, 500)
 }

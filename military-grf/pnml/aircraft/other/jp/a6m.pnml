@@ -86,23 +86,5 @@ if (IS_AIRCRAFT_FIGHTER_ENABLED(param_aircraft_enable_other)){
         }
     }
 
-
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_a6m)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_a6m)
-        {
-            property	
-            {
-                range: 620; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_a6m, 0, 620)
 }

@@ -47,32 +47,15 @@ if (IS_AIRCRAFT_FIGHTER_ENABLED(param_aircraft_enable_cs)){
             mail_capacity:                  4;
             sound_effect:                   SOUND_TAKEOFF_JET_FAST;
             /* Visual effect is left at default (no effect) */
-    }
-    graphics {
+        }
+        graphics {
             additional_text:    return string(STR_DESC_AIR_S105); //Additional text shown in purchase list
             default:            spriteset_air_avia_s105_switch;
             cargo_subtype_text: air_avia_s105_cargo_subtype_text;
             cost_factor:                    return 10;
             running_cost_factor:            return 224;
-    }
+        }
     }
 
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_s105)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_s105)
-        {
-            property	
-            {
-                range: 440; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_s105, 0, 440)
 }
