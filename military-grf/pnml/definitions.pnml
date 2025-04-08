@@ -14,8 +14,7 @@ if (param_standard_planes_disable)	{ disable_item(FEAT_AIRCRAFT, 0, 39);	}
 /**
  * Macro for offset generation for template_aircraft_voxel_zoom template.
  */
-#define MAKE_SPRITESET_ZOOMX4(name, base_path, \
-                              x1, y1, a1, b1, c1, d1, e1, f1) \
+#define MAKE_SPRITESET_ZOOMX4(name, base_path, x1, y1, a1, b1, c1, d1, e1, f1) \
 spriteset(name, ("../intermediate/gfx/1x/" + base_path + "_8bpp.png")) { \
     template_aircraft_voxel_zoom(x1, y1, a1, b1, c1, d1, e1, f1, 1) \
 } \
@@ -24,6 +23,17 @@ alternative_sprites(name, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, ("../intermediate/gf
 } \
 alternative_sprites(name, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, ("../intermediate/gfx/4x/" + base_path + "_8bpp.png")) { \
     template_aircraft_voxel_zoom(x1, y1, a1, b1, c1, d1, e1, f1, 4) \
+}
+
+#define MAKE_SPRITESET_ROTOR_ZOOMX4(name, base_path, x1, y1, a1, b1) \
+spriteset(name, ("../intermediate/gfx/1x/" + base_path + "_rotor_8bpp.png")) { \
+    template_rotor_voxel_zoom(x1, y1, a1, b1, 1) \
+} \
+alternative_sprites(name, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, ("../intermediate/gfx/2x/" + base_path + "_rotor_8bpp.png")) { \
+    template_rotor_voxel_zoom(x1, y1, a1, b1, 2) \
+} \
+alternative_sprites(name, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, ("../intermediate/gfx/4x/" + base_path + "_rotor_8bpp.png")) { \
+    template_rotor_voxel_zoom(x1, y1, a1, b1, 4) \
 }
 
 
