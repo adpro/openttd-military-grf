@@ -14,7 +14,7 @@ spriteset(spriteset_air_f86, "gfx/air_f86.png") {
     // [ 126,     0,       19,    17,     -9,        -7]
 }
 
-if (is_aircraft_fighter_enabled(param_aircraft_enable_us)){
+if (IS_AIRCRAFT_FIGHTER_ENABLED(param_aircraft_enable_us)){
     item (FEAT_AIRCRAFT, item_air_f86) {
         property {
             name:                           string(STR_NAME_AIR_F86);

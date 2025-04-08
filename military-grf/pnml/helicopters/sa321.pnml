@@ -79,7 +79,7 @@ switch (FEAT_AIRCRAFT, SELF, air_sa321_cargo_subtype_text, cargo_subtype)
      return CB_RESULT_NO_TEXT;
 }
 
-if (is_aircraft_helicopter_enabled(param_aircraft_enable_eu)){
+if (IS_AIRCRAFT_HELICOPTER_ENABLED(param_aircraft_enable_eu)){
     item (FEAT_AIRCRAFT, item_air_sa321) {
         property {
             name:                           string(STR_NAME_AIR_SA321);

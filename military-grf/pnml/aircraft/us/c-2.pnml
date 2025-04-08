@@ -15,7 +15,7 @@ spriteset(spriteset_air_c2, "gfx/air_c2.png") {
     // [ 224,     0,       35,    26,    -17,       -12]
 }
 
-if (is_aircraft_airlifter_enabled(param_aircraft_enable_us)){
+if (IS_AIRCRAFT_AIRLIFTER_ENABLED(param_aircraft_enable_us)){
     item (FEAT_AIRCRAFT, item_air_c2) {
         property {
             name:                           string(STR_NAME_AIR_C2);

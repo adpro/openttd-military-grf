@@ -48,7 +48,7 @@ switch (FEAT_AIRCRAFT, SELF, air_mi6_cargo_subtype_text, cargo_subtype)
 }
 
 
-if (is_aircraft_helicopter_enabled(param_aircraft_enable_rus)){
+if (IS_AIRCRAFT_HELICOPTER_ENABLED(param_aircraft_enable_rus)){
     item (FEAT_AIRCRAFT, item_air_mi6) {
         property {
             name:                           string(STR_NAME_AIR_MI6);

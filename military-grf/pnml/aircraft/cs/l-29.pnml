@@ -42,7 +42,7 @@ switch (FEAT_AIRCRAFT, SELF, air_aero_l29_cargo_subtype_text, cargo_subtype)
      return CB_RESULT_NO_TEXT;
 }
 
-if (is_aircraft_fighter_enabled(param_aircraft_enable_cs)){
+if (IS_AIRCRAFT_FIGHTER_ENABLED(param_aircraft_enable_cs)){
     item (FEAT_AIRCRAFT, item_air_aero_l29) {
         property {
             name:                           string(STR_NAME_AIR_AERO_L29);

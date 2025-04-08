@@ -16,7 +16,7 @@ spriteset(spriteset_air_su30, "gfx/air_su30.png") {
 }
 
 
-if (is_aircraft_fighter_enabled(param_aircraft_enable_rus)){
+if (IS_AIRCRAFT_FIGHTER_ENABLED(param_aircraft_enable_rus)){
     item (FEAT_AIRCRAFT, item_air_su30) {
         property {
             name:                           string(STR_NAME_AIR_SU30);

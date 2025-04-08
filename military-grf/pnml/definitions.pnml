@@ -1,10 +1,10 @@
-#define is_afb_enabled(parameter) (parameter == 1) || (parameter == 2) ? 1 : 0
-#define is_carrier_enabled(parameter) (parameter == 1) || (parameter == 3) ? 1 : 0
-#define is_heliport_enabled(parameter) (parameter == 1) || (parameter == 4) ? 1 : 0
+#define IS_AFB_ENABLED(parameter) (parameter == 1) || (parameter == 2) ? 1 : 0
+#define IS_CARRIER_ENABLED(parameter) (parameter == 1) || (parameter == 3) ? 1 : 0
+#define IS_HELIPORT_ENABLED(parameter) (parameter == 1) || (parameter == 4) ? 1 : 0
 
-#define is_aircraft_fighter_enabled(parameter) (parameter == 1) || (parameter == 2) ? 1 : 0
-#define is_aircraft_airlifter_enabled(parameter) (parameter == 1) || (parameter == 3) || (parameter == 5) ? 1 : 0
-#define is_aircraft_helicopter_enabled(parameter) (parameter == 1) || (parameter == 4) || (parameter == 5) ? 1 : 0
+#define IS_AIRCRAFT_FIGHTER_ENABLED(parameter) (parameter == 1) || (parameter == 2) ? 1 : 0
+#define IS_AIRCRAFT_AIRLIFTER_ENABLED(parameter) (parameter == 1) || (parameter == 3) || (parameter == 5) ? 1 : 0
+#define IS_AIRCRAFT_HELICOPTER_ENABLED(parameter) (parameter == 1) || (parameter == 4) || (parameter == 5) ? 1 : 0
 
 
 if (param_standard_planes_disable)	{ disable_item(FEAT_AIRCRAFT, 0, 39);	}
@@ -14,7 +14,7 @@ if (param_standard_planes_disable)	{ disable_item(FEAT_AIRCRAFT, 0, 39);	}
 /**
  * Macro for offset generation for template_aircraft_voxel_zoom template.
  */
-#define make_spriteset_zoomx4(name, base_path, \
+#define MAKE_SPRITESET_ZOOMX4(name, base_path, \
                               x1, y1, a1, b1, c1, d1, e1, f1) \
 spriteset(name, ("../intermediate/gfx/1x/" + base_path + "_8bpp.png")) { \
     template_aircraft_voxel_zoom(x1, y1, a1, b1, c1, d1, e1, f1, 1) \
@@ -27,14 +27,14 @@ alternative_sprites(name, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, ("../intermediate/gf
 }
 
 
-#define make_aircraft_landing_switch(switch_name, flight_spriteset, landing_spriteset) \
+#define MAKE_AIRCRAFT_LANDING_SWITCH(switch_name, flight_spriteset, landing_spriteset) \
 switch (FEAT_AIRCRAFT, SELF, switch_name, (var[0xE2, 0, 0xFF])) { \
     16..20: flight_spriteset; \
     landing_spriteset; /* default */ \
 }
 
 
-#define set_aircraft_range_basedon_param(item_id, range_0, range_1) \
+#define SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_id, range_0, range_1) \
 if (Aircraft_Ranges == 0) { \
     item (FEAT_AIRCRAFT, item_id) { property { range: range_0; } } \
 } \

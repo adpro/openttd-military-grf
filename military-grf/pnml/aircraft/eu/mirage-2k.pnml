@@ -14,7 +14,7 @@ spriteset(spriteset_air_mirage2k_loading, "gfx/air_mirage2000_loading.png") {
 }
 
 
-if (is_aircraft_fighter_enabled(param_aircraft_enable_eu)){
+if (IS_AIRCRAFT_FIGHTER_ENABLED(param_aircraft_enable_eu)){
     item (FEAT_AIRCRAFT, item_air_mirage2k) {
         property {
             name:                           string(STR_NAME_AIR_MIRAGE2K);

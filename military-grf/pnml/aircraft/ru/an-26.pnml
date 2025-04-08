@@ -7,7 +7,7 @@ spriteset(spriteset_air_an26, "gfx/air_an26.png") {
     template_aircraft(0,0,32,33,43,35,39,26)
 }
 
-if (is_aircraft_airlifter_enabled(param_aircraft_enable_rus)){
+if (IS_AIRCRAFT_AIRLIFTER_ENABLED(param_aircraft_enable_rus)){
     item (FEAT_AIRCRAFT, item_air_an26) {
         property {
             name:                           string(STR_NAME_AIR_AN26);

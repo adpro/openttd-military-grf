@@ -22,7 +22,7 @@ spriteset(spriteset_air_mig19_2cc_rev, "gfx/air_mig19.png") {
 }
 
 
-if (is_aircraft_fighter_enabled(param_aircraft_enable_rus)){
+if (IS_AIRCRAFT_FIGHTER_ENABLED(param_aircraft_enable_rus)){
     item (FEAT_AIRCRAFT, item_air_mig19) {
         property {
             name:                           string(STR_NAME_AIR_MIG19);

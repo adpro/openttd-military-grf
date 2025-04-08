@@ -15,7 +15,7 @@ spriteset(spriteset_air_a400, "gfx/air_a400m.png") {
     // [ 285,     0,       44,    36,    -22,       -17]
 }
 
-if (is_aircraft_airlifter_enabled(param_aircraft_enable_eu)){
+if (IS_AIRCRAFT_AIRLIFTER_ENABLED(param_aircraft_enable_eu)){
     item (FEAT_AIRCRAFT, item_air_a400) {
         property {
             name:                           string(STR_NAME_AIR_A400);

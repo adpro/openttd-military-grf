@@ -42,7 +42,7 @@ switch (FEAT_AIRCRAFT, SELF, air_let_l410_cargo_subtype_text, cargo_subtype)
      return CB_RESULT_NO_TEXT;
 }
 
-if (is_aircraft_airlifter_enabled(param_aircraft_enable_cs)){
+if (IS_AIRCRAFT_AIRLIFTER_ENABLED(param_aircraft_enable_cs)){
     item (FEAT_AIRCRAFT, item_air_let_l410) {
         property {
             name:                           string(STR_NAME_AIR_LET_L410);
@@ -107,7 +107,7 @@ if (is_aircraft_airlifter_enabled(param_aircraft_enable_cs)){
 // L-410NG
 // *******
 
-if (is_aircraft_airlifter_enabled(param_aircraft_enable_cs)){
+if (IS_AIRCRAFT_AIRLIFTER_ENABLED(param_aircraft_enable_cs)){
     item (FEAT_AIRCRAFT, item_air_let_l410ng) {
         property {
             name:                           string(STR_NAME_AIR_LET_L410NG);

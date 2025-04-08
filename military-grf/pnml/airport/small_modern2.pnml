@@ -164,7 +164,7 @@ spriteset(spriteset_air_small_modern2_preview, "gfx/air_airport_small.png") {
     preview_small_airport(571,342)
 }
 
-if (is_carrier_enabled(param_airport_enable)) {
+if (IS_CARRIER_ENABLED(param_airport_enable)) {
 	item(FEAT_AIRPORTS, small_airport_degaulle) {
 		property {
 			override: 0;

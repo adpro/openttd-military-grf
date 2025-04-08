@@ -15,7 +15,7 @@ spriteset(spriteset_air_hurricane, "gfx/air_hurricane.png") {
     // [ 121,     0,       18,    16,     -9,        -7]
 }
 
-if (is_aircraft_fighter_enabled(param_aircraft_enable_eu)){
+if (IS_AIRCRAFT_FIGHTER_ENABLED(param_aircraft_enable_eu)){
     item (FEAT_AIRCRAFT, item_air_hurricane) {
         property {
             name:                           string(STR_NAME_AIR_HURRICANE);

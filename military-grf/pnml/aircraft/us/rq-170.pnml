@@ -15,7 +15,7 @@ spriteset(spriteset_air_rq170, "gfx/air_rq170.png") {
     // [ 193,     0,       30,    24,    -15,       -12]
 }
 
-if (is_aircraft_fighter_enabled(param_aircraft_enable_us)){
+if (IS_AIRCRAFT_FIGHTER_ENABLED(param_aircraft_enable_us)){
     item (FEAT_AIRCRAFT, item_air_rq170) {
         property {
             name:                           string(STR_NAME_AIR_RQ170);

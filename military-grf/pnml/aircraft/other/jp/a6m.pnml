@@ -46,7 +46,7 @@ switch (FEAT_AIRCRAFT, SELF, air_a6m_cargo_subtype_text, cargo_subtype)
      return CB_RESULT_NO_TEXT;
 }
 
-if (is_aircraft_fighter_enabled(param_aircraft_enable_other)){
+if (IS_AIRCRAFT_FIGHTER_ENABLED(param_aircraft_enable_other)){
     item (FEAT_AIRCRAFT, item_air_a6m) {
         property {
             name:                           string(STR_NAME_AIR_A6M);

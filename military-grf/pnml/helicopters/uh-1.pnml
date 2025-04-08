@@ -49,7 +49,7 @@ switch (FEAT_AIRCRAFT, SELF, air_uh1_cargo_subtype_text, cargo_subtype)
 
 
 
-if (is_aircraft_helicopter_enabled(param_aircraft_enable_us)){
+if (IS_AIRCRAFT_HELICOPTER_ENABLED(param_aircraft_enable_us)){
     item (FEAT_AIRCRAFT, item_air_uh1) {
         property {
             name:                           string(STR_NAME_AIR_UH1);
