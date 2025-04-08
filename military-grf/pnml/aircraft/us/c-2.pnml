@@ -45,8 +45,8 @@ if (IS_AIRCRAFT_AIRLIFTER_ENABLED(param_aircraft_enable_us)){
             mail_capacity:                  0;
             sound_effect:                   SOUND_TAKEOFF_PROPELLER;
             /* Visual effect is left at default (no effect) */
-    }
-    graphics {
+        }
+        graphics {
             additional_text:    return string(STR_DESC_AIR_C2); //Additional text shown in purchase list
             default:            spriteset_air_c2;
 
@@ -54,25 +54,8 @@ if (IS_AIRCRAFT_AIRLIFTER_ENABLED(param_aircraft_enable_us)){
             //mail_capacity:      return 36;    // callback for setting capacity
             cost_factor:                    return 317;
             running_cost_factor:            return 1030;
-    }
+        }
     }
 
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_c2)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_c2)
-        {
-            property	
-            {
-                range: 480; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_c2, 0, 480)
 }
