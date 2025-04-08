@@ -80,31 +80,14 @@ if (IS_AIRCRAFT_HELICOPTER_ENABLED(param_aircraft_enable_rus)){
             /* Visual effect is left at default (no effect) */
         }
         graphics {
-                additional_text:            return string(STR_DESC_AIR_MI38); //Additional text shown in purchase list
-                cargo_subtype_text:         air_mi38_cargo_subtype_text;
-                default:                    spriteset_air_mi38_switch;
-                rotor:                      spriteset_air_mi38_rotor;
-                cost_factor:                return 15;
-                running_cost_factor:        return 410;
+            additional_text:            return string(STR_DESC_AIR_MI38); //Additional text shown in purchase list
+            cargo_subtype_text:         air_mi38_cargo_subtype_text;
+            default:                    spriteset_air_mi38_switch;
+            rotor:                      spriteset_air_mi38_rotor;
+            cost_factor:                return 15;
+            running_cost_factor:        return 410;
         }
     }
 
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_mi38)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_mi38)
-        {
-            property	
-            {
-                range: 176; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_mi38, 0, 176)
 }

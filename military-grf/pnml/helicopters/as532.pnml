@@ -110,24 +110,7 @@ if (IS_AIRCRAFT_HELICOPTER_ENABLED(param_aircraft_enable_eu)){
         }
     }
 
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_as532)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_as532)
-        {
-            property	
-            {
-                range: 115; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_as532, 0, 115)
 }
 /* cargo variant */
 // if (IS_AIRCRAFT_HELICOPTER_ENABLED(param_aircraft_enable_eu)){

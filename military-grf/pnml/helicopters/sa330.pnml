@@ -113,31 +113,14 @@ if (IS_AIRCRAFT_HELICOPTER_ENABLED(param_aircraft_enable_eu)){
             /* Visual effect is left at default (no effect) */
         }
         graphics {
-                additional_text:            return string(STR_DESC_AIR_SA330); //Additional text shown in purchase list
-                cargo_subtype_text:         air_sa330_cargo_subtype_text;
-                default:                    spriteset_air_sa330_switch;
-                rotor:                      spriteset_air_sa330_rotor;
-                cost_factor:                return 8;
-                running_cost_factor:        return 186;
+            additional_text:            return string(STR_DESC_AIR_SA330); //Additional text shown in purchase list
+            cargo_subtype_text:         air_sa330_cargo_subtype_text;
+            default:                    spriteset_air_sa330_switch;
+            rotor:                      spriteset_air_sa330_rotor;
+            cost_factor:                return 8;
+            running_cost_factor:        return 186;
         }
     }
 
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_sa330)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_sa330)
-        {
-            property	
-            {
-                range: 116; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_sa330, 0, 116)
 }

@@ -121,22 +121,5 @@ if (IS_AIRCRAFT_HELICOPTER_ENABLED(param_aircraft_enable_us)){
         }
     }
 
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_ch53e)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_ch53e)
-        {
-            property	
-            {
-                range: 200; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_ch53e, 0, 200)
 }

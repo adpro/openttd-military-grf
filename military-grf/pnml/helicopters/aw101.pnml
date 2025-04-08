@@ -111,31 +111,14 @@ if (IS_AIRCRAFT_HELICOPTER_ENABLED(param_aircraft_enable_eu)){
             /* Visual effect is left at default (no effect) */
         }
         graphics {
-                additional_text:            return string(STR_DESC_AIR_AW101); //Additional text shown in purchase list
-                cargo_subtype_text:         air_aw101_cargo_subtype_text;
-                default:                    spriteset_air_aw101_switch;
-                rotor:                      spriteset_air_aw101_rotor; //spriteset_air_ec725_rotor; //spriteset_air_aw101_rotor;
-                cost_factor:                return 46;
-                running_cost_factor:        return 418;
+            additional_text:            return string(STR_DESC_AIR_AW101); //Additional text shown in purchase list
+            cargo_subtype_text:         air_aw101_cargo_subtype_text;
+            default:                    spriteset_air_aw101_switch;
+            rotor:                      spriteset_air_aw101_rotor; //spriteset_air_ec725_rotor; //spriteset_air_aw101_rotor;
+            cost_factor:                return 46;
+            running_cost_factor:        return 418;
         }
     }
 
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_aw101)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_aw101)
-        {
-            property	
-            {
-                range: 272; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_aw101, 0, 272)
 }
