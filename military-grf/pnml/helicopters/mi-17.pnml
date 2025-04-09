@@ -1,37 +1,13 @@
 /* helicopter Mil Mi-17 */
 
 // 2cc
-spriteset(spriteset_air_mi17_2cc, "../intermediate/gfx/1x/air_mi17_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,9,33,42,31,47,14,1)
-}
-alternative_sprites(spriteset_air_mi17_2cc, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_mi17_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,9,33,42,31,47,14,2)
-}
-alternative_sprites(spriteset_air_mi17_2cc, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_mi17_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,9,33,42,31,47,14,4)
-}
+MAKE_SPRITESET_ZOOMX4(spriteset_air_mi17_2cc, "air_mi17_2cc", 0,0,9,33,42,31,47,14)
 
 // AF
-spriteset(spriteset_air_mi17_af, "../intermediate/gfx/1x/air_mi17_af_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,9,33,42,31,47,14,1)
-}
-alternative_sprites(spriteset_air_mi17_af, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_mi17_af_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,9,33,42,31,47,14,2)
-}
-alternative_sprites(spriteset_air_mi17_af, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_mi17_af_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,9,33,42,31,47,14,4)
-}
+MAKE_SPRITESET_ZOOMX4(spriteset_air_mi17_af, "air_mi17_af", 0,0,9,33,42,31,47,14)
 
 // rotor
-spriteset(spriteset_air_mi17_rotor, "../intermediate/gfx/1x/air_mi17_rotor_8bpp.png") {
-    template_rotor_voxel_zoom(0,0,43,23,1)
-}
-alternative_sprites(spriteset_air_mi17_rotor, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_mi17_rotor_8bpp.png") {
-    template_rotor_voxel_zoom(0,0,43,23,2)
-}
-alternative_sprites(spriteset_air_mi17_rotor, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_mi17_rotor_8bpp.png") {
-    template_rotor_voxel_zoom(0,0,43,23,4)
-}
+MAKE_SPRITESET_ROTOR_ZOOMX4(spriteset_air_mi17_rotor, "air_mi17", 0,0,43,23)
 
 // liveries switch
 switch (FEAT_AIRCRAFT, SELF, spriteset_air_mi17_switch, cargo_subtype)
@@ -48,7 +24,7 @@ switch (FEAT_AIRCRAFT, SELF, air_mi17_cargo_subtype_text, cargo_subtype)
 }
 
 
-if (is_aircraft_helicopter_enabled(param_aircraft_enable_rus)){
+if (IS_AIRCRAFT_HELICOPTER_ENABLED(param_aircraft_enable_rus)){
     item (FEAT_AIRCRAFT, item_air_mi17) {
         property {
             name:                           string(STR_NAME_AIR_MI17);
@@ -80,31 +56,14 @@ if (is_aircraft_helicopter_enabled(param_aircraft_enable_rus)){
             /* Visual effect is left at default (no effect) */
         }
         graphics {
-                additional_text:            return string(STR_DESC_AIR_MI17); //Additional text shown in purchase list
-                cargo_subtype_text:         air_mi17_cargo_subtype_text;
-                default:                    spriteset_air_mi17_switch;
-                rotor:                      spriteset_air_mi17_rotor;
-                cost_factor:                return 18;
-                running_cost_factor:        return 348;
+            additional_text:            return string(STR_DESC_AIR_MI17); //Additional text shown in purchase list
+            cargo_subtype_text:         air_mi17_cargo_subtype_text;
+            default:                    spriteset_air_mi17_switch;
+            rotor:                      spriteset_air_mi17_rotor;
+            cost_factor:                return 18;
+            running_cost_factor:        return 348;
         }
     }
 
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_mi17)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_mi17)
-        {
-            property	
-            {
-                range: 160; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_mi17, 0, 160)
 }

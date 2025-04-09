@@ -1,37 +1,13 @@
 /* helicopter UH-60 */
 
 // 2cc
-spriteset(spriteset_air_uh60_2cc, "../intermediate/gfx/1x/air_uh60_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,8,27,30,23,37,12,1)
-}
-alternative_sprites(spriteset_air_uh60_2cc, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_uh60_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,8,27,30,23,37,12,2)
-}
-alternative_sprites(spriteset_air_uh60_2cc, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_uh60_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,8,27,30,23,37,12,4)
-}
+MAKE_SPRITESET_ZOOMX4(spriteset_air_uh60_2cc, "air_uh60_2cc", 0,0,8,27,30,23,37,12)
 
 // AF
-spriteset(spriteset_air_uh60_af, "../intermediate/gfx/1x/air_uh60_af_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,8,27,30,23,37,12,1)
-}
-alternative_sprites(spriteset_air_uh60_af, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_uh60_af_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,8,27,30,23,37,12,2)
-}
-alternative_sprites(spriteset_air_uh60_af, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_uh60_af_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,8,27,30,23,37,12,4)
-}
+MAKE_SPRITESET_ZOOMX4(spriteset_air_uh60_af, "air_uh60_af", 0,0,8,27,30,23,37,12)
 
 // rotor
-spriteset(spriteset_air_uh60_rotor, "../intermediate/gfx/1x/air_uh60_rotor_8bpp.png") {
-    template_rotor_voxel_zoom(0,0,28,16,1)
-}
-alternative_sprites(spriteset_air_uh60_rotor, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_uh60_rotor_8bpp.png") {
-    template_rotor_voxel_zoom(0,0,28,16,2)
-}
-alternative_sprites(spriteset_air_uh60_rotor, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_uh60_rotor_8bpp.png") {
-    template_rotor_voxel_zoom(0,0,28,16,4)
-}
+MAKE_SPRITESET_ROTOR_ZOOMX4(spriteset_air_uh60_rotor, "air_uh60", 0,0,28,16)
 
 // livery switches
 switch (FEAT_AIRCRAFT, SELF, spriteset_air_uh60_switch, cargo_subtype)
@@ -47,7 +23,7 @@ switch (FEAT_AIRCRAFT, SELF, air_uh60_cargo_subtype_text, cargo_subtype)
      return CB_RESULT_NO_TEXT;
 }
 
-if (is_aircraft_helicopter_enabled(param_aircraft_enable_us)){
+if (IS_AIRCRAFT_HELICOPTER_ENABLED(param_aircraft_enable_us)){
     item (FEAT_AIRCRAFT, item_air_uh60) {
         property {
             name:                           string(STR_NAME_AIR_UH60);
@@ -88,22 +64,5 @@ if (is_aircraft_helicopter_enabled(param_aircraft_enable_us)){
         }
     }
 
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_uh60)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_uh60)
-        {
-            property	
-            {
-                range: 118; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_uh60, 0, 118)
 }

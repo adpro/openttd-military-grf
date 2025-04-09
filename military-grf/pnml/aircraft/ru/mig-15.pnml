@@ -21,7 +21,7 @@ spriteset(spriteset_air_mig15_2cc_rev, "gfx/air_mig15.png") {
     template_aircraft(0,51,12,16,19,16,19,11)
 }
 
-if (is_aircraft_fighter_enabled(param_aircraft_enable_rus)){
+if (IS_AIRCRAFT_FIGHTER_ENABLED(param_aircraft_enable_rus)){
     item (FEAT_AIRCRAFT, item_air_mig15) {
         property {
             name:                           string(STR_NAME_AIR_MIG15);
@@ -51,31 +51,14 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_rus)){
             mail_capacity:                  4;
             sound_effect:                   SOUND_TAKEOFF_JET; 
             /* Visual effect is left at default (no effect) */
-    }
-    graphics {
+        }
+        graphics {
             additional_text:    return string(STR_DESC_AIR_MIG15); //Additional text shown in purchase list
             default:            spriteset_air_mig15;
             cost_factor:                    return 2;
             running_cost_factor:            return 155;
-    }
+        }
     }
 
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_mig15)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_mig15)
-        {
-            property	
-            {
-                range: 504; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_mig15, 0, 504)
 }

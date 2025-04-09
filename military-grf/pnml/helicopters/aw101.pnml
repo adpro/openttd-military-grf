@@ -1,69 +1,17 @@
 /* helicopter AgustaWestland AW101 */
 
 // 2cc
-spriteset(spriteset_air_aw101_2cc, "../intermediate/gfx/1x/air_aw101_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,10,29,35,27,43,15,1)
-}
-alternative_sprites(spriteset_air_aw101_2cc, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_aw101_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,10,29,35,27,43,15,2)
-}
-alternative_sprites(spriteset_air_aw101_2cc, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_aw101_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,10,29,35,27,43,15,4)
-}
-spriteset(spriteset_air_aw101_2cc_landing, "../intermediate/gfx/1x/air_aw101_2cc_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,10,29,35,27,43,15,1)
-}
-alternative_sprites(spriteset_air_aw101_2cc_landing, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_aw101_2cc_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,10,29,35,27,43,15,2)
-}
-alternative_sprites(spriteset_air_aw101_2cc_landing, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_aw101_2cc_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,10,29,35,27,43,15,4)
-}
+MAKE_SPRITESET_ZOOMX4(spriteset_air_aw101_2cc, "air_aw101_2cc", 0,0,10,29,35,27,43,15)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_aw101_2cc_landing, "air_aw101_2cc_landing", 0,0,10,29,35,27,43,15)
+MAKE_HELI_LANDING_SWITCH(spriteset_air_aw101_2cc_status, spriteset_air_aw101_2cc, spriteset_air_aw101_2cc_landing)
 
 // AF
-spriteset(spriteset_air_aw101_af, "../intermediate/gfx/1x/air_aw101_af_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,10,29,35,27,43,15,1)
-}
-alternative_sprites(spriteset_air_aw101_af, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_aw101_af_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,10,29,35,27,43,15,2)
-}
-alternative_sprites(spriteset_air_aw101_af, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_aw101_af_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,10,29,35,27,43,15,4)
-}
-spriteset(spriteset_air_aw101_af_landing, "../intermediate/gfx/1x/air_aw101_af_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,10,29,35,27,43,15,1)
-}
-alternative_sprites(spriteset_air_aw101_af_landing, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_aw101_af_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,10,29,35,27,43,15,2)
-}
-alternative_sprites(spriteset_air_aw101_af_landing, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_aw101_af_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,10,29,35,27,43,15,4)
-}
+MAKE_SPRITESET_ZOOMX4(spriteset_air_aw101_af, "air_aw101_af", 0,0,10,29,35,27,43,15)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_aw101_af_landing, "air_aw101_af_landing", 0,0,10,29,35,27,43,15)
+MAKE_HELI_LANDING_SWITCH(spriteset_air_aw101_af_status, spriteset_air_aw101_af, spriteset_air_aw101_af_landing)
 
 // rotor
-spriteset(spriteset_air_aw101_rotor, "../intermediate/gfx/1x/air_aw101_rotor_8bpp.png") {
-    template_rotor_voxel_zoom(0,0,29,16,1)
-}
-alternative_sprites(spriteset_air_aw101_rotor, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_aw101_rotor_8bpp.png") {
-    template_rotor_voxel_zoom(0,0,29,16,2)
-}
-alternative_sprites(spriteset_air_aw101_rotor, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_aw101_rotor_8bpp.png") {
-    template_rotor_voxel_zoom(0,0,29,16,4)
-}
-
-// flight status
-switch (FEAT_AIRCRAFT, SELF, spriteset_air_aw101_2cc_status, (var[0xE2, 0, 0xFF])) {
-    16..20: spriteset_air_aw101_2cc; // flight
-    24: spriteset_air_aw101_2cc; // helicopter preparing to land at airport
-    27: spriteset_air_aw101_2cc; // helicopter preparing to land at heliport    
-        spriteset_air_aw101_2cc_landing; // default
-}
-switch (FEAT_AIRCRAFT, SELF, spriteset_air_aw101_af_status, (var[0xE2, 0, 0xFF])) {
-    16..20: spriteset_air_aw101_af; // flight
-    24: spriteset_air_aw101_af; // helicopter preparing to land at airport
-    27: spriteset_air_aw101_af; // helicopter preparing to land at heliport    
-        spriteset_air_aw101_af_landing; // default
-}
+MAKE_SPRITESET_ROTOR_ZOOMX4(spriteset_air_aw101_rotor, "air_aw101", 0,0,29,16)
 
 // liveries switch
 switch (FEAT_AIRCRAFT, SELF, spriteset_air_aw101_switch, cargo_subtype)
@@ -79,7 +27,7 @@ switch (FEAT_AIRCRAFT, SELF, air_aw101_cargo_subtype_text, cargo_subtype)
      return CB_RESULT_NO_TEXT;
 }
 
-if (is_aircraft_helicopter_enabled(param_aircraft_enable_eu)){
+if (IS_AIRCRAFT_HELICOPTER_ENABLED(param_aircraft_enable_eu)){
     item (FEAT_AIRCRAFT, item_air_aw101) {
         property {
             name:                           string(STR_NAME_AIR_AW101);
@@ -111,31 +59,14 @@ if (is_aircraft_helicopter_enabled(param_aircraft_enable_eu)){
             /* Visual effect is left at default (no effect) */
         }
         graphics {
-                additional_text:            return string(STR_DESC_AIR_AW101); //Additional text shown in purchase list
-                cargo_subtype_text:         air_aw101_cargo_subtype_text;
-                default:                    spriteset_air_aw101_switch;
-                rotor:                      spriteset_air_aw101_rotor; //spriteset_air_ec725_rotor; //spriteset_air_aw101_rotor;
-                cost_factor:                return 46;
-                running_cost_factor:        return 418;
+            additional_text:            return string(STR_DESC_AIR_AW101); //Additional text shown in purchase list
+            cargo_subtype_text:         air_aw101_cargo_subtype_text;
+            default:                    spriteset_air_aw101_switch;
+            rotor:                      spriteset_air_aw101_rotor; //spriteset_air_ec725_rotor; //spriteset_air_aw101_rotor;
+            cost_factor:                return 46;
+            running_cost_factor:        return 418;
         }
     }
 
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_aw101)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_aw101)
-        {
-            property	
-            {
-                range: 272; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_aw101, 0, 272)
 }

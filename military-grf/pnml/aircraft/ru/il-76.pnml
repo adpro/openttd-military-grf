@@ -7,7 +7,7 @@ spriteset(spriteset_air_il76, "gfx/air_il76.png") {
     template_aircraft(0,0,42,48,61,49,59,35)
 }
 
-if (is_aircraft_airlifter_enabled(param_aircraft_enable_rus)){
+if (IS_AIRCRAFT_AIRLIFTER_ENABLED(param_aircraft_enable_rus)){
     item (FEAT_AIRCRAFT, item_air_il76) {
         property {
             name:                           string(STR_NAME_AIR_IL76);
@@ -37,8 +37,8 @@ if (is_aircraft_airlifter_enabled(param_aircraft_enable_rus)){
             mail_capacity:                  0; // 60 t
             sound_effect:                   SOUND_TAKEOFF_JET_BIG;
             /* Visual effect is left at default (no effect) */
-    }
-    graphics {
+        }
+        graphics {
             additional_text:    return string(STR_DESC_AIR_IL76); //Additional text shown in purchase list
             default:            spriteset_air_il76;
 
@@ -46,25 +46,8 @@ if (is_aircraft_airlifter_enabled(param_aircraft_enable_rus)){
             mail_capacity:      return 600;    // callback for setting capacity
             cost_factor:                    return 305;
             running_cost_factor:            return 4844;
-    }
+        }
     }
 
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_il76)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_il76)
-        {
-            property	
-            {
-                range: 1000; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_il76, 0, 1000)
 }

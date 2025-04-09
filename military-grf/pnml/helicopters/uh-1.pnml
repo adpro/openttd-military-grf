@@ -1,37 +1,13 @@
 /* helicopter UH-1 */
 
 // 2cc
-spriteset(spriteset_air_uh1_2cc, "../intermediate/gfx/1x/air_uh1_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,5,21,25,19,30,9,1)
-}
-alternative_sprites(spriteset_air_uh1_2cc, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_uh1_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,5,21,25,19,30,9,2)
-}
-alternative_sprites(spriteset_air_uh1_2cc, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_uh1_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,5,21,25,19,30,9,4)
-}
+MAKE_SPRITESET_ZOOMX4(spriteset_air_uh1_2cc, "air_uh1_2cc", 0,0,5,21,25,19,30,9)
 
 // AF
-spriteset(spriteset_air_uh1_af, "../intermediate/gfx/1x/air_uh1_af_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,5,21,25,19,30,9,1)
-}
-alternative_sprites(spriteset_air_uh1_af, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_uh1_af_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,5,21,25,19,30,9,2)
-}
-alternative_sprites(spriteset_air_uh1_af, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_uh1_af_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,5,21,25,19,30,9,4)
-}
+MAKE_SPRITESET_ZOOMX4(spriteset_air_uh1_af, "air_uh1_af", 0,0,5,21,25,19,30,9)
 
 // rotor
-spriteset(spriteset_air_uh1_rotor, "../intermediate/gfx/1x/air_uh1_rotor_8bpp.png") {
-    template_rotor_voxel_zoom(0,0,20,12,1)
-}
-alternative_sprites(spriteset_air_uh1_rotor, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_uh1_rotor_8bpp.png") {
-    template_rotor_voxel_zoom(0,0,20,12,2)
-}
-alternative_sprites(spriteset_air_uh1_rotor, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_uh1_rotor_8bpp.png") {
-    template_rotor_voxel_zoom(0,0,20,12,4)
-}
+MAKE_SPRITESET_ROTOR_ZOOMX4(spriteset_air_uh1_rotor, "air_uh1", 0,0,20,12)
 
 // livery switches
 switch (FEAT_AIRCRAFT, SELF, spriteset_air_uh1_switch, cargo_subtype)
@@ -48,8 +24,7 @@ switch (FEAT_AIRCRAFT, SELF, air_uh1_cargo_subtype_text, cargo_subtype)
 }
 
 
-
-if (is_aircraft_helicopter_enabled(param_aircraft_enable_us)){
+if (IS_AIRCRAFT_HELICOPTER_ENABLED(param_aircraft_enable_us)){
     item (FEAT_AIRCRAFT, item_air_uh1) {
         property {
             name:                           string(STR_NAME_AIR_UH1);
@@ -90,22 +65,5 @@ if (is_aircraft_helicopter_enabled(param_aircraft_enable_us)){
         }
     }
 
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_uh1)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_uh1)
-        {
-            property	
-            {
-                range: 102; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_uh1, 0, 102)
 }

@@ -14,7 +14,7 @@ spriteset(spriteset_air_rafale_loading, "gfx/air_rafale_loading.png") {
 }
 
 
-if (is_aircraft_fighter_enabled(param_aircraft_enable_eu)){
+if (IS_AIRCRAFT_FIGHTER_ENABLED(param_aircraft_enable_eu)){
     item (FEAT_AIRCRAFT, item_air_rafale) {
         property {
             name:                           string(STR_NAME_AIR_RAFALE);
@@ -44,31 +44,14 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_eu)){
             mail_capacity:                  4;
             sound_effect:                   SOUND_TAKEOFF_JET_FAST; 
             /* Visual effect is left at default (no effect) */
-    }
-    graphics {
+        }
+        graphics {
             additional_text:    return string(STR_DESC_AIR_RAFALE); //Additional text shown in purchase list
             default:            spritegroup_air_rafale;
             cost_factor:                    return 217;
             running_cost_factor:            return 852;
-    }
+        }
     }
 
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_rafale)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_rafale)
-        {
-            property	
-            {
-                range: 740; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_rafale, 0, 740)
 }

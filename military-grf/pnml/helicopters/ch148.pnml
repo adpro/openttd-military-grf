@@ -1,58 +1,14 @@
 /* helicopter Sikorsky CH-148 / S-92 */
 
 // 2cc
-spriteset(spriteset_air_ch148_2cc, "../intermediate/gfx/1x/air_ch148_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,13,27,48,34,38,14,1)
-}
-alternative_sprites(spriteset_air_ch148_2cc, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_ch148_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,13,27,48,34,38,14,2)
-}
-alternative_sprites(spriteset_air_ch148_2cc, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_ch148_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,13,27,48,34,38,14,4)
-}
-spriteset(spriteset_air_ch148_2cc_landing, "../intermediate/gfx/1x/air_ch148_2cc_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,13,27,48,34,38,14,1)
-}
-alternative_sprites(spriteset_air_ch148_2cc_landing, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_ch148_2cc_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,13,27,48,34,38,14,2)
-}
-alternative_sprites(spriteset_air_ch148_2cc_landing, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_ch148_2cc_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,13,27,48,34,38,14,4)
-}
+MAKE_SPRITESET_ZOOMX4(spriteset_air_ch148_2cc, "air_ch148_2cc", 0,0,13,27,48,34,38,14)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_ch148_2cc_landing, "air_ch148_2cc_landing", 0,0,13,27,48,34,38,14)
+MAKE_HELI_LANDING_SWITCH(spriteset_air_ch148_2cc_status, spriteset_air_ch148_2cc, spriteset_air_ch148_2cc_landing)
 
 // AF
-spriteset(spriteset_air_ch148_af, "../intermediate/gfx/1x/air_ch148_af_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,13,27,48,34,38,14,1)
-}
-alternative_sprites(spriteset_air_ch148_af, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_ch148_af_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,13,27,48,34,38,14,2)
-}
-alternative_sprites(spriteset_air_ch148_af, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_ch148_af_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,13,27,48,34,38,14,4)
-}
-spriteset(spriteset_air_ch148_af_landing, "../intermediate/gfx/1x/air_ch148_af_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,13,27,48,34,38,14,1)
-}
-alternative_sprites(spriteset_air_ch148_af_landing, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_ch148_af_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,13,27,48,34,38,14,2)
-}
-alternative_sprites(spriteset_air_ch148_af_landing, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_ch148_af_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,13,27,48,34,38,14,4)
-}
-
-// flight status
-switch (FEAT_AIRCRAFT, SELF, spriteset_air_ch148_2cc_status, (var[0xE2, 0, 0xFF])) {
-    16..20: spriteset_air_ch148_2cc; // flight
-    24: spriteset_air_ch148_2cc; // helicopter preparing to land at airport
-    27: spriteset_air_ch148_2cc; // helicopter preparing to land at heliport    
-        spriteset_air_ch148_2cc_landing; // default
-}
-switch (FEAT_AIRCRAFT, SELF, spriteset_air_ch148_af_status, (var[0xE2, 0, 0xFF])) {
-    16..20: spriteset_air_ch148_af; // flight
-    24: spriteset_air_ch148_af; // helicopter preparing to land at airport
-    27: spriteset_air_ch148_af; // helicopter preparing to land at heliport    
-        spriteset_air_ch148_af_landing; // default
-}
+MAKE_SPRITESET_ZOOMX4(spriteset_air_ch148_af, "air_ch148_af", 0,0,13,27,48,34,38,14)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_ch148_af_landing, "air_ch148_af_landing", 0,0,13,27,48,34,38,14)
+MAKE_HELI_LANDING_SWITCH(spriteset_air_ch148_af_status, spriteset_air_ch148_af, spriteset_air_ch148_af_landing)
 
 // liveries switch
 switch (FEAT_AIRCRAFT, SELF, spriteset_air_ch148_switch, cargo_subtype)
@@ -68,7 +24,7 @@ switch (FEAT_AIRCRAFT, SELF, air_ch148_cargo_subtype_text, cargo_subtype)
      return CB_RESULT_NO_TEXT;
 }
 
-if (is_aircraft_helicopter_enabled(param_aircraft_enable_us)){
+if (IS_AIRCRAFT_HELICOPTER_ENABLED(param_aircraft_enable_us)){
     item (FEAT_AIRCRAFT, item_air_ch148) {
         property {
             name:                           string(STR_NAME_AIR_CH148);
@@ -109,22 +65,5 @@ if (is_aircraft_helicopter_enabled(param_aircraft_enable_us)){
         }
     }
 
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_ch148)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_ch148)
-        {
-            property	
-            {
-                range: 200; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_ch148, 0, 200)
 }

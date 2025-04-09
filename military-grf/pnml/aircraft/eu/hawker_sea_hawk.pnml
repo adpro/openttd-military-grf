@@ -15,7 +15,7 @@ spriteset(spriteset_air_hseahawk, "gfx/air_hawker_sea_hawk.png") {
     // [ 133,     0,       20,    15,    -10,        -6]
 }
 
-if (is_aircraft_fighter_enabled(param_aircraft_enable_eu)){
+if (IS_AIRCRAFT_FIGHTER_ENABLED(param_aircraft_enable_eu)){
     item (FEAT_AIRCRAFT, item_air_hseahawk) {
         property {
             name:                           string(STR_NAME_AIR_HSEAHAWK);
@@ -45,32 +45,14 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_eu)){
             mail_capacity:                  4;
             sound_effect:                   SOUND_TAKEOFF_JET;
             /* Visual effect is left at default (no effect) */
-    }
-    graphics {
+        }
+        graphics {
             additional_text:    return string(STR_DESC_AIR_HSEAHAWK); //Additional text shown in purchase list
             default:            spriteset_air_hseahawk;
             cost_factor:                    return 3;
             running_cost_factor:            return 189;
-    }
-    }
-
-
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_hseahawk)
-        {
-            property	
-            {
-                range: 0; 
-            }
         }
     }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_hseahawk)
-        {
-            property	
-            {
-                range: 238; 
-            }
-        }
-    }
+
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_hseahawk, 0, 238)
 }

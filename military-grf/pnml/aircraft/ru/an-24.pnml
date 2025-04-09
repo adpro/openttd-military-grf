@@ -7,7 +7,7 @@ spriteset(spriteset_air_an24, "gfx/air_an24.png") {
     template_aircraft(0,0,32,33,43,35,39,26)
 }
 
-if (is_aircraft_airlifter_enabled(param_aircraft_enable_rus)){
+if (IS_AIRCRAFT_AIRLIFTER_ENABLED(param_aircraft_enable_rus)){
     item (FEAT_AIRCRAFT, item_air_an24) {
         property {
             name:                           string(STR_NAME_AIR_AN24);
@@ -46,24 +46,7 @@ if (is_aircraft_airlifter_enabled(param_aircraft_enable_rus)){
         }
     }
 
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_an24)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_an24)
-        {
-            property	
-            {
-                range: 480; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_an24, 0, 480)
 
 // transport version
     item (FEAT_AIRCRAFT, item_air_an24t) {
@@ -107,22 +90,5 @@ if (is_aircraft_airlifter_enabled(param_aircraft_enable_rus)){
         }
     }
 
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_an24t)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_an24t)
-        {
-            property	
-            {
-                range: 480; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_an24t, 0, 480)
 }

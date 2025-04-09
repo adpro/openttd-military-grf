@@ -16,7 +16,7 @@ spriteset(spriteset_air_c141, "gfx/air_c141.png") {
     // [ 285,     0,       44,    36,    -22,       -17]
 }
 
-if (is_aircraft_airlifter_enabled(param_aircraft_enable_us)){
+if (IS_AIRCRAFT_AIRLIFTER_ENABLED(param_aircraft_enable_us)){
     item (FEAT_AIRCRAFT, item_air_c141) {
         property {
             name:                           string(STR_NAME_AIR_C141);
@@ -46,33 +46,16 @@ if (is_aircraft_airlifter_enabled(param_aircraft_enable_us)){
             mail_capacity:                  0;
             sound_effect:                   SOUND_TAKEOFF_JET_BIG;
             /* Visual effect is left at default (no effect) */
-    }
-    graphics {
+        }
+        graphics {
             additional_text:    return string(STR_DESC_AIR_C141); //Additional text shown in purchase list
             default:            spriteset_air_c141;
 
             mail_capacity:      return 420;    // callback for setting capacity
             cost_factor:                    return 66;
             running_cost_factor:            return 3557;
-    }
+        }
     }
 
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_c141)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_c141)
-        {
-            property	
-            {
-                range: 945; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_c141, 0, 945)
 }

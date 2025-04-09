@@ -1,3 +1,6 @@
+/*
+ * Macro for voxel based png templating in 4 level zooms (1x, 2x, 4x)
+ */
 template template_aircraft_voxel(x,y,a,b,c,d,e,f,zoom){
     [                             x,  y,  a,  b,  -(a/2),  -((b/2)-1)]
     [                x+a+(1*8*zoom),  y,  c,  d,  -(c/2),  -((d/2)-1)]

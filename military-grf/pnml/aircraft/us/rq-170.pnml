@@ -15,7 +15,7 @@ spriteset(spriteset_air_rq170, "gfx/air_rq170.png") {
     // [ 193,     0,       30,    24,    -15,       -12]
 }
 
-if (is_aircraft_fighter_enabled(param_aircraft_enable_us)){
+if (IS_AIRCRAFT_FIGHTER_ENABLED(param_aircraft_enable_us)){
     item (FEAT_AIRCRAFT, item_air_rq170) {
         property {
             name:                           string(STR_NAME_AIR_RQ170);
@@ -45,31 +45,14 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_us)){
             mail_capacity:                  2;
             sound_effect:                   SOUND_TAKEOFF_JET;
             /* Visual effect is left at default (no effect) */
-    }
-    graphics {
+        }
+        graphics {
             additional_text:    return string(STR_DESC_AIR_RQ170); //Additional text shown in purchase list
             default:            spriteset_air_rq170;
             cost_factor:                    return 7;
             running_cost_factor:            return 1732;
-    }
+        }
     }
 
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_rq170)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_rq170)
-        {
-            property	
-            {
-                range: 2000; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_rq170, 0, 2000)
 }

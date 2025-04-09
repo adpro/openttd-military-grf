@@ -1,12 +1,61 @@
-#define is_afb_enabled(parameter) (parameter == 1) || (parameter == 2) ? 1 : 0
-#define is_carrier_enabled(parameter) (parameter == 1) || (parameter == 3) ? 1 : 0
-#define is_heliport_enabled(parameter) (parameter == 1) || (parameter == 4) ? 1 : 0
+#define IS_AFB_ENABLED(parameter) (parameter == 1) || (parameter == 2) ? 1 : 0
+#define IS_CARRIER_ENABLED(parameter) (parameter == 1) || (parameter == 3) ? 1 : 0
+#define IS_HELIPORT_ENABLED(parameter) (parameter == 1) || (parameter == 4) ? 1 : 0
 
-#define is_aircraft_fighter_enabled(parameter) (parameter == 1) || (parameter == 2) ? 1 : 0
-#define is_aircraft_airlifter_enabled(parameter) (parameter == 1) || (parameter == 3) || (parameter == 5) ? 1 : 0
-#define is_aircraft_helicopter_enabled(parameter) (parameter == 1) || (parameter == 4) || (parameter == 5) ? 1 : 0
+#define IS_AIRCRAFT_FIGHTER_ENABLED(parameter) (parameter == 1) || (parameter == 2) ? 1 : 0
+#define IS_AIRCRAFT_AIRLIFTER_ENABLED(parameter) (parameter == 1) || (parameter == 3) || (parameter == 5) ? 1 : 0
+#define IS_AIRCRAFT_HELICOPTER_ENABLED(parameter) (parameter == 1) || (parameter == 4) || (parameter == 5) ? 1 : 0
 
 
 if (param_standard_planes_disable)	{ disable_item(FEAT_AIRCRAFT, 0, 39);	}
 
 // max. purchase sprite 64x18 airplane, 27x18 flag, 27x18 aircraft type + 9x18 separator = 64+9+27+9+27 = 136x18
+
+/**
+ * Macro for offset generation for template_aircraft_voxel_zoom template.
+ */
+#define MAKE_SPRITESET_ZOOMX4(name, base_path, x1, y1, a1, b1, c1, d1, e1, f1) \
+spriteset(name, ("../intermediate/gfx/1x/" + base_path + "_8bpp.png")) { \
+    template_aircraft_voxel_zoom(x1, y1, a1, b1, c1, d1, e1, f1, 1) \
+} \
+alternative_sprites(name, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, ("../intermediate/gfx/2x/" + base_path + "_8bpp.png")) { \
+    template_aircraft_voxel_zoom(x1, y1, a1, b1, c1, d1, e1, f1, 2) \
+} \
+alternative_sprites(name, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, ("../intermediate/gfx/4x/" + base_path + "_8bpp.png")) { \
+    template_aircraft_voxel_zoom(x1, y1, a1, b1, c1, d1, e1, f1, 4) \
+}
+
+#define MAKE_SPRITESET_ROTOR_ZOOMX4(name, base_path, x1, y1, a1, b1) \
+spriteset(name, ("../intermediate/gfx/1x/" + base_path + "_rotor_8bpp.png")) { \
+    template_rotor_voxel_zoom(x1, y1, a1, b1, 1) \
+} \
+alternative_sprites(name, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, ("../intermediate/gfx/2x/" + base_path + "_rotor_8bpp.png")) { \
+    template_rotor_voxel_zoom(x1, y1, a1, b1, 2) \
+} \
+alternative_sprites(name, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, ("../intermediate/gfx/4x/" + base_path + "_rotor_8bpp.png")) { \
+    template_rotor_voxel_zoom(x1, y1, a1, b1, 4) \
+}
+
+
+#define MAKE_AIRCRAFT_LANDING_SWITCH(switch_name, flight_spriteset, landing_spriteset) \
+switch (FEAT_AIRCRAFT, SELF, switch_name, (var[0xE2, 0, 0xFF])) { \
+    16..20: flight_spriteset; \
+    landing_spriteset; /* default */ \
+}
+
+#define MAKE_HELI_LANDING_SWITCH(switch_name, flight_spriteset, landing_spriteset) \
+switch (FEAT_AIRCRAFT, SELF, switch_name, (var[0xE2, 0, 0xFF])) { \
+    16..20: flight_spriteset; /* flight */ \
+    24: flight_spriteset; /* helicopter preparing to land at airport */ \
+    27: flight_spriteset; /* helicopter preparing to land at heliport */ \
+        landing_spriteset; /* default */ \
+}
+
+
+#define SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_id, range_0, range_1) \
+if (Aircraft_Ranges == 0) { \
+    item (FEAT_AIRCRAFT, item_id) { property { range: range_0; } } \
+} \
+if (Aircraft_Ranges == 1) { \
+    item (FEAT_AIRCRAFT, item_id) { property { range: range_1; } } \
+}

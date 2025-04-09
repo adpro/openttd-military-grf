@@ -137,7 +137,7 @@ spriteset(spriteset_air_small_preview, "gfx/air_airport_small.png") {
 
 
 
-if (is_carrier_enabled(param_airport_enable)) {
+if (IS_CARRIER_ENABLED(param_airport_enable)) {
 	item(FEAT_AIRPORTS, small_airport_intrepid) {
 		property {
 			override: 0;

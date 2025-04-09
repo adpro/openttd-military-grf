@@ -1,35 +1,10 @@
 /* airplane A6M Zero */
 
 // 2CC
-spriteset(spriteset_air_a6m_2cc, "../intermediate/gfx/1x/air_a6m_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,20,13,18,13,15,15,1)
-}
-alternative_sprites(spriteset_air_a6m_2cc, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_a6m_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,20,13,18,13,15,15,2)
-}
-alternative_sprites(spriteset_air_a6m_2cc, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_a6m_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,20,13,18,13,15,15,4)
-}
-// spriteset(spriteset_air_a6m_landing, "../intermediate/gfx/1x/air_a6m_2cc_landing_8bpp.png") {
-//     template_aircraft_voxel_zoom(0,0,20,13,18,13,15,15,1)
-// }
-// alternative_sprites(spriteset_air_a6m_landing, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_a6m_2cc_landing_8bpp.png") {
-//     template_aircraft_voxel_zoom(0,0,20,13,18,13,15,15,2)
-// }
-// alternative_sprites(spriteset_air_a6m_landing, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_a6m_2cc_landing_8bpp.png") {
-//     template_aircraft_voxel_zoom(0,0,20,13,18,13,15,15,4)
-// }
+MAKE_SPRITESET_ZOOMX4(spriteset_air_a6m_2cc, "air_a6m_2cc", 0,0,20,13,18,13,15,15)
 
 // AF
-spriteset(spriteset_air_a6m_af, "../intermediate/gfx/1x/air_a6m_af_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,20,13,18,13,15,15,1)
-}
-alternative_sprites(spriteset_air_a6m_af, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_a6m_af_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,20,13,18,13,15,15,2)
-}
-alternative_sprites(spriteset_air_a6m_af, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_a6m_af_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,20,13,18,13,15,15,4)
-}
+MAKE_SPRITESET_ZOOMX4(spriteset_air_a6m_af, "air_a6m_af", 0,0,20,13,18,13,15,15)
 
 // liveries switches
 
@@ -46,7 +21,7 @@ switch (FEAT_AIRCRAFT, SELF, air_a6m_cargo_subtype_text, cargo_subtype)
      return CB_RESULT_NO_TEXT;
 }
 
-if (is_aircraft_fighter_enabled(param_aircraft_enable_other)){
+if (IS_AIRCRAFT_FIGHTER_ENABLED(param_aircraft_enable_other)){
     item (FEAT_AIRCRAFT, item_air_a6m) {
         property {
             name:                           string(STR_NAME_AIR_A6M);
@@ -86,23 +61,5 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_other)){
         }
     }
 
-
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_a6m)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_a6m)
-        {
-            property	
-            {
-                range: 620; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_a6m, 0, 620)
 }

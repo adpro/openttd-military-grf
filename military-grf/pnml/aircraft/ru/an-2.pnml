@@ -7,7 +7,7 @@ spriteset(spriteset_air_an2, "gfx/air_an2.png") {
     template_aircraft(0,0,19,20,24,22,20,17)
 }
 
-if (is_aircraft_airlifter_enabled(param_aircraft_enable_rus)){
+if (IS_AIRCRAFT_AIRLIFTER_ENABLED(param_aircraft_enable_rus)){
     item (FEAT_AIRCRAFT, item_air_an2) {
         property {
             name:                           string(STR_NAME_AIR_AN2);
@@ -37,8 +37,8 @@ if (is_aircraft_airlifter_enabled(param_aircraft_enable_rus)){
             mail_capacity:                  0;
             sound_effect:                   SOUND_TAKEOFF_PROPELLER;
             /* Visual effect is left at default (no effect) */
-    }
-    graphics {
+        }
+        graphics {
             additional_text:    return string(STR_DESC_AIR_AN2); //Additional text shown in purchase list
             default:            spriteset_air_an2;
 
@@ -46,25 +46,8 @@ if (is_aircraft_airlifter_enabled(param_aircraft_enable_rus)){
             //mail_capacity:      return 36;    // callback for setting capacity
             cost_factor:                    return 2;
             running_cost_factor:            return 141;
-    }
+        }
     }
 
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_an2)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_an2)
-        {
-            property	
-            {
-                range: 169; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_an2, 0, 169)
 }

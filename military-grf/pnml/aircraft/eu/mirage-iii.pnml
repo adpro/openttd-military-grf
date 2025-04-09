@@ -5,7 +5,7 @@ spriteset(spriteset_air_mirage3, "gfx/air_mirage3.png") {
     template_fighter_26(0)
 }
 
-if (is_aircraft_fighter_enabled(param_aircraft_enable_eu)){
+if (IS_AIRCRAFT_FIGHTER_ENABLED(param_aircraft_enable_eu)){
     item (FEAT_AIRCRAFT, item_air_mirage3) {
         property {
             name:                           string(STR_NAME_AIR_MIRAGE3);
@@ -35,31 +35,14 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_eu)){
             mail_capacity:                  4;
             sound_effect:                   SOUND_TAKEOFF_JET_FAST;
             /* Visual effect is left at default (no effect) */
-    }
-    graphics {
+        }
+        graphics {
             additional_text:    return string(STR_DESC_AIR_MIRAGE3); //Additional text shown in purchase list
             default:            spriteset_air_mirage3;
             cost_factor:                    return 18;
             running_cost_factor:            return 263;
-    }
+        }
     }
 
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_mirage3)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_mirage3)
-        {
-            property	
-            {
-                range: 667; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_mirage3, 0, 667)
 }

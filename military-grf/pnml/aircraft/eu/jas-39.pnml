@@ -14,7 +14,7 @@ spriteset(spriteset_air_jas39_loading, "gfx/air_jas39_loading.png") {
 }
 
 
-if (is_aircraft_fighter_enabled(param_aircraft_enable_eu)){
+if (IS_AIRCRAFT_FIGHTER_ENABLED(param_aircraft_enable_eu)){
     item (FEAT_AIRCRAFT, item_air_jas39) {
         property {
             name:                           string(STR_NAME_AIR_JAS39);
@@ -44,31 +44,14 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_eu)){
             mail_capacity:                  4;
             sound_effect:                   SOUND_TAKEOFF_JET_FAST; 
             /* Visual effect is left at default (no effect) */
-    }
-    graphics {
+        }
+        graphics {
             additional_text:    return string(STR_DESC_AIR_JAS39); //Additional text shown in purchase list
             default:            spritegroup_air_jas39;
             cost_factor:                    return 74;
             running_cost_factor:            return 434;
-    }
+        }
     }
 
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_jas39)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_jas39)
-        {
-            property	
-            {
-                range: 640; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_jas39, 0, 640)
 }

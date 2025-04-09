@@ -15,7 +15,7 @@ spriteset(spriteset_air_f18, "gfx/air_f18.png") {
     // [ 168,     0,       25,    20,    -12,        -9]
 }
 
-if (is_aircraft_fighter_enabled(param_aircraft_enable_us)){
+if (IS_AIRCRAFT_FIGHTER_ENABLED(param_aircraft_enable_us)){
     item (FEAT_AIRCRAFT, item_air_f18) {
         property {
             name:                           string(STR_NAME_AIR_F18);
@@ -45,31 +45,14 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_us)){
             mail_capacity:                  4;
             sound_effect:                   SOUND_TAKEOFF_JET_FAST;
             /* Visual effect is left at default (no effect) */
-    }
-    graphics {
+        }
+        graphics {
             additional_text:    return string(STR_DESC_AIR_F18); //Additional text shown in purchase list
             default:            spriteset_air_f18;
             cost_factor:                    return 112;
             running_cost_factor:            return 714;
-    }
+        }
     }
 
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_f18)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_f18)
-        {
-            property	
-            {
-                range: 403; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_c2, 0, 403)
 }

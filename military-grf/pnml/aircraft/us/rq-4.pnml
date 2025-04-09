@@ -15,7 +15,7 @@ spriteset(spriteset_air_rq4, "gfx/air_rq4.png") {
     // [ 278,     0,       45,    30,    -22,       -14]
 }
 
-if (is_aircraft_fighter_enabled(param_aircraft_enable_us)){
+if (IS_AIRCRAFT_FIGHTER_ENABLED(param_aircraft_enable_us)){
     item (FEAT_AIRCRAFT, item_air_rq4) {
         property {
             name:                           string(STR_NAME_AIR_RQ4);
@@ -45,31 +45,14 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_us)){
             mail_capacity:                  4;
             sound_effect:                   SOUND_TAKEOFF_JET;
             /* Visual effect is left at default (no effect) */
-    }
-    graphics {
+        }
+        graphics {
             additional_text:    return string(STR_DESC_AIR_RQ4); //Additional text shown in purchase list
             default:            spriteset_air_rq4;
             cost_factor:                    return 151;
             running_cost_factor:            return 534;
-    }
+        }
     }
 
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_rq4)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_rq4)
-        {
-            property	
-            {
-                range: 4560; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_rq4, 0, 4560)
 }

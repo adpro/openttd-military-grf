@@ -33,7 +33,7 @@ switch (FEAT_AIRCRAFT, SELF, air_zlin_z12_cargo_subtype_text, cargo_subtype)
      return CB_RESULT_NO_TEXT;
 }
 
-if (is_aircraft_fighter_enabled(param_aircraft_enable_cs)){
+if (IS_AIRCRAFT_FIGHTER_ENABLED(param_aircraft_enable_cs)){
     item (FEAT_AIRCRAFT, item_air_zlin_z12) {
         property {
             name:                           string(STR_NAME_AIR_ZLIN_Z12);
@@ -65,30 +65,13 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_cs)){
             /* Visual effect is left at default (no effect) */
         }
         graphics {
-                additional_text:    return string(STR_DESC_AIR_ZLIN_Z12); //Additional text shown in purchase list
-                cargo_subtype_text: air_zlin_z12_cargo_subtype_text;
-                default:            spriteset_air_zlin_z12_switch;
-                cost_factor:                    return 1;
-                running_cost_factor:            return 13;
+            additional_text:    return string(STR_DESC_AIR_ZLIN_Z12); //Additional text shown in purchase list
+            cargo_subtype_text: air_zlin_z12_cargo_subtype_text;
+            default:            spriteset_air_zlin_z12_switch;
+            cost_factor:                    return 1;
+            running_cost_factor:            return 13;
         }
     }
 
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_zlin_z12)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_zlin_z12)
-        {
-            property	
-            {
-                range: 80; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_zlin_z12, 0, 80)
 }

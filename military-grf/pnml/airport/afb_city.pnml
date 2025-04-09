@@ -708,7 +708,7 @@ spriteset(spriteset_air_afb_city_preview, "gfx/air_airport_afb_city_preview.png"
     preview_small_airport(0,212)
 }
 
-if (is_afb_enabled(param_airport_enable)) {
+if (IS_AFB_ENABLED(param_airport_enable)) {
 	item(FEAT_AIRPORTS, airport_afb_city) {
 		property {
 			override: 1;

@@ -17,7 +17,7 @@ spriteset(spriteset_air_avro, "gfx/air_avro504.png") {
 
 
 
-if (is_aircraft_fighter_enabled(param_aircraft_enable_eu)){
+if (IS_AIRCRAFT_FIGHTER_ENABLED(param_aircraft_enable_eu)){
     item (FEAT_AIRCRAFT, item_air_avro) {
         property {
             name:                           string(STR_NAME_AIR_AVRO);
@@ -47,31 +47,14 @@ if (is_aircraft_fighter_enabled(param_aircraft_enable_eu)){
             mail_capacity:                  2;
             sound_effect:                   SOUND_TAKEOFF_PROPELLER; 
             /* Visual effect is left at default (no effect) */
-    }
-    graphics {
+        }
+        graphics {
             additional_text:    return string(STR_DESC_AIR_AVRO); //Additional text shown in purchase list
             default:            spriteset_air_avro;
             cost_factor:                    return 1;
             running_cost_factor:            return 21;
-    }
+        }
     }
 
-    if (Aircraft_Ranges == 0) {
-        item (FEAT_AIRCRAFT, item_air_avro)
-        {
-            property	
-            {
-                range: 0; 
-            }
-        }
-    }
-    if (Aircraft_Ranges == 1) {
-        item (FEAT_AIRCRAFT, item_air_avro)
-        {
-            property	
-            {
-                range: 80; 
-            }
-        }
-    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_avro, 0, 80)
 }
