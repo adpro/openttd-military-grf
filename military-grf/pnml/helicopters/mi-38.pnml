@@ -1,37 +1,13 @@
 /* helicopter Mil Mi-38 */
 
 // 2CC
-spriteset(spriteset_air_mi38_2cc, "../intermediate/gfx/1x/air_mi38_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,8,32,36,29,43,15,1)
-}
-alternative_sprites(spriteset_air_mi38_2cc, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_mi38_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,8,32,36,29,43,15,2)
-}
-alternative_sprites(spriteset_air_mi38_2cc, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_mi38_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,8,32,36,29,43,15,4)
-}
+MAKE_SPRITESET_ZOOMX4(spriteset_air_mi38_2cc, "air_mi38_2cc", 0,0,8,32,36,29,43,15)
 
 // AF
-spriteset(spriteset_air_mi38_af, "../intermediate/gfx/1x/air_mi38_af_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,8,32,36,29,43,15,1)
-}
-alternative_sprites(spriteset_air_mi38_af, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_mi38_af_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,8,32,36,29,43,15,2)
-}
-alternative_sprites(spriteset_air_mi38_af, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_mi38_af_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,8,32,36,29,43,15,4)
-}
+MAKE_SPRITESET_ZOOMX4(spriteset_air_mi38_af, "air_mi38_af", 0,0,8,32,36,29,43,15)
 
 // rotor
-spriteset(spriteset_air_mi38_rotor, "../intermediate/gfx/1x/air_mi38_rotor_8bpp.png") {
-    template_rotor_voxel_zoom(0,0,35,19,1)
-}
-alternative_sprites(spriteset_air_mi38_rotor, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_mi38_rotor_8bpp.png") {
-    template_rotor_voxel_zoom(0,0,35,19,2)
-}
-alternative_sprites(spriteset_air_mi38_rotor, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_mi38_rotor_8bpp.png") {
-    template_rotor_voxel_zoom(0,0,35,19,4)
-}
+MAKE_SPRITESET_ROTOR_ZOOMX4(spriteset_air_mi38_rotor, "air_mi38", 0,0,35,19)
 
 // livery switches
 

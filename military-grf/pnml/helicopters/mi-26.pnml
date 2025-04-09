@@ -1,40 +1,13 @@
 /* helicopter Mil Mi-26 */
 
-
 // 2CC
-spriteset(spriteset_air_mi26_2cc, "../intermediate/gfx/1x/air_mi26_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,14,48,58,47,64,24,1)
-}
-alternative_sprites(spriteset_air_mi26_2cc, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_mi26_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,14,48,58,47,64,24,2)
-}
-alternative_sprites(spriteset_air_mi26_2cc, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_mi26_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,14,48,58,47,64,24,4)
-}
+MAKE_SPRITESET_ZOOMX4(spriteset_air_mi26_2cc, "air_mi26_2cc", 0,0,14,48,58,47,64,24)
 
 // AF
-spriteset(spriteset_air_mi26_af, "../intermediate/gfx/1x/air_mi26_af_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,14,48,58,47,64,24,1)
-}
-alternative_sprites(spriteset_air_mi26_af, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_mi26_af_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,14,48,58,47,64,24,2)
-}
-alternative_sprites(spriteset_air_mi26_af, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_mi26_af_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,14,48,58,47,64,24,4)
-}
+MAKE_SPRITESET_ZOOMX4(spriteset_air_mi26_af, "air_mi26_af", 0,0,14,48,58,47,64,24)
 
 // rotor
-
-spriteset(spriteset_air_mi26_rotor, "../intermediate/gfx/1x/air_mi26_rotor_8bpp.png") {
-    // orig size 0,0,57,30,1
-    template_rotor_voxel_zoom(0,0,52,27,1)
-}
-alternative_sprites(spriteset_air_mi26_rotor, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_mi26_rotor_8bpp.png") {
-    template_rotor_voxel_zoom(0,0,52,27,2)
-}
-alternative_sprites(spriteset_air_mi26_rotor, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_mi26_rotor_8bpp.png") {
-    template_rotor_voxel_zoom(0,0,52,27,4)
-}
+MAKE_SPRITESET_ROTOR_ZOOMX4(spriteset_air_mi26_rotor, "air_mi26", 0,0,52,27)
 
 // liveries switch
 switch (FEAT_AIRCRAFT, SELF, spriteset_air_mi26_switch, cargo_subtype)

@@ -43,6 +43,14 @@ switch (FEAT_AIRCRAFT, SELF, switch_name, (var[0xE2, 0, 0xFF])) { \
     landing_spriteset; /* default */ \
 }
 
+#define MAKE_HELI_LANDING_SWITCH(switch_name, flight_spriteset, landing_spriteset) \
+switch (FEAT_AIRCRAFT, SELF, switch_name, (var[0xE2, 0, 0xFF])) { \
+    16..20: flight_spriteset; /* flight */ \
+    24: flight_spriteset; /* helicopter preparing to land at airport */ \
+    27: flight_spriteset; /* helicopter preparing to land at heliport */ \
+        landing_spriteset; /* default */ \
+}
+
 
 #define SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_id, range_0, range_1) \
 if (Aircraft_Ranges == 0) { \

@@ -1,58 +1,14 @@
 /* helicopter Sikorsky CH-53K */
 
 // 2cc
-spriteset(spriteset_air_ch53k_2cc, "../intermediate/gfx/1x/air_ch53k_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,12,40,48,37,53,18,1)
-}
-alternative_sprites(spriteset_air_ch53k_2cc, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_ch53k_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,12,40,48,37,53,18,2)
-}
-alternative_sprites(spriteset_air_ch53k_2cc, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_ch53k_2cc_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,12,40,48,37,53,18,4)
-}
-spriteset(spriteset_air_ch53k_2cc_landing, "../intermediate/gfx/1x/air_ch53k_2cc_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,12,40,48,37,53,18,1)
-}
-alternative_sprites(spriteset_air_ch53k_2cc_landing, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_ch53k_2cc_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,12,40,48,37,53,18,2)
-}
-alternative_sprites(spriteset_air_ch53k_2cc_landing, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_ch53k_2cc_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,12,40,48,37,53,18,4)
-}
+MAKE_SPRITESET_ZOOMX4(spriteset_air_ch53k_2cc, "air_ch53k_2cc", 0,0,12,40,48,37,53,18)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_ch53k_2cc_landing, "air_ch53k_2cc_landing", 0,0,12,40,48,37,53,18)
+MAKE_HELI_LANDING_SWITCH(spriteset_air_ch53k_2cc_status, spriteset_air_ch53k_2cc, spriteset_air_ch53k_2cc_landing)
 
 // AF
-spriteset(spriteset_air_ch53k_af, "../intermediate/gfx/1x/air_ch53k_af_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,12,40,48,37,53,18,1)
-}
-alternative_sprites(spriteset_air_ch53k_af, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_ch53k_af_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,12,40,48,37,53,18,2)
-}
-alternative_sprites(spriteset_air_ch53k_af, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_ch53k_af_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,12,40,48,37,53,18,4)
-}
-spriteset(spriteset_air_ch53k_af_landing, "../intermediate/gfx/1x/air_ch53k_af_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,12,40,48,37,53,18,1)
-}
-alternative_sprites(spriteset_air_ch53k_af_landing, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "../intermediate/gfx/2x/air_ch53k_af_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,12,40,48,37,53,18,2)
-}
-alternative_sprites(spriteset_air_ch53k_af_landing, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "../intermediate/gfx/4x/air_ch53k_af_landing_8bpp.png") {
-    template_aircraft_voxel_zoom(0,0,12,40,48,37,53,18,4)
-}
-
-// flight status
-switch (FEAT_AIRCRAFT, SELF, spriteset_air_ch53k_2cc_status, (var[0xE2, 0, 0xFF])) {
-    16..20: spriteset_air_ch53k_2cc; // flight
-    24: spriteset_air_ch53k_2cc; // helicopter preparing to land at airport
-    27: spriteset_air_ch53k_2cc; // helicopter preparing to land at heliport    
-        spriteset_air_ch53k_2cc_landing; // default
-}
-switch (FEAT_AIRCRAFT, SELF, spriteset_air_ch53k_af_status, (var[0xE2, 0, 0xFF])) {
-    16..20: spriteset_air_ch53k_af; // flight
-    24: spriteset_air_ch53k_af; // helicopter preparing to land at airport
-    27: spriteset_air_ch53k_af; // helicopter preparing to land at heliport    
-        spriteset_air_ch53k_af_landing; // default
-}
+MAKE_SPRITESET_ZOOMX4(spriteset_air_ch53k_af, "air_ch53k_af", 0,0,12,40,48,37,53,18)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_ch53k_af_landing, "air_ch53k_af_landing", 0,0,12,40,48,37,53,18)
+MAKE_HELI_LANDING_SWITCH(spriteset_air_ch53k_af_status, spriteset_air_ch53k_af, spriteset_air_ch53k_af_landing)
 
 // liveries switch
 switch (FEAT_AIRCRAFT, SELF, spriteset_air_ch53k_switch, cargo_subtype)
