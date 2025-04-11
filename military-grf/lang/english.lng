@@ -65,6 +65,9 @@ STR_PARAM_NAME_STD_PLANES   :Disable default aircraft
 STR_PARAM_DESC_STD_PLANES   :Disables default airplanes and helicopters in game.
 
 
+STR_NAME_ITEM_CAMO_CFG  :{STRING}{YELLOW}{STRING},{GREEN}{STRING}
+
+
 # --------------------
 # vehicle names
 STR_NAME_AIR_F86        :North American F-86 Sabre
@@ -75,6 +78,11 @@ STR_DESC_AIR_F4		    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {O
 
 STR_NAME_AIR_F16        :General Dynamics F-16 Fighting Falcon
 STR_DESC_AIR_F16	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The world's most numerous fixed-wing aircraft in military service in 2015. {}{BLACK}Number built: {ORANGE}> 4,600
+STR_NAME_AIR_F16A       :F-16A Block 1/5/10/15/20
+STR_NAME_AIR_F16C       :F-16C Block 25/30/32/40/42
+STR_NAME_AIR_F16C50     :F-16C Block 50/52/50+/52+
+STR_NAME_AIR_F16E       :F-16E Block 60
+STR_NAME_AIR_F16V       :F-16V Block 70/72
 
 STR_NAME_AIR_F18        :McDonnell Douglas F/A-18 Hornet
 STR_DESC_AIR_F18	    :Country of origin: {ORANGE}USA {}{BLACK}Historic facts: {ORANGE}The aircraft can perform fighter escort, fleet air defense, suppression of enemy air defenses, air interdiction, close air support, and aerial reconnaissance. {}{BLACK}Number built: {ORANGE}1,500
@@ -304,7 +312,13 @@ STR_LIV_AIR_AF          : Air Force
 STR_LIV_AIR_AF_STRIPES  : Air Force with stripes
 STR_LIV_AIR_2CC         : 2CC
 STR_LIV_AIR_2CC_REV     : 2CC Reversed
-STR_LIV_AIR_BASE        : Default
+STR_LIV_AIR_BASE        : Default camo
+
+STR_CFG_AIR_AFTB        : afterburner
+STR_CFG_AIR_INTFUEL     : cruise, int. fuel
+STR_CFG_AIR_EXTFUEL     : cruise, ext. fuel
+STR_CFG_AIR_MAXFUEL     : cruise, max. fuel
+
 # real base liveries
 STR_LIV_AIR_USN_VF24    : U.S. Navy VF-24
 

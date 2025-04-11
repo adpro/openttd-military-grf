@@ -67,6 +67,9 @@ STR_PARAM_NAME_STD_PLANES   :Zakázat výchozí letadla
 STR_PARAM_DESC_STD_PLANES   :Zakáže výchozí letadla a helikoptéry ve hře.
 
 
+STR_NAME_ITEM_CAMO_CFG  :{STRING}{YELLOW}{STRING},{GREEN}{STRING}
+
+
 # vehicle names
 STR_NAME_AIR_F86        :North American F-86 Sabre
 STR_DESC_AIR_F86		:Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Známý jako první americký stíhací letoun s šípovými křídly, který dokázal čelit sovětským MiGům-15 v rychlých soubojích na obloze korejské války. {}{BLACK}Vyrobeno ks: {ORANGE}9 860
@@ -76,6 +79,11 @@ STR_DESC_AIR_F4		    :Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {OR
 
 STR_NAME_AIR_F16        :General Dynamics F-16 Fighting Falcon
 STR_DESC_AIR_F16		:Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Nejpočetnější letadlo s pevnými křídly na světě ve vojenské službě v roce 2015. {}{BLACK}Vyrobeno ks: {ORANGE}> 4 600
+STR_NAME_AIR_F16A       :F-16A Block 1/5/10/15/20
+STR_NAME_AIR_F16C       :F-16C Block 25/30/32/40/42
+STR_NAME_AIR_F16C50     :F-16C Block 50/52/50+/52+
+STR_NAME_AIR_F16E       :F-16E Block 60
+STR_NAME_AIR_F16V       :F-16V Block 70/72
 
 STR_NAME_AIR_F18        :McDonnell Douglas F/A-18 Hornet
 STR_DESC_AIR_F18		:Země původu: {ORANGE}USA {}{BLACK}Historická fakta: {ORANGE}Letoun může provádět stíhací doprovod, protivzdušnou obranu flotily, potlačení nepřátelské protivzdušné obrany, přímou leteckou podporu a vzdušný průzkum. {}{BLACK}Vyrobeno ks: {ORANGE}1 500
@@ -304,7 +312,12 @@ STR_LIV_AIR_AF          : Vzdušné síly
 STR_LIV_AIR_AF_STRIPES  : Vzdušné síly s pruhy
 STR_LIV_AIR_2CC         : Dvoubarevné schéma 
 STR_LIV_AIR_2CC_REV     : Dvoubarevné schéma obrácené
-STR_LIV_AIR_BASE        : Základní schéma
+STR_LIV_AIR_BASE        : Základní kamufláž
+
+STR_CFG_AIR_AFTB        : příd. spalování
+STR_CFG_AIR_INTFUEL     : cest. let, int. palivo
+STR_CFG_AIR_EXTFUEL     : cest. let, ext. palivo
+STR_CFG_AIR_MAXFUEL     : cest. let, max. paliva
 
 
 # --------------------
