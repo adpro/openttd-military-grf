@@ -1,54 +1,5 @@
 /* airplane F-16 */
 
-
-/* spritesets */
-
-/* F-16 A default */
-MAKE_SPRITESET_ZOOMX4(spriteset_air_f16a_default, "air_f16_a_default", 0,0,16,22,24,20,25,17)
-MAKE_SPRITESET_ZOOMX4(spriteset_air_f16a_default_landing, "air_f16_a_default_landing", 0,0,16,22,24,20,25,17)
-MAKE_AIRCRAFT_LANDING_SWITCH(air_f16a_default_status, spriteset_air_f16a_default, spriteset_air_f16a_default_landing)
-/* F-16 A external wing tanks */
-MAKE_SPRITESET_ZOOMX4(spriteset_air_f16a_default_extfuel, "air_f16_a_default_extfuel", 0,0,16,22,24,20,25,17)
-MAKE_SPRITESET_ZOOMX4(spriteset_air_f16a_default_extfuel_landing, "air_f16_a_default_extfuel_landing", 0,0,16,22,24,20,25,17)
-MAKE_AIRCRAFT_LANDING_SWITCH(air_f16a_default_extfuel_status, spriteset_air_f16a_default_extfuel, spriteset_air_f16a_default_extfuel_landing)
-
-/* F-16 C default */
-MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c_default, "air_f16_c_default", 0,0,16,22,24,20,25,17)
-MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c_default_landing, "air_f16_c_default_landing", 0,0,16,22,24,20,25,17)
-MAKE_AIRCRAFT_LANDING_SWITCH(air_f16c_default_status, spriteset_air_f16c_default, spriteset_air_f16c_default_landing)
-/* F-16 C external wing tanks */
-MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c_default_extfuel, "air_f16_c_default_extfuel", 0,0,16,22,24,20,25,17)
-MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c_default_extfuel_landing, "air_f16_c_default_extfuel_landing", 0,0,16,22,24,20,25,17)
-MAKE_AIRCRAFT_LANDING_SWITCH(air_f16c_default_extfuel_status, spriteset_air_f16c_default_extfuel, spriteset_air_f16c_default_extfuel_landing)
-
-/* spriteset switch */
-/*
-switch (FEAT_AIRCRAFT, SELF, spriteset_air_f16_switch, cargo_subtype)
-{
-  0..15:  air_f16a_default_status;
-  16..31: air_f16a_default_status;
-  32..47: air_f16a_default_extfuel_status;
-//   48: air_f16a_default_maxfuel_status;
-     air_f16a_default_status;
-}
-
-switch (FEAT_AIRCRAFT, SELF, air_f16a_cargo_subtype_text, cargo_subtype)
-{
-  0..15: string(STR_LIV_AIR_BASE);
-  16..31: string(STR_LIV_AIR_BASE_AFTB);
-  32..47: string(STR_LIV_AIR_BASE_EXTFUEL);
-//   48: string(STR_LIV_AIR_BASE_MAXFUEL);
-  return CB_RESULT_NO_TEXT;
-}
-
-switch (FEAT_AIRCRAFT, SELF, air_f16a_speed, cargo_subtype)
-{
-    16..31: return int(2124*5/64);  // afterburner
-    32..47: return int(874*5/64);   // ext fuel
-    return int(895*5/64);           // base cruise
-}
-*/
-
 #define MAKE_AIRCRAFT_F16_PROPERTIES(pintroduction, pmlife, pvehlife, pcost, pruncost, pspeed, prange) \
     climates_available:             bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL); \
     introduction_date:              pintroduction; \
@@ -85,11 +36,49 @@ switch (FEAT_AIRCRAFT, SELF, air_f16a_speed, cargo_subtype)
 
 #define MAKE_VARIANT_CAMO(item_id) \
     variant_group:  item_id; \
-    extra_flags:    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW);
+    extra_flags:    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
 
 #define MAKE_VARIANT_TYPE(item_id) \
     variant_group:  item_id; \
-    extra_flags:    bitmask(VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+    extra_flags:    bitmask();
+
+#define F16A_INTF_RNG   397
+#define F16A_EXTF_RNG   676
+#define F16C_INTF_RNG   397
+#define F16C_EXTF_RNG   836
+
+#define PROP_F16A_INTF \
+    MAKE_AIRCRAFT_F16_PROPERTIES(date(1976,06,01), 55, 40, 30, 27, 895, F16A_INTF_RNG)
+
+#define PROP_F16A_EXTF \
+    MAKE_AIRCRAFT_F16_PROPERTIES(date(1976,06,01), 55, 40, 30, 27, 874, F16A_EXTF_RNG)
+
+#define PROP_F16C_INTF \
+    MAKE_AIRCRAFT_F16_PROPERTIES(date(1984,06,19), 55, 40, 30, 27, 895, F16C_INTF_RNG)
+
+#define PROP_F16C_EXTF \
+    MAKE_AIRCRAFT_F16_PROPERTIES(date(1984,06,19), 55, 40, 30, 27, 874, F16C_EXTF_RNG)
+
+
+/* spritesets */
+
+/* F-16 A default */
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16a_default, "air_f16_a_default", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16a_default_landing, "air_f16_a_default_landing", 0,0,16,22,24,20,25,17)
+MAKE_AIRCRAFT_LANDING_SWITCH(air_f16a_default_status, spriteset_air_f16a_default, spriteset_air_f16a_default_landing)
+/* F-16 A external wing tanks */
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16a_default_extfuel, "air_f16_a_default_extfuel", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16a_default_extfuel_landing, "air_f16_a_default_extfuel_landing", 0,0,16,22,24,20,25,17)
+MAKE_AIRCRAFT_LANDING_SWITCH(air_f16a_default_extfuel_status, spriteset_air_f16a_default_extfuel, spriteset_air_f16a_default_extfuel_landing)
+
+/* F-16 C default */
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c_default, "air_f16_c_default", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c_default_landing, "air_f16_c_default_landing", 0,0,16,22,24,20,25,17)
+MAKE_AIRCRAFT_LANDING_SWITCH(air_f16c_default_status, spriteset_air_f16c_default, spriteset_air_f16c_default_landing)
+/* F-16 C external wing tanks */
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c_default_extfuel, "air_f16_c_default_extfuel", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c_default_extfuel_landing, "air_f16_c_default_extfuel_landing", 0,0,16,22,24,20,25,17)
+MAKE_AIRCRAFT_LANDING_SWITCH(air_f16c_default_extfuel_status, spriteset_air_f16c_default_extfuel, spriteset_air_f16c_default_extfuel_landing)
 
 
 if (IS_AIRCRAFT_FIGHTER_ENABLED(param_aircraft_enable_us)){
@@ -112,53 +101,51 @@ if (IS_AIRCRAFT_FIGHTER_ENABLED(param_aircraft_enable_us)){
     item (FEAT_AIRCRAFT, item_air_f16a) {
         property {
             name: string(STR_NAME_ITEM_CAMO_CFG, string(STR_NAME_AIR_F16A), string(STR_LIV_AIR_BASE), string(STR_CFG_AIR_INTFUEL));
-            MAKE_AIRCRAFT_F16_PROPERTIES(date(1976,06,01), 55, 40, 30, 27, 895, 397)
+            PROP_F16A_INTF
             MAKE_VARIANT_TYPE(item_air_f16)
         }
         graphics {
             MAKE_AIRCRAFT_F16_GRAPHICS(STR_DESC_AIR_F16, air_f16a_default_status, 118, 554)
         }
     }
-    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_f16a, 0, 397)
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_f16a, 0, F16A_INTF_RNG)
 
     /* F-16 A Block 1/../20 | Default camo | External fuel */
     item (FEAT_AIRCRAFT, item_air_f16a_dflt_extfuel) {
         property {
             name: string(STR_NAME_ITEM_CAMO_CFG, string(STR_NAME_AIR_F16A), string(STR_LIV_AIR_BASE), string(STR_CFG_AIR_EXTFUEL));
-            MAKE_AIRCRAFT_F16_PROPERTIES(date(1976,06,01), 55, 40, 30, 27, 874, 676)
+            PROP_F16A_EXTF
             MAKE_VARIANT_CAMO(item_air_f16a)
         }
         graphics {
             MAKE_AIRCRAFT_F16_GRAPHICS(STR_DESC_AIR_F16, air_f16a_default_extfuel_status, 118, 554)
         }
     }
-    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_f16a_dflt_extfuel, 0, 676)
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_f16a_dflt_extfuel, 0, F16A_EXTF_RNG)
 
     /* F-16 C Block 25/../42 | Default camo | Internal fuel */
     item (FEAT_AIRCRAFT, item_air_f16c) {
         property {
             name: string(STR_NAME_ITEM_CAMO_CFG, string(STR_NAME_AIR_F16C), string(STR_LIV_AIR_BASE), string(STR_CFG_AIR_INTFUEL));
-            MAKE_AIRCRAFT_F16_PROPERTIES(date(1984,06,19), 55, 40, 30, 27, 895, 397)
+            PROP_F16C_INTF
             MAKE_VARIANT_TYPE(item_air_f16)
         }
         graphics {
             MAKE_AIRCRAFT_F16_GRAPHICS(STR_DESC_AIR_F16, air_f16c_default_status, 118, 554)
         }
     }
-    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_f16c, 0, 397)
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_f16c, 0, F16C_INTF_RNG)
 
     /* F-16 C Block 25/../42 | Default camo | External fuel */
     item (FEAT_AIRCRAFT, item_air_f16c_dflt_extfuel) {
         property {
             name: string(STR_NAME_ITEM_CAMO_CFG, string(STR_NAME_AIR_F16C), string(STR_LIV_AIR_BASE), string(STR_CFG_AIR_EXTFUEL));
-            MAKE_AIRCRAFT_F16_PROPERTIES(date(1984,06,19), 55, 40, 30, 27, 874, 836)
+            PROP_F16C_EXTF
             MAKE_VARIANT_CAMO(item_air_f16c)
         }
         graphics {
             MAKE_AIRCRAFT_F16_GRAPHICS(STR_DESC_AIR_F16, air_f16c_default_extfuel_status, 118, 554)
         }
     }
-    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_f16c_dflt_extfuel, 0, 836)
-
-
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_f16c_dflt_extfuel, 0, F16C_EXTF_RNG)
 }
