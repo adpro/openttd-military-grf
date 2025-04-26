@@ -42,23 +42,58 @@
     variant_group:  item_id; \
     extra_flags:    bitmask();
 
-#define F16A_INTF_RNG   397
-#define F16A_EXTF_RNG   676
-#define F16C_INTF_RNG   397
-#define F16C_EXTF_RNG   836
+#define F16A_INTF_RNG       397
+#define F16A_EXTF_RNG       676
+#define F16C_INTF_RNG       397
+#define F16C_EXTF_RNG       836
+#define F16C50_INTF_RNG     397
+#define F16C50_EXTF_RNG     836
+#define F16C50_CFT_RNG      575
+#define F16C50_CFTEXTF_RNG  1025
+#define F16C70_INTF_RNG     423
+#define F16C70_EXTF_RNG     853
+#define F16C70_CFT_RNG      615
+#define F16C70_CFTEXTF_RNG  1100
+#define F16E60_CFT_RNG      555
 
 #define PROP_F16A_INTF \
-    MAKE_AIRCRAFT_F16_PROPERTIES(date(1976,06,01), 55, 40, 30, 27, 895, F16A_INTF_RNG)
+    MAKE_AIRCRAFT_F16_PROPERTIES(date(1976,06,01), 18, 15, 30, 27, 895, F16A_INTF_RNG)
 
 #define PROP_F16A_EXTF \
-    MAKE_AIRCRAFT_F16_PROPERTIES(date(1976,06,01), 55, 40, 30, 27, 874, F16A_EXTF_RNG)
+    MAKE_AIRCRAFT_F16_PROPERTIES(date(1976,06,01), 18, 15, 30, 27, 874, F16A_EXTF_RNG)
 
 #define PROP_F16C_INTF \
-    MAKE_AIRCRAFT_F16_PROPERTIES(date(1984,06,19), 55, 40, 30, 27, 895, F16C_INTF_RNG)
+    MAKE_AIRCRAFT_F16_PROPERTIES(date(1984,06,19), 7, 22, 30, 27, 895, F16C_INTF_RNG)
 
 #define PROP_F16C_EXTF \
-    MAKE_AIRCRAFT_F16_PROPERTIES(date(1984,06,19), 55, 40, 30, 27, 874, F16C_EXTF_RNG)
+    MAKE_AIRCRAFT_F16_PROPERTIES(date(1984,06,19), 7, 22, 30, 27, 874, F16C_EXTF_RNG)
 
+#define PROP_F16C50_INTF \
+    MAKE_AIRCRAFT_F16_PROPERTIES(date(1991,10,31), 32, 22, 30, 27, 895, F16C50_INTF_RNG)
+
+#define PROP_F16C50_EXTF \
+    MAKE_AIRCRAFT_F16_PROPERTIES(date(1991,10,31), 32, 25, 30, 27, 874, F16C50_EXTF_RNG)
+
+#define PROP_F16C50_CFTF \
+    MAKE_AIRCRAFT_F16_PROPERTIES(date(2002,04,01), 11, 25, 30, 27, 880, F16C50_CFT_RNG)
+
+#define PROP_F16C50_CFTEXTF \
+    MAKE_AIRCRAFT_F16_PROPERTIES(date(2002,04,01), 11, 25, 30, 27, 850, F16C50_CFTEXTF_RNG)
+
+#define PROP_F16C70_INTF \
+    MAKE_AIRCRAFT_F16_PROPERTIES(date(2023,01,01), 27, 35, 30, 27, 895, F16C70_INTF_RNG)
+
+#define PROP_F16C70_EXTF \
+    MAKE_AIRCRAFT_F16_PROPERTIES(date(2023,01,01), 27, 35, 30, 27, 874, F16C70_EXTF_RNG)
+
+#define PROP_F16C70_CFTF \
+    MAKE_AIRCRAFT_F16_PROPERTIES(date(2023,01,01), 27, 35, 30, 27, 880, F16C70_CFT_RNG)
+
+#define PROP_F16C70_CFTEXTF \
+    MAKE_AIRCRAFT_F16_PROPERTIES(date(2023,01,01), 27, 35, 30, 27, 850, F16C70_CFTEXTF_RNG)
+
+#define PROP_F16E60_CFTF \
+    MAKE_AIRCRAFT_F16_PROPERTIES(date(2004,06,01), 19, 25, 30, 27, 880, F16E60_CFT_RNG)
 
 /* spritesets */
 
@@ -71,6 +106,16 @@ MAKE_SPRITESET_ZOOMX4(spriteset_air_f16a_default_extfuel, "air_f16_a_default_ext
 MAKE_SPRITESET_ZOOMX4(spriteset_air_f16a_default_extfuel_landing, "air_f16_a_default_extfuel_landing", 0,0,16,22,24,20,25,17)
 MAKE_AIRCRAFT_LANDING_SWITCH(air_f16a_default_extfuel_status, spriteset_air_f16a_default_extfuel, spriteset_air_f16a_default_extfuel_landing)
 
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16a_beaf2w2, "air_f16_a_beaf2w2", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16a_cla7, "air_f16_a_cla7", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16a_itaf37w18, "air_f16_a_itaf37w18", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16a_nlaf322, "air_f16_a_nlaf322", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16a_noaf132w331, "air_f16_a_noaf132w331", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16a_pkaf38w9, "air_f16_a_pkaf38w9", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16a_ptaf201, "air_f16_a_ptaf201", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16a_usnnawdc, "air_f16_a_usnnawdc", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16a_veaf161, "air_f16_a_veaf161", 0,0,16,22,24,20,25,17)
+
 /* F-16 C default */
 MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c_default, "air_f16_c_default", 0,0,16,22,24,20,25,17)
 MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c_default_landing, "air_f16_c_default_landing", 0,0,16,22,24,20,25,17)
@@ -79,6 +124,69 @@ MAKE_AIRCRAFT_LANDING_SWITCH(air_f16c_default_status, spriteset_air_f16c_default
 MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c_default_extfuel, "air_f16_c_default_extfuel", 0,0,16,22,24,20,25,17)
 MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c_default_extfuel_landing, "air_f16_c_default_extfuel_landing", 0,0,16,22,24,20,25,17)
 MAKE_AIRCRAFT_LANDING_SWITCH(air_f16c_default_extfuel_status, spriteset_air_f16c_default_extfuel, spriteset_air_f16c_default_extfuel_landing)
+
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c_bhaf1, "air_f16_c_bhaf1", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c_ilaf1w117, "air_f16_c_ilaf1w117", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c_ilaf10w115, "air_f16_c_ilaf10w115", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c_usaf51w36, "air_f16_c_usaf51w36", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c_usaf56w310, "air_f16_c_usaf56w310", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c_usaf57w64, "air_f16_c_usaf57w64", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c_usaf363w17, "air_f16_c_usaf363w17", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c_usaf388w34, "air_f16_c_usaf388w34", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c_usmr187w100, "air_f16_c_usmr187w100", 0,0,16,22,24,20,25,17)
+
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c30_graf110w346, "air_f16_c30_graf110w346", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c30_kraf19w161, "air_f16_c30_kraf19w161", 0,0,16,22,24,20,25,17)
+
+/* F-16 C 50 default */
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c50_default, "air_f16_c50_default", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c50_default_landing, "air_f16_c50_default_landing", 0,0,16,22,24,20,25,17)
+MAKE_AIRCRAFT_LANDING_SWITCH(air_f16c50_default_status, spriteset_air_f16c50_default, spriteset_air_f16c50_default_landing)
+/* F-16 C 50 external wing tanks */
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c50_default_extfuel, "air_f16_c50_default_extfuel", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c50_default_extfuel_landing, "air_f16_c50_default_extfuel_landing", 0,0,16,22,24,20,25,17)
+MAKE_AIRCRAFT_LANDING_SWITCH(air_f16c50_default_extfuel_status, spriteset_air_f16c50_default_extfuel, spriteset_air_f16c50_default_extfuel_landing)
+/* F-16 C 50 CFT default */
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c50_default_cft, "air_f16_c50_default_cft", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c50_default_cft_landing, "air_f16_c50_default_cft_landing", 0,0,16,22,24,20,25,17)
+MAKE_AIRCRAFT_LANDING_SWITCH(air_f16c50_default_cft_status, spriteset_air_f16c50_default_cft, spriteset_air_f16c50_default_cft_landing)
+/* F-16 C 50 CFT + external wing tanks */
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c50_default_cftextfuel, "air_f16_c50_default_cftextfuel", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c50_default_cftextfuel_landing, "air_f16_c50_default_cftextfuel_landing", 0,0,16,22,24,20,25,17)
+MAKE_AIRCRAFT_LANDING_SWITCH(air_f16c50_default_cftextfuel_status, spriteset_air_f16c50_default_cftextfuel, spriteset_air_f16c50_default_cftextfuel_landing)
+
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c50_claf3, "air_f16_c50_claf3", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c50_graf110w337, "air_f16_c50_graf110w337", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c50_kraf19w155, "air_f16_c50_kraf19w155", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c50_omaf18, "air_f16_c50_omaf18", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c50_plaf31w3, "air_f16_c50_plaf31w3", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c50_sgaf143, "air_f16_c50_sgaf143", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c50_usaf53w422, "air_f16_c50_usaf53w422", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c50_usaf57w414, "air_f16_c50_usaf57w414", 0,0,16,22,24,20,25,17)
+
+/* F-16 E 60 CFT default */
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16e60_default_cft, "air_f16_e60_default_cft", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16e60_default_cft_landing, "air_f16_e60_default_cft_landing", 0,0,16,22,24,20,25,17)
+MAKE_AIRCRAFT_LANDING_SWITCH(air_f16e60_default_status, spriteset_air_f16e60_default_cft, spriteset_air_f16e60_default_cft_landing)
+
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16e60_aeaf1, "air_f16_e60_aeaf1", 0,0,16,22,24,20,25,17)
+
+/* F-16 C 70 default */
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c70_default, "air_f16_c70_default", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c70_default_landing, "air_f16_c70_default_landing", 0,0,16,22,24,20,25,17)
+MAKE_AIRCRAFT_LANDING_SWITCH(air_f16c70_default_status, spriteset_air_f16c70_default, spriteset_air_f16c70_default_landing)
+/* F-16 C 70 external wing tanks */
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c70_default_extfuel, "air_f16_c70_default_extfuel", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c70_default_extfuel_landing, "air_f16_c70_default_extfuel_landing", 0,0,16,22,24,20,25,17)
+MAKE_AIRCRAFT_LANDING_SWITCH(air_f16c70_default_extfuel_status, spriteset_air_f16c70_default_extfuel, spriteset_air_f16c70_default_extfuel_landing)
+/* F-16 C 70 CFT default */
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c70_default_cft, "air_f16_c70_default_cft", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c70_default_cft_landing, "air_f16_c70_default_cft_landing", 0,0,16,22,24,20,25,17)
+MAKE_AIRCRAFT_LANDING_SWITCH(air_f16c70_default_cft_status, spriteset_air_f16c70_default_cft, spriteset_air_f16c70_default_cft_landing)
+/* F-16 C 70 CFT + external wing tanks */
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c70_default_cftextfuel, "air_f16_c70_default_cftextfuel", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16c70_default_cftextfuel_landing, "air_f16_c70_default_cftextfuel_landing", 0,0,16,22,24,20,25,17)
+MAKE_AIRCRAFT_LANDING_SWITCH(air_f16c70_default_cftextfuel_status, spriteset_air_f16c70_default_cftextfuel, spriteset_air_f16c70_default_cftextfuel_landing)
 
 
 if (IS_AIRCRAFT_FIGHTER_ENABLED(param_aircraft_enable_us)){
@@ -148,4 +256,123 @@ if (IS_AIRCRAFT_FIGHTER_ENABLED(param_aircraft_enable_us)){
         }
     }
     SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_f16c_dflt_extfuel, 0, F16C_EXTF_RNG)
+
+    /* F-16 C Block 50 | Default camo | Internal fuel */
+    item (FEAT_AIRCRAFT, item_air_f16c50) {
+        property {
+            name: string(STR_NAME_ITEM_CAMO_CFG, string(STR_NAME_AIR_F16C50), string(STR_LIV_AIR_BASE), string(STR_CFG_AIR_INTFUEL));
+            PROP_F16C50_INTF
+            MAKE_VARIANT_TYPE(item_air_f16)
+        }
+        graphics {
+            MAKE_AIRCRAFT_F16_GRAPHICS(STR_DESC_AIR_F16, air_f16c50_default_status, 118, 554)
+        }
+    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_f16c50, 0, F16C50_INTF_RNG)
+
+    /* F-16 C Block 50 | Default camo | External fuel */
+    item (FEAT_AIRCRAFT, item_air_f16c50_dflt_extfuel) {
+        property {
+            name: string(STR_NAME_ITEM_CAMO_CFG, string(STR_NAME_AIR_F16C50), string(STR_LIV_AIR_BASE), string(STR_CFG_AIR_EXTFUEL));
+            PROP_F16C50_EXTF
+            MAKE_VARIANT_CAMO(item_air_f16c50)
+        }
+        graphics {
+            MAKE_AIRCRAFT_F16_GRAPHICS(STR_DESC_AIR_F16, air_f16c50_default_extfuel_status, 118, 554)
+        }
+    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_f16c50_dflt_extfuel, 0, F16C50_EXTF_RNG)
+
+    /* F-16 C Block 50 | Default camo | CFT fuel */
+    item (FEAT_AIRCRAFT, item_air_f16c50_dflt_cft) {
+        property {
+            name: string(STR_NAME_ITEM_CAMO_CFG, string(STR_NAME_AIR_F16C50), string(STR_LIV_AIR_BASE), string(STR_CFG_AIR_CFTFUEL));
+            PROP_F16C50_CFTF
+            MAKE_VARIANT_TYPE(item_air_f16c50)
+        }
+        graphics {
+            MAKE_AIRCRAFT_F16_GRAPHICS(STR_DESC_AIR_F16, air_f16c50_default_cft_status, 118, 554)
+        }
+    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_f16c50_dflt_cft, 0, F16C50_CFT_RNG)
+
+    /* F-16 C Block 50 | Default camo | CFT + External fuel */
+    item (FEAT_AIRCRAFT, item_air_f16c50_dflt_cftextfuel) {
+        property {
+            name: string(STR_NAME_ITEM_CAMO_CFG, string(STR_NAME_AIR_F16C50), string(STR_LIV_AIR_BASE), string(STR_CFG_AIR_MAXFUEL));
+            PROP_F16C50_CFTEXTF
+            MAKE_VARIANT_CAMO(item_air_f16c50)
+        }
+        graphics {
+            MAKE_AIRCRAFT_F16_GRAPHICS(STR_DESC_AIR_F16, air_f16c50_default_cftextfuel_status, 118, 554)
+        }
+    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_f16c50_dflt_cftextfuel, 0, F16C50_CFTEXTF_RNG)
+
+    /* F-16 E Block 60 | Default camo | CFT fuel */
+    item (FEAT_AIRCRAFT, item_air_f16e60_dflt_cft) {
+        property {
+            name: string(STR_NAME_ITEM_CAMO_CFG, string(STR_NAME_AIR_F16E), string(STR_LIV_AIR_BASE), string(STR_CFG_AIR_CFTFUEL));
+            PROP_F16E60_CFTF
+            MAKE_VARIANT_TYPE(item_air_f16)
+        }
+        graphics {
+            MAKE_AIRCRAFT_F16_GRAPHICS(STR_DESC_AIR_F16, air_f16e60_default_status, 118, 554)
+        }
+    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_f16e60_dflt_cft, 0, F16E60_CFT_RNG)
+
+    /* F-16 C Block 70 | Default camo | Internal fuel */
+    item (FEAT_AIRCRAFT, item_air_f16c70) {
+        property {
+            name: string(STR_NAME_ITEM_CAMO_CFG, string(STR_NAME_AIR_F16V), string(STR_LIV_AIR_BASE), string(STR_CFG_AIR_INTFUEL));
+            PROP_F16C70_INTF
+            MAKE_VARIANT_TYPE(item_air_f16)
+        }
+        graphics {
+            MAKE_AIRCRAFT_F16_GRAPHICS(STR_DESC_AIR_F16, air_f16c70_default_status, 118, 554)
+        }
+    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_f16c70, 0, F16C70_INTF_RNG)
+
+    /* F-16 C Block 70 | Default camo | External fuel */
+    item (FEAT_AIRCRAFT, item_air_f16c70_dflt_extfuel) {
+        property {
+            name: string(STR_NAME_ITEM_CAMO_CFG, string(STR_NAME_AIR_F16V), string(STR_LIV_AIR_BASE), string(STR_CFG_AIR_EXTFUEL));
+            PROP_F16C70_EXTF
+            MAKE_VARIANT_CAMO(item_air_f16c70)
+        }
+        graphics {
+            MAKE_AIRCRAFT_F16_GRAPHICS(STR_DESC_AIR_F16, air_f16c70_default_extfuel_status, 118, 554)
+        }
+    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_f16c70_dflt_extfuel, 0, F16C70_EXTF_RNG)
+
+    /* F-16 C Block 70 | Default camo | CFT fuel */
+    item (FEAT_AIRCRAFT, item_air_f16c70_dflt_cft) {
+        property {
+            name: string(STR_NAME_ITEM_CAMO_CFG, string(STR_NAME_AIR_F16V), string(STR_LIV_AIR_BASE), string(STR_CFG_AIR_CFTFUEL));
+            PROP_F16C70_CFTF
+            MAKE_VARIANT_TYPE(item_air_f16c70)
+        }
+        graphics {
+            MAKE_AIRCRAFT_F16_GRAPHICS(STR_DESC_AIR_F16, air_f16c70_default_cft_status, 118, 554)
+        }
+    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_f16c70_dflt_cft, 0, F16C70_CFT_RNG)
+
+    /* F-16 C Block 70 | Default camo | CFT + External fuel */
+    item (FEAT_AIRCRAFT, item_air_f16c70_dflt_cftextfuel) {
+        property {
+            name: string(STR_NAME_ITEM_CAMO_CFG, string(STR_NAME_AIR_F16V), string(STR_LIV_AIR_BASE), string(STR_CFG_AIR_MAXFUEL));
+            PROP_F16C50_CFTEXTF
+            MAKE_VARIANT_CAMO(item_air_f16c70)
+        }
+        graphics {
+            MAKE_AIRCRAFT_F16_GRAPHICS(STR_DESC_AIR_F16, air_f16c70_default_cftextfuel_status, 118, 554)
+        }
+    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_f16c70_dflt_cftextfuel, 0, F16C70_CFTEXTF_RNG)
+
+#include "f-16_liveries.pnml"
 }

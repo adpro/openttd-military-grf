@@ -30,7 +30,10 @@ sort (FEAT_AIRCRAFT,
     ,item_air_aero_l39
     ,item_air_aero_l39za
     ,item_air_aero_l39ms
-    ,item_air_f16, item_air_f16a, item_air_f16a_dflt_extfuel, item_air_f16c, item_air_f16c_dflt_extfuel
+    ,item_air_f16, item_air_f16a, item_air_f16a_dflt_extfuel, item_air_f16c, item_air_f16c_dflt_extfuel, 
+        item_air_f16c50, item_air_f16c50_dflt_extfuel, item_air_f16c50_dflt_cft, item_air_f16c50_dflt_cftextfuel,
+        item_air_f16e60_dflt_cft, item_air_f16c70, item_air_f16c70_dflt_extfuel, item_air_f16c70_dflt_cft, 
+        item_air_f16c70_dflt_cftextfuel
     ,item_air_mig29
     ,item_air_mirage2k
     ,item_air_f18

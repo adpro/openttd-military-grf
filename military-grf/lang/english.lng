@@ -317,6 +317,7 @@ STR_LIV_AIR_BASE        : Default camo
 STR_CFG_AIR_AFTB        : afterburner
 STR_CFG_AIR_INTFUEL     : cruise, int. fuel
 STR_CFG_AIR_EXTFUEL     : cruise, ext. fuel
+STR_CFG_AIR_CFTFUEL     : cruise, CFT
 STR_CFG_AIR_MAXFUEL     : cruise, max. fuel
 
 # real base liveries
