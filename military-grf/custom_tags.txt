@@ -1,2 +1,2 @@
-VERSION  :1.2.0.alpha+311
+VERSION  :1.2.0.alpha+312
 TITLE    :Military items

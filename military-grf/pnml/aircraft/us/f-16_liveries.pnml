@@ -1,42 +1,22 @@
-    item (FEAT_AIRCRAFT, item_air_f16a_) {
-        property {
-            name: string(STR_NAME_ITEM_CAMO_CFG, string(STR_NAME_AIR_F16A), string(STR_LIV_AIR_BASE), string(STR_CFG_AIR_INTFUEL));
-            PROP_F16A_INTF
-            MAKE_VARIANT_CAMO(item_air_f16a)
-        }
-        graphics {
-            MAKE_AIRCRAFT_F16_GRAPHICS(STR_DESC_AIR_F16, air_f16a_default_status, 118, 554)
-        }
-    }
-    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_f16a_, 0, F16A_INTF_RNG)
+#define MAKE_F16_CAMO(pitem_id, pbase_name, pprop_name, pvariant_macro, pspriteset, prange, pcfg_str) \
+    item (FEAT_AIRCRAFT, pitem_id) { \
+        property { \
+            name: string(STR_NAME_ITEM_CAMO_CFG, string(pbase_name), string(STR_LIV_AIR_BASE), string(pcfg_str)); \
+            pprop_name \
+            pvariant_macro(pitem_id) \
+        } \
+        graphics { \
+            MAKE_AIRCRAFT_F16_GRAPHICS(STR_DESC_AIR_F16, pspriteset, 118, 554) \
+        } \
+    } \
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(pitem_id, 0, prange)
 
+MAKE_F16_CAMO(item_air_f16a_, STR_NAME_AIR_F16A, PROP_F16A_INTF, MAKE_VARIANT_CAMO, air_f16a_default_status, F16A_INTF_RNG, STR_CFG_AIR_INTFUEL)
 
+MAKE_F16_CAMO(item_air_f16c_, STR_NAME_AIR_F16C, PROP_F16C_INTF, MAKE_VARIANT_CAMO, air_f16c_default_status, F16C_INTF_RNG, STR_CFG_AIR_INTFUEL)
 
+MAKE_F16_CAMO(item_air_f16c50_, STR_NAME_AIR_F16C50, PROP_F16C50_INTF, MAKE_VARIANT_CAMO, air_f16c50_default_status, F16C50_INTF_RNG, STR_CFG_AIR_INTFUEL)
 
-    item (FEAT_AIRCRAFT, item_air_f16c_) {
-        property {
-            name: string(STR_NAME_ITEM_CAMO_CFG, string(STR_NAME_AIR_F16C), string(STR_LIV_AIR_BASE), string(STR_CFG_AIR_INTFUEL));
-            PROP_F16C_INTF
-            MAKE_VARIANT_CAMO(item_air_f16c)
-        }
-        graphics {
-            MAKE_AIRCRAFT_F16_GRAPHICS(STR_DESC_AIR_F16, air_f16c_default_status, 118, 554)
-        }
-    }
-    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_f16c_, 0, F16C_INTF_RNG)
+MAKE_F16_CAMO(item_air_f16c50_x_cft, STR_NAME_AIR_F16C50, PROP_F16C50_CFTF, MAKE_VARIANT_CAMO, air_f16c50_default_cft_status, F16C50_CFT_RNG, STR_CFG_AIR_CFTFUEL)
 
-
-
-
-
-    item (FEAT_AIRCRAFT, item_air_f16c50_) {
-        property {
-            name: string(STR_NAME_ITEM_CAMO_CFG, string(STR_NAME_AIR_F16C50), string(STR_LIV_AIR_BASE), string(STR_CFG_AIR_INTFUEL));
-            PROP_F16C50_INTF
-            MAKE_VARIANT_TYPE(item_air_f16c50)
-        }
-        graphics {
-            MAKE_AIRCRAFT_F16_GRAPHICS(STR_DESC_AIR_F16, air_f16c_default_status, 118, 554)
-        }
-    }
-    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_f16c50_, 0, F16C50_INTF_RNG)
+MAKE_F16_CAMO(item_air_f16e60_x_cft, STR_NAME_AIR_F16E, PROP_F16E60_CFTF, MAKE_VARIANT_CAMO, air_f16e60_default_status, F16E60_CFT_RNG, STR_CFG_AIR_CFTFUEL)
