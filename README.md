@@ -298,7 +298,8 @@ Some voxel models are based on existing free 3D models. These models are often c
 - ["Aw139 Chopper"](https://skfb.ly/XyXn) by Bannerz is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
 - ["Mi6"](https://skfb.ly/YWRu), ["Mi8"](https://skfb.ly/YWYr) aka Mi-17, ["Mi26"](https://skfb.ly/YX6r) by manilov.ap is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
 - ["Mi-38"](https://desirefx.me/3d_models/mi-38-helicopter-3d-model/) by desirefx.me is licensed under free for all license.
-
+- ["F 16 C"](https://skfb.ly/6XHQo) by Usman Zia is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- ["Lockheed Martin F-16e/f "Fighting Falcon""](https://skfb.ly/po69q) by andertan is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 ## License
 

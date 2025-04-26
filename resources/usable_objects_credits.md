@@ -1,8 +1,7 @@
 # Usable 3D objects
 
 ## Not Used 3D object credits
-- "F 16 C" (https://skfb.ly/6XHQo) by Usman Zia is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
-- "Lockheed Martin F-16e/f "Fighting Falcon"" (https://skfb.ly/po69q) by andertan is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 
 - "Antonov An 12" (https://skfb.ly/nm4jf1dcb) by helijah is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 - "Antonov AN 22 "Antei"" () by helijah is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).

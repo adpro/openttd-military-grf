@@ -30,9 +30,18 @@ sort (FEAT_AIRCRAFT,
     ,item_air_aero_l39
     ,item_air_aero_l39za
     ,item_air_aero_l39ms
-    ,item_air_f16, item_air_f16a, item_air_f16a_dflt_extfuel, item_air_f16c, item_air_f16c_dflt_extfuel, 
+    ,item_air_f16, item_air_f16a, item_air_f16a_dflt_extfuel, item_air_f16a_beaf2w2, item_air_f16a_claf7,
+        item_air_f16a_itaf37w18, item_air_f16a_nlaf322, item_air_f16a_noaf132w331, item_air_f16a_pkaf38w9,
+        item_air_f16a_ptaf201, item_air_f16a_usnnawdc, item_air_f16a_veaf161,
+        item_air_f16c, item_air_f16c_dflt_extfuel, item_air_f16c_bhaf1, item_air_f16c_ilaf1w117,
+        item_air_f16c_ilaf10w115, item_air_f16c_usaf51w36, item_air_f16c_usaf56w310, item_air_f16c_usaf57w64,
+        item_air_f16c_usaf363w17, item_air_f16c_usaf388w34, item_air_f16c_usmr187w100, item_air_f16c_graf110w346,
+        item_air_f16c_kraf19w161,
         item_air_f16c50, item_air_f16c50_dflt_extfuel, item_air_f16c50_dflt_cft, item_air_f16c50_dflt_cftextfuel,
+        item_air_f16c50_claf3, item_air_f16c50_kraf19w155, item_air_f16c50_omaf18, item_air_f16c50_plaf31w3, 
+        item_air_f16c50_sgaf143, item_air_f16c50_usaf53w422, item_air_f16c50_usaf57w414, item_air_f16c50_graf110w337_cft,
         item_air_f16e60_dflt_cft, item_air_f16c70, item_air_f16c70_dflt_extfuel, item_air_f16c70_dflt_cft, 
+        item_air_f16e60_aeaf1_cft,
         item_air_f16c70_dflt_cftextfuel
     ,item_air_mig29
     ,item_air_mirage2k

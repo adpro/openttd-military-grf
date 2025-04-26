@@ -322,6 +322,35 @@ STR_CFG_AIR_MAXFUEL     : cruise, max. fuel
 
 # real base liveries
 STR_LIV_AIR_USN_VF24    : U.S. Navy VF-24
+STR_LIV_AIR_AEAF1       : UAE AF, 1 sqn
+STR_LIV_AIR_BEAF_2W2    : Belgian AF, 2 W 2.sqn "Comet"
+STR_LIV_AIR_BHAF1       : Bahraini AF, 1 FW 1 TFS
+STR_LIV_AIR_CLAF_7      : Chilean AF, V BA Grupo n°7
+STR_LIV_AIR_CLAF3       : Chilean AF, I BA Grupo n°3
+STR_LIV_AIR_GRAF110W337 : Hellenic AF, 110 PM 337 Mira "Ghost"
+STR_LIV_AIR_GRAF110W346 : Hellenic AF, 110 PM 346 Mira "Jason"
+STR_LIV_AIR_ILAF10W115  : Israel Def. Force, Canaf 10 Tayeset 115 "The Flying Dragon"
+STR_LIV_AIR_ILAF1W117   : Israel Def. Force, Canaf 1 Tayeset 117 "First Jet"
+STR_LIV_AIR_ITAF37W18   : Italian AF, 37 Stormo 18 gruppo "Brandy"
+STR_LIV_AIR_KRAF19W155  : Republic of Korea AF, 19 FW 155 FS "Rhino"
+STR_LIV_AIR_KRAF19W161  : Republic of Korea AF, 19 FW 161 FS "Boramae"
+STR_LIV_AIR_NLAF322     : Royal Netherlands AF, 322.sqn "Polly Parrot"
+STR_LIV_AIR_NOAF132W331 : Royal Norwegian AF, 132 Luftving 332 skv "Eagle" NATO 50
+STR_LIV_AIR_OMAF18      : Royal AF of Oman, 18 sqn
+STR_LIV_AIR_PKAF38W9    : Pakistan AF, 38 W 9 sqn "Griffins"
+STR_LIV_AIR_PLAF31W3    : Polish AF, 31 BLT 3rd ELT "Raven"
+STR_LIV_AIR_PTAF201     : Portugal AF, BA5 201 esq "Falcons"
+STR_LIV_AIR_SGAF143     : Republic of Singapore AF, 143 sqn "Phoenix"
+STR_LIV_AIR_USAF363W17  : U.S. AF, 363 FW 17 FS "Hooters" (SW)
+STR_LIV_AIR_USAF388W34  : U.S. AF, 388 FW 34 FS "Rams" (HL)
+STR_LIV_AIR_USAF51W36   : U.S. AF, 51 FW 36 FS "Flying Fiends" (OS)
+STR_LIV_AIR_USAF53W422  : U.S. AF, 53 W 422 TES "Green Bats" (OT)
+STR_LIV_AIR_USAF56W310  : U.S. AF, 56 FW 310 FS "Tophats" Passionate Patsy
+STR_LIV_AIR_USAF57W414  : U.S. AF, 57 FW 414 CTS "Aggressors" (WA)
+STR_LIV_AIR_USAF57W64   : U.S. AF, 57 FW 64 AGRS "Aggressors" (WA)
+STR_LIV_AIR_USMR187W100 : U.S. AF Air Nat. Guard, 187 FW 100 FS "Tuskegee Airman"
+STR_LIV_AIR_USNNAWDC    : U.S. Navy, NAWDC "Strike"
+STR_LIV_AIR_VEAF161     : Venezuela AF, Escuadrón 161 "Caribes"
 
 
 # --------------------

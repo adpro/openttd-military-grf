@@ -317,8 +317,8 @@ STR_LIV_AIR_BASE        : Základní kamufláž
 STR_CFG_AIR_AFTB        : příd. spalování
 STR_CFG_AIR_INTFUEL     : cest. let, int. palivo
 STR_CFG_AIR_EXTFUEL     : cest. let, ext. palivo
+STR_CFG_AIR_CFTFUEL     : cest. let, CFT
 STR_CFG_AIR_MAXFUEL     : cest. let, max. paliva
-
 
 # --------------------
 # airports

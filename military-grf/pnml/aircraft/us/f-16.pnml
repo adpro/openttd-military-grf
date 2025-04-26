@@ -107,7 +107,7 @@ MAKE_SPRITESET_ZOOMX4(spriteset_air_f16a_default_extfuel_landing, "air_f16_a_def
 MAKE_AIRCRAFT_LANDING_SWITCH(air_f16a_default_extfuel_status, spriteset_air_f16a_default_extfuel, spriteset_air_f16a_default_extfuel_landing)
 
 MAKE_SPRITESET_ZOOMX4(spriteset_air_f16a_beaf2w2, "air_f16_a_beaf2w2", 0,0,16,22,24,20,25,17)
-MAKE_SPRITESET_ZOOMX4(spriteset_air_f16a_cla7, "air_f16_a_cla7", 0,0,16,22,24,20,25,17)
+MAKE_SPRITESET_ZOOMX4(spriteset_air_f16a_claf7, "air_f16_a_claf7", 0,0,16,22,24,20,25,17)
 MAKE_SPRITESET_ZOOMX4(spriteset_air_f16a_itaf37w18, "air_f16_a_itaf37w18", 0,0,16,22,24,20,25,17)
 MAKE_SPRITESET_ZOOMX4(spriteset_air_f16a_nlaf322, "air_f16_a_nlaf322", 0,0,16,22,24,20,25,17)
 MAKE_SPRITESET_ZOOMX4(spriteset_air_f16a_noaf132w331, "air_f16_a_noaf132w331", 0,0,16,22,24,20,25,17)

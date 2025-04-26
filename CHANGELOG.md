@@ -16,10 +16,11 @@ You can find these types of changes:
 ## Unreleased
 
 ### Added
+- 43 variants/liveries/configurations of F-16 (variant groups)
 
 ### Changed
-
-- L-39 liveries changed to variant groups
+- F-16 change to vox model
+- L-39 liveries change to variant groups
 - upgrade to python 3.13
 - upgrade to nml 0.7.6
 
