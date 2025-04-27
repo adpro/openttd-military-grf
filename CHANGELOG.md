@@ -15,8 +15,10 @@ You can find these types of changes:
 
 ## Unreleased
 
+## [1.2.0] - 2025-04-27
+
 ### Added
-- 43 variants/liveries/configurations of F-16 (variant groups)
+- 47 variants/liveries/configurations of F-16 (variant groups)
 
 ### Changed
 - F-16 change to vox model

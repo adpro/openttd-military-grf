@@ -42,19 +42,26 @@
     variant_group:  item_id; \
     extra_flags:    bitmask();
 
+#define F16A_AFTB_RNG       141
 #define F16A_INTF_RNG       397
 #define F16A_EXTF_RNG       676
+#define F16C_AFTB_RNG       141
 #define F16C_INTF_RNG       397
 #define F16C_EXTF_RNG       836
+#define F16C50_AFTB_RNG     141
 #define F16C50_INTF_RNG     397
 #define F16C50_EXTF_RNG     836
 #define F16C50_CFT_RNG      575
 #define F16C50_CFTEXTF_RNG  1025
+#define F16C70_AFTB_RNG     151
 #define F16C70_INTF_RNG     423
 #define F16C70_EXTF_RNG     853
 #define F16C70_CFT_RNG      615
 #define F16C70_CFTEXTF_RNG  1100
 #define F16E60_CFT_RNG      555
+
+#define PROP_F16A_AFTB \
+    MAKE_AIRCRAFT_F16_PROPERTIES(date(1976,06,01), 18, 15, 30, 27, 2176, F16A_AFTB_RNG)
 
 #define PROP_F16A_INTF \
     MAKE_AIRCRAFT_F16_PROPERTIES(date(1976,06,01), 18, 15, 30, 27, 895, F16A_INTF_RNG)
@@ -62,11 +69,17 @@
 #define PROP_F16A_EXTF \
     MAKE_AIRCRAFT_F16_PROPERTIES(date(1976,06,01), 18, 15, 30, 27, 874, F16A_EXTF_RNG)
 
+#define PROP_F16C_AFTB \
+    MAKE_AIRCRAFT_F16_PROPERTIES(date(1984,06,19), 7, 22, 30, 27, 2145, F16C_AFTB_RNG)
+
 #define PROP_F16C_INTF \
     MAKE_AIRCRAFT_F16_PROPERTIES(date(1984,06,19), 7, 22, 30, 27, 895, F16C_INTF_RNG)
 
 #define PROP_F16C_EXTF \
     MAKE_AIRCRAFT_F16_PROPERTIES(date(1984,06,19), 7, 22, 30, 27, 874, F16C_EXTF_RNG)
+
+#define PROP_F16C50_AFTB \
+    MAKE_AIRCRAFT_F16_PROPERTIES(date(1991,10,31), 32, 22, 30, 27, 2176, F16C50_AFTB_RNG)
 
 #define PROP_F16C50_INTF \
     MAKE_AIRCRAFT_F16_PROPERTIES(date(1991,10,31), 32, 22, 30, 27, 895, F16C50_INTF_RNG)
@@ -79,6 +92,9 @@
 
 #define PROP_F16C50_CFTEXTF \
     MAKE_AIRCRAFT_F16_PROPERTIES(date(2002,04,01), 11, 25, 30, 27, 850, F16C50_CFTEXTF_RNG)
+
+#define PROP_F16C70_AFTB \
+    MAKE_AIRCRAFT_F16_PROPERTIES(date(2023,01,01), 27, 35, 30, 27, 2176, F16C70_AFTB_RNG)
 
 #define PROP_F16C70_INTF \
     MAKE_AIRCRAFT_F16_PROPERTIES(date(2023,01,01), 27, 35, 30, 27, 895, F16C70_INTF_RNG)
@@ -231,6 +247,19 @@ if (IS_AIRCRAFT_FIGHTER_ENABLED(param_aircraft_enable_us)){
     }
     SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_f16a_dflt_extfuel, 0, F16A_EXTF_RNG)
 
+    /* F-16 A Block 1/../20 | Default camo | Afterburner */
+    item (FEAT_AIRCRAFT, item_air_f16a_dflt_aftb) {
+        property {
+            name: string(STR_NAME_ITEM_CAMO_CFG, string(STR_NAME_AIR_F16A), string(STR_LIV_AIR_BASE), string(STR_CFG_AIR_AFTB));
+            PROP_F16A_AFTB
+            MAKE_VARIANT_CAMO(item_air_f16a)
+        }
+        graphics {
+            MAKE_AIRCRAFT_F16_GRAPHICS(STR_DESC_AIR_F16, air_f16a_default_status, 118, 554)
+        }
+    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_f16a_dflt_aftb, 0, F16A_AFTB_RNG)
+
     /* F-16 C Block 25/../42 | Default camo | Internal fuel */
     item (FEAT_AIRCRAFT, item_air_f16c) {
         property {
@@ -256,6 +285,19 @@ if (IS_AIRCRAFT_FIGHTER_ENABLED(param_aircraft_enable_us)){
         }
     }
     SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_f16c_dflt_extfuel, 0, F16C_EXTF_RNG)
+
+    /* F-16 C Block 25/../42 | Default camo | Afterburner */
+    item (FEAT_AIRCRAFT, item_air_f16c_dflt_aftb) {
+        property {
+            name: string(STR_NAME_ITEM_CAMO_CFG, string(STR_NAME_AIR_F16C), string(STR_LIV_AIR_BASE), string(STR_CFG_AIR_AFTB));
+            PROP_F16C_AFTB
+            MAKE_VARIANT_CAMO(item_air_f16c)
+        }
+        graphics {
+            MAKE_AIRCRAFT_F16_GRAPHICS(STR_DESC_AIR_F16, air_f16c_default_status, 118, 554)
+        }
+    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_f16c_dflt_aftb, 0, F16C_AFTB_RNG)
 
     /* F-16 C Block 50 | Default camo | Internal fuel */
     item (FEAT_AIRCRAFT, item_air_f16c50) {
@@ -308,6 +350,19 @@ if (IS_AIRCRAFT_FIGHTER_ENABLED(param_aircraft_enable_us)){
         }
     }
     SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_f16c50_dflt_cftextfuel, 0, F16C50_CFTEXTF_RNG)
+
+    /* F-16 C Block 50 | Default camo | Afterburner */
+    item (FEAT_AIRCRAFT, item_air_f16c50_dflt_aftb) {
+        property {
+            name: string(STR_NAME_ITEM_CAMO_CFG, string(STR_NAME_AIR_F16C50), string(STR_LIV_AIR_BASE), string(STR_CFG_AIR_AFTB));
+            PROP_F16C50_AFTB
+            MAKE_VARIANT_CAMO(item_air_f16c50)
+        }
+        graphics {
+            MAKE_AIRCRAFT_F16_GRAPHICS(STR_DESC_AIR_F16, air_f16c50_default_status, 118, 554)
+        }
+    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_f16c50_dflt_aftb, 0, F16C50_AFTB_RNG)
 
     /* F-16 E Block 60 | Default camo | CFT fuel */
     item (FEAT_AIRCRAFT, item_air_f16e60_dflt_cft) {
@@ -373,6 +428,19 @@ if (IS_AIRCRAFT_FIGHTER_ENABLED(param_aircraft_enable_us)){
         }
     }
     SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_f16c70_dflt_cftextfuel, 0, F16C70_CFTEXTF_RNG)
+
+    /* F-16 C Block 70 | Default camo | Afterburner */
+    item (FEAT_AIRCRAFT, item_air_f16c70_dflt_aftb) {
+        property {
+            name: string(STR_NAME_ITEM_CAMO_CFG, string(STR_NAME_AIR_F16V), string(STR_LIV_AIR_BASE), string(STR_CFG_AIR_AFTB));
+            PROP_F16C50_AFTB
+            MAKE_VARIANT_CAMO(item_air_f16c70)
+        }
+        graphics {
+            MAKE_AIRCRAFT_F16_GRAPHICS(STR_DESC_AIR_F16, air_f16c70_default_cftextfuel_status, 118, 554)
+        }
+    }
+    SET_AIRCRAFT_RANGE_BASEDON_PARAM(item_air_f16c70_dflt_aftb, 0, F16C70_AFTB_RNG)
 
 #include "f-16_liveries.pnml"
 }
