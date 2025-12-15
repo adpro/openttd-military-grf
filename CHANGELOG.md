@@ -15,6 +15,10 @@ You can find these types of changes:
 
 ## Unreleased
 
+### Changed
+- upgrade NML to version 0.8.1
+
+
 ## [1.2.0] - 2025-04-27
 
 ### Added
